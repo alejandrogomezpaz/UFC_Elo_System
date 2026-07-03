@@ -1,0 +1,117 @@
+url,error
+http://ufcstats.com/fight-details/a5c90086fb65f58e,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/a1db4c917777aa79,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/80cb366cd1e54aec,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/7ada9af99946d456,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/ccacbe6a4c31cd45,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/83414cc83ec3f2ac,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/64756e0f4b305da8,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/92b98afec5eb4e05,"Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to ""http://ufcstats.com/fight-details/92b98afec5eb4e05"", waiting until ""domcontentloaded""
+"
+http://ufcstats.com/fight-details/61d89fc97e7b145c,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/8e03db41687d9132,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/fe6b45e7210bfa8e,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/74256b4e8d0b1de6,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/9a2d3ebab827d333,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/629655f9b898810d,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/2c13b938e0f8190b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/0fcf42b68f2f0fa3,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/77bf1e37929b0d59,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/1cad3dc6d7eccdfb,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/39dccca8e8083072,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/48e51d4e7172048e,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/d93c8c77e1091a16,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/c413b0abc04358c3,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/0019ec81fd706ade,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/e1bb0b615c02d715,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/819af4bbad55324d,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/651da45cc83ce011,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/bb59b82bddc96cca,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/46fa8e79fe8a9539,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/a7fd9da657bbce8e,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/62acea88e628c3ca,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/ceac6997d22f2f3b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/f3100979573e2895,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/633fbb0894c002d2,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/821960adf5bfa15c,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/9d4b2767f6630fc9,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/6b30fe49b6df63de,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/ab18079c7c0040fb,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/f59b1215176636f6,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/dc48627a5f2daba9,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/7d0874323bd1f768,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/ce151e053721fe69,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/8208afe1e52b02e9,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/7ffdaa44fc8d111b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/407e1c6850e7022c,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/2750ac5854e8b28b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/7601245171a28da1,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/c9eb00b7efdc7559,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/0d1af8c6a5793185,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/65b4d4be2d04bb34,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/f1a9c3187855155c,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/3badedeb2c5533f4,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/57ff0eb2351979c4,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/934c967872f28b13,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/e3a2bf2d9ee83318,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/287c71b9017c5769,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/13e2ff8b3a122094,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/6390c8e74630473e,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/2874ea5d2f783e23,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/c47cf097227cc6a0,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/565ecefd8a37ad7e,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/f044802db5688bbe,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/2f449bd58b3d9a99,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/91daeeeea0a83e49,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/7ffcc3a72e082ace,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/6e5a3d6b6ed84ac3,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/c0568b225d5f0fe6,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/b80872821bc4f6ba,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/5d3e046b6bcd49f5,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/b297c3e938e1005e,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/5ab286735ccee803,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/6449a1a9a69a830c,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/5a2b86570110191b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/04d37c1c206c0efd,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/9cdfcd164b48f55e,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/4b334c9727eee450,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/6cd542650d886c22,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/fe60fd0ee67902dc,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/b80e6a799c95d499,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/8b258bbb37f74a66,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/4bce0ce561a65288,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/b78545b32a97ac44,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/640d52630f4f8a61,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/4622ec182e7fed6b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/635fbf57001897c7,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/96eaf07b34538b8b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/b068a4ee6d842606,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/28255055879685bc,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/346875f19aefc88d,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/b2857e799319f931,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/93ffadd9e41af797,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/5701dbbbfa4f8313,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/aa161809e78bef96,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/5ab2a4fec735e0b2,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/415ea2520b7ba720,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/8ae79d7967681db8,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/f4e490d25bd62d39,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/58450502a93454c8,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/443791a8c6790cf0,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/7e8749cbf32ef1f8,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/be70a2f68f6ad3e7,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/e4fe950846b51bdf,'NoneType' object is not iterable
+http://ufcstats.com/fight-details/7e27d9f37c217b63,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/53343bd123bcf651,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/da3210cd829fceb7,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/9968d308e97c6531,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/969aa613824c5dfe,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/b25662d83e6d4c3b,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/2aa175f3ebffcdf2,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/aa6a9aeeb45577d4,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/a6245f48fc60bc6a,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/73370221b3fa3676,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/6fe9729cee57c680,cannot access local variable 'winner' where it is not associated with a value
+http://ufcstats.com/fight-details/d822ebc7dbc6c259,cannot access local variable 'winner' where it is not associated with a value
