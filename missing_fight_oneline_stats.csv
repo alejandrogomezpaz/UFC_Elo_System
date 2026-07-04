@@ -1,0 +1,2287 @@
+fight_id,Method:,Round:,Time:,Time format:,winner,loser
+1fcb50100d0e6bc6,Submission,1,0:37,3 Rnd (5-5-5),Nick Klein,Heraldo Souza
+971ed760d0425fab,Submission,1,2:06,2 Rnd (10-10),Mark Kerr,Igor Borisov
+acbe77c01b8f753a,Submission,1,3:41,2 Rnd (10-5),Daisuke Nakamura,Andy Ologun
+b1587c8aa2ccaeeb,Submission,2,0:57,3 Rnd (5-5-5),Alex Serdyukov,Scott Norton
+83daff5f87126976,Submission,3,3:25,3 Rnd (5-5-5),Julius Anglickas,Karl Reed
+a7623d6fa6d4bad0,KO/TKO,1,2:35,3 Rnd (5-5-5),Hiromitsu Miura,Blas Avena
+2941af61e71ba5c0,Submission,1,1:55,3 Rnd (5-5-5),Rafael Rebello,Kyle Dietz
+2e0bd2897ce8d70e,KO/TKO,1,3:15,3 Rnd (5-5-5),Murilo Rua,Tony Bonello
+75dbde075a0985db,Submission,1,4:35,3 Rnd (10-5-5),Igor Vovchanchyn,Valentijn Overeem
+59f0fbfddc853143,Decision - Split,3,5:00,3 Rnd (5-5-5),Kenji Osawa,Yoshiro Maeda
+b785a4cb8723b176,Submission,1,1:37,3 Rnd (5-5-5),Valentijn Overeem,Ray Sefo
+873e2361ea6432ea,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kenji Osawa,Keisuke Fujiwara
+c39663306d2776d7,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Bobby Southworth,Anthony Ruiz
+295ca78f56ebee0f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tatsuya Kawajiri,Michihiro Omigawa
+d06819e674091440,KO/TKO,1,8:25,3 Rnd (10-5-5),Kazuyuki Fujita,James Thompson
+da08c2627f9f3384,KO/TKO,1,1:44,3 Rnd (3-3-3),Kim Couture,Lina Kvokov
+acbe07e3131d14dc,Decision - Split,3,5:00,3 Rnd (5-5-5),Cub Swanson,Mackens Semerzier
+00bd7b0077fcbe42,Submission,1,1:55,5 Rnd (5-5-5-5-5),Nick Diaz,Joe Hurley
+9ea1eec0972dff46,Submission,1,4:59,3 Rnd (5-5-5),Samandar Murodov,Gian Siqueira
+668099c4f0926c97,KO/TKO,1,4:37,3 Rnd (5-5-5),Logan Clark,Scott Harper
+af5ebdc8fb23ad8e,Submission,2,3:04,3 Rnd (5-5-5),Igor Gracie,John Salgado
+7a730541f3fde4aa,Submission,3,3:06,3 Rnd + OT (5-5-5-5),Rongzhu,Shin Haraguchi
+3ba736f419b5830e,KO/TKO,1,3:05,3 Rnd (5-5-5),Nate Diaz,Gilbert Rael
+71d2e9e817dea352,KO/TKO,1,1:43,3 Rnd (5-5-5),Mario Pinto,Lucas Camacho
+b9a38c69d5aff4db,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Kyle,Marcos Rogerio de Lima
+2e1b837c4cc273a2,KO/TKO,1,2:29,3 Rnd (5-5-5),Justin Eilers,Josh Diekmann
+8f3c4e6395c43b3a,KO/TKO,1,1:18,3 Rnd (10-5-5),Kiyoshi Tamura,Ikuhisa Minowa
+cdcf80d81ca640fe,KO/TKO,1,0:30,3 Rnd (10-5-5),Wanderlei Silva,Shungo Oyama
+3da8164e9f98d434,KO/TKO,1,2:31,5 Rnd (5-5-5-5-5),Urijah Faber,Joe Pearson
+84f08b960fcf0e70,Submission,1,6:04,3 Rnd (10-5-5),Hidehiko Yoshida,Naoya Ogawa
+5e31efcc838308bd,KO/TKO,1,3:37,3 Rnd (5-5-5),Mauricio Rua,Alistair Overeem
+ec157232743329de,Submission,1,1:10,2 Rnd (10-5),Shinya Aoki,Todd Moore
+c040bd838188ec92,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dusko Todorovic,Teddy Ash
+d6e797984979fa31,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Victor Martinez,Jacob Rosales
+f85f95631cbdeecc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Arroyo,Diego Henrique da Silva
+e87222fdbc228f33,Decision - Split,3,5:00,3 Rnd (5-5-5),Diego Nunes,Raphael Assuncao
+2f46c0a469e3665b,Submission,2,2:03,3 Rnd (5-5-5),Nate Diaz,Joe Hurley
+c694c1b0a0dfb8e3,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lorenz Larkin,Gian Villante
+7285c9f0b9c0308b,KO/TKO,1,3:41,3 Rnd (5-5-5),Ihor Potieria,Lucasz Sudolski
+51d926eadd65d4f8,Submission,2,2:38,3 Rnd (5-5-5),Alberto Montes,Carlos Calderon
+e8ec95cdef577733,KO/TKO,1,1:27,3 Rnd (5-5-5),Joe Stevenson,Jeremy Jackson
+3bdba539a350721c,KO/TKO,1,4:15,3 Rnd (5-5-5),Jose Aldo,Rolando Perez
+1e6018b3a676d0cc,KO/TKO,1,0:21,3 Rnd (5-5-5),Frank Shamrock,Cesar Gracie
+af1e16e0c2c8b747,Submission,2,3:15,3 Rnd (5-5-5),Austin Bashi,Dorian Ramos
+1dd94e641c7e4021,Decision - Unanimous,2,3:00,2 Rnd (3-3),Miesha Tate,Maiju Kujala
+3f03fa128b00e893,Decision - Split,3,5:00,3 Rnd (5-5-5),Nick Ertl,Nam Phan
+6f98d8438431d653,Submission,1,5:41,3 Rnd (10-5-5),Kazushi Sakuraba,Quinton Jackson
+16f1f0baf02adc3b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jeff Curran,Stephen Ledbetter
+a4b1565a356618d3,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Francis Marshall,Connor Matthews
+ebb45ec974325bac,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Johny Hendricks,Alex Serdyukov
+872ada6d9ea0e12d,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuo Misaki,Jorge Patino
+00f2db92f13faa60,Decision - Split,3,5:00,3 Rnd (5-5-5),Ricky Steele,Phil Caracappa
+42ec60fe546264f9,Decision - Unanimous,2,3:00,2 Rnd (3-3),Liz Carmouche,Colleen Schneider
+eff9d4e4a0b309ca,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Luana Carolina,Mabelly Lima
+63abbc607cf24d9b,KO/TKO,1,1:39,3 Rnd (5-5-5),Micah Miller,Chance Farrar
+7c755367819db17d,DQ,1,10:00,2 Rnd (10-10),Daijiro Matsui,Bob Schrijber
+9ad1d551dce8e3fd,Submission,1,2:22,3 Rnd (5-5-5),Shinya Aoki,Keith Wisniewski
+494046cf92263b65,KO/TKO,1,1:25,3 Rnd (5-5-5),Danny Castillo,Will Kerr
+c7186a2d40d3d8fc,KO/TKO,2,0:10,3 Rnd (5-5-5),Paul Buentello,Carter Williams
+46b91d8d819079e6,Submission,3,4:12,3 Rnd (5-5-5),Javid Basharat,Oron Kahlon
+4040fa6b8cb71ae1,Decision - Unanimous,2,10:00,2 Rnd (10-10),Kazushi Sakuraba,Vitor Belfort
+7e3c1bd6b13b12de,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Zellhuber,Lucas Almeida
+ae1e167936b09e00,KO/TKO,2,1:46,3 Rnd (5-5-5),Dave Terrel,Tiki Ghosn
+9ba87ef51d1be403,Submission,2,2:25,3 Rnd (5-5-5),Miguel Torres,Charlie Valencia
+464f531bb230b973,Submission,1,4:42,3 Rnd (5-5-5),Trevor Prangley,Anthony Ruiz
+42fd31119edc121e,KO/TKO,1,9:04,2 Rnd (10-5),Mauricio Rua,Akihiro Gono
+70a3345aab473137,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hideo Tokoro,Takeshi Yamazaki
+6eb2195511126278,Submission,1,4:21,3 Rnd (5-5-5),AJ Dobson,Hashem Arkhagha
+229cad26aa15bd66,Submission,1,3:39,2 Rnd (5-5),Diego Sanchez,Rene Kronvold
+914855bbafaa192c,TKO - Doctor's Stoppage,1,5:00,3 Rnd (5-5-5),Jalin Turner,Max Mustaki
+46937e8aca60a3b6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Royce Gracie,Kazushi Sakuraba
+e717df080b2f4843,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jack Della Maddalena,Ange Loosa
+0671ed118e51974d,KO/TKO,2,3:37,3 Rnd (5-5-5),Duane Ludwig,Tony Fryklund
+fae88870fd1f1d12,KO/TKO,1,3:40,3 Rnd (5-5-5),Ben Rothwell,Chris Guillen
+d0aa0a891d4dfe4c,Decision - Split,3,5:00,3 Rnd (5-5-5),Kamal Shalorus,Bart Palaszewski
+d2bab0dd95364cc8,Submission,1,7:34,2 Rnd (10-5),Andre Galvao,John Alessio
+013cf9354b881566,KO/TKO,3,3:41,3 Rnd (5-5-5),Matt Lindland,Kevin Casey
+5d155122e50305b2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Charlie Valencia,Seth Dikun
+cea71d7f78ae7542,KO/TKO,2,0:44,3 Rnd (5-5-5),Gilbert Melendez,Harris Sarmiento
+e9ef343f699c2cf2,KO/TKO,2,1:25,3 Rnd (5-5-5),Jose Delgado,Ernie Juarez
+1081c31d9b093566,Decision - Split,3,5:00,3 Rnd (5-5-5),Georgi Karakhanyan,Hiroyuki Takaya
+02fb1b19e5987e38,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Pat Healy,Kurt Holobaugh
+f2aeed55c911bb2d,KO/TKO,1,2:52,3 Rnd (5-5-5),Devonte Smith,Joe Lowry
+7542088bdbe767dc,KO/TKO,1,4:59,5 Rnd (5-5-5-5-5),Cristiane Justino,Gina Carano
+80c770f87db80367,Submission,2,9:43,2 Rnd (10-10),Kazushi Sakuraba,Renzo Gracie
+d2e022a39488ecaa,KO/TKO,2,3:35,3 Rnd (5-5-5),Hiromitsu Miura,Fernando Gonzalez
+6daf012e1022a4b1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ryo Chonan,Andrews Nakahara
+e08cdb8ed788e4b4,KO/TKO,1,4:29,3 Rnd (5-5-5),Jutaro Nakao,Shinya Aoki
+db737d568ea1fdb2,TKO - Doctor's Stoppage,1,2:10,3 Rnd (5-5-5),Shinya Aoki,Kuniyoshi Hironaka
+a6585c7369230560,KO/TKO,1,4:06,3 Rnd (5-5-5),Rogerio Nogueira,Edwin DeWees
+c2c2d90e1d6eb481,KO/TKO,2,2:38,3 Rnd (5-5-5),Marco Tulio,Matthieu Duclos
+34f67640ecd7909e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Masanori Kanehara,Norifumi Yamamoto
+4486bdebc55b014e,Decision - Split,3,5:00,3 Rnd (5-5-5),Lyle Beerbohm,Vitor Ribeiro
+29bc6bcf294842e8,KO/TKO,1,1:21,2 Rnd (10-5),James Thompson,Henry Miller
+af1ee2e3c22760b6,KO/TKO,1,3:44,3 Rnd (10-5-5),Alistair Overeem,Mike Bencic
+54bc12eeff0e307e,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Cristiane Justino,Yoko Takahashi
+76a8b66a06e3be4a,KO/TKO,1,2:48,3 Rnd (5-5-5),Luana Pinheiro,Stephanie Frausto
+e4daaccd58d6c80b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ovince Saint Preux,Antwain Britt
+61d2065a8b572e76,KO/TKO,1,2:46,3 Rnd (10-5-5),Wanderlei Silva,Yuki Kondo
+a758fb8a16ce7811,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cesar Almeida,Lucas Fernando
+4d69795ed6030009,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Muhammed Lawal,Gegard Mousasi
+b6419c0badbcffc2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Andre Lima,Rickson Zenidim
+3ef54c5d70035533,Other,5,3:00,5 Rnd (3-3-3-3-3),TIE,TIE
+e807c42a60ba9b38,KO/TKO,2,4:59,3 Rnd (10-5-5),Alistair Overeem,Bazigit Atajev
+36bbd879dc7f60de,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Gian Villante,Derrick Mehmen
+576a3176bd3bd2c5,Submission,1,0:31,2 Rnd (10-5),Gegard Mousasi,Jake O'Brien
+294bc24d593e1303,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Lawrence Lui,Zhang Qinghe
+8924c6be36b9cc3a,KO/TKO,3,3:55,3 Rnd (5-5-5),Pedro Falcao,James Barnes
+9a04ec72cd4788e5,Submission,1,6:17,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Enson Inoue
+95f37108f6742001,Submission,1,0:56,3 Rnd (5-5-5),Mark Coleman,Milco Voorn
+10fa5dcc005594df,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Josh Thomson,Nam Phan
+dfae68a1248be4c5,Submission,1,1:23,3 Rnd (10-5-5),Sergei Kharitonov,Cory Peterson
+814ac874956d0824,Submission,3,4:41,3 Rnd (5-5-5),Ryan Couture,Lee Higgins
+ceabe70188a702fc,KO/TKO,1,3:48,3 Rnd + OT (5-5-5-5),Sulangrangbo,Peter Danesoe
+bb6fc11738167352,KO/TKO,1,1:05,3 Rnd (5-5-5),Gian Villante,Trevor Smith
+8d5048daf153078d,KO/TKO,1,2:16,5 Rnd (5-5-5-5-5),Doug Marshall,Justin McElfresh
+9bc609407cfbfca5,Submission,2,2:36,3 Rnd (5-5-5),Renato Sobral,Rameau Thierry Sokoudjou
+1eecedf965db49ed,Submission,1,1:42,3 Rnd (5-5-5),Alistair Overeem,Nikolajus Cilkinas
+e70dec4ff9d4291f,Submission,1,2:06,3 Rnd (5-5-5),Jake Shields,Ido Pariente
+820872383c5c5503,Decision - Unanimous,2,10:00,2 Rnd (10-10),Allan Goes,Vernon White
+4d23dfc3850e25d5,KO/TKO,1,1:57,3 Rnd (5-5-5),Glover Teixeira,Carlton Jones
+1f5cebb31f0ab6f3,KO/TKO,1,4:45,3 Rnd + OT (5-5-5-5),WonBin Ki,Jinnosuke Kashimura
+469d61ef1081f2f8,Submission,1,2:21,5 Rnd (5-5-5-5-5),Carlos Condit,Brock Larson
+2b7120d3f5e7b325,Submission,1,9:09,3 Rnd (10-10-10),Marco Ruas,Gary Goodridge
+23562eaf15eeb95e,KO/TKO,1,0:19,3 Rnd (5-5-5),Luke Stewart,Bryson Kamaka
+4e25cada2ae16608,KO/TKO,1,6:10,3 Rnd (10-5-5),Don Frye,Yoshihiro Takayama
+4f8b5b850b58c367,Decision - Unanimous,2,5:00,2 Rnd (10-5),Sean Sherk,Ryuki Ueyama
+b72edfcf37abdc98,Submission,1,1:52,3 Rnd (5-5-5),Marcio Alexandre Junior,Leonardo Silva de Oliveira
+badc5aee374b250c,KO/TKO,1,2:08,5 Rnd (5-5-5-5-5),Jamie Varner,Marcus Hicks
+7d90c16a46caa5c7,KO/TKO,2,2:29,3 Rnd (5-5-5),Kazuo Misaki,Joe Riggs
+45891d4b6afaced1,Decision - Split,3,5:00,3 Rnd (5-5-5),Luis Gurule,Nick Piccininni
+91ffee32690a6ca9,KO/TKO,1,2:22,3 Rnd (5-5-5),Ibo Aslan,Paulo Renato Junior
+970fb2ce5496c94c,KO/TKO,1,0:39,3 Rnd (5-5-5),Adrian Yanez,Brady Huang
+68ede15481aabb09,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Damacio Page,Scott Jorgensen
+ed72d7c1d943194b,Submission,1,0:50,3 Rnd (5-5-5),Aliaskhab Khizriev,Henrique Shiguemoto
+bb186b35de310e24,KO/TKO,1,2:17,3 Rnd (5-5-5),Rafael Cavalcante,John Doyle
+e74ec1389325a108,KO/TKO,1,1:59,3 Rnd (10-5-5),Rameau Thierry Sokoudjou,Ricardo Arona
+5948cb3a8f9ab926,KO/TKO,1,0:42,3 Rnd + OT (5-5-5-5),JeongYeong Lee,Lu Kai
+3d3aa9b5bac57a5f,KO/TKO,1,2:46,3 Rnd (5-5-5),Rich Franklin,Antony Rea
+e1a3beabfdbde54d,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Heath Herring
+97b83ca76ea0313b,Decision - Unanimous,2,10:00,2 Rnd (10-10),Carlos Barreto,Tra Telligman
+0552c352d3f21ec2,KO/TKO,2,2:31,3 Rnd (5-5-5),Ignacio Bahamondes,Edson Gomez
+beb985ed5356e413,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Piera Rodriguez,Valesca Machado
+c9578be72a48d1a1,Submission,2,4:25,3 Rnd + OT (5-5-5-5),Baergeng Jieleyisi,Li Yunfeng
+3eb21d77e227e57a,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ikuhisa Minowa,Mike Polchlopek
+a4ab73cf2aedf28d,Submission,1,2:15,3 Rnd (5-5-5),Marcus Hicks,Scott McAfee
+df85484449649e7b,Decision - Unanimous,2,5:00,2 Rnd (10-5),Antonio Rodrigo Nogueira,Sergei Kharitonov
+007f8d72f0931779,Submission,1,1:51,3 Rnd (10-5-5),Tom Erikson,Matt Skelton
+18ec1a0ccf6c975f,KO/TKO,1,0:25,2 Rnd (10-5),Phil Baroni,Yuki Kondo
+3bf673590b49815b,KO/TKO,1,3:24,3 Rnd (10-5-5),Sergei Kharitonov,Mu Bae Choi
+a8322b53015f905b,Submission,1,1:24,3 Rnd (5-5-5),Fabricio Werdum,Mike Kyle
+33d715a29a00bb81,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Sim Kai Xiong,Kuya Ito
+f117950e65460861,KO/TKO,2,4:51,3 Rnd (5-5-5),Rafael Cavalcante,Yoel Romero
+3e75012dd687a0ab,KO/TKO,1,7:35,2 Rnd (10-5),Eddie Alvarez,Tatsuya Kawajiri
+cb1724eee61502e7,KO/TKO,1,9:40,2 Rnd (10-5),Hiroyuki Takaya,Yoshiro Maeda
+baa0d1ffcf25c6fb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Zachary Micklewright,Muhsin Corbbrey
+12304dabd98e8c2e,KO/TKO,1,6:27,3 Rnd (10-5-5),Anderson Silva,Carlos Newton
+1a05461b252638f8,KO/TKO,1,1:40,3 Rnd (10-5-5),Mauricio Rua,Hiromitsu Kanehara
+f5842f2fc92c0f03,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hayato Sakurai,Joachim Hansen
+3931973e3fe0df07,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Rodriguez,Rico Farrington
+aa8009b8b58da28d,Submission,3,3:59,3 Rnd (5-5-5),Rogerio Nogueira,Dion Staring
+86b19fddda4583d5,Submission,1,2:08,3 Rnd (5-5-5),Rani Yahya,John Hosman
+d48528e3a482bddf,Submission,1,2:17,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Wagner da Conceicao Martins
+5da6f617f2dca421,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Chris Cariaso,Anthony Figueroa
+f69e9c0d7a7b9956,Decision - Split,3,5:00,3 Rnd (5-5-5),Antonio Silva,Ricco Rodriguez
+03d1758f52e9bb42,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Michael Morales,Nikolay Veretennikov
+cff365dc885a37b5,Decision - Split,3,5:00,3 Rnd (5-5-5),John Franchi,Mike Budnik
+5cde138422f490b5,KO/TKO,2,0:48,3 Rnd (5-5-5),Aleksa Camur,Fabio Cherant
+827cec94aa5deeb2,Submission,3,3:35,3 Rnd (5-5-5),Pat Healy,Caros Fodor
+ce5c3d42666d0115,KO/TKO,2,3:43,3 Rnd (5-5-5),Gegard Mousasi,Rameau Thierry Sokoudjou
+2e10d9739a82861d,Submission,1,4:15,3 Rnd (5-5-5),Jordan Leavitt,Luke Flores
+a5e4b205812f4aaf,Decision - Split,3,5:00,3 Rnd (5-5-5),Tyron Woodley,Nathan Coy
+a7198e5637bdf9a8,Submission,1,1:02,3 Rnd (5-5-5),Bo Nickal,Zachary Borrego
+398ddabf769e5e64,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Taila Santos,Estefani Almeida
+16824735d44eef41,Submission,1,2:35,3 Rnd (5-5-5),Mauricio Rua,Kevin Randleman
+74f4debc34873601,Submission,1,0:15,3 Rnd (5-5-5),Joe Stevenson,Thomas Denny
+ff2d68dd6f1565c3,Decision - Split,2,5:00,2 Rnd (10-5),Takanori Gomi,Marcus Aurelio
+35610cabb2459367,Decision - Split,2,5:00,2 Rnd (10-5),Dan Henderson,Murilo Bustamante
+0cffb35593609793,Decision - Unanimous,2,5:00,2 Rnd (10-5),Paulo Filho,Gregory Bouchelaghem
+69b7caa245500492,Submission,1,8:45,3 Rnd (10-5-5),Aleksander Emelianenko,Pawel Nastula
+561f0b0c0cee17e2,KO/TKO,3,4:45,5 Rnd (5-5-5-5-5),Sarah Kaufman,Roxanne Modafferi
+c363fc024e6a7548,Submission,1,4:34,2 Rnd (10-5),Marcus Aurelio,Takanori Gomi
+1b0d1dc02edec572,Submission,1,2:43,3 Rnd (5-5-5),Rousimar Palhares,Fabio Nascimento
+475c2efc8e71f8cb,Decision - Unanimous,2,5:00,2 Rnd (5-5),Rashad Evans,Hector Ramirez
+bea3ffb3c52dae63,Submission,1,0:26,3 Rnd (5-5-5),Jason High,Nate Moore
+0b130c42c220ead1,Submission,1,0:39,3 Rnd (5-5-5),Ronda Rousey,Julia Budd
+e4728e48ef9df454,TKO - Doctor's Stoppage,1,5:00,3 Rnd (5-5-5),Alonzo Menifield,Daniel Jolly
+8ad9b34dd1424d83,Decision - Unanimous,3,3:24,3 Rnd (5-5-5),Dominick Cruz,Ivan Lopez
+3cb8e8ebfb942cb3,Submission,1,5:25,3 Rnd (10-5-5),Hidehiko Yoshida,Mark Hunt
+c952f6dac20e0e9d,Decision - Split,3,5:00,3 Rnd (5-5-5),John Polakowski,Olaf Alfonso
+eb3f56264d0755ae,KO/TKO,1,4:23,3 Rnd + OT (5-5-5-5),Peter Danesoe,Sim Kai Xiong
+aa7819ca84d8964a,Submission,2,1:02,2 Rnd (10-5),Crosley Gracie,Hayato Sakurai
+32f1585189dd74a2,KO/TKO,2,1:16,3 Rnd (5-5-5),Kazuhiro Nakamura,Travis Galbraith
+0f1debed6e206c60,KO/TKO,1,4:41,2 Rnd (10-5),Tatsuya Kawajiri,Drew Fickett
+28d14941a678d34c,KO/TKO,3,2:54,5 Rnd (5-5-5-5-5),Jamie Varner,Rob McCullough
+b8324a8941c26142,KO/TKO,1,1:17,2 Rnd (10-5),Hong Man Choi,Jose Canseco
+bcc76f9544d786ca,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sidney Outlaw,Michael Cora
+96680f12f06edfee,KO/TKO,1,3:40,5 Rnd (5-5-5-5-5),Alistair Overeem,Brett Rogers
+3610564037fe69b1,Submission,1,3:03,3 Rnd + OT (5-5-5-5),Yizha,Kaiwen
+967840bf71e9c4ab,KO/TKO,1,3:57,3 Rnd (5-5-5),Zhang Mingyang,Tuco Tokkos
+0bf4c9ed1b265e35,KO/TKO,1,3:59,2 Rnd (10-5),Jens Pulver,Kenji Arai
+c78952eaf07238c1,KO/TKO,1,9:43,2 Rnd (10-10),Ken Shamrock,Alexander Otsuka
+14b50d099683c99b,KO/TKO,1,0:26,3 Rnd (10-5-5),Fedor Emelianenko,Wagner da Conceicao Martins
+d65a1a1247b1efd2,Decision - Unanimous,2,10:00,2 Rnd (10-10),Wanderlei Silva,Carl Malenko
+e2b742101d18408f,Submission,1,0:58,3 Rnd + OT (5-5-5-5),Daermisi Zhawupasi,Eperaim Ginting
+ca351f5b8b6c71e1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Gegard Mousasi,Dong Sik Yoon
+e690cd6b9f6fddaf,Submission,1,2:30,2 Rnd (10-5),Paulo Filho,Ryo Chonan
+4f7e08d30ca0b131,Submission,1,2:33,2 Rnd (10-5),Joachim Hansen,Kultar Gill
+b99405e9fa6223f6,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Ricco Rodriguez
+00b8c4163a69dfaf,Submission,3,3:08,3 Rnd (10-5-5),Ryo Chonan,Anderson Silva
+2157c91a9a97caf8,Submission,1,1:15,3 Rnd (5-5-5),Luke Stewart,Bill Duvall
+4cdfcb77a2ef999a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Christian Rodriguez,Reyes Cortez Jr.
+131e31dcda2d747e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Zach Skinner,Scott Shaffer
+f93ac9f031b496c8,KO/TKO,1,1:26,2 Rnd (10-5),Katsunori Kikuno,Kuniyoshi Hironaka
+1d74f34a01169c96,KO/TKO,3,3:10,3 Rnd + OT (5-5-5-5),SangHoon Yoo,Chris Hofmann
+37bfb2497072e7c1,Decision - Split,3,5:00,3 Rnd (5-5-5),Josias Musasa,Otari Tanzilovi
+8115935927a4fc89,Decision - Split,2,5:00,2 Rnd (10-5),Masakazu Imanari,Atsushi Yamamoto
+6c62eae0210bde37,Decision - Split,2,5:00,2 Rnd (10-5),Joachim Hansen,Mitsuhiro Ishida
+5471cd3d79067e0d,Submission,1,3:23,3 Rnd (5-5-5),Georges St-Pierre,Justin Bruckmann
+c66ce8becb63a99b,KO/TKO,1,0:19,3 Rnd (5-5-5),Kevin Ferguson,Bo Cantrell
+2077a980c50264e1,KO/TKO,1,3:12,3 Rnd (5-5-5),Charlie Valencia,Antonio Banuelos
+7f0896f35d3ac151,KO/TKO,2,1:42,3 Rnd + OT (5-5-5-5),SangWon Kim,Keisuke Sasu
+d6e969ddfb82c9ff,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),JJ Okanovich,Christian Lohsen
+9d92dd4a6733d680,KO/TKO,1,1:56,3 Rnd (5-5-5),Geoff Neal,Chase Waldon
+b91be5ef1fdd3938,KO/TKO,2,4:22,3 Rnd (5-5-5),Vinicius Salvador,Shannon Ross
+bb670195b46ac1c1,Submission,3,1:41,3 Rnd (5-5-5),Nick Diaz,Scott Smith
+e1b3f51a6f460439,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Mark Coleman,Don Frye
+05743f2c8a83133d,Decision - Split,3,5:00,3 Rnd (5-5-5),Ryan Couture,Joe Duarte
+c2febab73f3c62b6,Submission,1,5:11,3 Rnd (10-5-5),Fabricio Werdum,Tom Erikson
+374ea556bf8cf673,KO/TKO,1,2:01,3 Rnd (5-5-5),Duane Ludwig,Sammy Morgan
+0a913b0af51d027f,Decision - Unanimous,2,5:00,2 Rnd (10-5),Tatsuya Kawajiri,Gesias Cavalcante
+58cd0fa074f5434b,TKO - Doctor's Stoppage,1,10:00,3 Rnd (10-5-5),Fedor Emelianenko,Heath Herring
+d3e08262b763c6a8,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Karl Williams,Jimmy Lawson
+99fee9002241cdeb,KO/TKO,1,3:19,3 Rnd + OT (5-5-5-5),George Mangos,Yuito Yanagawa
+d525e54852c65e67,Submission,1,1:29,3 Rnd (5-5-5),Jake Shields,Ray Steinbeiss
+ff098f3cef1c30d6,Decision - Split,3,5:00,3 Rnd (5-5-5),Bogdan Grad,Michael Aswell Jr.
+3154882a62c2b334,Submission,2,4:50,5 Rnd (5-5-5-5-5),Nick Diaz,Evangelista Santos
+5b2a9b9502e9548e,Submission,2,4:24,2 Rnd (10-5),Akihiro Gono,Gegard Mousasi
+5c1cac591dcd6f63,KO/TKO,1,0:44,2 Rnd (5-5),Alistair Overeem,Yusuke Imamura
+9abdfd656d9c3723,Submission,1,1:53,3 Rnd (5-5-5),Maurice Smith,Rick Roufus
+7f952fcf4a6837bf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ricky Palacios,Toby Misech
+05a771026d5182cf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Radley Da Silva,George Mangos
+b24a8b470ad3df65,Decision - Split,2,5:00,2 Rnd (10-5),Hideo Tokoro,Atsushi Yamamoto
+216607cb1a08c3aa,KO/TKO,3,2:34,3 Rnd (5-5-5),Yousri Belgaroui,Taiga Iwasaki
+0b4d974deee07902,KO/TKO,1,2:24,3 Rnd (5-5-5),Brett Rogers,James Thompson
+841a1d322a1c021a,Submission,1,4:41,2 Rnd (10-5),Josh Barnett,Siala Siliga
+e0d0a74b2fdfe057,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jorge Masvidal,Billy Evangelista
+eb567d187f8313fc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chase Hooper,Canaan Kawaihae
+3d7561e53110e4e7,KO/TKO,2,3:57,3 Rnd (5-5-5),Paul Buentello,Ruben Villareal
+7365907aa259d8e2,KO/TKO,1,4:14,3 Rnd (10-5-5),Sergei Kharitonov,Murilo Rua
+32676aa237a09174,Submission,3,2:29,3 Rnd (5-5-5),Renan Barao,Anthony Leone
+d3c8ca4e4cbed83a,Decision - Split,3,5:00,3 Rnd (10-5-5),Mark Hunt,Wanderlei Silva
+b7248a434af5d661,KO/TKO,1,3:49,3 Rnd (5-5-5),Antonio Silva,Wesley Correira
+c2df05f52e20b892,Submission,1,0:54,5 Rnd (5-5-5-5-5),Ronda Rousey,Sarah Kaufman
+a776731a0e8a5aff,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Satoshi Ishii,Jerome LeBanner
+8a087f39fe3279d9,KO/TKO,1,3:56,3 Rnd (5-5-5),Daniel Cormier,Antonio Silva
+4b5afef9b457fb2f,Submission,2,3:42,3 Rnd + OT (5-5-5-5),Sangwook Kim,Ren Yawei
+8af059523fcaa0fb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Danyelle Wolf,Taneisha Tennant
+cf09c3a9de1b36de,KO/TKO,2,2:55,3 Rnd (5-5-5),Jacobe Smith,Christien Savoie
+4c23c2a8ca4d9700,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Fedor Emelianenko,Mirko Filipovic
+84f1eeafc1100eb6,KO/TKO,1,1:52,2 Rnd (10-10),Guy Mezger,Alexander Otsuka
+5470282e2c7a1351,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Rei Tsuruya,Mark Climaco
+3611fe9d10a3a32e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Pat Healy,Lyle Beerbohm
+ebf1c1ca3fc0c05f,Submission,1,2:35,3 Rnd (10-5-5),Tom Erikson,Tim Catalfo
+e3e9cf721368808b,Submission,2,2:42,2 Rnd (10-5),Ikuhisa Minowa,Jimmy Ambriz
+0f2d0eef162ff3a7,KO/TKO,2,2:20,3 Rnd (5-5-5),Julian Marquez,Phil Hawes
+de0ed6bd63fe2bd8,KO/TKO,1,1:15,3 Rnd (10-5-5),Dan Henderson,Kazuhiro Nakamura
+163d1464e538aecb,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Sanae Kikuta,Makoto Takimoto
+324b7d0ea628f2c0,Submission,1,0:36,5 Rnd (5-5-5-5-5),Fedor Emelianenko,Tim Sylvia
+2ca03d08d37161cb,KO/TKO,1,4:26,5 Rnd (5-5-5-5-5),Luke Rockhold,Keith Jardine
+195ed0a0b85fa85e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Allen,Jacobi Jones
+3f08248de1b99fd3,KO/TKO,1,0:28,2 Rnd (10-10),Gilbert Yvel,Gary Goodridge
+e52acd56bbcb2ec6,Decision - Split,2,5:00,2 Rnd (10-5),Yusuke Kawaguchi,James Thompson
+a09e00758d46a8e5,Submission,2,0:58,2 Rnd (10-5),Masakazu Imanari,Kenji Osawa
+d3727d2e77649508,KO/TKO,3,3:35,3 Rnd + OT (5-5-5-5),ChangHo Lee,Daermisi Zhawupasi
+e754ac0247ca14ab,KO/TKO,1,3:17,3 Rnd (4-4-4),Ben Rothwell,Bryan Vetell
+c0651ff11b3d2e1f,Decision - Split,3,5:00,3 Rnd (5-5-5),KJ Noons,Conor Heun
+2116ea793dfe9290,Submission,2,2:13,3 Rnd (5-5-5),Roosevelt Roberts,Garrett Gross
+39116243fcb4a3f8,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Igor Vovchanchyn,Masaaki Satake
+10fb3de37870d351,Decision - Split,3,5:00,3 Rnd (10-10-5),Akira Shoji,Guy Mezger
+a0f1f25c90222b4d,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Clay Guida,Josh Thomson
+15bb241ded012e00,KO/TKO,1,2:17,3 Rnd (5-5-5),Anthony Pettis,Danny Castillo
+689ae33bc74cee64,Submission,1,4:09,3 Rnd (5-5-5),Gegard Mousasi,Mike Kyle
+6ae435f226b94d94,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Daijiro Matsui,Jose Landi-Jons
+345cf40a953385ea,Submission,2,4:18,3 Rnd (5-5-5),Sam Patterson,Vinicius Cenci
+28cf059c5ed3c5ae,Submission,2,4:36,3 Rnd (5-5-5),Brad Pickett,Kyle Dietz
+abc2a8cf52f16b8b,KO/TKO,2,3:26,3 Rnd (10-5-5),Wanderlei Silva,Quinton Jackson
+7b1bed9bac363cb4,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Alistair Overeem,Fabricio Werdum
+af7c42764ab050ea,KO/TKO,1,4:41,2 Rnd (10-5),Tatsuya Mizuno,Trevor Prangley
+bd37d09ff85ea511,Decision - Split,2,5:00,2 Rnd (10-5),Kazuo Misaki,Denis Kang
+4cea6a1a07380421,KO/TKO,1,2:51,3 Rnd (5-5-5),Akiyo Nishiura,Hideo Tokoro
+0bd4d58ac34783ae,Decision - Split,3,5:00,3 Rnd (5-5-5),Gisele Moreira,Dayana Silva
+778653bf095d4487,Submission,1,2:33,3 Rnd (5-5-5),Josh Grispi,LC Davis
+a49006f9199a015b,KO/TKO,3,2:17,3 Rnd (5-5-5),Herschel Walker,Greg Nagy
+8b41fa16ecc05116,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dennis Buzukja,Kaleio Romero
+f55fefe46b8cbd44,KO/TKO,2,2:28,3 Rnd (5-5-5),Joby Sanchez,JP Buys
+8237b505833e6139,KO/TKO,1,3:17,3 Rnd (10-5-5),Mirko Filipovic,Heath Herring
+b9b84b6a3aa4e50b,Decision - Unanimous,2,5:00,2 Rnd (10-5),Tatsuya Kawajiri,Luiz Firmino
+81a5491ec780a380,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tyron Woodley,Paul Daley
+952343deb41eab83,Submission,1,5:02,3 Rnd (10-5-5),Semmy Schilt,Gan McGee
+58fa74f40f8291bf,Submission,1,7:17,3 Rnd (10-5-5),Antonio Schembri,Johil de Oliveira
+dd3d1522b0ec7361,Submission,1,9:23,2 Rnd (10-10),Kazushi Sakuraba,Ebenezer Fontes Braga
+a1688f2c68347da6,KO/TKO,1,6:32,2 Rnd (10-5),Mirko Filipovic,Hong Man Choi
+ecfacf52e86bf524,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chael Sonnen,Bryan Baker
+6fcfbc88ccc2ed40,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Ricardo Arona,Murilo Rua
+a3c05cda32c7923e,KO/TKO,1,4:34,3 Rnd (5-5-5),Austen Lane,Richard Jacobi
+f5b0055b226bace9,KO/TKO,2,2:54,3 Rnd (5-5-5),Danny Castillo,Rafael Dias
+ba3a8cb3d8cf8682,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anderson Silva,Hayato Sakurai
+c037bb8d796de3bd,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Dagiisuren Chagnaadorj,Regezhen
+4b894751d0f333f2,Submission,1,6:41,3 Rnd (10-5-5),Kazushi Sakuraba,Kestutis Smirnovas
+ce7671f240552705,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),BoHyun Park,Dong Huaxiang
+543629cffefa50a5,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Shin Haraguchi,JaeHyun Park
+8f83b828b225ce8f,KO/TKO,1,0:25,3 Rnd (5-5-5),Muhammed Lawal,Mark Kerr
+0d404bf702881bb5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Connor Matthews,Jair Farias
+1372409566d76c29,Decision - Split,3,5:00,3 Rnd (5-5-5),Mark Hominick,Leonard Garcia
+01f5a9e917657973,Decision - Unanimous,2,10:00,2 Rnd (10-10),Carlos Newton,Johil de Oliveira
+33be2a2c90737ef1,KO/TKO,2,2:48,3 Rnd (3-3-3),Cristiane Justino,Shayna Baszler
+8380f331f1102802,KO/TKO,1,1:04,3 Rnd (5-5-5),Donte Johnson,Darion Abbey
+44fbfb56a6bd3e2e,Submission,1,1:40,3 Rnd (5-5-5),Rousimar Palhares,Helio Dipp
+31a648a4e311a248,KO/TKO,1,1:52,No Time Limit,Jens Pulver,Joe Stevenson
+2dcd5ab3bda87007,Submission,1,1:27,2 Rnd (10-5),Jacare Souza,Zelg Galesic
+f7cd689b15798885,KO/TKO,1,0:18,3 Rnd (5-5-5),Lavar Johnson,Carl Seumanutafa
+a0c7da03207d8f5d,KO/TKO,1,1:23,3 Rnd (5-5-5),Tom Nolan,Bogdan Grad
+9f8a479698aefd35,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Aaron Tau,Yin Shuai
+70e38c73a2d978d7,Submission,1,2:09,2 Rnd (10-5),Jason Miller,Kazushi Sakuraba
+6c63acdc942d47bf,Submission,1,7:38,2 Rnd (10-5),Tatsuya Mizuno,Melvin Manhoef
+666a6fa839fe5fcb,KO/TKO,3,3:25,3 Rnd (5-5-5),Scott Smith,Cung Le
+45a04f599a25908b,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Ryo Tajima,Ti Haitao
+c991aa52bb0f5526,Submission,3,2:17,3 Rnd (5-5-5),Nate Diaz,Alejandro Garcia
+b9bbaf94bf339f4c,Submission,1,1:02,3 Rnd (5-5-5),Mayra Bueno Silva,Mayana Kellem
+8ccee3b4d82d5b45,Submission,1,1:25,2 Rnd (10-5),Ikuhisa Minowa,Lee Kwan Bum
+6f92dee15369dce7,Submission,1,1:13,3 Rnd (5-5-5),Darrius Flowers,Amiran Gogoladze
+8451014d76529392,Submission,1,4:14,3 Rnd (10-5-5),Charles Bennett,Ken Kaneko
+4ea1a45f36221284,KO/TKO,1,2:12,3 Rnd (5-5-5),Paul Daley,Sammy Morgan
+004f21a2d4101544,KO/TKO,1,4:00,3 Rnd (5-5-5),Jake Shields,Renato Verissimo
+bec2637f9d7d7fba,KO/TKO,2,4:00,3 Rnd (5-5-5),Ateba Gautier,Yura Naito
+ace14ca0397deedc,Submission,1,2:53,2 Rnd (10-5),Kazushi Sakuraba,Rubin Williams
+53d20c6112e6710c,Decision - Unanimous,2,5:00,2 Rnd (10-5),KJ Noons,Andre Amado
+0e9f89c9dc1f6629,KO/TKO,3,4:00,3 Rnd (5-5-5),Jonas Bilharinho,Canaan Kawaihae
+35630c35a9b087cc,KO/TKO,1,6:45,2 Rnd (10-5),Nick Diaz,Katsuya Inoue
+dd10baec46e0290f,Decision - Split,3,5:00,3 Rnd (5-5-5),Leonard Garcia,Jameel Massouh
+037f4c25a87b9234,Submission,1,1:32,2 Rnd (10-5),Shinya Aoki,Eddie Alvarez
+3bedf8b6871ecbfd,KO/TKO,1,1:31,3 Rnd (5-5-5),Josh Parisian,Greg Rebello
+a0b044082c8ae962,KO/TKO,3,1:37,3 Rnd (5-5-5),Chris Curtis,Sean Lally
+65bbb3d58cbcf8de,Submission,1,4:29,3 Rnd (5-5-5),Jason Miller,Lodune Sincaid
+ab0afaa93bbbfbc0,Decision - Unanimous,2,5:00,2 Rnd (10-5),Shinya Aoki,Gesias Cavalcante
+3e45d8ff94f243d4,Decision - Unanimous,2,5:00,2 Rnd (10-5),Yves Edwards,Seichi Ikemoto
+a8c9e8728b458fb8,Submission,3,2:41,3 Rnd (5-5-5),Ahmad Hassanzada,Dylan Mantello
+6d0641a9c67de9ac,KO/TKO,1,4:18,3 Rnd (5-5-5),Takeshi Inoue,Caol Uno
+6c6e9945c84fad34,KO/TKO,1,1:58,3 Rnd (5-5-5),Scott Smith,Justin Levens
+a31bdaf252a3706d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jay Hieron,Joe Riggs
+1eabff4497aed806,Submission,1,4:04,3 Rnd (10-5-5),Paulo Cesar Silva,Henry Miller
+9613c8d7a200f308,KO/TKO,1,0:19,3 Rnd (5-5-5),Marius Zaromskis,Ho Bae Myeon
+43ac452f93b08715,Submission,1,1:01,3 Rnd (5-5-5),Shane Roller,Mike Budnik
+144c4e65599288c3,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sara McMann,Tonya Evinger
+159cc462a1686c3f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lauren Mueller,Kelly Velasco
+56b8f5464f0a9c8f,Submission,1,8:20,2 Rnd (10-5),Kazushi Sakuraba,Andrews Nakahara
+cdff9c4ec4951ba1,Submission,1,3:36,3 Rnd (5-5-5),Mike Pyle,Bret Bergmark
+ec8b2d89c6c852ce,KO/TKO,1,4:36,3 Rnd + OT (5-5-5-5),Takaya Suzuki,Otgonbaatar Boldbaatar
+d7b6e746510cc016,Submission,3,1:59,3 Rnd (5-5-5),Donnie Liles,Pete Spratt
+d84792fe981ff316,Submission,3,2:30,3 Rnd (5-5-5),Tatsuya Kawajiri,Joachim Hansen
+bc7fbff31a52621a,KO/TKO,1,3:52,3 Rnd + OT (5-5-5-5),ChangHo Lee,Rana Rudra Pratap Singh
+4dff739953febc35,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Brown,Jeff Curran
+67131f9a904a8c25,Submission,1,3:12,3 Rnd (5-5-5),Antonio Silva,Jonathan Wiezorek
+b3aa5746a0426e78,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rogerio Nogueira,Moise Rimbon
+b71203a58b2269a9,Submission,1,1:02,3 Rnd (5-5-5),Damacio Page,Will Campuzano
+65cc3c85cc70e833,Submission,1,2:29,2 Rnd (10-5),Mitsuhiro Ishida,Paul Rodriguez
+ea9a95a7d717e732,KO/TKO,1,1:24,3 Rnd (5-5-5),Fedor Emelianenko,Pedro Rizzo
+b4987a1df3364cf0,Submission,3,3:46,3 Rnd + OT (5-5-5-5),Kasib Murdoch,Yunosuke Minami
+85e3930c7023372a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dave Jansen,Richard Crunkilton
+10cfd70fdd01fe1f,KO/TKO,1,1:29,5 Rnd (5-5-5-5-5),Rob McCullough,Richard Crunkilton
+b385af06f4ac8e45,Other,2,10:00,2 Rnd (10-10),TIE,TIE
+db1d125c2fd31e2f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Mike French
+9ac468a721638e5d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Alex Karalexis,Thomas Denny
+f5eb5439a5b9cc56,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dominick Cruz,Joseph Benavidez
+52f03726bded3471,KO/TKO,1,1:06,3 Rnd (5-5-5),Mantas Kondratavicius,Djani Barbir
+c7311ea33202a6e4,Decision - Unanimous,1,15:00,1 Rnd (15),Royce Gracie,Nobuhiko Takada
+a3ea5158912c86d0,Decision - Unanimous,3,5:00,3 Rnd (10-10-5),Carl Malenko,Egan Inoue
+a2fe941d5ce1b149,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Donald Cerrone,Jamie Varner
+6a4aa0df150f93d3,KO/TKO,1,0:21,2 Rnd (10-5),Henry Miller,Mal Foki
+8b5b70c97b410397,KO/TKO,1,1:25,3 Rnd (5-5-5),Sergei Kharitonov,Tatsuya Mizuno
+76f6479b97d371f4,Submission,1,0:26,3 Rnd (5-5-5),Ryan Spann,Emiliano Sordi
+596cefaf23f9444c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Andrey Pulyaev,Liam Anderson
+faa1bec23a4d5147,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hayato Sakurai,Milton Vieira
+2a48a115654c77db,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eduardo Chapolin,An Tuan Ho
+eb0c00f9162da33c,Decision - Split,3,5:00,3 Rnd (5-5-5),Ariel Gandulla,Gary Padilla
+1a6b919c5bec1f63,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,Daiki Hata
+d05cadbe809c8669,Submission,1,1:37,3 Rnd (10-5-5),Ryan Gracie,Shungo Oyama
+22a2257989234747,Decision - Split,3,5:00,3 Rnd (5-5-5),Karen Darabedyan,Rob McCullough
+2524a350c54e3fe3,KO/TKO,3,2:39,3 Rnd (5-5-5),Mike Pierce,Justin Haskins
+33151bfa498c1c6c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cub Swanson,Hiroyuki Takaya
+f28ce40f7de33d96,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jean Matsumoto,Kasey Tanner
+9b086b82050b5c44,Decision - Split,3,5:00,3 Rnd (5-5-5),Lucrezia Ria,Marilia Santos
+b7b0881270beab34,KO/TKO,1,2:00,2 Rnd (10-5),Andrews Nakahara,Shungo Oyama
+57cb1a350540c29e,Submission,1,1:53,2 Rnd (10-5),Shinya Aoki,Tatsuya Kawajiri
+75273d6f825d6ab6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jorge Masvidal,Ryan Healy
+083071334b074d0c,Submission,3,0:35,3 Rnd (10-5-5),Heath Herring,Paulo Cesar Silva
+fc5cf81c8d09e720,KO/TKO,1,1:50,3 Rnd (5-5-5),Doug Marshall,Jeff Terry
+c5a6f1067616a2d8,KO/TKO,1,2:10,3 Rnd (5-5-5),Fernie Garcia,Joshua Weems
+da66ac8c442e29ed,Decision - Split,3,5:00,3 Rnd (5-5-5),Ryan Couture,KJ Noons
+4659c64ec61991d8,KO/TKO,1,3:23,2 Rnd (10-5),Ikuhisa Minowa,Kenichi Yamamoto
+c9456b8e77980cda,Decision - Split,3,5:00,3 Rnd (5-5-5),TIE,TIE
+e22e05aee76cbc2d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Marco Tulio,Yousri Belgaroui
+4adbf8f6282c7d00,KO/TKO,2,4:02,3 Rnd (5-5-5),Daniel Cormier,Dion Staring
+bb1849f6f88e273b,KO/TKO,1,0:11,3 Rnd (10-5-5),Aleksander Emelianenko,James Thompson
+0d9e832be918a4e0,Decision - Split,3,5:00,3 Rnd (10-5-5),Akira Shoji,Alex Stiebling
+1cde015cd3d13b81,KO/TKO,1,4:46,3 Rnd (5-5-5),Gegard Mousasi,Damir Mirenic
+f18efb662a0e5b9a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hideo Tokoro,Jong Man Kim
+0a733a70e2f462b6,KO/TKO,1,8:19,3 Rnd (10-5-5),Semmy Schilt,Akira Shoji
+617c3c10e5b45a58,KO/TKO,2,4:45,3 Rnd (5-5-5),Georges St-Pierre,Thomas Denny
+5601f096a0d323f9,KO/TKO,1,4:50,3 Rnd (5-5-5),Georges St-Pierre,Ivan Menjivar
+055f9d0121c1f4da,Submission,1,1:28,3 Rnd (5-5-5),Collin Huckbody,Kyron Bowen
+8d4b1e19a3eb188c,KO/TKO,2,2:18,5 Rnd (5-5-5-5-5),Gilbert Melendez,Gabe Lemley
+940db2e9f51e4736,KO/TKO,1,1:35,3 Rnd (5-5-5),Brunno Ferreira,Leon Aliu
+2978249c8497319e,TKO - Doctor's Stoppage,1,10:00,3 Rnd (10-5-5),Wanderlei Silva,Kazushi Sakuraba
+514aa392ad98e48f,KO/TKO,1,4:59,3 Rnd (5-5-5),Rizvan Kuniev,Hugo Cunha
+964aa7a25c6f191f,Submission,3,0:39,3 Rnd (5-5-5),Louis Jourdain,Magno Dias
+dd43a31ba94f604b,KO/TKO,1,0:40,3 Rnd (5-5-5),Edmen Shahbazyan,Antonio Jones
+99d02515c21dfaef,Submission,2,0:36,2 Rnd (10-10),Naoya Ogawa,Gary Goodridge
+cd85938981c79cbf,Submission,1,1:01,3 Rnd (5-5-5),Blas Avena,Tiki Ghosn
+2056b05676c112ff,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Matt Lindland,Fabio Nascimento
+8c8b506dc39d603e,KO/TKO,2,1:35,3 Rnd (5-5-5),Thanh Le,Lazar Stojadinovic
+5b4057e38d093d56,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Alex Stiebling,Wallid Ismail
+d057796c53d29ebb,KO/TKO,1,2:31,3 Rnd (5-5-5),Mauricio Rua,Evangelista Santos
+4fbb9b5eccbc3e5e,Other,4,10:00,4 Rnd (10-10-10-10),TIE,TIE
+c5eaf65f33e8da6e,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Urijah Faber,Jens Pulver
+382b91c479de14e1,KO/TKO,1,7:32,3 Rnd (10-5-5),Quinton Jackson,Ricardo Arona
+1c41498b4aca8c39,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Nick Diaz,KJ Noons
+d3428fbadfc16dc9,Submission,3,3:51,3 Rnd (5-5-5),Lukasz Brzeski,Dylan Potter
+48dc574b3da0e1c2,KO/TKO,2,0:42,3 Rnd (5-5-5),Paul Daley,Duane Ludwig
+3bf88611cdcca10f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),BJ Penn,Rodrigo Gracie
+1f79d65163e5c072,KO/TKO,1,1:45,2 Rnd (10-5),Hiroyuki Takaya,Chase Beebe
+450181217e433a78,Submission,1,3:47,3 Rnd (5-5-5),J.T Taylor,Drew Dimanlig
+5bf0e3cca360f7ff,Decision - Split,2,5:00,2 Rnd (10-5),Ryan Gracie,Ikuhisa Minowa
+579e06e9e88def0b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Kenji Osawa
+f5db1c0ea15c523a,Submission,1,4:38,3 Rnd (5-5-5),Donald Cerrone,James Krause
+97dc488028b5e163,Decision - Split,3,4:00,3 Rnd (4-4-4),Ben Rothwell,Roy Nelson
+3fd7874d71f3b887,KO/TKO,1,0:36,3 Rnd (5-5-5),Cezary Oleksiejczuk,Theo Haig
+e210bfb11eef3b21,Submission,1,2:19,3 Rnd (5-5-5),Trevor Harris,Colley  Bradford
+6954b6e02651e353,Submission,1,2:26,3 Rnd (5-5-5),Zhang Tiequan,Pablo Garza
+756fd0250d001671,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Joseph Benavidez,Danny Martinez
+8a7ff52167188be3,Submission,2,0:42,3 Rnd (5-5-5),Benson Henderson,Anthony Njokuani
+67f8ce4438cc1dd6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),King Green,Matt Ricehouse
+dc4ccf631665e8bb,Submission,1,1:30,3 Rnd (5-5-5),Donald Cerrone,Danny Castillo
+6ce8f19e0341c54d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Peter Barrett,SangHoon Yoo
+00e41a8014757a75,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Punahele Soriano,Jamie Pickett
+398c0effc1dc334e,Submission,1,1:15,3 Rnd (5-5-5),Ryan Couture,Lucas Stark
+ce6f0fdb0e48502a,KO/TKO,1,3:28,2 Rnd (10-5),Tatsuya Kawajiri,Kim In Seok
+b98bf0bbd2f7a0f7,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Paddy McCorry,In Su Hwang
+f275781a6d7105af,KO/TKO,2,2:01,3 Rnd (5-5-5),Tafon Nchukwi,Al Matavao
+9f34b89176f24058,KO/TKO,1,0:37,3 Rnd (5-5-5),Brock Larson,Carlo Prater
+46d7f06673556a08,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Seokhyeon Ko,Igor Cavalcanti
+68a3f26b424269fc,KO/TKO,1,6:02,2 Rnd (10-5),Mauricio Rua,Yasuhito Namekawa
+f359f526d56bc583,DQ,1,7:27,3 Rnd (10-5-5),Don Frye,Gilbert Yvel
+718eb09cfbe62ffb,Submission,1,2:05,3 Rnd (5-5-5),Daniel McWilliams,Eddy Millis
+18a15bdc6f0cd766,KO/TKO,1,8:08,3 Rnd (10-5-5),Ricardo Morais,Tae Hyun Lee
+c6ed2a253886099b,Decision - Unanimous,3,0:12,3 Rnd (5-5-5),Joanderson Brito,Diego Lopes
+04b445edf2165d4f,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Tokitaka Nakanishi,KyuSung Kim
+588d17c61e6a34d7,Submission,1,1:02,3 Rnd (5-5-5),Rich Franklin,Marvin Eastman
+01d4d1337c5c423a,Submission,1,1:33,3 Rnd (10-5-5),Fedor Emelianenko,Kevin Randleman
+641ccfa8dde67fd2,Submission,1,1:30,3 Rnd (4-4-4),Dan Miller,Dave Phillips
+d17902f646c4aad6,KO/TKO,3,3:00,3 Rnd (5-5-5),Manoel Sousa,Cristian Perez
+665b820ea8514132,KO/TKO,1,1:13,3 Rnd (5-5-5),Yuneisy Duben,Shannon Clark
+f714a164a75fd853,Submission,1,2:10,3 Rnd (5-5-5),Carlos Condit,Kyle Jensen
+29a75cf420a16418,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ron Waterman,Ricco Rodriguez
+d2090d2a91cce61d,KO/TKO,1,3:39,3 Rnd (5-5-5),Gary Goodridge,Lloyd Van Dams
+12188cb0809778a1,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Anthony Pettis,Benson Henderson
+3945c9fff281e5bd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mo Miller,Brandon Lewis
+5597b162e6c67551,KO/TKO,1,1:54,2 Rnd (10-5),Hayato Sakurai,Olaf Alfonso
+9142d3afd70580b5,KO/TKO,1,6:21,3 Rnd (10-5-5),Takanori Gomi,Jens Pulver
+44b6d8c58590299a,KO/TKO,2,1:05,2 Rnd (10-5),Daisuke Nakamura,Bu-Kyung Jung
+4097a11d4305f023,Decision - Unanimous,2,5:00,2 Rnd (10-5),Dong Sik Yoon,Shungo Oyama
+d53731ff465cddef,KO/TKO,1,0:50,3 Rnd (5-5-5),Melvin Manhoef,Denis Kang
+512e65ebe4fea988,Submission,1,2:52,2 Rnd (5-5),Luiz Firmino,Hiroyuki Abe
+a89fb93c12f198a7,Submission,1,6:17,2 Rnd (10-10),Heath Herring,Tom Erikson
+f377d703092b1ab2,Submission,1,4:29,3 Rnd (5-5-5),Aaron Rosa,Anthony Ruiz
+7067ccf701531a60,KO/TKO,1,0:43,3 Rnd (5-5-5),Kevin Ferguson,David Abbott
+dc6acbd6b242152a,KO/TKO,1,1:07,3 Rnd (5-5-5),Blas Avena,Dave Terrel
+de0f2173cfa00243,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Miguel Baeza,Victor Reyna
+02b094f234f587d9,KO/TKO,3,4:23,3 Rnd (5-5-5),Logan Clark,Blas Avena
+9951b28c9d7d3710,KO/TKO,2,3:15,3 Rnd (5-5-5),Lorenz Larkin,Scott Lighty
+ca7fccba51c65338,Decision - Unanimous,2,5:00,2 Rnd (10-5),Gegard Mousasi,Hector Lombard
+df8c9dfeb62e896c,Decision - Split,3,5:00,3 Rnd (5-5-5),Juan Puerta,Shang Zhifa
+ef6841f685b32d4d,Decision - Split,3,5:00,3 Rnd (5-5-5),Alessandro Costa,Juan Andres Luna
+db453d7b75bf4137,Submission,1,1:03,5 Rnd (5-5-5-5-5),Jake Shields,Nick Thompson
+3078271911f9f646,KO/TKO,2,4:41,3 Rnd (5-5-5),Victoria Leonardo,Chelsea Hackett
+dc3cdbd2e0a17d9d,Submission,1,2:09,3 Rnd (5-5-5),Ikram Aliskerov,Mario Sousa
+fd8493fb53d5c5ff,KO/TKO,1,6:42,2 Rnd (10-5),Mauricio Rua,Alistair Overeem
+0c9857fcc7459521,Submission,3,2:41,5 Rnd (5-5-5-5-5),Benson Henderson,Jamie Varner
+b6bfa84d467f6690,Submission,1,1:07,3 Rnd (5-5-5),Rani Yahya,Eddie Wineland
+ab67cc766d572ea3,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ikuhisa Minowa,Phil Baroni
+e95553450202e5ce,Submission,1,1:23,3 Rnd (5-5-5),Jordan Espinosa,Nick Urso
+ec01168c96090258,KO/TKO,1,4:23,3 Rnd (5-5-5),Artem Vakhitov,Islem Masraf
+91a3854320fa2cec,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Cormier,Jeff Monson
+e00157119f6dd4d0,KO/TKO,1,0:29,3 Rnd (5-5-5),Ramon Taveras,Cortavious Romious
+a501d75e238496c5,Submission,3,2:36,3 Rnd (10-5-5),Kazushi Sakuraba,Kevin Randleman
+0fc009b972f70cf4,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,Daisuke Nakamura
+90a1bb473fcc04ce,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Timmy Cuamba,Mateo Vogel
+2acc732934e77c3f,KO/TKO,1,3:56,3 Rnd + OT (5-5-5-5),HyunSung Park,Jeremia Siregar
+c4513e20df71a21d,Decision - Unanimous,2,5:00,2 Rnd (10-5),Gilbert Melendez,Nobuhiro Obiya
+842c9594ba271aca,KO/TKO,1,0:30,3 Rnd (5-5-5),Abdul Rakhman Yakhyaev,Alik Lorenz
+b0fd04c4528268f5,Submission,1,2:42,3 Rnd (5-5-5),Michael McDonald,Clint Godfrey
+a77a1ea309180cad,KO/TKO,3,0:22,3 Rnd (5-5-5),Billy Quarantillo,Kamuela Kirk
+9f5c74c742e18c01,KO/TKO,1,2:11,3 Rnd (5-5-5),Muhammed Lawal,Travis Wiuff
+40e5515a410a6b5d,KO/TKO,1,3:48,2 Rnd (10-5),Tatsuya Kawajiri,Melchor Manibusan
+99135ea239d85895,KO/TKO,4,1:39,5 Rnd (5-5-5-5-5),Nate Marquardt,Tyron Woodley
+b57867d3f572a7a2,Decision - Split,3,5:00,3 Rnd (5-5-5),Jonny Parsons,Solomon Renfro
+7f84d211a1779931,Submission,1,9:16,2 Rnd (10-10),Allan Goes,Carl Malenko
+1be742357ec1cbeb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Casey Olson,Chris Solomon
+b312baec8b33a370,KO/TKO,1,5:58,3 Rnd (10-10-10),Igor Vovchanchyn,Gary Goodridge
+8a1a3da88b9158e4,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Yizha,Koyomi Matsushima
+a9642fcd89aaed14,Submission,1,1:14,3 Rnd (5-5-5),Zach Reese,Eli Aronov
+3008c84749681f1a,Submission,1,1:39,3 Rnd (8-8-8),Enson Inoue,Randy Couture
+15b5664aef830327,Decision - Split,3,5:00,3 Rnd (5-5-5),Adam Antolin,Casey Kenney
+7a795809b69ef652,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sarah Kaufman,Shayna Baszler
+e25b4d9e98081861,KO/TKO,1,3:02,3 Rnd (5-5-5),Vinicius Oliveira,Victor Madrigal
+607a4efc385dec1b,KO/TKO,3,0:20,3 Rnd (5-5-5),Ovince Saint Preux,TJ Cook
+996a43ffd5edee56,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Maheshate,Achilles Estremadura
+0a37be2a57f6fdf3,Submission,3,0:46,3 Rnd (5-5-5),Masakazu Imanari,Abel Cullum
+3f31a3c8269b45bd,Submission,1,3:07,3 Rnd (5-5-5),Eric Lawson,Kenneth Seegrist
+6249b19cca44ef17,KO/TKO,1,2:54,3 Rnd (5-5-5),Michihiro Omigawa,Hiroyuki Takaya
+75098d531205a293,Submission,1,0:31,3 Rnd (5-5-5),Scott Jorgensen,Chad George
+98aefabf3b3f53ea,Submission,1,3:20,2 Rnd (10-5),Murilo Bustamante,Masanori Suda
+8ca7accef9a5950f,Submission,2,3:04,3 Rnd (5-5-5),Josh Barnett,Pawel Nastula
+03570af81e64fc6f,KO/TKO,1,2:23,3 Rnd (5-5-5),William Knight,Cody Brundage
+580a22e2b02bc6b1,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Kaiwen,Koya Kanda
+7d94acb864e549fd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hyder Amil,Emrah Sonmez
+0072f5a6074844c0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Caio Machado,Kevin Szaflarski
+b2c8167a19e908b8,KO/TKO,3,3:40,5 Rnd (5-5-5-5-5),Cristiane Justino,Marloes Coenen
+b97b6464bee3b334,KO/TKO,1,4:23,3 Rnd (5-5-5),Jimmy Crute,Chris Birchler
+4cf4ed1edc8a0b24,KO/TKO,1,1:30,2 Rnd (10-5),Melvin Manhoef,Kazushi Sakuraba
+2dad6580e28f4ebc,Submission,1,2:48,2 Rnd (10-5),Joachim Hansen,Hideo Tokoro
+cdd3c7e1369b1838,KO/TKO,1,4:59,3 Rnd (5-5-5),Don'Tale Mayes,Ricardo Prasel
+9d62269257ea6e9c,Decision - Split,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Hideo Tokoro
+c15b253026ff6b86,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Murilo Rua,Alex Andrade
+048b349912e02238,Submission,2,2:46,5 Rnd (5-5-5-5-5),Hermes Franca,Nate Diaz
+dcce47a08c62ad47,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kevin Randleman,Michiyoshi Ohara
+28f08497ca8b5edb,Decision - Unanimous,2,5:00,2 Rnd (10-5),Katsuyori Shibata,Ikuhisa Minowa
+7d3469fe940b02a6,KO/TKO,1,6:45,3 Rnd (10-5-5),Aleksander Emelianenko,Sergei Kharitonov
+1bd1a710c2c042ad,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Benson Henderson,Donald Cerrone
+e19d1119ee688a15,Decision - Split,3,5:00,3 Rnd (5-5-5),Shinya Aoki,Akira Kikuchi
+6d8f0d6bdca29ced,Submission,1,2:01,3 Rnd + OT (5-5-5-5),Ren Yawei,Deni Daffa
+189abc11508a193d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Akitoshi Tamura,Manny Tapia
+a2aab2671473df63,KO/TKO,1,1:52,3 Rnd (10-5-5),Quinton Jackson,Yuki Ishikawa
+28eea8d7e7b3f2aa,Submission,3,4:23,3 Rnd (5-5-5),Richard Crunkilton,Mike Joy
+007b2ff615d3bc5e,KO/TKO,1,2:29,2 Rnd (10-5),Rameau Thierry Sokoudjou,Jan Nortje
+2d8e61c251bcb36e,Submission,1,3:10,2 Rnd (10-5),Gegard Mousasi,Denis Kang
+83ffee8bad43d83d,Submission,1,1:14,1 Rnd (15),Mark Coleman,Masaaki Satake
+7ff39ef3b71bda10,Submission,1,1:46,5 Rnd (5-5-5-5-5),Frank Shamrock,Bryan Pardoe
+de5b54a1af875724,KO/TKO,1,1:19,3 Rnd (5-5-5),Danny Barlow,Raheam Forest
+0683387ffe6a7561,Submission,1,3:47,3 Rnd (5-5-5),Renan Barao,Chris Cariaso
+ba92547fcdea973f,Submission,3,1:36,3 Rnd (5-5-5),Tim Kennedy,Trevor Smith
+3d80efab061e456c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ricardo Lamas,Bart Palaszewski
+4975abfbc792d511,KO/TKO,1,6:25,2 Rnd (10-5),Jason Black,Won Jin Eoh
+322121e5a20de22a,TKO - Doctor's Stoppage,1,0:43,3 Rnd (5-5-5),Cung Le,Jason Von Flue
+63fbcced7dfb858c,Submission,1,3:48,5 Rnd (5-5-5-5-5),Carlos Condit,Carlo Prater
+0d746297824efc9b,KO/TKO,3,4:30,3 Rnd (5-5-5),Jack Jenkins,Emiliano Linares
+b26185538326ebd4,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuhiro Nakamura,Karl Amoussou
+ffb5e01def6d4224,KO/TKO,1,2:34,2 Rnd (10-5),Joachim Hansen,Masakazu Imanari
+06ce0c8dc1a056a4,Submission,1,2:25,3 Rnd (5-5-5),Forrest Griffin,Chael Sonnen
+bf462014be853a1f,Decision - Unanimous,2,5:00,2 Rnd (5-5),TIE,TIE
+3d6f1ff9e9d84044,KO/TKO,1,1:31,3 Rnd (5-5-5),Ed Ratcliff,Johnny Sampaio
+cb62f33db20c5c7f,Submission,2,1:02,3 Rnd (5-5-5),Bobby Moffett,Jacob Kilburn
+10dce5da0c70ad81,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Scott Jorgensen,Takeya Mizugaki
+3ceecbd617dc9f59,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),BJ Penn,Renzo Gracie
+fe5b65e965066ffe,KO/TKO,1,0:06,2 Rnd (10-5),Takanori Gomi,Ralph Gracie
+7f0e5ac5bcb5a0f3,Submission,6,0:43,Unlimited Rnd (10),Renzo Gracie,Sanae Kikuta
+bb24f10adc04f1e4,Decision - Split,3,5:00,3 Rnd (10-5-5),Tadao Yasuda,Masaaki Satake
+38844e832a7c4794,KO/TKO,1,3:04,3 Rnd (10-5-5),Gilbert Yvel,Akira Shoji
+50877133c9e3cedb,Submission,1,1:20,3 Rnd (3-3-3),Michelle Waterson-Gomez,Tyra Parker
+ae6a3acd1b61cae7,KO/TKO,1,0:36,3 Rnd (10-5-5),Vitor Belfort,Yoshiki Takahashi
+8e5123975a83a6b1,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Top Noi Kiwram,Yuma Horiuchi
+8b5130c2f2723a90,Submission,1,1:22,3 Rnd (5-5-5),Rousimar Palhares,Daniel Acacio
+96872cb06e69681a,KO/TKO,3,2:17,3 Rnd (5-5-5),Luke Stewart,Jason Von Flue
+0c23180f14d5f1ba,Decision - Split,3,5:00,3 Rnd (10-5-5),Ricardo Arona,Guy Mezger
+920b5a6a500c7420,Decision - Split,3,5:00,3 Rnd (5-5-5),Bryan Baker,Eric Schambari
+315563606441439a,TKO - Doctor's Stoppage,2,3:52,3 Rnd (10-5-5),Alistair Overeem,Hiromitsu Kanehara
+528f15113cc63219,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lorenz Larkin,Nick Rossborough
+636b7596f95a730e,Submission,1,2:58,3 Rnd (5-5-5),Fedor Emelianenko,Matt Lindland
+6eb6be737ed0bb4d,Submission,1,2:18,3 Rnd (10-10-10),Nobuhiko Takada,Kyle Sturgeon
+788fe64a5c4ad1db,Submission,1,7:10,2 Rnd (10-5),Takanori Gomi,David Baron
+3d1199807e68aaeb,KO/TKO,1,3:43,3 Rnd (5-5-5),Josh Parisian,Chad Johnson
+bb91b9dc712e88d5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tarec Saffiedine,Scott Smith
+c8dcda179a4dbf7a,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Josh Thomson,Gilbert Melendez
+6341ee3adf9e0995,KO/TKO,1,4:10,3 Rnd (5-5-5),Torrez Finney,Abdellah Er-Ramy
+f7dd231cd5865109,Submission,1,1:01,2 Rnd (10-5),Ikuhisa Minowa,Errol Zimmerman
+8f7e8597eb31bb8d,Submission,1,5:47,3 Rnd (10-5-5),Mu Bae Choi,Paulo Cesar Silva
+fb2c55c96429544d,Submission,3,4:27,3 Rnd (5-5-5),Josh Thomson,Pat Healy
+867e26145f303f21,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Justin Gonzales,Zach Zane
+2835da3459b24ee1,KO/TKO,2,0:28,3 Rnd (5-5-5),Viacheslav Borshchev,Chris Duncan
+d2ef459e4a22f797,Decision - Split,3,5:00,3 Rnd (5-5-5),Chad Anheliger,Muin Gafurov
+1f60a7478c61419c,Submission,1,1:19,2 Rnd (10-5),Gegard Mousasi,Mark Hunt
+4c2a39756f74be4d,KO/TKO,1,2:06,3 Rnd (5-5-5),Bobby Lashley,Wes Sims
+473b7c7ef547d3c6,KO/TKO,1,4:21,3 Rnd (5-5-5),Sergei Kharitonov,Alistair Overeem
+3d6ec1310997fbe6,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Bobby Stack,Jose Palacios
+ab4f26f7becb3fa6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jacare Souza,Joey Villasenor
+49b0a1f8367b9074,KO/TKO,3,4:34,3 Rnd (5-5-5),William Knight,Herdem Alacabek
+c8fe721ddc70ecdf,KO/TKO,1,2:58,3 Rnd (5-5-5),Cam Rowston,Brandon Holmes
+d440a643a9c94150,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Jiniushiyue,Kaito Oda
+3e5ed439449ad251,Submission,2,4:34,5 Rnd (5-5-5-5-5),Urijah Faber,Jeff Curran
+14cff97fa1525e1e,Submission,1,4:33,3 Rnd (10-5-5),Pawel Nastula,Edson Drago
+b3e94d09541a3ad4,Submission,1,4:16,3 Rnd (5-5-5),Ikuhisa Minowa,Imani Lee
+93e3c033ad898819,Decision - Split,3,5:00,3 Rnd (5-5-5),Rob McCullough,Kenneth Alexander
+e3f8111f469e8ec0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Marcos,Brandon Lewis
+7f8a115cc9e4e1f6,KO/TKO,1,0:18,2 Rnd (10-5),Melvin Manhoef,Mark Hunt
+25e00e359a5928a1,Decision - Split,3,5:00,3 Rnd (10-5-5),Wanderlei Silva,Hidehiko Yoshida
+0ae1159c09bcff93,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eddy Ellis,Steve Berger
+cf1ec8be3cdb12fa,Submission,2,4:54,3 Rnd (5-5-5),Tatsuya Kawajiri,Kazuyuki Miyata
+d330291be30efb01,KO/TKO,1,4:12,2 Rnd (10-5),Hayato Sakurai,Hidetaka Monma
+9cb93c61e5a5ec58,Submission,1,2:36,2 Rnd (10-5),Paulo Filho,Melvin Manhoef
+f7426fe04f176cf3,KO/TKO,1,5:24,3 Rnd (10-5-5),Wanderlei Silva,Kazuhiro Nakamura
+7b84bd4efcf9f658,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Hayato Sakurai,Daiju Takase
+f16a454494e18ba2,Submission,1,2:37,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Gary Goodridge
+4e5b3310dd3d1f1d,Submission,1,4:04,2 Rnd (10-5),Dokonjonosuke Mishima,Charles Bennett
+332e7617050e8103,Submission,1,1:57,3 Rnd (5-5-5),Mick Parkin,Eduardo Neves
+db42735e6c8308c0,Decision - Unanimous,2,5:00,2 Rnd (10-5),Marcus Aurelio,Daisuke Nakamura
+ee999c5575eaecb7,Submission,1,3:43,3 Rnd (5-5-5),Brock Larson,Erik Apple
+e74e3b8d8ba50268,Submission,1,1:47,3 Rnd (5-5-5),Alistair Overeem,Gary Goodridge
+b2958bbf28126a79,KO/TKO,1,2:29,3 Rnd (5-5-5),Malcolm Wellmaker,Adam Bramhald
+71546b5a88e4e167,KO/TKO,1,4:59,3 Rnd (5-5-5),Anderson Silva,Curtis Stout
+2eb4d3172c1f8ec1,Submission,2,1:41,3 Rnd (5-5-5),Yoshihiro Akiyama,Tokimitsu Ishizawa
+fd163ed5c9776080,Submission,1,9:43,2 Rnd (10-5),Paulo Filho,Kazuo Misaki
+eff7ae2b3bba667a,TKO - Doctor's Stoppage,1,5:00,5 Rnd (5-5-5-5-5),KJ Noons,Nick Diaz
+cedd2e6d3bed12c3,KO/TKO,1,4:38,3 Rnd + OT (5-5-5-5),Yin Shuai,Kai Yoshida
+d71e665421b1a38e,Submission,1,6:10,2 Rnd (10-5),Gegard Mousasi,Tatsuya Mizuno
+de8d02b01f18e85e,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Dong Huaxiang,Priya Sharma
+1e02a945f4ada4ef,Submission,1,2:55,3 Rnd (5-5-5),Josh Grispi,Mark Hominick
+b33e6a1d4911cf87,Decision - Split,3,5:00,3 Rnd (10-5-5),Mark Hunt,Mirko Filipovic
+00aa55793349d161,Decision - Split,3,5:00,3 Rnd (5-5-5),Benjamin Bennett,Joey Hart
+3285962d06e5046e,KO/TKO,1,2:09,3 Rnd (3-3-3),Anthony Figueroa,Miguel Linares
+92ade8f34a00748c,KO/TKO,2,0:51,3 Rnd (5-5-5),Doug Marshall,Lodune Sincaid
+1a8b6e3596f7b231,Decision - Unanimous,3,4:00,3 Rnd (4-4-4),Ben Rothwell,Ricco Rodriguez
+f09bc4b8529119d3,Submission,2,4:05,3 Rnd (5-5-5),Julia Polastri,Patricia Alujas
+be003c34815169e3,KO/TKO,1,1:02,3 Rnd (5-5-5),Daniel Cormier,Jason Riley
+a8c0e62a6c24591b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Andy Ologun,Katsuaki Furuki
+70b1135b27aa6c1e,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Gilbert Melendez,Jorge Masvidal
+ed1d24b3fd08eb93,KO/TKO,1,4:02,2 Rnd (10-5),Igor Vovchanchyn,Katsuhisa Fujii
+0b6b40a4bc4b5402,KO/TKO,2,1:00,3 Rnd (10-5-5),Kiyoshi Tamura,Nobuhiko Takada
+820d44b5dccba9b6,Submission,2,2:32,2 Rnd (10-5),Shinya Aoki,Rich Clementi
+6a3b6402a72cd57a,KO/TKO,1,3:57,3 Rnd (5-5-5),Tyson Griffin,Duane Ludwig
+d409e34ed53a2218,Submission,1,3:05,3 Rnd (5-5-5),Mateusz Rebecki,Rodrigo Lidio
+7841b63382a421dd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chad George,John Hosman
+e9652fe3e49e8cfb,KO/TKO,2,4:44,3 Rnd (5-5-5),Eddie Wineland,Will Campuzano
+8aa76801976bd8cd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jamal Pogues,Marcos Brigagao
+0c3ab516e78bdb04,Submission,3,4:51,3 Rnd (5-5-5),Anthony Pettis,Shane Roller
+a36d2dbfd23630a8,KO/TKO,1,3:28,3 Rnd (10-5-5),Dan Henderson,Shungo Oyama
+70e5b3cba465ed6c,Decision - Unanimous,2,5:00,2 Rnd (10-5),Abel Cullum,Akiyo Nishiura
+477ad8189ec7153d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Yadier del Valle,Antonio Monteiro
+3e10732fece95085,Submission,2,2:46,3 Rnd (5-5-5),Joseph Holmes,Shonte Barnes
+769c7ba310d786f0,KO/TKO,1,2:53,3 Rnd (5-5-5),Ramiro Jimenez,Tommy Cuozzi Jr.
+da70e4dd9950090b,KO/TKO,1,2:10,3 Rnd (5-5-5),Manuel Torres,Kolton Englund
+c1ac62bc08810aef,KO/TKO,1,1:31,3 Rnd (5-5-5),Leonard Garcia,Hiroyuki Takaya
+8468f283a8b0828e,KO/TKO,2,1:36,3 Rnd (5-5-5),Jared Hamman,Scott Graham
+955f171f7facad27,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eugene Jackson,Jorge Ortiz
+0036dd92d6e86d2c,Submission,1,3:02,2 Rnd (10-5),Ralek Gracie,Alavutdin Gadjiev
+83fe4c29c0fc0091,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Bahatebole Batebolati,HanSeul Kim
+ecbf3ab18f21c519,KO/TKO,2,4:37,3 Rnd + OT (5-5-5-5),Rabindra Dhant,Kimbert Alintozon
+5645926958858f47,Submission,1,1:13,3 Rnd (5-5-5),Danylo Voievodkin,Bailey Schoenfelder
+bfc0d9943dfc5099,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Renato Sobral,Robbie Lawler
+8f798afa4b972157,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hideo Tokoro,Masakazu Imanari
+a678060b70582988,Submission,1,1:21,3 Rnd (5-5-5),Mitsuhiro Ishida,Justin Wilcox
+5220d8f227013afa,Submission,2,3:10,3 Rnd (10-5-5),Kazuyuki Fujita,Yoshihiro Takayama
+fe1eb1104377f2da,KO/TKO,1,2:23,5 Rnd (5-5-5-5-5),Mike Brown,Urijah Faber
+8ddecf3f95697ed1,KO/TKO,2,1:28,3 Rnd (5-5-5),Fabricio Werdum,Ebenezer Fontes Braga
+083dff081c658695,KO/TKO,1,0:54,3 Rnd (10-5-5),Kazuhiro Nakamura,Stefan Leko
+85d71f5b24e5fe2d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Deividas Taurosevicius,Mackens Semerzier
+b4119b4e522724c4,Submission,1,4:54,3 Rnd (5-5-5),JP Buys,Jacob Silva
+5cd41743ea49ad5b,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Hiroyuki Takaya,Takeshi Inoue
+33d3b3af102bb0e3,Submission,2,2:22,3 Rnd (5-5-5),Jason Von Flue,Eric Wray
+9431958641df3e04,KO/TKO,1,3:45,2 Rnd (10-10),Wanderlei Silva,Guy Mezger
+ddc31823f37816a1,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kleydson Rodrigues,Santo Curatolo
+04bd246a93a48400,Decision - Split,2,5:00,2 Rnd (10-5),Keita Nakamura,Adriano Martins
+7295a7b6087b368c,KO/TKO,2,3:40,3 Rnd (5-5-5),Jeremy Horn,Forrest Griffin
+75da960c32b34dc0,KO/TKO,2,4:17,2 Rnd (10-5),Thiago Silva,Rubens Xavier
+5700cce4f56a4de6,Submission,2,4:24,3 Rnd (5-5-5),Pat Healy,Maximo Blanco
+03168c6dff25e0d2,Decision - Unanimous,2,5:00,2 Rnd (10-5),Eiji Mitsuoka,Bruno Carvalho
+61f50925c6a73e63,Submission,1,0:41,3 Rnd (5-5-5),Bibiano Fernandes,Takafumi Otsuka
+3b2dc7f39710bb58,Submission,1,1:09,3 Rnd (5-5-5),Scott Jorgensen,Frank Gomez
+a4162b84c0c8a022,KO/TKO,2,3:39,3 Rnd (5-5-5),Daniel Cormier,Gary Frazier
+2270f544ee79c6a7,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Justin Wilcox,Shamar Bailey
+8d967a14dd9189c0,Submission,1,1:46,3 Rnd (5-5-5),Bibiano Fernandes,Yoshiro Maeda
+6bcf38174b14d1db,TKO - Doctor's Stoppage,1,2:02,3 Rnd + OT (5-5-5-5),Farida Abdueva,Feng Xiaocan
+349bf689ebb97c51,KO/TKO,1,1:31,3 Rnd (10-5-5),Wagner da Conceicao Martins,Henry Miller
+c8cd7b374b6754e4,KO/TKO,1,4:45,3 Rnd (10-5-5),Yoshihiro Akiyama,Denis Kang
+827c4504313e79bc,KO/TKO,2,3:57,3 Rnd (5-5-5),Nick Diaz,Frank Shamrock
+82919ce80ff45d35,Submission,1,9:15,3 Rnd (10-5-5),Yoshihiro Nakao,Edson Drago
+51386d6e46d6fd0b,KO/TKO,1,1:35,3 Rnd (5-5-5),Paul Daley,Aurelijus Kerpe
+e1fe2679f85b4192,Submission,1,4:11,3 Rnd (5-5-5),Fabricio Werdum,Kristof Midoux
+9af02bf8da160ead,KO/TKO,1,4:15,3 Rnd (5-5-5),Yorgan De Castro,Sanford Alton Meeks
+a9fcbeec312e7ca0,Decision - Unanimous,2,5:00,2 Rnd (5-5),Yushin Okami,Ryuta Sakurai
+5a5f151c102eff54,Decision - Unanimous,2,5:00,2 Rnd (10-5),Luiz Firmino,Masakazu Imanari
+abd7047d24fdf91f,Decision - Unanimous,3,2:00,3 Rnd (2-2-2),Gina Carano,Elaina Maxwell
+54c92eb8aba91a78,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Billy Evangelista,Luke Caudillo
+fbc5538c22d8d17b,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Rulon Gardner,Hidehiko Yoshida
+f4ad4af860cfba78,Submission,3,3:23,3 Rnd (5-5-5),Dan Ige,Luis Gomez
+d4a898c65f2da4f1,Submission,1,2:20,3 Rnd (10-5-5),Kiyoshi Tamura,Rony Sefo
+604ab3034ea76f75,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tatsuya Kawajiri,Kazunori Yokota
+458df792b7c7e872,Submission,1,3:48,3 Rnd (5-5-5),Mark Hominick,Bryan Caraway
+acd56ab35498a8e2,KO/TKO,1,6:58,2 Rnd (10-10),Masaaki Satake,Kazunari Murakami
+e56d23dd63a0b0ec,KO/TKO,1,5:25,1 Rnd (20),Dan Henderson,Crezio de Souza
+d831397199c7bfa8,Submission,1,2:54,3 Rnd (5-5-5),Alex Perez,Kevin Gray
+1b2fd7f3ab96a61c,Submission,1,7:12,3 Rnd (10-5-5),Daniel Gracie,Wataru Sakata
+502e759919cd1daa,Submission,2,13:16,Unlimited Rnd  (15),Kazushi Sakuraba,Royler Gracie
+97926722c0e0d2b1,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jake Shields,Carlos Condit
+695597b78c8f94e3,KO/TKO,1,0:27,2 Rnd (10-5),Hayato Sakurai,Shinya Aoki
+29b10d5cf507e124,KO/TKO,2,10:00,3 Rnd (10-10-10),Alexander Otsuka,Marco Ruas
+61d03495aca66c24,KO/TKO,2,2:21,3 Rnd (5-5-5),Navajo Stirling,Phillip Latu
+766c216bbcaa55db,KO/TKO,1,1:18,3 Rnd (5-5-5),Edgar Garcia,Hiromitsu Miura
+03a5ddb7275e3a39,Decision - Majority,3,5:00,3 Rnd (5-5-5),Sarah Kaufman,Alexis Davis
+e39cd3b9d0bf4944,Submission,1,3:01,3 Rnd (5-5-5),Jonathan Micallef,Mohamed Ado
+ec20f2d4c8d2b03f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Demetrious Johnson,Nick Pace
+399880422eda1aaa,KO/TKO,1,2:47,3 Rnd (5-5-5),Rafael Cavalcante,Wayne Cole
+667266b6d18b0db3,Submission,3,3:19,3 Rnd (5-5-5),Josh Thomson,Harris Sarmiento
+8749e5e4a2312303,KO/TKO,1,4:35,2 Rnd (10-10),Anderson Silva,Claudionor Fontinelle
+30ccec06a24f700f,KO/TKO,1,4:56,3 Rnd (5-5-5),Martin Buday,Lorenzo Hood
+6cf2d02153029a7a,Submission,3,3:32,3 Rnd (5-5-5),Shane Roller,Danny Castillo
+076459b53f05bb78,Submission,1,4:28,3 Rnd (5-5-5),Trevor Smith,TJ Cook
+9c11ecdf921caf48,Submission,2,2:03,3 Rnd (5-5-5),Charles Byrd,Randall Wallace
+1925133573105ff1,KO/TKO,2,3:14,3 Rnd (5-5-5),Andrei Arlovski,Roy Nelson
+4cb4ee5c0ff9e779,Submission,2,1:35,3 Rnd (5-5-5),Javier Vazquez,Mackens Semerzier
+e1a94e8fdf6dedbd,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Mirko Filipovic,Josh Barnett
+040e067fc5746862,Decision - Unanimous,2,5:00,2 Rnd (10-5),Luiz Firmino,Nobuhiro Obiya
+20ca6639daaa5a4f,Submission,1,1:58,2 Rnd (10-5),Shinya Aoki,Jason Black
+ed2653ba1ee3e216,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Chad George
+25b0a2db6e1cec97,Submission,1,5:32,3 Rnd (10-5-5),Hidehiko Yoshida,Don Frye
+7bd6c1021523eaa6,KO/TKO,1,2:17,3 Rnd + OT (5-5-5-5),Rongzhu,SeongChan Hong
+2fdf8c06175a88e4,KO/TKO,1,2:26,3 Rnd (5-5-5),Mark Munoz,Ricardo Barros
+b8f7d6f0f270686d,KO/TKO,2,0:45,5 Rnd (5-5-5-5-5),Chris Leben,Mike Swick
+ec854e0ba97921bb,KO/TKO,1,7:58,2 Rnd (10-5),Dan Henderson,Akihiro Gono
+0f326d6637f64c3d,Other,2,5:00,2 Rnd (10-5),TIE,TIE
+8a0cc6e3baa53923,TKO - Doctor's Stoppage,2,3:00,3 Rnd (3-3-3),Gina Carano,Kaitlin Young
+230e7adc759d891e,Submission,1,1:00,2 Rnd (5-5),Diego Sanchez,Shannon Ritch
+1e9ac035a9f93c91,KO/TKO,2,0:44,3 Rnd (5-5-5),Genaro Valdez,Patrik White
+a5be1796c1506f33,KO/TKO,3,2:08,3 Rnd (5-5-5),Terry Martin,Cory Devela
+1949b87bce92c00c,KO/TKO,2,0:41,3 Rnd (5-5-5),Jesse Lennox,Blas Avena
+90514cd24441c0b8,KO/TKO,2,3:25,3 Rnd (5-5-5),Rafael Cavalcante,Aaron Rosa
+ee615433eb898a9c,Submission,1,1:20,3 Rnd (10-5-5),Alistair Overeem,Igor Vovchanchyn
+65a949fe2172a7ed,Submission,1,3:16,3 Rnd (5-5-5),Rodrigo Nascimento,Michal Martinek
+7bfc563ff8bc4ebc,KO/TKO,1,7:22,3 Rnd (10-10-10),Gary Goodridge,Amir Rahnavardi
+3f0cc15b3dbed4a4,KO/TKO,1,0:11,3 Rnd (10-5-5),Bob Sapp,Kiyoshi Tamura
+345d416e5cae66bc,KO/TKO,1,1:48,3 Rnd (5-5-5),Tyron Woodley,Andre Galvao
+f54a156c054bca14,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Pat Healy,Bryan Travers
+cd7f996ec94230cd,KO/TKO,1,4:13,3 Rnd (5-5-5),Ricco Rodriguez,Jimmy Ambriz
+56ff07465df402a8,KO/TKO,1,9:21,3 Rnd (10-5-5),Wanderlei Silva,Kazuyuki Fujita
+0914449e4fa9258f,Submission,1,1:02,3 Rnd (5-5-5),Isaiah Hill,Bobby Stack
+ce399c810a64f0a1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Paulo Filho,Murilo Rua
+e5c5fcd3042d339d,Submission,3,1:56,3 Rnd (5-5-5),Jesus Aguilar,Erisson Ferreira
+db66dd2b0f226978,TKO - Doctor's Stoppage,1,5:00,3 Rnd (5-5-5),TJ Laramie,Daniel Swain
+b414466c59a1986d,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Guy Mezger,Yoshihisa Yamamoto
+80ca453e9e569239,KO/TKO,2,0:32,2 Rnd (10-5),Hiroyuki Takaya,Hideo Tokoro
+a47eaaf3f292f06c,Submission,3,1:59,5 Rnd (5-5-5-5-5),Marloes Coenen,Sarah Kaufman
+2047f87b6863e130,Submission,2,4:55,3 Rnd (10-5-5),Mu Bae Choi,Soa Palelei
+6c7b8a2e2716957e,Submission,1,0:55,5 Rnd (5-5-5-5-5),Doug Marshall,Ariel Gandulla
+cfb5a6c998f1954b,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Gilbert Melendez,Shinya Aoki
+89f202a1545d17b6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sara McMann,Shayna Baszler
+9fd42f7256aa7ad7,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Viktoriia Dudakova,Maria Silva
+9ddb518b18c61627,Submission,1,1:20,3 Rnd (5-5-5),Will Kerr,Karen Darabedyan
+50e385a841d29df6,Submission,1,1:10,2 Rnd (10-5),Ikuhisa Minowa,Gilbert Yvel
+e050d88eec25781c,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Dom Mar Fan,Yuji Ephoevi-Ga
+cc937ebcf20d93f5,Submission,1,4:18,3 Rnd (5-5-5),Jacare Souza,Matt Lindland
+5f5b80aac7893eaf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kevin Holland,Will Santiago
+faa39c2f5956a7ee,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dominick Cruz,Charlie Valencia
+638ca5907fd9b478,KO/TKO,3,2:48,3 Rnd (5-5-5),Jessica Penne,Lisa Ellis
+24f8d14359fbf0c8,Submission,1,0:52,3 Rnd (5-5-5),Poppies Martinez,Robert Breslin
+6bc606ed26130bba,Decision - Split,3,5:00,3 Rnd (5-5-5),Lyoto Machida,Sam Greco
+53a10a8fe6ca4ee7,Decision - Split,2,5:00,2 Rnd (10-5),Aleksander Emelianenko,Assuerio Silva
+863c2e6814e10107,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazuhiro Nakamura,Yuki Kondo
+3b7222f9eeb71830,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,Bu-Kyung Jung
+f8800963527ba5c5,Submission,1,0:39,3 Rnd (5-5-5),James Lee,Travis Wiuff
+def9727f272e24ab,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Torrez Finney,Cam Rowston
+07c3c0b48449c89b,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Rongzhu,Sangwook Kim
+11688b235fed019a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eddie Wineland,George Roop
+ac7ca2ec38b96c1a,KO/TKO,1,0:59,No Time Limit,Gerard Gordeau,Kevin Rosier
+c8c43312b98fe11e,Submission,1,8:05,3 Rnd (10-5-5),Rogerio Nogueira,Dan Henderson
+822389878f00bb97,Submission,1,3:23,3 Rnd (5-5-5),Rich Franklin,Yan Pellerin
+d23d2d2bd8ebe7a6,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Heath Herring,Igor Vovchanchyn
+5c17cf860ab2d396,Submission,1,1:28,2 Rnd (10-5),Gegard Mousasi,Melvin Manhoef
+83128aeb6c6ded35,Submission,2,3:31,3 Rnd (5-5-5),Antonio Arroyo,Stephen Regman
+2f35172fe91bf5d6,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Zhu Kangjie,Shin Haraguchi
+f2ab106b3328215a,KO/TKO,1,2:38,3 Rnd (3-3-3),Sam Spengler,Frank Megallon
+8e8d429dd63b9c49,KO/TKO,1,4:19,2 Rnd (10-5),Joachim Hansen,Shinya Aoki
+dedaf589ed3e0c1a,Submission,1,3:19,3 Rnd (5-5-5),Charlie Valencia,Ian McCall
+a00236d8c8e29db9,Submission,1,3:11,2 Rnd (10-5),Ikuhisa Minowa,Kimo Leopoldo
+827d2a33908ef233,Decision - Split,3,5:00,3 Rnd (5-5-5),Yan Qihui,Lisa Kyriacou
+2ecf87fc0ffe8b54,KO/TKO,2,2:13,3 Rnd (10-5-5),Rogerio Nogueira,Alistair Overeem
+62df357b834238ec,TKO - Doctor's Stoppage,1,5:00,5 Rnd (5-5-5-5-5),Renato Sobral,Bobby Southworth
+2d575461c01e0099,KO/TKO,2,4:58,3 Rnd (5-5-5),Juan Diaz,Kwon Wonil
+5f7a1fe8cf7afb83,KO/TKO,1,7:31,3 Rnd (10-5-5),Heath Herring,Iouri Kotchkine
+44f72d86b025ef8a,Submission,1,0:43,3 Rnd (5-5-5),Dan Molina,Rafael  Del Real
+b3874cc436c7b1fe,KO/TKO,1,1:07,3 Rnd (5-5-5),Forrest Griffin,Edson Silva
+4e3520b514535e25,Decision - Unanimous,2,5:00,2 Rnd (10-5),Bibiano Fernandes,Masakazu Imanari
+034bec34c6dde2c5,KO/TKO,1,3:29,3 Rnd (10-5-5),Naoya Ogawa,Paulo Cesar Silva
+3ea14584d775efc9,Submission,1,5:58,2 Rnd (10-5),Shinya Aoki,David Gardner
+94581ca7540810ef,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tereza Bleda,Nayara Maia
+5a81ddab738c45e8,Submission,1,1:57,5 Rnd (5-5-5-5-5),Mike Brown,Leonard Garcia
+876755e13d9b08c5,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kiyoshi Tamura,Kazushi Sakuraba
+f5d1b6f3be5b8ee0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Denise Gomes,Rayanne dos Santos
+d466309f03ad3cb9,KO/TKO,1,4:15,3 Rnd (5-5-5),Bryan Baker,Jesse Forbes
+fe2be48976cb678d,Decision - Split,3,5:00,3 Rnd (5-5-5),Arisa Matsuda,Feng Xiaocan
+86758a96d189537f,KO/TKO,1,2:44,3 Rnd (5-5-5),Islam Dulatov,Vanilto Antunes
+647a6694817bf944,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Magomed Zaynukov,Lucas Caldas
+4459fbc0eb23fe8a,KO/TKO,1,1:11,3 Rnd + OT (5-5-5-5),Kaiwen,Lu Kai
+1ad8e82e8af862a3,Submission,1,1:17,3 Rnd (5-5-5),John Alessio,Alex Serdyukov
+58a314edcfe1d23a,KO/TKO,1,4:59,3 Rnd + OT (5-5-5-5),Rei Tsuruya,Jiniushiyue
+c5a204241bee1b19,Decision,2,10:00,2 Rnd (10-10),Wanderlei Silva,Daijiro Matsui
+54248bb11f17c770,Submission,1,2:01,3 Rnd (10-5-5),Yoshihiro Akiyama,Taiei Kin
+8a7fb78d9281413d,KO/TKO,1,1:10,3 Rnd (5-5-5),Rongzhu,Victor Martinez
+5913a86b65035f7b,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Renzo Gracie,Michiyoshi Ohara
+a514ab24e3117651,KO/TKO,2,2:28,3 Rnd (10-5-5),Wanderlei Silva,Kiyoshi Tamura
+67eb8c8b73180809,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lemont Davis,Brian Schwartz
+3cb43492a197d852,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ricky Legere Jr.,Chris Spang
+f516bc15c094cb2d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Samandar Murodov,Jonathan Piersma
+bdb6cbb1e4edc5d0,KO/TKO,1,0:24,2 Rnd (5-5),Jorge Santiago,Sean Salmon
+c96aeb4d701efdc2,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Gina Carano,Kelly Kobold
+884f7e970f0234cf,Submission,1,1:11,2 Rnd (10-5),Alistair Overeem,Mark Hunt
+ee40632fb74b8841,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazuhiro Nakamura,Yoshihiro Nakao
+25c748439a31d199,Decision - Split,3,5:00,3 Rnd (10-5-5),Ricardo Arona,Dan Henderson
+41fdcb1da04d0ab5,KO/TKO,1,4:10,3 Rnd (5-5-5),Sam Oropeza,Don Carlo-Clauss
+a611b5916dc411b1,Submission,1,3:59,5 Rnd (5-5-5-5-5),Miguel Torres,Chase Beebe
+ad70c56e5963b1f9,KO/TKO,3,1:31,3 Rnd (5-5-5),Jafel Filho,Roybert Echeverria
+ab06f9c2aab2a27e,KO/TKO,1,3:29,3 Rnd (5-5-5),Mandel Nallo,Samuel Silva
+1b5917a5fb2bce8f,Submission,2,1:15,3 Rnd (5-5-5),Grant Dawson,Adrian Diaz
+abc09c41e89d948f,KO/TKO,1,0:49,3 Rnd (10-5-5),Mark Coleman,Mauricio Rua
+7d4349deb1649a6b,TKO - Doctor's Stoppage,1,6:35,2 Rnd (10-5),Hayato Sakurai,Luciano Azevedo
+b3b0d1b87bd997ed,KO/TKO,1,1:57,3 Rnd (10-5-5),Kevin Randleman,Mirko Filipovic
+a59dfa68457f92bf,Submission,3,0:40,3 Rnd (5-5-5),Tim McKenzie,Jeremy Lang
+313ce2ac0f6f71fc,KO/TKO,1,1:40,3 Rnd (10-5-5),Dan Henderson,Renzo Gracie
+ea91af0c3345ece0,KO/TKO,2,1:28,3 Rnd (5-5-5),Rich Franklin,Curtis Stout
+13d212c9b2e62a7c,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Jeremy Horn,Akira Shoji
+1553eb969ffb5645,KO/TKO,1,2:36,3 Rnd (5-5-5),Eddie Wineland,Antonio Banuelos
+551e407c7ac8414b,Submission,2,4:59,5 Rnd (5-5-5-5-5),Carlos Condit,John Alessio
+a9d82a1f1451359d,KO/TKO,1,1:41,3 Rnd (5-5-5),Benson Henderson,Shane Roller
+179cd8be9f977fc9,KO/TKO,1,7:07,3 Rnd (10-5-5),Quinton Jackson,Masaaki Satake
+6c4d79ba4214a978,KO/TKO,2,0:29,2 Rnd (5-5),Bertrand Amoussou,Raou Raou
+627d61eb9e11071d,KO/TKO,2,1:38,3 Rnd + OT (5-5-5-5),Taiyilake Nueraji,HanSeul Kim
+80e40378655aa61b,Decision - Unanimous,2,5:00,2 Rnd (10-5),Daiju Takase,Chris Brennan
+4ff244d056c1c815,Submission,1,4:55,3 Rnd (5-5-5),Dan Lauzon,King Green
+54a527a7a711a430,KO/TKO,1,0:53,3 Rnd (5-5-5),Dustin Poirier,Zachary Micklewright
+803d9d2b660cc406,Submission,1,7:42,2 Rnd (10-5),Takanori Gomi,Tatsuya Kawajiri
+fb3f9156fefb8b12,Submission,2,2:55,3 Rnd (5-5-5),Sarah Alpar,Shanna Young
+557ed8c426e7c3fc,KO/TKO,1,0:22,3 Rnd (5-5-5),Robbie Lawler,Joey Villasenor
+fd5832aa1ca446bc,Submission,1,2:24,3 Rnd (10-5-5),Shinya Aoki,Joachim Hansen
+0167a9d6e4b599eb,KO/TKO,2,3:55,3 Rnd (5-5-5),Richard Crunkilton,Nick Ertl
+df74c8c5124e8f1b,Decision - Unanimous,2,5:00,2 Rnd (10-5),Denis Kang,Andrei Semenov
+3005f52f624e3d95,Submission,1,3:39,3 Rnd (5-5-5),Jake Shields,Mike Pyle
+ccd34456e34703c5,Submission,3,2:33,3 Rnd (5-5-5),Joachim Hansen,Jason Ireland
+f8c685c49f910f61,Submission,1,4:40,3 Rnd (5-5-5),Bart Palaszewski,Karen Darabedyan
+6ae83aab4d47140c,KO/TKO,2,3:42,5 Rnd (5-5-5-5-5),Alistair Overeem,Paul Buentello
+75ea926f5250b069,Submission,1,1:54,3 Rnd (5-5-5),Daniel Puder,Jesse Fujarczyk
+24daf3443b4b47b3,KO/TKO,1,5:01,3 Rnd (10-5-5),Wanderlei Silva,Kazushi Sakuraba
+4ed7a81bb2b85dff,KO/TKO,1,3:53,3 Rnd (5-5-5),Danillo Villefort,Mike Campbell
+33d9c35170eb10f2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Will Campuzano,Coty Wheeler
+7ac919c8490a5f0b,KO/TKO,2,3:44,3 Rnd (5-5-5),Tyler Toner,Ricky Johnson
+1cc982ca9322ddbc,KO/TKO,1,1:14,3 Rnd (10-5-5),Takanori Gomi,Mitsuhiro Ishida
+5a0b63e357c9cc9c,KO/TKO,1,4:33,3 Rnd (5-5-5),Tommy Speer,Sidney Silva
+635cb295888afd25,Submission,1,2:57,3 Rnd (5-5-5),Shane del Rosario,Brandon Cash
+d15b5d5c4a5951b3,KO/TKO,1,2:03,3 Rnd (5-5-5),Georges St-Pierre,Travis Galbraith
+8d47c8c7be67e241,Submission,1,3:10,3 Rnd (5-5-5),Jacare Souza,Ed Herman
+bb27ff4b39f8ffd7,Submission,1,1:14,3 Rnd (5-5-5),Drew Fickett,Jae Suk Lim
+46acd54cc0c905fb,Submission,1,1:49,No Time Limit,Ken Shamrock,Patrick Smith
+4c8ab4b02c80814c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Alexander Munoz,Nick Newell
+a07940ac02b2bb2c,KO/TKO,1,4:07,5 Rnd (5-5-5-5-5),Paulo Filho,Joe Doerksen
+e275ab81ba2e19bc,Decision - Split,2,5:00,2 Rnd (10-5),Jason High,Andre Galvao
+473a50043bdcbc0a,KO/TKO,2,2:56,3 Rnd (5-5-5),Devin Cole,Mike Kyle
+98da8263fc92a4da,KO/TKO,1,2:44,3 Rnd (10-5-5),Bob Sapp,Yoshihisa Yamamoto
+f11bcbec89256ca9,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lyoto Machida,Vernon White
+7beefab4396b3609,Submission,1,1:42,3 Rnd (5-5-5),Josh Thomson,Nick Gonzalez
+21c712a68a2d167e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Fedor Emelianenko,Jeff Monson
+f64acc1ebd091e7f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cole Province,Fredson Paixao
+9fa7d582d469e510,Submission,1,1:28,3 Rnd (5-5-5),Philip Perez,Brandon Shuey
+61fe99ff744ac061,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jeff Molina,Jacob Silva
+1213ee02278a3f30,KO/TKO,2,1:14,3 Rnd (5-5-5),Carlos Prates,Mitch Ramirez
+2083ce2e6f6e5798,Submission,1,1:34,3 Rnd (10-10-10),Kazunari Murakami,John Dixson
+e2b347ca90e9f0ad,Decision - Majority,3,5:00,3 Rnd (5-5-5),Jake Shields,Yushin Okami
+7ee462ee20361982,KO/TKO,1,4:15,3 Rnd (5-5-5),Mark Munoz,Chuck Grigsby
+7d23915c459473bc,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Yizha,SangWon Kim
+120b837f5751cd5a,Submission,1,2:11,3 Rnd (5-5-5),Josh Barnett,Nandor Guelmino
+440c778bd235b595,KO/TKO,1,2:54,3 Rnd (10-5-5),Mauricio Rua,Ricardo Arona
+d9ddbee8aac151bb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Diego Nunes,Cole Province
+a069eb895d50ee10,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hideo Tokoro,Darren Uyenoyama
+190fb679c4e633e2,Decision - Split,3,5:00,3 Rnd (5-5-5),Kenji Osawa,Rafael Rebello
+176e7df9a1525068,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Frank Gomez,Seth Dikun
+3d991d8dc4445ac3,Submission,1,3:36,3 Rnd (5-5-5),Yoshiro Maeda,Chase Beebe
+598a5f936c6d2bb1,Submission,2,2:42,3 Rnd (5-5-5),Yan Cabral,Kazushi Sakuraba
+b7c5c923d227a40e,Decision - Majority,3,5:00,3 Rnd (5-5-5),Tommy McMillen,David Mgoyan
+730c5d9e74ff82f5,KO/TKO,2,1:45,3 Rnd (10-5-5),Igor Vovchanchyn,Dan Bobish
+8055d70f58b50bd7,Decision - Unanimous,2,10:00,2 Rnd (10-10),Wanderlei Silva,Dan Henderson
+b1e7b96ce7da41ec,Decision - Unanimous,2,5:00,2 Rnd (10-5),Tarec Saffiedine,Seichi Ikemoto
+66f4e23d9edf6402,Decision - Unanimous,2,5:00,2 Rnd (5-5),Keith Jardine,Philip Preece
+ba0a930f1caa5f08,KO/TKO,2,5:00,5 Rnd (5-5-5-5-5),Urijah Faber,Cole Escovedo
+86106c10c93bb0aa,Submission,1,2:14,3 Rnd (5-5-5),Mackens Semerzier,Wagnney Fabiano
+5a2ca63600767404,KO/TKO,1,4:52,3 Rnd (5-5-5),Katsuyori Shibata,Tokimitsu Ishizawa
+e982837da15f1caa,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Shane Roller,Marcus Hicks
+63c5c2dc21fb4a27,Submission,2,4:56,2 Rnd (10-5),Shinya Aoki,Joachim Hansen
+fdb09543b7a06bd3,KO/TKO,2,4:56,3 Rnd (10-5-5),Heath Herring,Mark Kerr
+15ffd32d78c31b5f,Submission,1,3:26,3 Rnd (5-5-5),Takeru Uchida,Shaun Etchell
+e83fd204d6c01e84,Submission,1,0:30,1 Rnd (20),Dan Henderson,Eric Smith
+745b1395a2698762,Decision - Split,3,5:00,3 Rnd (5-5-5),TIE,TIE
+245a3d53baa5e268,Decision - Majority,3,5:00,3 Rnd (5-5-5),Oban Elliott,Kaik Brito
+8901217cd25d0ffd,Decision - Split,3,5:00,3 Rnd (5-5-5),Kennedy Nzechukwu,Anton Berzin
+2c3cec08be40a254,Submission,1,1:05,2 Rnd (10-5),Yasuhito Namekawa,Egidijus Valavicius
+2d1d73bc0470c98b,KO/TKO,1,5:33,3 Rnd (10-5-5),Anderson Silva,Roan Carneiro
+ef9ae227f0ba98e0,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Alexander Otsuka,Kenichi Yamamoto
+5606cdf32577404f,Submission,2,4:36,3 Rnd (5-5-5),Joe Stevenson,Joe Camacho
+aaf53754f154caec,Submission,1,0:40,2 Rnd (10-10),Carlos Newton,Yuhi Sano
+ca332b7c94497ba8,Submission,2,4:55,5 Rnd (5-5-5-5-5),Paulo Filho,Chael Sonnen
+c4af521ee3a3f1cb,Submission,1,3:36,5 Rnd (4-4-4-4-4),Dan Miller,Ryan McGivern
+ae8cd939252e58f4,Submission,1,1:02,3 Rnd (5-5-5),Nyamjargal Tumendemberel,Peter Danesoe
+bc6378fadcb73273,KO/TKO,1,2:24,3 Rnd (5-5-5),Luke Rockhold,Paul Bradley
+0d4688ca7e998d5b,KO/TKO,1,3:59,3 Rnd (4-4-4),Ben Rothwell,Krzysztof Soszynski
+390cbd016abf01a4,Submission,1,0:35,3 Rnd (10-5-5),Rogerio Nogueira,Yusuke Imamura
+d9355aa66ae63385,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tucker Lutz,Sherrard Blackledge
+b74993a068384f55,Submission,1,3:38,2 Rnd (10-5),Jacare Souza,Ian Murphy
+d1ae10227576e983,Submission,1,1:05,3 Rnd (5-5-5),Marloes Coenen,Roxanne Modafferi
+56faba8669683c32,Decision - Split,3,5:00,3 Rnd (5-5-5),Jon Fitch,Jeff Joslin
+47b7753e289e52bf,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Joseph Larcinese,Ryoga Arimoto
+5deead436893e098,Submission,1,3:19,5 Rnd (5-5-5-5-5),Urijah Faber,Chance Farrar
+6f50ba3e066fa603,Submission,1,2:51,3 Rnd (5-5-5),Mike Pyle,JJ Ambrose
+d41a9dab3e28355b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Danny Sabatello,Taylor Moore
+b3fd1f7b5e2abd7d,KO/TKO,1,7:38,3 Rnd (10-5-5),Mirko Filipovic,Hidehiko Yoshida
+41bd31453f0a9e0a,KO/TKO,1,1:35,3 Rnd (5-5-5),Joseph Benavidez,Rani Yahya
+6662e08d79a9d204,Submission,1,1:40,2 Rnd (10-5),Zelg Galesic,Magomed Sultanakhmedov
+b48ff7feb376359c,KO/TKO,1,4:34,3 Rnd (5-5-5),Thiago Silva,Dino Pezao
+5a8c2edd16a0d64e,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Chase Beebe,Eddie Wineland
+69ff4a1867f8f6f3,Decision - Unanimous,2,5:00,2 Rnd (10-5),Daiki Hata,Hideo Tokoro
+bb33721d05e51095,Submission,1,0:54,2 Rnd (10-5),Joe Pearson,Yoshiro Maeda
+060dce171e75b1ec,KO/TKO,1,2:26,3 Rnd (5-5-5),Serhiy Sidey,Ramon Taveras
+82f4ef3cfd4a388a,KO/TKO,1,3:57,5 Rnd (5-5-5-5-5),Brian Bowles,Miguel Torres
+17082276301cbc43,KO/TKO,1,0:36,3 Rnd (5-5-5),Alistair Overeem,Tomohiko Hashimoto
+0d9fcf99551b7dae,KO/TKO,3,1:13,3 Rnd (5-5-5),Andrei Arlovski,Ben Rothwell
+9883e5a2ab338aec,DQ,3,0:20,3 Rnd (5-5-5),Mario Piazzon,Alexander Soldatkin
+06341b344b45466a,Decision - Split,3,5:00,3 Rnd (5-5-5),Carmelo Marrero,Steve Steinbeiss
+9c610ba07b0b9bd6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Yuri Panferov,Chris Ewert
+c07b0e957e4f2063,Decision - Split,3,5:00,3 Rnd (5-5-5),TIE,TIE
+1b15b43a241de7ab,Submission,2,3:08,3 Rnd (5-5-5),Shawn Jordan,Lavar Johnson
+65df45b296cfa7d8,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chad Mendes,Javier Vazquez
+8cc1db07cf00c453,Submission,1,2:35,3 Rnd (10-5-5),Eric Esch,Wagner da Conceicao Martins
+bf5497ee7e9fd41f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Muhammed Lawal,Ryo Kawamura
+a7d91199c4c0f963,KO/TKO,1,0:23,3 Rnd (5-5-5),Rameau Thierry Sokoudjou,Rogerio Nogueira
+b5c58b000a67a28e,KO/TKO,1,1:10,5 Rnd (5-5-5-5-5),Michael Bisping,Jakob Lovstad
+c30d792b648556ea,Submission,2,1:57,3 Rnd (5-5-5),Coty Wheeler,Del Hawkins
+26ae2bd6732c8b7a,DQ,2,0:05,3 Rnd (5-5-5),Shinya Aoki,George Sotiropoulos
+e1c6c620e6c4636d,Submission,2,3:47,5 Rnd (5-5-5-5-5),Jake Shields,Paul Daley
+88a02612baa17142,KO/TKO,2,5:00,3 Rnd (10-5-5),Ricardo Arona,Kazushi Sakuraba
+3dbe2f6fe5209bdd,Decision - Split,3,5:00,3 Rnd (10-5-5),Quinton Jackson,Murilo Bustamante
+c59b6c0979b328a4,Submission,2,4:37,3 Rnd (5-5-5),Luis Felipe Dias,Donavon Hedrick
+51cf57b5f191b94d,KO/TKO,1,3:20,2 Rnd (10-5),Andy Ologun,Yukio Sakaguchi
+9c4a3c3ca42d62af,KO/TKO,2,3:29,3 Rnd (5-5-5),Lavar Johnson,Lolohea Mahe
+7e52ea079dd292bf,Decision - Split,3,5:00,3 Rnd (10-5-5),Wanderlei Silva,Ricardo Arona
+ebcf97b53ba4a4fe,Submission,1,9:30,3 Rnd (10-10-10),Rickson Gracie,Nobuhiko Takada
+66e6cd7b6114f8f5,Submission,1,5:31,2 Rnd (10-5),Semmy Schilt,Siala Siliga
+0406f5db172492d6,KO/TKO,1,1:00,5 Rnd (5-5-5-5-5),Gegard Mousasi,Renato Sobral
+ae3333dc399bc7ab,KO/TKO,2,2:05,3 Rnd (5-5-5),Joe Riggs,Luke Stewart
+6606d271eee62e3a,Submission,1,0:35,3 Rnd (5-5-5),Jens Pulver,Cub Swanson
+d1b47cd882cb8d14,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ralph Gracie,Dokonjonosuke Mishima
+a89033f7d7e4d52d,Decision - Unanimous,2,5:00,2 Rnd (10-5),Shinya Aoki,Caol Uno
+172346850e7d24d6,Submission,2,1:15,3 Rnd (5-5-5),Fedor Emelianenko,Mark Coleman
+4c6b880c1a2813bf,KO/TKO,1,2:02,3 Rnd (5-5-5),Carlos Ulberg,Bruno Oliveira
+1181d1baffee793e,Decision - Unanimous,2,5:00,2 Rnd (10-5),Katsunori Kikuno,Daisuke Nakamura
+5d735b5e351109bb,KO/TKO,1,0:55,3 Rnd (5-5-5),Jan Nortje,Bob Sapp
+7e62dd5fe9f24595,KO/TKO,1,1:03,3 Rnd (5-5-5),Tim Kennedy,Mack Brewer
+a4a6288767ff97ed,KO/TKO,1,2:12,3 Rnd (5-5-5),Uros Medic,Mikey Gonzalez
+ca7f63aca5581fa8,Decision - Split,3,5:00,3 Rnd (5-5-5),Kevin Aguilar,Joey Gomez
+115c59f83e287cdb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Raphael Assuncao,Jameel Massouh
+a9f85de4ad37810b,KO/TKO,1,3:24,2 Rnd (5-5),Rashad Evans,Bryan Pardoe
+b6b9c0b182e246cf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lyoto Machida,Kengo Watanabe
+d26583e8495947f3,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Koya Kanda,Yibugele
+4aa44d2411841fc9,Submission,1,6:25,3 Rnd (10-5-5),Kazushi Sakuraba,Masakatsu Funaki
+43ef662233a92ef9,KO/TKO,1,2:29,3 Rnd (5-5-5),Yoshiro Maeda,Charlie Valencia
+9fa30ed017f7cb6e,Submission,1,0:30,3 Rnd (5-5-5),Luke Rockhold,Cory Devela
+054b499dbbe54029,KO/TKO,1,3:50,3 Rnd (5-5-5),Chris Lytle,Trenell Young
+df6b1c42209f5628,Submission,1,2:01,5 Rnd (5-5-5-5-5),Eugene Jackson,Ronald Jhun
+270e8994b206da03,Submission,3,2:29,3 Rnd (10-5-5),Heath Herring,Yoshihisa Yamamoto
+54b12f348a0ec2a3,KO/TKO,1,4:28,3 Rnd (10-5-5),Ricardo Arona,Alistair Overeem
+8834fa1ab549aca5,Submission,1,3:41,3 Rnd (5-5-5),Tim Kennedy,Melvin Manhoef
+86516ffd4b664486,Submission,1,0:47,3 Rnd (5-5-5),Sedriques Dumas,Matej Penaz
+d37f7b3e56adf270,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Estevan Payan,Alonzo Martinez
+fa6c956a4f75d0fe,KO/TKO,1,2:05,3 Rnd (5-5-5),Xie Bin,Yudi Cahyadi
+2abc22777ebf89b8,KO/TKO,1,0:46,2 Rnd (10-5),Mirko Filipovic,Dos Caras Jr.
+c0d2c9d507be7415,KO/TKO,1,6:00,2 Rnd (10-5),Aaron Riley,Michihiro Omigawa
+280b27df982f3204,Submission,2,1:59,3 Rnd (3-3-3),Jeremiah Metcalf,Raymond Daniels
+c12883ff1a0a18a1,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Zhu Kangjie,Xie Bin
+afc1327e262cb1d7,Decision - Unanimous,2,10:00,2 Rnd (10-10),Ricco Rodriguez,Gary Goodridge
+0f98b6404dda35c6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anthony Romero,Mike Breeden
+a82eed329f1f3801,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Maria Silva,Kathryn Paprocki
+d825023bc9f343fc,Decision - Unanimous,2,5:00,2 Rnd (10-5),Daniel Acacio,Kazuo Misaki
+552b01ec3faebd65,Submission,1,3:23,3 Rnd (5-5-5),Brendan Allen,Aaron Jeffery
+58c45a2a1ef88eeb,Decision - Unanimous,2,10:00,2 Rnd (10-10),Ricardo Almeida,Akira Shoji
+d617d78ffe4f75bc,Decision - Split,3,5:00,3 Rnd (5-5-5),Billy Evangelista,Nam Phan
+463a9cdea031d084,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mallory Martin,Micol Di Segni
+0182542fe245123e,KO/TKO,2,3:55,3 Rnd (5-5-5),Mansur Abdul-Malik,Wes Schultz
+fc0ff1b09ff58b57,KO/TKO,1,0:28,3 Rnd (5-5-5),Te Edwards,Austin Tweedy
+44e0fca5baccd831,Submission,1,3:24,3 Rnd + OT (5-5-5-5),Rinya Nakamura,Gugun Gusman
+83a40598ab4d85d7,KO/TKO,2,2:24,3 Rnd + OT (5-5-5-5),Keiichiro Nakamura,EoJin Park
+53ed934a2afa76ae,KO/TKO,1,3:25,3 Rnd (5-5-5),Chris Spang,Nah-Shon Burrell
+5769c08adc653958,Decision - Unanimous,2,5:00,2 Rnd (10-5),Akihiro Gono,Daniel Acacio
+368008f70fbb6aa7,KO/TKO,1,1:30,3 Rnd (5-5-5),Patrick Cote,Steve Vigneault
+0d6722fb9dc4c9c9,KO/TKO,1,2:15,3 Rnd (5-5-5),Mike Rodriguez,Jamelle Jones
+0fc0e33891539d9c,KO/TKO,1,5:26,2 Rnd (10-5),Mirko Filipovic,Wanderlei Silva
+521f018c07cdaab5,KO/TKO,1,0:39,3 Rnd (5-5-5),Gina Carano,Leiticia Pestova
+a87f85225861f7bb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ed Ratcliff,Phil Cardella
+2053fa21407cc7b5,KO/TKO,2,1:39,3 Rnd (5-5-5),Joe Pyfer,Ozzy Diaz
+08a63c4a36167377,Submission,1,8:33,3 Rnd (10-5-5),Ryan Gracie,Yoji Anjo
+60b0752b35c7e0c5,Submission,2,4:15,5 Rnd (5-5-5-5-5),Frank Shamrock,Phil Baroni
+bfc029673b78751f,Submission,1,4:19,3 Rnd (5-5-5),Roger Gracie,Trevor Prangley
+cd31ecf58234a9ed,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hannah Goldy,Kali Robbins
+e1546b4013f55e6d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),TIE,TIE
+6f9963e9dccf8e4d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Trevor Prangley,Anthony Ruiz
+cb132a2a6991a9bc,Decision - Unanimous,2,5:00,2 Rnd (10-5),Satoshi Ishii,Ikuhisa Minowa
+41cca7934bf8737a,KO/TKO,2,1:06,3 Rnd (5-5-5),Omar Morales,Harvey Park
+1e11b42ab5611ade,KO/TKO,1,2:25,3 Rnd (5-5-5),Yoshihiro Akiyama,Katsuhiko Nagata
+37acb80a4fc3ee6b,KO/TKO,1,1:08,3 Rnd (5-5-5),Jean-Paul Lebosnoyani,Jack Congdon
+b3e8a036d4811fed,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),John Castaneda,Cheyden Leialoha
+28648815e5f46bd9,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Keiichiro Nakamura,Kaiwen
+7172bcb0d1ddf0ed,KO/TKO,1,0:22,3 Rnd (5-5-5),Brett Rogers,Andrei Arlovski
+862ea50197179db9,Submission,2,1:27,2 Rnd (10-5),Ikuhisa Minowa,Hong Man Choi
+bcb53bd633106d5e,Submission,1,0:54,2 Rnd (10-5),Fedor Emelianenko,Naoya Ogawa
+46d73805667745df,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tyron Woodley,Tarec Saffiedine
+e226f22aa29b9232,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Whitehead,Kevin Randleman
+1a93f7c25f5f922e,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,Marcus Aurelio
+17ddee22d105eecd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cub Swanson,Micah Miller
+9efe39e3c1ee2cc6,KO/TKO,1,0:56,2 Rnd (10-5),Mirko Filipovic,Tatsuya Mizuno
+c936e2a815bfeea3,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),SuYoung You,Daermisi Zhawupasi
+b98d4637f9f22158,KO/TKO,1,1:49,3 Rnd (5-5-5),Melvin Manhoef,Kazuo Misaki
+9293d9f38ba22343,Submission,1,1:57,5 Rnd (5-5-5-5-5),Benson Henderson,Donald Cerrone
+5fc256ee7d166d5e,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hatsu Hioki,Jeff Curran
+cd1fc455771e8e11,KO/TKO,1,3:47,2 Rnd (10-5),Katsunori Kikuno,Andre Amado
+dbf645ed8cde54f1,KO/TKO,1,0:21,3 Rnd (5-5-5),Mirko Filipovic,Yuji Nagata
+f0c705ff23481a90,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kazuyuki Miyata,Caol Uno
+09caf1ced8fea908,KO/TKO,1,0:15,3 Rnd (5-5-5),Luke Fernandez,Rafael Pergentino
+b522a0d49a277f56,Decision - Split,2,5:00,2 Rnd (10-5),Kenji Osawa,Takafumi Otsuka
+42eeefa6ca99163f,KO/TKO,3,1:00,3 Rnd (5-5-5),Rizvan Kuniev,Edivan Santos
+39003cb1926bb9e0,KO/TKO,1,2:22,3 Rnd (5-5-5),Manvel Gamburyan,Mike Brown
+9afb09b16993180b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Cormier,Devin Cole
+18802deb8da3e5d2,KO/TKO,1,1:26,3 Rnd (5-5-5),Kamal Shalorus,Will Kerr
+0091e56e746971f4,KO/TKO,2,1:30,3 Rnd (5-5-5),George Roop,Chan Sung Jung
+7091bfae576ff565,KO/TKO,1,3:33,3 Rnd (5-5-5),Robbie Lawler,Melvin Manhoef
+e100cee98b236e33,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Fedor Emelianenko,Antonio Rodrigo Nogueira
+a52ec7298ba5e2c5,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),SuYoung You,Shohei Nose
+39fd87af09ba1a2a,KO/TKO,3,1:58,3 Rnd (5-5-5),Cung Le,Sammy Morgan
+6487ae1d68fc511b,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Ahejiang Ailinuer,GwanWoo Lim
+87bda6d520fe9677,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sodiq Yusuff,Mike Davis
+59b354e937f4fcab,Submission,2,0:30,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Heath Herring
+20787d716f2450b8,Decision - Unanimous,2,10:00,2 Rnd (10-10),Ricco Rodriguez,John Marsh
+f977cdf17fad3d5c,Decision - Unanimous,2,5:00,2 Rnd (10-5),Tatsuya Kawajiri,Luiz Firmino
+acd102ea1153953c,Decision - Split,3,5:00,3 Rnd (5-5-5),Chris Horodecki,Ed Ratcliff
+20f3db57c5fc65d0,KO/TKO,1,8:56,2 Rnd (10-5),Hayato Sakurai,Jens Pulver
+4dbea93c1ebea6af,Submission,1,1:34,3 Rnd (10-5-5),Naoya Ogawa,Stefan Leko
+4b075f9bd40a607b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tatsuya Kawajiri,Josh Thomson
+d14c18eb7dc26a03,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Baergeng Jieleyisi,Tokitaka Nakanishi
+f8f28b8f25039954,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Kiru Sahota,Yin Shuai
+f28fea1a908e2d71,KO/TKO,1,2:49,3 Rnd (5-5-5),Chad Griggs,Gian Villante
+46c473ecb09f60a0,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Fedor Emelianenko,Semmy Schilt
+c0f12fa7d1b6e969,Submission,1,0:36,3 Rnd + OT (5-5-5-5),JeongYeong Lee,Xie Bin
+37532c5071232a2a,Submission,1,8:37,3 Rnd (10-5-5),Ricardo Arona,Sergey Ignatov
+d0d97f7c471c87ce,Submission,1,2:04,3 Rnd (5-5-5),Chris Brennan,Joe Stevenson
+3b44632d5c9c8ba5,KO/TKO,1,2:51,3 Rnd (5-5-5),Ryan Gandra,Trent Miller
+50f343081acd2be6,Submission,2,1:39,2 Rnd (10-5),Caol Uno,Mitsuhiro Ishida
+b96e96764933dd7c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hayato Sakurai,Phil Baroni
+9300e3765b2adea6,KO/TKO,1,4:14,3 Rnd (5-5-5),Marcio Barbosa,Damon Wilson
+2804f94e534a19ba,KO/TKO,1,4:59,2 Rnd (10-10),Francisco Bueno,Satoshi Honma
+be575baad34db0d7,KO/TKO,3,4:36,3 Rnd (5-5-5),Aalon Cruz,Steven Nguyen
+1faf3decc2691370,KO/TKO,3,1:42,3 Rnd (5-5-5),Jordan Mein,Evangelista Santos
+59fdc26f5eaf0827,Submission,1,2:53,3 Rnd (3-3-3),Gina Carano,Tonya Evinger
+10dd7a89b404f945,KO/TKO,1,4:14,3 Rnd (5-5-5),Sean O'Malley,Alfred Khashakyan
+254577446e095f22,KO/TKO,1,0:29,3 Rnd (5-5-5),Eric Esch,Sean O'Haire
+a8561b04e03057fe,Submission,1,1:45,3 Rnd (5-5-5),BJ Penn,Duane Ludwig
+6eed134caa7ea417,KO/TKO,1,1:11,3 Rnd (5-5-5),Joey Villasenor,Phil Baroni
+a033d8965d001058,KO/TKO,2,3:20,3 Rnd (5-5-5),Andreas Gustafsson,Pat Pytlik
+7064268eaf716ab5,Submission,1,1:42,2 Rnd (10-5),Jeff Monson,Sergei Kharitonov
+c8e5cbf334606fe9,KO/TKO,1,1:33,3 Rnd (5-5-5),Jorge Masvidal,Matt Lee
+c647023c2ea5b784,Submission,1,3:54,3 Rnd (5-5-5),Nick Diaz,Hayato Sakurai
+47f4b5bf0609e401,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brandon Davis,Austin Arnett
+85399c2ad97fcefe,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eddie Wineland,Manny Tapia
+ae2dfd555dd3d55b,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Chase Beebe,Rani Yahya
+ae37a27ad1023507,Submission,1,3:07,3 Rnd (5-5-5),Shane Roller,Anthony Njokuani
+dfef84fcb3dfaeb9,KO/TKO,1,2:21,3 Rnd + OT (5-5-5-5),Rinya Nakamura,Shohei Nose
+b489d59041f8fe1d,KO/TKO,1,2:32,3 Rnd (5-5-5),Javier Reyes,Justice Torres
+b271a4c3c3dd0f74,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazuhiro Nakamura,Kevin Randleman
+03b311ad8a1455f6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Gilbert Melendez,Tetsuji Kato
+e4d2bce5c9700584,KO/TKO,1,4:23,3 Rnd + OT (5-5-5-5),Agulali,Mridul Saikia
+c92be4488171e2b5,TKO - Doctor's Stoppage,1,5:34,2 Rnd (10-5),Gegard Mousasi,Makoto Takimoto
+25dd929221f19ddd,KO/TKO,1,2:03,3 Rnd + OT (5-5-5-5),Feng Xiaocan,Kiran Singh
+7358b5ff482f338a,KO/TKO,1,2:41,3 Rnd + OT (5-5-5-5),Jeka Saragih,WonBin Ki
+456773ac4da3a2d5,KO/TKO,2,2:37,3 Rnd (5-5-5),Igor Severino,Jhonata Silva
+4eceaea405422508,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Danny Silva,Angel Pacheco
+6169ccdf150c2b99,TKO - Doctor's Stoppage,1,0:39,3 Rnd (5-5-5),Mirko Filipovic,Kazuyuki Fujita
+2215b14c71852f1f,KO/TKO,1,1:49,3 Rnd (5-5-5),Glover Teixeira,Rameau Thierry Sokoudjou
+2f091aaf7556f820,Submission,2,1:49,3 Rnd (5-5-5),Jailton Almeida,Nasrudin Nasrudinov
+5cd3241cbe555903,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Mark Climaco,JungHyun Lee
+af29e748ce8242d4,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,David Bielkheden
+3552bfbab85f39c9,Submission,1,2:30,2 Rnd (10-5),Michihiro Omigawa,Cole Escovedo
+19f170b2f5d4e3eb,Decision - Split,2,5:00,3 Rnd (5-5-5),Mitsuhiro Ishida,Akiyo Nishiura
+dd4da5e25239c56e,Decision - Split,2,5:00,2 Rnd (10-5),Bibiano Fernandes,Joachim Hansen
+febfb1f1a5ea0689,TKO - Doctor's Stoppage,1,5:00,3 Rnd (5-5-5),Josh LaBerge,Anthony Leone
+22a91fb1d8077c90,KO/TKO,2,0:51,3 Rnd (5-5-5),WonBin Ki,Tatsuya Saika
+f58b60a7dbbc7a1a,KO/TKO,2,2:47,3 Rnd (5-5-5),Bevon Lewis,Elias Urbina
+11dec8b04de1d509,KO/TKO,1,3:29,2 Rnd (10-5),Gegard Mousasi,Hiroshi Izumi
+f3fd6257c091fc56,KO/TKO,2,4:15,3 Rnd (5-5-5),Danny Castillo,Ricardo Lamas
+567a09fd200cfa05,KO/TKO,1,0:26,No Time Limit,Gerard Gordeau,Teila Tuli
+b681b56a1245ee07,KO/TKO,3,4:45,3 Rnd (5-5-5),Mauricio Ruffy,Raimond Magomedaliev
+2bfa5eb06a8a463f,KO/TKO,2,3:21,3 Rnd + OT (5-5-5-5),Kaiwen,DongHyun Seo
+b889791c3d1d60fa,Submission,1,4:28,3 Rnd (5-5-5),Josh Barnett,Sergei Kharitonov
+3dd533eb639da9f8,KO/TKO,1,1:58,3 Rnd (5-5-5),Cain Velasquez,Jesse Fujarczyk
+d475731497afe289,Submission,3,3:47,3 Rnd (5-5-5),Donald Cerrone,Ed Ratcliff
+aec020121409ce53,KO/TKO,1,0:08,3 Rnd (5-5-5),Alonzo Menifield,Dashawn Boatwright
+b6e48269344015f0,Submission,1,3:04,3 Rnd (5-5-5),Wang Cong,Paula Luna
+c5d5dcd8a5f2ee7b,KO/TKO,2,2:56,5 Rnd (5-5-5-5-5),Cristiane Justino,Jan Finney
+5689a290e1b09fe1,KO/TKO,2,3:22,3 Rnd (10-10-10),Daiju Takase,Emmanuel Yarborough
+eadcd1aaf588c786,KO/TKO,1,1:35,5 Rnd (5-5-5-5-5),Brian Stann,Doug Marshall
+8c0a53d11ee60612,KO/TKO,1,2:59,3 Rnd (5-5-5),Mike Santiago,Mark Cherico
+aa06e23b9c4c7baf,KO/TKO,1,4:00,3 Rnd (5-5-5),Cain Velasquez,Jeremiah Constant
+1e1206e31a08bc37,KO/TKO,2,4:55,3 Rnd (5-5-5),Gina Carano,Rosi Sexton
+e96509457faa70dc,Submission,1,3:15,3 Rnd (5-5-5),Chris Leben,Brian Sleeman
+50b124f278d1c4f5,Submission,2,3:52,3 Rnd (5-5-5),Poppies Martinez,Gigo Jara
+d5aa060d862705e7,Submission,1,0:59,2 Rnd (10-5),Jason High,Yuya Shirai
+09497799dab23f4d,KO/TKO,1,0:48,3 Rnd (5-5-5),Mateus Mendonca,Ashiek Ajim
+7aa02fc2b02c89a2,TKO - Doctor's Stoppage,2,0:52,3 Rnd (5-5-5),Anthony Ruiz,Bobby Southworth
+42b7367d5bab76dc,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazuhiro Nakamura,Murilo Bustamante
+3753e380cc873f04,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Carlos Candelario,Ronaldo Candido
+8e6f722a1ac55be8,Submission,2,2:30,2 Rnd (10-10),Kazushi Sakuraba,Anthony Macias
+082c4514f8a1c8f4,Decision - Split,3,5:00,3 Rnd (5-5-5),Quinn Mulhern,Yuri Villefort
+465971b89ae3954e,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Koyomi Matsushima,JunYoung Hong
+6e5c9b61635f7b6d,KO/TKO,2,1:42,3 Rnd (5-5-5),Anthony Njokuani,Muhsin Corbbrey
+20b569f81522c897,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Scott Jorgensen,Brad Pickett
+f43fca8400dbd1c4,KO/TKO,1,8:43,2 Rnd (10-5),Atsushi Yamamoto,Yusaku Nakamura
+1be49df19bc8ce25,KO/TKO,2,4:33,3 Rnd + OT (5-5-5-5),Lu Kai,Angga
+3df860f7d7e3fcd0,KO/TKO,1,3:13,3 Rnd (5-5-5),Scott Jorgensen,Noah Thomas
+96cbea57c4f26c4f,KO/TKO,1,3:37,3 Rnd (5-5-5),Billy Ray Goff,Shimon Smotritsky
+5584458cadd0a0ca,KO/TKO,2,3:34,2 Rnd (10-5),Daniel Acacio,Daiju Takase
+2cf691492ba888a3,Submission,1,0:17,3 Rnd (5-5-5),Rousimar Palhares,Claudio Mattos
+21b83513f621bcb1,KO/TKO,1,9:08,3 Rnd (10-5-5),Mario Sperry,Hirotaka Yokoi
+d57f6294c610a86b,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Murilo Rua,Mario Sperry
+1a5edd29cb7ca881,KO/TKO,3,1:14,5 Rnd (5-5-5-5-5),Rafael Cavalcante,Muhammed Lawal
+f1f9ae4be31392c7,DQ,1,2:14,3 Rnd (10-10-10),Mark Kerr,Branko Cikatic
+0aea8d478f7175ef,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Conor Heun,Magno Almeida
+b4524a197c3be378,TKO - Doctor's Stoppage,2,5:00,5 Rnd (5-5-5-5-5),Dominick Cruz,Brian Bowles
+65adf5fa5bf6fbbc,KO/TKO,1,1:48,3 Rnd + OT (5-5-5-5),Namsrai Batbayar,Yin Shuai
+d269447621861c5e,Submission,1,2:38,3 Rnd (5-5-5),Shamil Gaziev,Greg Velasco
+eb050237f0c3a75c,Submission,1,5:40,3 Rnd (10-5-5),Makoto Takimoto,Zelg Galesic
+c1b2bad19fbcb817,KO/TKO,3,4:58,3 Rnd (5-5-5),Jordan Espinosa,Rilley Dutro
+c962bd169b31e238,KO/TKO,1,1:53,3 Rnd (5-5-5),Dan Henderson,Renato Sobral
+03722384d963aac0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Daniel Puder,Richard Dalton
+ecc31d536e49c5d7,KO/TKO,2,2:21,3 Rnd (10-5-5),Chuck Liddell,Guy Mezger
+8b8c5a870e039c05,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Joby Sanchez,Manny Vazquez
+80d1f9945f7d0d5b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brad Pickett,Demetrious Johnson
+8f0308dba0d511d3,KO/TKO,3,3:18,3 Rnd (10-5-5),Dan Henderson,Akira Shoji
+b5d14ebf0d26e06a,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),ChangMin Yoon,Jin Aoi
+42b363b70dc7c806,KO/TKO,1,0:51,3 Rnd (5-5-5),Brandon Vera,Andre Mussi
+03d15591f06d4db8,Decision - Split,3,5:00,3 Rnd (5-5-5),Charlie Valencia,Akitoshi Tamura
+dff3bdaf44227bcf,Submission,1,4:39,3 Rnd (5-5-5),Ode Osbourne,Armando Villarreal
+1820d9f45e614aa9,Decision - Unanimous,2,10:00,2 Rnd (10-10),Igor Vovchanchyn,Akira Shoji
+d149a6a19e218e3d,KO/TKO,2,4:29,3 Rnd (5-5-5),Jamahal Hill,Alexander Poppeck
+cecdc0da584274b9,Submission,1,2:18,No Time Limit,Royce Gracie,Art Jimmerson
+9463dd6b883a1095,Decision - Split,3,5:00,3 Rnd (5-5-5),Ernesta Kareckaite,Carli Judice
+6c6ba06d43698ebd,KO/TKO,1,3:00,3 Rnd (5-5-5),Azamat Murzakanov,Matheus Scheffel
+76759187ab442283,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Yves Jabouin,Brandon Visher
+baf3a89def6d4948,KO/TKO,3,2:52,3 Rnd (5-5-5),Cameron Saaiman,Joshua Wang-Kim
+1885d42633d44619,KO/TKO,3,2:11,3 Rnd (5-5-5),Fabricio Werdum,Gabriel Gonzaga
+4ebf473fd3a4267d,Submission,1,1:33,3 Rnd (10-5-5),Shinya Aoki,Brian Lo-A-Njoe
+0cc28c0cd0ae9f47,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Quillan Salkilld,Gauge Young
+16bb650c7092a116,KO/TKO,1,2:09,3 Rnd (10-5-5),Mirko Filipovic,Aleksander Emelianenko
+04d4dbc7083bb5fd,KO/TKO,2,0:25,3 Rnd (5-5-5),Nate Moore,Nathan Coy
+21a0b6cd9723f85c,Submission,1,3:29,3 Rnd (5-5-5),Marloes Coenen,Fiona Muxlow
+1ef0698e6ada50f2,Submission,1,2:52,3 Rnd (5-5-5),Kaynan Kruschewsky,Dylan Mantello
+95a3d8f1890b2bb8,Submission,1,3:04,2 Rnd (10-10),Mark Kerr,Nobuhiko Takada
+40aaaebf8b92724e,Submission,1,7:33,2 Rnd (10-10),Maurice Smith,Branko Cikatic
+1601aad5b26dc804,KO/TKO,1,3:45,3 Rnd (5-5-5),Rafael Cavalcante,Antwain Britt
+7bbb46df42383d73,Submission,3,6:53,3 Rnd (10-10-10),Kazushi Sakuraba,Vernon White
+311b7600957275e8,KO/TKO,1,1:01,3 Rnd (5-5-5),Brett Rogers,Jon Murphy
+7a0297fb8ff88b39,Submission,2,3:28,3 Rnd (5-5-5),Mike Kyle,Abongo Humphrey
+7ca10988d77d0b4f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tarec Saffiedine,Roger Bowling
+b58cad41bc3f4142,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kyle Daukaus,Michael Lombardo
+1cbabb50e9b3a84b,KO/TKO,1,2:02,3 Rnd (5-5-5),Anderson Silva,Tony Fryklund
+3849ded07678f6e3,Submission,1,4:13,3 Rnd (5-5-5),Gabriel Bonfim,Trey Waters
+83ec6d2c413f6639,KO/TKO,2,1:26,3 Rnd (5-5-5),Ed Ratcliff,Alex Karalexis
+c266ee1c1fe8c4c2,KO/TKO,1,4:45,3 Rnd (5-5-5),Josh Thomson,Adam Lynn
+a2c89a8d4857906a,KO/TKO,1,2:29,2 Rnd (10-5),Cole Escovedo,Yoshiro Maeda
+f22b3d85ab5a087f,Submission,1,6:44,2 Rnd (10-10),Akira Shoji,John Renken
+acbe24bc4bb3fefc,Submission,3,2:53,3 Rnd (5-5-5),Sara McMann,Raquel Pa'aluhi
+0e55d1bebe8a3f19,KO/TKO,1,1:04,3 Rnd (5-5-5),Jay Hieron,Jason High
+f8c24b531731a43a,KO/TKO,3,0:10,3 Rnd (5-5-5),Cody Chovancek,Raphael Uchegbu
+281eee31b9538056,KO/TKO,1,0:58,3 Rnd (5-5-5),Thiago Silva,Vitor Vianna
+a1d6ce06dd7831ca,Decision - Unanimous,2,5:00,3 Rnd (10-5-5),Kazuhiro Nakamura,Igor Vovchanchyn
+263d34e670d39376,Submission,1,4:08,2 Rnd (5-5),Mu Bae Choi,Yusuke Imamura
+4f6a323e1b90ae2f,KO/TKO,1,2:49,3 Rnd (5-5-5),Sergei Kharitonov,Andrei Arlovski
+25bed327d963ada5,Decision - Unanimous,2,5:00,2 Rnd (10-5),Amar Suloev,Murilo Bustamante
+2e3b45fd211a38f9,Decision - Unanimous,2,10:00,2 Rnd (10-10),Renzo Gracie,Alexander Otsuka
+d170b5afc5066432,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brian Ebersole,Matt Horwich
+463f534067039d23,KO/TKO,1,2:15,2 Rnd (10-5),Gegard Mousasi,Jacare Souza
+e3172ef92bebcafe,Submission,1,5:06,3 Rnd (10-5-5),Hidehiko Yoshida,Kiyoshi Tamura
+ccede4c1f54ee437,KO/TKO,1,2:09,3 Rnd (10-5-5),Kazuyuki Fujita,Eldari Kurtanidze
+29fcd261bdb5bd5f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Pat Healy,Mizuto Hirota
+d17339f98fbdc293,Submission,1,4:50,3 Rnd (5-5-5),Urijah Faber,Takeya Mizugaki
+6b3e132a880d0a0a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Gegard Mousasi,Ovince Saint Preux
+f3cf7284ac078ce3,Submission,1,9:00,2 Rnd (10-5),Akihiro Gono,Dae Won Kim
+92cde4c4f5ff3bbc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Brunson,Nate James
+27c9e025e06b9f93,KO/TKO,1,2:45,3 Rnd (5-5-5),Josh Barnett,Geronimo dos Santos
+9f4e0e40a26a95fc,KO/TKO,1,1:19,3 Rnd (10-5-5),Mark Coleman,Allan Goes
+f3b77c91ff878099,KO/TKO,1,2:23,2 Rnd (10-5),Ikuhisa Minowa,Paulo Cesar Silva
+2a8e1f19b8a94295,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tracy Cortez,Mariya Agapova
+1c2b372e9d8ed8c8,KO/TKO,2,1:32,5 Rnd (5-5-5-5-5),Jose Aldo,Manvel Gamburyan
+14e13f30dae7d702,KO/TKO,2,0:19,5 Rnd (5-5-5-5-5),Antonio Silva,Justin Eilers
+f884605702000c37,KO/TKO,1,0:48,5 Rnd (5-5-5-5-5),KJ Noons,Yves Edwards
+4e580d89ff712b0a,Submission,2,1:44,2 Rnd (10-10),Nobuhiko Takada,Mark Coleman
+70824f447a6a3c11,KO/TKO,1,4:00,3 Rnd (5-5-5),Mauricio Rua,Rafael Freitas
+2b9b471d912069b3,Submission,1,3:52,3 Rnd (5-5-5),Anthony Smith,Lumumba Sayers
+4c1299b3b03e1e79,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Qiu Lun,Wallen Del Rosario
+82c499c0e73a6c48,Decision - Split,3,5:00,3 Rnd (10-5-5),Gary Goodridge,Achmed Labasanov
+35d772de54955b55,Submission,1,3:36,2 Rnd (5-5),Daisuke Nakamura,Seichi Ikemoto
+3b52732a25562c46,Submission,1,1:08,2 Rnd (10-10),Kazushi Sakuraba,Shannon Ritch
+bdfcf8179d736556,Submission,3,1:49,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Dan Henderson
+4e4c7cf58dd3b82b,Decision - Split,3,5:00,3 Rnd (5-5-5),Will Ribeiro,Chase Beebe
+81f7630c32919a1f,KO/TKO,1,1:21,3 Rnd (5-5-5),Bibiano Fernandes,Antonio Banuelos
+fd9054008c4108d7,KO/TKO,1,2:29,3 Rnd (5-5-5),Fedor Emelianenko,Satoshi Ishii
+ca9d8b701e9abc23,Decision - Split,5,5:00,5 Rnd (5-5-5-5-5),Dominick Cruz,Joseph Benavidez
+ad146a4885643b9a,KO/TKO,2,3:53,3 Rnd + OT (5-5-5-5),Sangwook Kim,Daichi Kamiya
+4e0c181c3cffc9e3,KO/TKO,2,4:07,3 Rnd (5-5-5),Kody Steele,Chasen Blair
+505b4a98d3ea6f00,KO/TKO,1,3:42,3 Rnd (5-5-5),Gegard Mousasi,Evangelista Santos
+431f9bad886eb2ae,Decision - Split,3,5:00,3 Rnd (5-5-5),Nick Diaz,Mike Aina
+49dc6ce420444a8c,KO/TKO,2,3:56,3 Rnd (5-5-5),Michael Oliveira,Victor Valenzuela
+f4e15484c8761a92,KO/TKO,1,3:40,3 Rnd (5-5-5),Luke Stewart,Sam Liera
+f72018121f9deb68,Decision - Split,2,5:00,2 Rnd (10-5),Ryo Chonan,Joey Villasenor
+03df471ba3a9b2e2,Submission,2,5:19,3 Rnd (10-10-10),Kazushi Sakuraba,Carlos Newton
+b7c705973249005b,Submission,1,0:39,3 Rnd (5-5-5),Mike Malott,Shimon Smotritsky
+afdff1671f6c1d55,Decision - Split,3,5:00,3 Rnd (10-5-5),Quinton Jackson,Murilo Rua
+ec90b830fa248677,Decision - Split,2,5:00,2 Rnd (10-5),Joachim Hansen,Yves Edwards
+a153cd3731d44f87,KO/TKO,2,1:21,3 Rnd (5-5-5),Tarec Saffiedine,Nate Moore
+7eca2ad1c8e84b30,Submission,1,2:14,3 Rnd (10-10-10),Koji Kitao,Nathan Jones
+8e8e10a958cf5fba,Submission,3,2:50,3 Rnd (5-5-5),Hideo Tokoro,Kazuhisa Watanabe
+00afc619bea2f937,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Yancy Medeiros,Raul Castillo
+c84ff9bd822d5e2c,Submission,1,0:42,2 Rnd (10-5),Bibiano Fernandes,Joe Warren
+c5d87ccc3d677fca,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Casey Kenney,CJ Hamilton
+34d14c405b2abfe9,KO/TKO,2,3:17,2 Rnd (10-10),Igor Vovchanchyn,Nobuhiko Takada
+4732c745da1e7152,Decision - Split,5,5:00,5 Rnd (5-5-5-5-5),Gilbert Melendez,Josh Thomson
+a12846d99674ae0b,KO/TKO,1,0:21,3 Rnd (5-5-5),Patrick Cote,Bill Mahood
+379f6356feb17a2c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Renato Sobral,Mike Whitehead
+460b882ff744ade1,KO/TKO,2,1:10,3 Rnd (5-5-5),Julian Erosa,Jamall Emmers
+ba9c82e9796b5656,KO/TKO,1,6:47,2 Rnd (10-5),Eddie Alvarez,Andre Amado
+c237fec2accf8841,Submission,2,1:57,3 Rnd (10-5-5),Josh Barnett,Aleksander Emelianenko
+98ee13494a8fd40f,Submission,1,4:39,3 Rnd (5-5-5),Ikuhisa Minowa,Baru Harn
+5b24ef1a35cfbcea,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Impa Kasanganay,Kailan Hill
+faf341f7f0dbd79c,Other,2,2:12,2 Rnd (5-5),Trevor Prangley,Falaniko Vitale
+64808c9f0a557a66,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Jake Shields,Jason Miller
+78d0951ab350a25a,KO/TKO,1,1:57,3 Rnd (5-5-5),Tallison Teixeira,Arthur Lopes
+4d755833ccb01345,Decision - Unanimous,2,5:00,2 Rnd (10-5),Dan Henderson,Kazuo Misaki
+d84be979606263c9,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Tra Telligman,Igor Vovchanchyn
+8ea6d3d6df655c2e,Submission,1,8:33,3 Rnd (10-5-5),Daiju Takase,Anderson Silva
+9112f3dcd3fd88c8,Submission,1,2:29,3 Rnd (5-5-5),Herbert Burns,Darrick Minner
+8377d38e79248aab,Submission,1,1:34,3 Rnd (5-5-5),Lumumba Sayers,Scott Smith
+9a5267dac72a3a21,Decision - Unanimous,2,5:00,2 Rnd (10-5),Tatsuya Kawajiri,Luiz Azeredo
+2de50e21c8f32761,Other,2,5:00,2 Rnd (5-5),TIE,TIE
+659a7d4a34820efe,Decision - Majority,3,5:00,3 Rnd (5-5-5),LC Davis,Deividas Taurosevicius
+aed6f650460be277,Submission,1,7:16,3 Rnd (10-5-5),Carlos Newton,Jose Landi-Jons
+85b6e43cb6109242,KO/TKO,1,5:00,2 Rnd (10-10),Frank Trigg,Fabiano Iha
+4b4c1352b9d2a477,KO/TKO,2,4:14,3 Rnd + OT (5-5-5-5),Namsrai Batbayar,Wataru Yamauchi
+1e89003eac3c5dd5,KO/TKO,2,0:18,3 Rnd (5-5-5),Lucas Rocha,Davi Bittencourt
+e69e9676776712aa,KO/TKO,2,3:48,3 Rnd (5-5-5),Jake Rosholt,Nissen Osterneck
+6d23a49fc5650449,Decision - Unanimous,2,10:00,2 Rnd (10-10),Guy Mezger,Masaaki Satake
+2e8f5f8e5dcab3d4,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Kiru Sahota,Ruel Panales
+a0d99312f392f33e,Submission,1,4:57,3 Rnd (5-5-5),Shinya Aoki,Rob McCullough
+836c59ffa2575d33,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Magomed Gadzhiyasulov,Jose Daniel Medina
+98d5f9423adb8fc5,Decision - Split,3,5:00,3 Rnd (5-5-5),Tarec Saffiedine,Tyler Stinson
+334b2a622638ab21,KO/TKO,1,2:13,3 Rnd (10-5-5),James Thompson,Alexandru Lungu
+8bb2e7d446678d91,KO/TKO,3,2:00,5 Rnd (5-5-5-5-5),Dan Henderson,Wanderlei Silva
+5636300eff639caf,KO/TKO,3,0:35,3 Rnd (3-3-3),Cristiane Justino,Hitomi Akano
+c070eaf8422de974,KO/TKO,1,1:13,3 Rnd + OT (5-5-5-5),Shohei Nose,Wulijiburen
+e7c19f08b126fdcd,KO/TKO,1,1:09,3 Rnd (10-5-5),Fedor Emelianenko,Gary Goodridge
+c28e455bd277622c,Submission,1,1:29,3 Rnd (5-5-5),Rousimar Palhares,Flavio Luiz Moura
+772b22bf0670c817,Decision - Split,3,5:00,3 Rnd (10-5-5),Heath Herring,Gan McGee
+8ad416e5bfbc2c78,Submission,1,2:42,2 Rnd (10-10),Wanderlei Silva,Bob Schrijber
+32b777bd9e079eac,KO/TKO,1,2:24,3 Rnd (5-5-5),AJ Fletcher,Leonardo Damiani
+5cf2380d0bb09b0e,KO/TKO,3,3:24,3 Rnd (5-5-5),Scott Smith,Benji Radach
+dccfad7e9ea1c8d5,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Shungo Oyama,Renzo Gracie
+b18629089b433099,Submission,1,0:27,3 Rnd (10-5-5),Ikuhisa Minowa,Stefan Leko
+ec808c672e88bb2e,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazuhiro Nakamura,Dos Caras Jr.
+7457018bf00554bf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Charlie Valencia,Coty Wheeler
+ece52e89356b812b,Submission,1,4:49,3 Rnd (10-5-5),Kazuhiro Nakamura,Evangelista Santos
+cbfbc4d8ff9d7305,Decision - Split,3,5:00,3 Rnd (5-5-5),Manny Tapia,Antonio Banuelos
+ea3bd1bdf77ed6bd,Submission,1,2:14,3 Rnd + OT (5-5-5-5),Yizha,Keisuke Sasu
+939f202ff8525452,Submission,2,1:38,2 Rnd (10-5),Hideo Tokoro,Abel Cullum
+e445c7a99d08d092,KO/TKO,3,1:59,3 Rnd (5-5-5),Nazim Sadykhov,Ahmad Hassanzada
+f51b39b999230212,Decision - Unanimous,2,5:00,2 Rnd (10-5),Wanderlei Silva,Hidehiko Yoshida
+559e84f568f798f0,Submission,1,2:30,3 Rnd (5-5-5),Miguel Torres,Jeff Bedard
+8062bd5f0672c7a2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Duane Ludwig,Yves Edwards
+a2efa66c2210ce11,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazuhiro Hamanaka,Antonio Schembri
+c4e0e44eed35f3c9,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Joseph Benavidez,Jeff Curran
+9ada499a8b14bc94,Submission,1,3:41,3 Rnd (5-5-5),Javier Vazquez,Jens Pulver
+5b9aaee3ed9e3db0,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Miesha Tate,Hitomi Akano
+e87d722873abf9d8,KO/TKO,1,4:51,3 Rnd (10-5-5),Tokimitsu Ishizawa,Ryan Gracie
+2d57dbca9277fa8b,Submission,1,3:30,3 Rnd (5-5-5),Brian Bowles,Damacio Page
+4c53afc33324a585,Submission,1,5:25,3 Rnd (10-5-5),Murilo Rua,Alexander Otsuka
+50c45c4fe074f4f4,Decision - Unanimous,3,5:00,3 Rnd (10-10-5),Igor Vovchanchyn,Carlos Barreto
+e1157b4b85376364,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Josh Thomson,KJ Noons
+72f7308efde27dd0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Alexia Thainara,Rose Conceicao
+6b66a284b827c9d8,Submission,1,7:44,3 Rnd (10-5-5),Ron Waterman,Kevin Randleman
+32602ced539d8bd5,KO/TKO,2,2:09,3 Rnd (5-5-5),Brian Bowles,Marcos Galvao
+aeea3ae545a5d309,KO/TKO,1,3:26,3 Rnd (5-5-5),James Terry,Lucas Gamaza
+cab5020e3d9fc5cd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Vitor Belfort,James Zikic
+716365659d790cda,KO/TKO,1,1:00,2 Rnd (10-5),Mirko Filipovic,Shungo Oyama
+ba5611c32181e30e,KO/TKO,2,0:35,3 Rnd (5-5-5),Crafton Wallace,Ray Routh
+5b816892ccac8109,Decision - Unanimous,2,10:00,2 Rnd (10-10),Vitor Belfort,Gilbert Yvel
+fac3a2e2d187f798,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sean Gauci,Anthony Drilich
+b0eddfc9a3b688df,Submission,1,2:00,5 Rnd (5-5-5-5-5),Michael Bisping,Ross Pointon
+921c539ac28d49d0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anderson Silva,Jeremy Horn
+5dca017a71f51bf4,Submission,2,2:30,3 Rnd (10-5-5),Wallid Ismail,Shungo Oyama
+19af97be994f6e13,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jovan Leka,Azamat Nuftillaev
+94db9c6a2b94591a,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Jiniushiyue,SeungGuk Choi
+eedf15d3a2d462b0,KO/TKO,2,2:13,3 Rnd (5-5-5),Marwan Rahiki,Ananias Mulumba
+0f4f2d5f6040d6d8,Submission,1,4:22,2 Rnd (10-5),Paulo Filho,Amar Suloev
+3c4666f644122537,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ricardo Almeida,Ryo Chonan
+53b365814a959fe5,Submission,1,2:48,3 Rnd (10-5-5),Paulo Filho,Akira Shoji
+22c2cb86540a9cea,Submission,3,0:28,3 Rnd (10-5-5),Rodrigo Gracie,Daijiro Matsui
+63192e7960e796eb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dwight Joseph,Jay Perrin
+dd41e8f03ec8d100,KO/TKO,1,6:15,3 Rnd (10-5-5),Antonio Schembri,Kazushi Sakuraba
+18f8a421eadb038d,Decision - Unanimous,2,5:00,2 Rnd (10-5),Akihiro Gono,Hector Lombard
+547698916e1b255e,Decision - Split,2,5:00,2 Rnd (10-5),Joe Warren,Norifumi Yamamoto
+8f9121e05e5514fd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Joe Riggs,Phil Baroni
+95572facfb26c53b,Submission,1,4:58,3 Rnd (5-5-5),Mike Joy,Robert Densley
+aa6b4b792711d970,KO/TKO,1,4:35,3 Rnd (5-5-5),Steve Garcia,Desmond Torres
+23feb95726bb6fe4,Submission,1,2:30,3 Rnd (5-5-5),Seth Dikun,Rolando Perez
+83697b062c59f8d4,Submission,1,6:37,3 Rnd (10-5-5),Jeff Monson,Kazuyuki Fujita
+64139d1d505e46c5,Submission,1,1:44,No Time Limit,Royce Gracie,Gerard Gordeau
+78a7b8ddd5c27ad0,KO/TKO,1,6:57,2 Rnd (10-5),Jason Miller,Katsuyori Shibata
+97addff4a2e5efa6,Submission,1,1:17,3 Rnd (5-5-5),Shinya Aoki,Mizuto Hirota
+6abfa1dc0a506c80,Decision - Split,3,5:00,3 Rnd (5-5-5),Kitt Campbell,YunSeong Jang
+59ef971b74b6abf5,Submission,1,4:27,5 Rnd (5-5-5-5-5),Ronda Rousey,Miesha Tate
+8903c1ba17c65de2,Submission,1,2:55,3 Rnd (5-5-5),Rich Franklin,Ralph Dillon
+fcede73d60a55598,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jaime Alvarez,Martin Day
+dd2d3f55d26252a7,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hunter Azure,Christian Ocon
+3ca7ff28385f0e90,KO/TKO,3,4:15,3 Rnd (5-5-5),Maycee Barber,Jamie Colleen
+4bc7e28787a40158,Submission,1,4:09,3 Rnd (10-5-5),Vitor Belfort,Bobby Southworth
+47d8d85681bebf18,KO/TKO,2,0:30,2 Rnd (10-5),Andrews Nakahara,Dong Sik Yoon
+3d0a69c907c76220,Decision - Majority,3,5:00,3 Rnd (5-5-5),Ryan Couture,Maka Watson
+42808dce82e81f0f,Decision - Split,2,5:00,2 Rnd (10-5),Josh Barnett,Antonio Rodrigo Nogueira
+ffdfa7ba590eddaa,Decision - Unanimous,2,5:00,2 Rnd (10-5),Rodrigo Gracie,Daiju Takase
+d229a1ad1f8d7c88,Decision - Unanimous,1,15:00,1 Rnd (15),Akira Shoji,Ebenezer Fontes Braga
+51dc9b89cc914cff,Submission,1,6:34,2 Rnd (10-5),Yoshihiro Akiyama,Katsuyori Shibata
+bb4afeeecf63ea38,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Caio Borralho,Aaron Jeffery
+70739ce142f5b180,TKO - Doctor's Stoppage,2,4:22,3 Rnd (5-5-5),Kyle Noke,Seth Kleinbeck
+0e891b7fb3c1b78f,KO/TKO,1,0:15,2 Rnd (10-5),Aleksander Emelianenko,Ricardo Morais
+1fca4c6370e6bbe1,TKO - Doctor's Stoppage,1,6:02,3 Rnd (10-5-5),Mario Sperry,Andrei Kopylov
+055c003466c45a37,KO/TKO,1,4:57,5 Rnd (5-5-5-5-5),Nick Diaz,Paul Daley
+887f6f9769127749,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuo Misaki,Phil Baroni
+98865bb10310b70b,DQ,2,2:00,3 Rnd (5-5-5),Renzo Gracie,Frank Shamrock
+75cb390623071c4f,Decision - Unanimous,2,5:00,2 Rnd (10-5),Shinya Aoki,Bu-Kyung Jung
+21c950a5627de2db,Decision - Unanimous,3,5:00,3 Rnd (10-10-5),Akira Shoji,Larry Parker
+373da61963b1ddc7,Decision - Unanimous,2,5:00,2 Rnd (10-5),Rodrigo Gracie,Hayato Sakurai
+d87e602c10b772d9,KO/TKO,2,2:35,5 Rnd (5-5-5-5-5),Robbie Lawler,Scott Smith
+e5bc6c9a74fc94a3,Submission,2,0:24,3 Rnd (5-5-5),Ray Sefo,Kevin Jordan
+d0c60c807da2dea2,Submission,3,1:09,3 Rnd (5-5-5),Chris Horodecki,Danny Downes
+4317b099e2e1d265,Decision - Split,3,5:00,3 Rnd (5-5-5),Kazuyuki Miyata,Takafumi Otsuka
+6cddc822670517ca,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Shinya Aoki,Satoru Kitaoka
+d09ed6546afecb49,KO/TKO,2,0:40,2 Rnd (10-5),Hiroyuki Takaya,Jong Won Kim
+0e71ec7e594af6bc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Karolina Wojcik,Sandra Lavado
+988c2d722b3f8a3b,Submission,1,3:08,3 Rnd + OT (5-5-5-5),Sangwook Kim,Kazuma Maruyama
+5468d39fa5d07bea,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kevin Borjas,Victor Dias
+43527f349b3d201f,Submission,2,1:35,3 Rnd (5-5-5),Anthony Pettis,Alex Karalexis
+8b46d4df47656628,Submission,1,1:27,3 Rnd (5-5-5),Glover Teixeira,Jack Morrison
+1646f952dfb2cb66,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chad Mendes,Erik Koch
+a01c49950ea6de10,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),DongHun Choi,Angad Bisht
+ca698dd487137281,KO/TKO,1,0:16,3 Rnd (5-5-5),Steven Asplund,Anthony Guarascio
+7ffcc8a15a3b1989,KO/TKO,1,2:27,3 Rnd (10-5-5),Kazushi Sakuraba,Ken Shamrock
+307df71b56bf9ec8,KO/TKO,3,1:35,3 Rnd (5-5-5),Chidi Njokuani,Mario Sousa
+67e8216e321978d4,KO/TKO,3,0:38,3 Rnd (5-5-5),Kevin Ferguson,James Thompson
+f822c0ee0b45fc05,KO/TKO,3,1:50,3 Rnd (5-5-5),Jonathan Pearce,Jacob Rosales
+ab202b964c97cc18,Submission,3,0:55,3 Rnd (5-5-5),Natan Levy,Shaheen Santana
+db9dc90572012628,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mansher Khera,Aziz Khaydarov
+b74d7dc83375cddd,KO/TKO,1,0:46,3 Rnd (5-5-5),Kyler Phillips,James Gray
+dc6d124a00be3109,Decision - Split,3,5:00,3 Rnd (5-5-5),Ricky Simon,Donavon Frelow
+484c198cec02c283,Submission,1,2:37,2 Rnd (10-10),Alexander Otsuka,Mike Bourke
+a36dd6342e45afa5,Submission,1,2:11,3 Rnd (10-5-5),Fedor Emelianenko,Mark Coleman
+bed65248ae2cc266,Submission,1,2:02,3 Rnd (5-5-5),Jake Shields,Robbie Lawler
+b89e90de7dfcab18,KO/TKO,1,4:09,3 Rnd (5-5-5),MarQuel Mederos,Issa Isakov
+ed7d3a32576f4f1e,TKO - Doctor's Stoppage,3,0:25,3 Rnd (5-5-5),Pat Healy,Tiki Ghosn
+30e8118c51f44a32,KO/TKO,3,1:18,3 Rnd (10-5-5),Mark Hunt,Yosuke Nishijima
+268b9ff0ece697b2,KO/TKO,1,1:37,3 Rnd (5-5-5),Murtazali Magomedov,Brahyam Zurcher
+990de0c502b78823,Submission,2,4:00,3 Rnd + OT (5-5-5-5),Chungreng Koren,Ryuho Miyaguchi
+5c9c3687bb1002e9,KO/TKO,3,0:16,3 Rnd (5-5-5),Phil Rowe,Leon Shahbazyan
+c979d4fbd1c6d299,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ryo Chonan,Antonio Schembri
+0dd8f71a1a628550,Submission,4,1:29,5 Rnd (5-5-5-5-5),Marloes Coenen,Liz Carmouche
+fda32c9544070b17,KO/TKO,3,2:45,3 Rnd (5-5-5),Andre Galvao,Jorge Patino
+9661d43a374e5a60,TKO - Doctor's Stoppage,1,10:00,2 Rnd (10-5),Fedor Emelianenko,Tsuyoshi Kohsaka
+82d5c8ae5aa80251,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Josh Thomson,Rob McCullough
+364ffc75af9353d4,Submission,1,1:18,3 Rnd + OT (5-5-5-5),Takeru Uchida,Eros Baluyot
+61f89bde8ce388a4,Submission,1,0:33,3 Rnd (5-5-5),Josh Grispi,Jens Pulver
+7e66baaed59c4f14,KO/TKO,1,3:43,3 Rnd (5-5-5),Ricardo Lamas,Bendy Casimir
+1e1e7772ec0f73ad,Submission,2,3:57,3 Rnd (5-5-5),John Cholish,Marc Stevens
+da080f49cf73b91c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Scott Jorgensen,Antonio Banuelos
+cc324358892c8bcc,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ryo Chonan,Carlos Newton
+2cbb26d7a91fb853,KO/TKO,1,5:00,3 Rnd (5-5-5),Kuniyoshi Hironaka,Won Sik Park
+89fe06aef3da0954,KO/TKO,1,9:25,3 Rnd (10-10-10),Satoshi Honma,Yuhi Sano
+1d79206dbae0f14a,KO/TKO,2,0:29,2 Rnd (10-5),Antonio Rodrigo Nogueira,Sanae Kikuta
+c1a5cd9d428ae647,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jamal Pogues,Paulo Renato Junior
+b0d7a9e825735eaf,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Ebenezer Fontes Braga,Daijiro Matsui
+31f1ef43f7ee82ce,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Germaine de Randamie,Hiroko Yamanaka
+62e029072ce23b60,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),LC Davis,Diego Nunes
+e93a446ad5e483de,Submission,3,4:10,3 Rnd (5-5-5),Austin Springer,Giga Chikadze
+67889a6786346dbd,KO/TKO,1,0:22,2 Rnd (10-5),Dan Henderson,Ryo Chonan
+286625c70abc4dbe,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Dom Mar Fan,JaeHyun Park
+61e694823fa6df19,Decision - Unanimous,2,5:00,2 Rnd (10-5),Ricardo Arona,Wanderlei Silva
+30949e9e17098ab9,TKO - Doctor's Stoppage,2,3:53,3 Rnd (5-5-5),Alex Karalexis,Olaf Alfonso
+94c58432d68d62d5,KO/TKO,1,0:36,2 Rnd (10-5),Alistair Overeem,Tae Hyun Lee
+3a0cb2d68f5c62cf,Decision - Unanimous,2,5:00,2 Rnd (10-5),Shinya Aoki,Vitor Ribeiro
+c108e8f2c0330460,Submission,1,1:19,3 Rnd (5-5-5),Rani Yahya,Mark Hominick
+6e1d32f8779320c4,Decision - Split,2,5:00,2 Rnd (10-5),Dokonjonosuke Mishima,Marcus Aurelio
+33a14fe5bbafe9a2,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Sanae Kikuta,Alexander Otsuka
+a5e253480c5fe056,Decision - Unanimous,1,15:00,1 Rnd (15),Igor Vovchanchyn,Alexander Otsuka
+37d63c2a6c98ad36,KO/TKO,2,4:15,3 Rnd (10-5-5),Mark Hunt,Tsuyoshi Kohsaka
+9520b70a03878708,KO/TKO,1,1:12,3 Rnd (5-5-5),Ovince Saint Preux,Joe Cason
+fab1d19a26e24cde,KO/TKO,1,2:19,3 Rnd (5-5-5),Dave Herman,Ron Waterman
+8d1732e9ea4698b0,KO/TKO,1,0:37,3 Rnd (5-5-5),Vitor Belfort,Matt Lindland
+7371bc392fb72612,KO/TKO,2,2:37,3 Rnd (5-5-5),Trevor Peek,Malik Lewis
+16c8c87d2f9a1feb,Submission,2,3:11,3 Rnd (5-5-5),Jake Hadley,Mitch Raposo
+13be4d6107ff9642,Decision - Unanimous,2,5:00,2 Rnd (10-5),Yoshiro Maeda,Micah Miller
+e282b0b11fbf5301,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),John Alessio,Todd Moore
+68a5ccbaa5e3d89e,Submission,1,2:22,3 Rnd (5-5-5),Drako Rodriguez,Mana Martinez
+945c49cb9dc90632,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Meng Bo,Arisa Matsuda
+30ef64733d9a487e,TKO - Doctor's Stoppage,1,5:00,3 Rnd (5-5-5),Justin Wilcox,Rodrigo Damm
+dc9d6bbdc83c8e60,KO/TKO,1,0:18,2 Rnd (10-5),Akira Shoji,Tsuyoshi Tamakairiki
+43e539049364b9a1,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Mauricio Rua,Kazuhiro Nakamura
+801e71a4423c36c6,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mirko Filipovic,Hiromitsu Kanehara
+d70abd7e7da80834,Submission,2,3:49,3 Rnd (10-5-5),Rogerio Nogueira,Kazuhiro Nakamura
+5dfd7d350d455c23,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Ricardo Arona,Dean Lister
+6654ed9d9d930e92,Submission,1,1:34,3 Rnd (5-5-5),Urijah Faber,Jens Pulver
+02d7776460d6b702,KO/TKO,1,0:41,3 Rnd (5-5-5),Jacare Souza,Derek Brunson
+ed33249f2f247b53,Submission,3,4:50,3 Rnd (5-5-5),Cub Swanson,John Franchi
+a033f3919ab637be,Submission,1,4:55,3 Rnd (5-5-5),Luke Stewart,Jesse Juarez
+e78262f4b172b238,Decision - Unanimous,2,10:00,2 Rnd (10-10),Kazuyuki Fujita,Gilbert Yvel
+968766d39fe12bd4,Submission,1,3:47,3 Rnd (10-10-10),Akira Shoji,Juan Mott
+1b1445af38be4ded,Decision - Split,2,5:00,2 Rnd (10-5),Ikuhisa Minowa,Ryuki Ueyama
+310cc5580bf9b3c0,KO/TKO,1,1:18,3 Rnd (5-5-5),Mike Brown,Cole Province
+ef1dd4431df15fea,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wagnney Fabiano,Fredson Paixao
+f57bbe5c6ffbd972,KO/TKO,1,2:25,3 Rnd (5-5-5),Lone'er Kavanagh,An Tuan Ho
+f0145f1c90dbb904,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Daermisi Zhawupasi,Ren Ozaki
+3c41705038dfceb8,KO/TKO,2,4:01,5 Rnd (5-5-5-5-5),Steve Cantwell,Brian Stann
+71e8c99c13943254,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ricardo Lamas,James Krause
+a2a5df820b6a5b1a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Justin Robbins
+d0b19566de99eaea,Submission,2,1:55,3 Rnd (5-5-5),Alex Gilpin,JR Coughran
+13eb404abdf2521b,KO/TKO,1,6:51,2 Rnd (10-5),Takeshi Inoue,Koichiro Matsumoto
+afb9cbca1ef429a1,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jason Miller,Hiromitsu Miura
+00d1e67bbc3d797e,Submission,1,1:54,3 Rnd (5-5-5),Yoshihiro Akiyama,Francois Botha
+2eef138ce7de27f9,Submission,2,3:29,3 Rnd (10-5-5),Hirotaka Yokoi,Jerrel Venetiaan
+88eb08f51f651486,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Collin Anglin,Muhammad Naimov
+2508a1868bede089,Submission,1,1:15,3 Rnd (5-5-5),Bobby Southworth,Bill Mahood
+d333b4e4c03731d6,KO/TKO,1,2:16,2 Rnd (10-10),Ryan Gracie,Tokimitsu Ishizawa
+2f4af8be26721835,Decision - Split,2,5:00,2 Rnd (10-5),Rogerio Nogueira,Kazuhiro Nakamura
+215b623ca9c8bbd8,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Diego Nunes,Rafael Dias
+ce67ebd7609927a0,KO/TKO,1,0:34,3 Rnd (3-3-3),Rex Richards,Ray Seraille
+ca93269870d067ba,Submission,3,2:35,3 Rnd (5-5-5),BJ Penn,Takanori Gomi
+a42416b23aef8acf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Yves Edwards,Deshaun Johnson
+c1521f70f480a240,KO/TKO,1,1:20,3 Rnd (5-5-5),Kurtis Campbell,Demba Seck
+a4cacfd8d5bec345,KO/TKO,1,2:47,3 Rnd (5-5-5),Yoshihiro Akiyama,Michael Lerma
+c264e1cdd6988bea,KO/TKO,1,3:14,5 Rnd (5-5-5-5-5),Fedor Emelianenko,Andrei Arlovski
+7bda703d2b9d2001,KO/TKO,3,3:59,3 Rnd (5-5-5),Nick Diaz,Muhsin Corbbrey
+9576b7596f944613,KO/TKO,1,0:14,3 Rnd (5-5-5),Amanda Nunes,Julia Budd
+1994f9e6567c0058,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Julia Budd,Germaine de Randamie
+786af1a8321306a1,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hidehiko Yoshida,Satoshi Ishii
+1a0a78a7e420f8da,KO/TKO,1,2:31,2 Rnd (5-5),Jorge Santiago,Trevor Prangley
+058efe9677bf7b6b,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Daniel Cormier,Josh Barnett
+a81f3f2bbb1ba560,TKO - Doctor's Stoppage,1,4:21,3 Rnd (5-5-5),Lyoto Machida,Stephan Bonnar
+5187483d24408878,Submission,1,4:31,3 Rnd (5-5-5),Shane del Rosario,Lavar Johnson
+6267d880047c1e20,KO/TKO,1,1:09,2 Rnd (5-5),Keith Jardine,Bryan Pardoe
+92961925688cd2d6,KO/TKO,1,0:55,3 Rnd (5-5-5),Mauricio Rua,Angelo Antonio
+2adf42faae2d37db,KO/TKO,1,2:19,3 Rnd (5-5-5),Jordan Williams,Gregory Rodrigues
+e900a9387686738a,Decision - Unanimous,2,5:00,2 Rnd (10-5),Marius Zaromskis,Seichi Ikemoto
+bc3beeb2224ea493,Submission,1,33:14,No Time Limit,Royler Gracie,Yuhi Sano
+760d7564c0c561db,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),SeungGuk Choi,Sumit Kumar
+4d89b5cd86405adf,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Quinton Jackson,Dong Sik Yoon
+5c9f13e6e789fdee,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dominick Cruz,Ian McCall
+30491a7e9e7a9af7,Submission,1,2:39,3 Rnd (5-5-5),Fredson Paixao,Courtney Buck
+1e0c39cf7bd0e4f2,KO/TKO,1,4:08,3 Rnd (5-5-5),Jamie Varner,Sherron Leggett
+cab16b1c48945cda,KO/TKO,1,0:42,2 Rnd (5-5),Yusup Saadulaev,Hideo Tokoro
+0c482de739fe3d6d,Submission,1,0:28,3 Rnd (5-5-5),Daniel Puder,Tom Tuggle
+ed77984f7e5e0bc5,KO/TKO,1,2:29,3 Rnd (5-5-5),Paul Daley,Junior Barata
+5b414ad4d5e5c058,Decision - Split,3,5:00,3 Rnd (5-5-5),Raphael Assuncao,Yves Jabouin
+6e727f52d8007d8d,KO/TKO,1,4:55,2 Rnd (10-5),Denis Kang,Mark Weir
+9b30b9ddadb99365,KO/TKO,1,0:30,3 Rnd + OT (5-5-5-5),KyeungPyo Kim,Jinensibieke Asikeerbai
+6ecb0ce98d30dd9b,KO/TKO,2,1:25,3 Rnd + OT (5-5-5-5),Shin Haraguchi,Windri Patilima
+cd3eff18570ea415,KO/TKO,1,2:44,2 Rnd (5-5),Gegard Mousasi,Steve Mensing
+2d9ffc603ce43a9f,KO/TKO,1,3:56,2 Rnd (10-5),Takanori Gomi,Hayato Sakurai
+d784682682e30180,KO/TKO,2,2:08,3 Rnd (5-5-5),Dwight Grant,Tyler Hill
+5bb74bc322638f4d,Submission,1,4:01,3 Rnd (10-5-5),Fabricio Werdum,Roman Zentsov
+128a18ae82f10cfd,KO/TKO,2,0:21,3 Rnd (5-5-5),Kyle Stewart,Jason Jackson
+869f7107a45b499c,KO/TKO,2,3:09,Unlimited Rnd (20),Mark Coleman,Igor Vovchanchyn
+8c93a978b0487c7c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Richard Crunkilton,Sergio Gomez
+554176480a3519c0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Fabricio Werdum,Antonio Silva
+f45116e8bdbbd42f,Decision - Split,2,5:00,2 Rnd (10-5),Paulo Filho,Akira Shoji
+2326f804924549e8,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rafael Dias,Mike Budnik
+f27c88e1cb5f8486,Decision - Split,3,5:00,3 Rnd (5-5-5),Hailey Cowan,Claudia Leite
+625e4fe0778b7b42,Other,3,10:00,3 Rnd (10-10-10),TIE,TIE
+694b8b7f9096378a,Decision - Split,3,5:00,3 Rnd (5-5-5),Jeisla Chaves,Sofia Montenegro
+69939ca0727096b3,Submission,2,1:25,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Hirotaka Yokoi
+2e8e9e69cb68710f,KO/TKO,1,4:45,3 Rnd (5-5-5),Brandon Visher,Courtney Buck
+dbf2d62a64405265,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Danny Downes,Zhang Tiequan
+37bf2148d7436ad1,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Gilbert Melendez,Josh Thomson
+ccb208d7dca38511,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Payton Talbott,Reyes Cortez Jr.
+1fce6c1d5800bd74,TKO - Doctor's Stoppage,2,5:00,3 Rnd (5-5-5),Mychal Clark,Josh Bennett
+67035ef78271e606,TKO - Doctor's Stoppage,2,5:00,3 Rnd (5-5-5),Mirko Filipovic,Kazushi Sakuraba
+4cd0293c4673d768,TKO - Doctor's Stoppage,1,1:23,3 Rnd (10-5-5),Anderson Silva,Alex Stiebling
+1b960c59351664c4,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Fedor Emelianenko,Antonio Rodrigo Nogueira
+c545843a281586b7,KO/TKO,1,3:03,3 Rnd (5-5-5),Marina Rodriguez,Maria Oliveira
+d89bb22e64e005af,Submission,1,4:31,2 Rnd (5-5),Chris Brennan,Eiji Mitsuoka
+bf785a636fb3ba17,KO/TKO,1,4:21,3 Rnd (5-5-5),Thiago Moises,Gleidson Cutis
+7cef035e99698774,Submission,1,4:08,2 Rnd (10-5),Hayato Sakurai,Brady Fink
+aa9b79cea309d6fc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Erisson Ferreira,Qiu Lun
+6c23d9d8f7f5c2a6,KO/TKO,1,6:23,3 Rnd (10-5-5),James Thompson,Don Frye
+b8f1acbb2f1e180b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Andre Muniz,Bruno Assis
+88632e2831585801,KO/TKO,3,3:05,3 Rnd (5-5-5),Josh Barnett,Gilbert Yvel
+e20681f19675b7b2,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Rogerio Nogueira,Alistair Overeem
+0cead5ba0726ae90,Submission,1,4:47,3 Rnd (10-10-10),Rickson Gracie,Nobuhiko Takada
+3c95a5d68af5735b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dustin Jacoby,Ty Flores
+75314fc5819d2970,Submission,1,2:30,2 Rnd (10-5),Tatsuya Kawajiri,Charles Bennett
+fb7ddb21affc10c1,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Luke Rockhold,Tim Kennedy
+c02fe69a5f0319ed,KO/TKO,1,3:47,2 Rnd (10-5),Mauricio Rua,Akira Shoji
+769d9c583715bd64,KO/TKO,2,4:33,3 Rnd (5-5-5),Bruna Brasil,Marnic Mann
+10a8dac489fa364e,Submission,1,4:55,3 Rnd (5-5-5),Charles Byrd,Jamie Pickett
+2424415cfbefdde7,KO/TKO,1,6:46,2 Rnd (10-10),Kazuyuki Fujita,Ken Shamrock
+e86bc317a62551ba,Submission,3,2:08,3 Rnd (10-5-5),Kazushi Sakuraba,Gilles Arsene
+8a972b30a6660651,KO/TKO,1,4:57,3 Rnd (5-5-5),Brian Stann,Craig Zellner
+eda1cb20e9f8cb05,KO/TKO,2,4:46,3 Rnd (5-5-5),Rodolfo Bellato,Murtaza Talha
+70e090dc6a68d8a3,Submission,1,3:40,3 Rnd (5-5-5),Georges St-Pierre,Pete Spratt
+689a5f1577b314e2,KO/TKO,2,3:04,3 Rnd (5-5-5),Azunna Anyanwu,Greg Rebello
+6eb76def9a9c2176,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuyuki Miyata,Daiki Hata
+6aa862d0ed2ed411,KO/TKO,1,4:56,3 Rnd (5-5-5),Yves Edwards,Edson Berto
+7a892d689d0064eb,KO/TKO,1,2:22,2 Rnd (10-5),Marius Zaromskis,Jason High
+ae430488dceb4fe8,Decision - Split,3,5:00,3 Rnd (5-5-5),Satoru Kitaoka,Willamy Freire
+ba5634d1f4217b20,KO/TKO,1,3:00,3 Rnd (10-5-5),Semmy Schilt,Yoshihiro Takayama
+ec56625e60630f0a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brad Pickett,Ivan Menjivar
+a01fdc44178da964,Submission,2,3:12,3 Rnd (5-5-5),Frank Gomez,Noah Thomas
+6c95eff9a67d2b9b,KO/TKO,1,3:24,3 Rnd (5-5-5),Bas Rutten,Ruben Villareal
+21487a2b78f0701a,Submission,1,3:10,3 Rnd (5-5-5),Daniel Spohn,Angel De Anda
+6481296c10e55828,KO/TKO,1,3:23,3 Rnd (5-5-5),Nate Diaz,Tony Juarez
+f576a9bc5756a2bd,Decision - Unanimous,3,5:00,3 Rnd (10-10-5),Carlos Newton,Daijiro Matsui
+d4c577755cda195a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Martinez,Xavier Franklin
+87a150a16a195e77,Submission,1,1:00,3 Rnd (5-5-5),Shinya Aoki,Yokthai Sithoar
+3b71207db2db2404,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Erik Koch,Jameel Massouh
+dbbdfdfed9194b17,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Diego Nunes,Tyler Toner
+53be741d0bf45801,KO/TKO,1,2:11,3 Rnd (5-5-5),Shane Carwin,Carlton Jones
+8b3afee3c9a41224,Decision - Split,3,5:00,3 Rnd (5-5-5),Deividas Taurosevicius,Javier Vazquez
+c863fb61781a7cf2,Submission,3,3:07,3 Rnd (5-5-5),Renato Sobral,Mauricio Rua
+dd98427eb6386734,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cristian Quinonez,Xiao Long
+45492d801a6b6dfb,KO/TKO,1,1:18,3 Rnd (5-5-5),Phil Hawes,Khadzhi Bestaev
+0ff9addbe42fad5b,Submission,2,2:01,2 Rnd (10-10),Naoya Ogawa,Masaaki Satake
+75a202ab412c1be3,KO/TKO,1,0:11,2 Rnd (10-5),Luiz Azeredo,Naoyuki Kotani
+18d60c9110c1d409,KO/TKO,1,3:54,3 Rnd (5-5-5),Muhammed Lawal,Yukiya Naito
+8d97d0feeadee1d7,Decision - Split,3,5:00,3 Rnd (5-5-5),Ramazan Kuramagomedov,Jordan Williams
+b7a5ae247a57fb11,Decision - Unanimous,2,5:00,2 Rnd (10-5),Marcus Aurelio,Jutaro Nakao
+63bfc9cdc24d0cc8,Submission,2,3:20,3 Rnd (5-5-5),Marcus Hicks,Sergio Gomez
+e79d44f6465d5abd,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Farid Basharat,Allan Begosso
+2083c785b6a1cae3,KO/TKO,1,4:53,3 Rnd (10-5-5),Mirko Filipovic,Ron Waterman
+7ba595d6d1d8debc,Submission,2,4:03,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Bob Sapp
+474b66bf94eedd4a,KO/TKO,1,0:15,3 Rnd (5-5-5),Karl Roberson,Ryan Spann
+3337527b8592dd6a,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuyuki Miyata,Takeshi Inoue
+4c1a647a442bc332,Submission,1,4:57,3 Rnd (5-5-5),Jessica Penne,Nicdali Rivera-Calanoc
+941cc8090f91142d,TKO - Doctor's Stoppage,1,2:35,3 Rnd (5-5-5),Fernando Gonzalez,Alex Stiebling
+58aaf171cb77ea6a,KO/TKO,1,4:38,5 Rnd (5-5-5-5-5),Nick Diaz,Marius Zaromskis
+08d8ae9c65ef01d6,Submission,3,3:21,3 Rnd (5-5-5),Mike Budnik,Greg McIntyre
+f0107cb480275a29,KO/TKO,1,4:08,2 Rnd (10-5),Melvin Manhoef,Dae Won Kim
+92e1811e03894bf9,Submission,1,1:05,3 Rnd (5-5-5),Thiago Silva,Dave Dalgliesh
+51c462059ac70e0e,Submission,1,4:50,3 Rnd (5-5-5),John Alessio,Brian Gassaway
+b28a6efb7197b786,KO/TKO,1,3:13,3 Rnd (5-5-5),Herschel Walker,Scott Carson
+518a3cf8f8ed8b16,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Nyamjargal Tumendemberel,Top Noi Kiwram
+ca78df0ac32551f2,KO/TKO,1,4:29,3 Rnd (5-5-5),Thiago Silva,Tatsuya Mizuno
+5c0e69825bf298a6,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Makoto Takimoto,Henry Miller
+fbefcc81cdec584c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Devin Cole,Shawn Jordan
+aacf867c219eaa2b,KO/TKO,2,3:12,3 Rnd (5-5-5),Vitor Belfort,Terry Martin
+cfb3647b2826d7be,Submission,1,0:52,2 Rnd (10-5),Masakatsu Funaki,Ikuhisa Minowa
+fc6cf77dbb753e1b,Decision - Split,2,5:00,2 Rnd (10-5),Daiju Takase,Carlos Newton
+0f06613c6e5458cc,Submission,1,0:52,3 Rnd (5-5-5),Bo Nickal,Donovan Beard
+8ba75970610c6402,KO/TKO,2,1:44,3 Rnd (5-5-5),Josh Barnett,Pedro Rizzo
+d192d0ddb973c849,Decision - Split,3,5:00,3 Rnd (10-5-5),Sergei Kharitonov,Fabricio Werdum
+d95f2db367aab2e1,Submission,1,3:05,3 Rnd + OT (5-5-5-5),HyunSung Park,Top Noi Kiwram
+1140cdf425a73cc9,KO/TKO,1,5:29,3 Rnd (10-5-5),Mauricio Rua,Cyrille Diabate
+d9678b13d95fed79,Submission,1,2:28,3 Rnd + OT (5-5-5-5),Yizha,Wuziazibieke Jiahefu
+be968d65fdba04b1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Bibiano Fernandes,Takafumi Otsuka
+4d29ce9121889ea4,Decision - Split,2,5:00,2 Rnd (10-5),Amar Suloev,Dean Lister
+28edfe6106699457,Submission,3,1:11,3 Rnd (5-5-5),Brian Bowles,Will Ribeiro
+3bc01bb091acca5e,Decision - Split,3,5:00,3 Rnd (10-5-5),Daniel Gracie,Takashi Sugiura
+b700dad0f229898a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jose Johnson,Jack Cartwright
+88ea8bb55ef928d3,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),James Llontop,Malik Lewis
+a9ea028e4f663399,KO/TKO,1,3:08,3 Rnd (5-5-5),Muhammed Lawal,Mike Whitehead
+5faf7245c03fff76,KO/TKO,2,1:46,3 Rnd (5-5-5),Cung Le,Scott Smith
+b69e59d8584f76ac,Submission,3,4:43,3 Rnd (5-5-5),Jamie Colleen,Tiffany Masters
+7a3b155d223f5242,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Feng Xiaocan,Miki Motono
+1ac2c6b28f8592cc,KO/TKO,1,3:00,3 Rnd (5-5-5),Rafael Cavalcante,Travis Galbraith
+a731c86effb39c57,Decision - Split,3,5:00,3 Rnd (10-5-5),Hiroyuki Takaya,Kazuyuki Miyata
+0d85347c7790c537,Decision - Split,2,5:00,2 Rnd (5-5),Antonio Banuelos,Masakazu Imanari
+a655aa6b96d4a112,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jerome Rivera,Ronaldo Rodriguez
+9ef792b897768f8e,DQ,1,2:33,3 Rnd (5-5-5),Yushin Okami,Anderson Silva
+09a09c083a9da124,KO/TKO,2,4:49,3 Rnd (5-5-5),Don'Tale Mayes,Mitchell Sipe
+a66aba997f042ca8,Decision - Majority,3,5:00,3 Rnd (5-5-5),Alex Karalexis,Josh Smith
+59bccf0233ba8bde,Decision - Split,3,5:00,3 Rnd (10-5-5),Dan Henderson,Yuki Kondo
+ccd10b9e3ee7c920,KO/TKO,1,7:09,3 Rnd (10-5-5),Kiyoshi Tamura,Aliev Makhmud
+67016f000657b1ec,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Schambari,Logan Clark
+c3257824671aeca6,KO/TKO,1,2:11,3 Rnd (5-5-5),Eddie Wineland,Ken Stone
+2df495844afe6b14,KO/TKO,1,5:13,3 Rnd (10-5-5),Alistair Overeem,Sergei Kharitonov
+115743ec26320a13,TKO - Doctor's Stoppage,3,2:22,3 Rnd (10-5-5),Wanderlei Silva,Alexander Otsuka
+464178a22a436f11,KO/TKO,3,0:45,3 Rnd (5-5-5),Jose Aldo,Jonathan Brookins
+d548f4f50ec5d551,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ovince Saint Preux,Abongo Humphrey
+50a9a4f6f3682099,KO/TKO,1,3:20,3 Rnd (5-5-5),Levi Rodrigues Jr.,Freddy Vidal
+c3a1d2bfb9288403,KO/TKO,2,3:10,2 Rnd (10-5),Quinton Jackson,Chuck Liddell
+8343af82570b0462,Submission,1,1:35,3 Rnd (5-5-5),Alex Serdyukov,Ryan Stonitsch
+bd142a8dcde4d0a0,KO/TKO,1,2:18,3 Rnd (10-5-5),Semmy Schilt,Masaaki Satake
+161aa838e83f67e4,Submission,2,3:43,3 Rnd (10-5-5),Fabricio Werdum,Alistair Overeem
+bc4f5d0353454877,KO/TKO,1,3:37,3 Rnd (5-5-5),Ian Heinisch,Justin Sumter
+c1ed08a1f760f9c7,Submission,2,1:08,3 Rnd (5-5-5),Thomas Petersen,Chandler Cole
+10c92101e15b3374,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hecher Sosa,Macksom Lee
+90ee2e72fdbe5fd1,Decision - Split,3,5:00,3 Rnd (5-5-5),Kazuo Misaki,Paul Daley
+044d7405d6cdf5b3,KO/TKO,2,0:30,3 Rnd (5-5-5),Nick Diaz,Thomas Denny
+f0c53220b4201b43,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Pat Healy,Eric Wisely
+32f168f2de60e9d9,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),John Alessio,Marcelo Brito
+d071fa43844157ee,KO/TKO,2,2:03,3 Rnd (5-5-5),Mike Cook,Carlton Jones
+5a025a422d928f19,KO/TKO,1,3:40,3 Rnd (10-5-5),Mirko Filipovic,Mark Coleman
+aabf5466bfc27f5f,Submission,2,3:32,3 Rnd (5-5-5),Matt Frevola,Luke Flores
+b799bf8f19df7019,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Sebastian Szalay,Baergeng Jieleyisi
+bc6613e0c0f4377b,Submission,1,2:29,3 Rnd (3-3-3),Luke Stewart,Jeremiah Metcalf
+3a0b8b6a4dc668f3,Submission,1,0:48,2 Rnd (10-10),Heath Herring,Willie Peeters
+358b32410b1f90de,KO/TKO,2,3:57,3 Rnd (5-5-5),Jenna Castillo,Charlene Gellner
+11b5d0cfccb73d2f,KO/TKO,1,1:35,3 Rnd (5-5-5),Maciej Jewtuszko,Anthony Njokuani
+1bd393b287d14990,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chael Sonnen,Paulo Filho
+dd3519ed476080ce,Submission,4,2:31,5 Rnd (5-5-5-5-5),Michelle Waterson-Gomez,Jessica Penne
+230cf794228db7ab,Submission,1,3:49,2 Rnd (10-5),Paulo Filho,Ryuta Sakurai
+a9b41758700ad445,Submission,1,2:30,3 Rnd (5-5-5),Lyoto Machida,Michael McDonald
+cda50e3b2099d0a0,Submission,1,4:36,2 Rnd (10-5),Yves Edwards,Dokonjonosuke Mishima
+1369fe94731f935b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adrian Luna Martinetti,Mark Vologdin
+09efe67ec9106bbe,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anton Turkalj,Acacio Dos Santos
+d1930aee9f26f915,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuhiro Nakamura,Daniel Gracie
+9052769356e422b3,Decision - Split,2,5:00,2 Rnd (10-5),Bibiano Fernandes,Hiroyuki Takaya
+9e5671094d03c734,Submission,1,0:44,3 Rnd (5-5-5),Jorge Gurgel,Billy Vaughan
+cce0c0a22a8b676b,KO/TKO,2,2:37,3 Rnd (5-5-5),Tim Kennedy,Nick Thompson
+10e6357c56ef6e4c,KO/TKO,1,3:40,3 Rnd (5-5-5),Waldo Cortes Acosta,Danilo Suzart
+c068cb666557e471,KO/TKO,1,2:25,3 Rnd (10-5-5),Guy Mezger,Egan Inoue
+78c56f730d937c89,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Anderson Silva,Alexander Otsuka
+0ae3cd1f3ffc607e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Clay Guida,Joe Martin
+ce7013cf4b6ee053,KO/TKO,1,4:17,3 Rnd (5-5-5),Juan Adams,Shawn Teed
+3ef7cdb0d2933d84,KO/TKO,1,3:47,3 Rnd (5-5-5),Vitor Belfort,Ivan Serati
+2b36807773190d38,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Impa Kasanganay,Anthony Adams
+69ec8f4e5de13486,KO/TKO,1,0:28,3 Rnd (5-5-5),Lumumba Sayers,Antwain Britt
+d9da0300f2f998e3,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Joe Doerksen,Chris Leben
+2c6c4fb90cf77a38,Submission,1,1:09,3 Rnd (5-5-5),Fabricio Werdum,Fedor Emelianenko
+88eb01209d15b87c,KO/TKO,1,3:07,3 Rnd (5-5-5),Brian Stann,Jeremiah Billington
+a78e557c9a788f2a,KO/TKO,2,4:14,3 Rnd (5-5-5),Bruno Lopes,Mikheil Sazhiniani
+4b4e34d410131c71,Submission,3,2:43,3 Rnd (5-5-5),Jacare Souza,Bristol Marunde
+48dba26e877e725c,Decision - Split,3,5:00,3 Rnd (5-5-5),Jason High,Hayato Sakurai
+5994386c6c48c52e,KO/TKO,1,0:10,3 Rnd (5-5-5),Gegard Mousasi,Tsuyoshi Kurihara
+d1c8b11817e72328,Decision - Unanimous,2,5:00,2 Rnd (10-5),Joachim Hansen,Kotetsu Boku
+5fe61d91ad604700,Submission,1,4:35,3 Rnd (5-5-5),Dione Barbosa,Rainn Guerrero
+f99f3ffb50e1c215,KO/TKO,3,2:24,3 Rnd + OT (5-5-5-5),Jeka Saragih,Pawan Maan
+63cd89ead50253ec,KO/TKO,2,1:38,3 Rnd (5-5-5),Brett Rogers,Abongo Humphrey
+288e8bd0c680a1f0,Decision - Split,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Scott Jorgensen
+fb8b796ffe2e0883,Decision - Unanimous,2,10:00,2 Rnd (10-10),Mark Coleman,Ricardo Morais
+628e3610cd32aaa4,Submission,3,4:48,3 Rnd (5-5-5),Freddy Vidal,Felipe Franco
+00b0796724ec1c09,Submission,1,0:52,No Time Limit,Jason DeLucia,Trent Jenkins
+da615f3f8a837477,Decision - Unanimous,2,5:00,2 Rnd (10-5),Sanae Kikuta,Jean Francois Lenogue
+83aaaaecf868f4d7,Submission,1,9:30,2 Rnd (10-5),Kazuki Okubo,Ryuichi Murata
+68942cb236c5e7b0,KO/TKO,2,2:25,3 Rnd (5-5-5),Rafael Estevam,Joao Elias
+0878a14ad859f421,KO/TKO,2,0:19,3 Rnd (5-5-5),KJ Noons,Jorge Gurgel
+b54acaaf7bc6d035,Decision - Split,2,5:00,2 Rnd (10-5),Carlos Newton,Renzo Gracie
+ab3d6bfc5001e382,Other,3,10:00,3 Rnd (10-10-10),TIE,TIE
+4eaec67c66814dab,Submission,1,6:26,2 Rnd (10-5),Yoshihiro Akiyama,Masanori Tonooka
+54f7c6e77f6ad38e,KO/TKO,2,5:00,3 Rnd (5-5-5),Chad Griggs,Bobby Lashley
+b14718312a86f046,TKO - Doctor's Stoppage,1,5:03,2 Rnd (10-10),Igor Vovchanchyn,Daijiro Matsui
+8861b2dd4b2e288b,KO/TKO,1,4:21,3 Rnd (5-5-5),Dustin Stoltzfus,Joe Pyfer
+87f119134d8958ed,KO/TKO,1,1:10,3 Rnd (10-5-5),Igor Vovchanchyn,Yoshiki Takahashi
+a670904b81ec5436,Submission,1,2:52,3 Rnd (5-5-5),Tyron Woodley,Rudy Bears
+ea799db5c284c126,KO/TKO,1,3:26,3 Rnd (5-5-5),Sarah Frota,Maiara Amanajas dos Santos
+86c3ceeafd5d3150,Submission,2,2:31,3 Rnd (5-5-5),Daniel Puder,Mike Cook
+9632b74a1c97e41f,KO/TKO,1,2:23,3 Rnd (5-5-5),Kevin Vallejos,Cam Teague
+f8b8c4437ee210f5,Submission,2,3:16,3 Rnd (5-5-5),Roger Gracie,Anthony Smith
+3d05c4053ee465f0,KO/TKO,1,0:13,3 Rnd (4-4-4),Ben Rothwell,Krzysztof Soszynski
+89c5be34881fb94c,Submission,1,1:52,3 Rnd (5-5-5),Georges St-Pierre,Dave Strasser
+dae788f34bcfcab9,KO/TKO,1,1:12,3 Rnd (5-5-5),Leonard Garcia,Jens Pulver
+9736470363a94ca3,KO/TKO,1,9:19,3 Rnd (10-5-5),Sergei Kharitonov,Semmy Schilt
+f86cf98947f79a6f,KO/TKO,2,0:43,2 Rnd (10-5),Hideo Tokoro,Yoshiro Maeda
+13136eecb614a8a3,KO/TKO,2,3:22,3 Rnd (5-5-5),Antonina Shevchenko,Jaimelene Nievera
+c12e9a542d17272b,Decision - Split,3,5:00,3 Rnd (5-5-5),Takeya Mizugaki,Jeff Curran
+13ba941eae15552f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Donald Cerrone,Rob McCullough
+6da0168894927c90,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Frank Trigg,Kazuo Misaki
+b709e56c9b0c77e4,DQ,1,0:14,3 Rnd (10-5-5),Daijiro Matsui,Quinton Jackson
+7d1e6d69043c8489,Submission,1,6:04,2 Rnd (10-10),Ricco Rodriguez,Takayuki Okada
+94f82c2a65bd325e,Submission,1,0:51,1 Rnd (15),Gary Goodridge,Osamu Tachihikari
+2d7eeab18c1d6cc4,KO/TKO,1,1:06,2 Rnd (10-10),Anderson Silva,Jose Barreto
+e2dca1df3a99c19a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Roger Gracie,Keith Jardine
+9a4807549b9104dd,KO/TKO,2,3:32,3 Rnd (5-5-5),Diyar Nurgozhay,Bartosz Szewczyk
+a957addd67dc611b,KO/TKO,1,5:53,2 Rnd (10-10),Egan Inoue,Minoru Toyonaga
+b993d7b2ac19b122,Submission,1,3:48,2 Rnd (10-10),Akira Shoji,Herman Renting
+fde83655e103986a,KO/TKO,1,1:29,3 Rnd (10-5-5),Mirko Filipovic,Igor Vovchanchyn
+9a1e66597e73c68f,Submission,1,4:00,3 Rnd (5-5-5),Eduarda Moura,Janaina Silva
+bddf90939b347437,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Alex Stiebling,Jason Guida
+69e7f5780b7b038b,KO/TKO,1,4:19,3 Rnd (5-5-5),Alex Karalexis,Greg McIntyre
+1f11b69af7e796f5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anderson Silva,Lee Murray
+54d176f7879eb8e7,KO/TKO,1,1:30,3 Rnd (5-5-5),Esteban Ribovics,Thomas Paull
+5c8dd2208172bc28,Submission,1,2:25,2 Rnd (5-5),Sergei Kharitonov,Jason Suttie
+18395da26d236cc3,Submission,1,2:44,3 Rnd (5-5-5),Kenny Ento,Mario Rivera
+171396dc000bd370,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Daijiro Matsui,Kazuki Okubo
+f66830622b92dff0,Decision - Unanimous,1,15:00,1 Rnd (15),Kazuyuki Fujita,Mark Kerr
+4fed5538a2156719,KO/TKO,1,1:57,3 Rnd (5-5-5),Matt Sayles,Yazan Hajeh
+e67750873804e128,Submission,1,3:46,3 Rnd (5-5-5),Sergei Kharitonov,Mike Russow
+941f1d1d55e5e2ee,Submission,1,1:56,3 Rnd (5-5-5),Rich Franklin,Dennis Reed
+9168b7875c452a46,KO/TKO,1,5:22,2 Rnd (10-5),Bob Sapp,Akihito Tanaka
+87cca96b1ca170d5,KO/TKO,1,2:24,3 Rnd (5-5-5),Jerome LeBanner,Yoshihiro Akiyama
+8aa862bb5ccf99f4,Submission,1,4:10,2 Rnd (10-5),Denis Kang,Amar Suloev
+00e205c60891fb76,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ilian Bouafia,Neemias Santana
+c7b0fe2dd849dd63,KO/TKO,1,7:50,3 Rnd (10-5-5),James Thompson,Hidehiko Yoshida
+4535ea28402c7e22,KO/TKO,1,2:36,3 Rnd (5-5-5),Tyler Toner,Brandon Visher
+cda9bc6c889186ce,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brendan Seguin,Fernando Gonzalez
+0038ba8c2f4f0ab1,KO/TKO,1,1:41,3 Rnd (5-5-5),Caio Borralho,Jesse Murray
+e6c3c9d1c80dc59a,Decision - Split,3,5:00,3 Rnd (5-5-5),Chris Lytle,Pat Healy
+acea2db85333b67f,KO/TKO,2,2:05,3 Rnd (5-5-5),Gilbert Melendez,Jeff Hougland
+9b37a20a4132c7cd,Submission,3,1:52,3 Rnd (5-5-5),John Alessio,Alex Serdyukov
+1e95bbfddff606c6,KO/TKO,1,0:02,1 Rnd (15),Mark Coleman,Kazuyuki Fujita
+00db4bd36ab66f69,Submission,1,4:45,2 Rnd (10-5),Kazuhiro Nakamura,Chalid Arrab
+617972e7681a5dcf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tim Kennedy,Robbie Lawler
+4a855d7b7cf8d951,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sarah Kaufman,Liz Carmouche
+b9d8c73dc1bf6be7,Decision - Unanimous,2,5:00,2 Rnd (10-5),Marius Zaromskis,Eiji Ishikawa
+56ae35c5162e35b1,KO/TKO,1,1:31,2 Rnd (10-5),Rameau Thierry Sokoudjou,Bob Sapp
+4f0bfce4af3eb2a4,Decision - Split,3,5:00,3 Rnd (5-5-5),Bart Palaszewski,Anthony Pettis
+4472ab71027260a5,KO/TKO,1,3:47,3 Rnd (5-5-5),Brendson Ribeiro,Bruno Lopes
+a9656b863a3c1c90,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Michael Lombardo,Korey Kuppe
+58b631a884e8499e,Submission,2,2:20,5 Rnd (5-5-5-5-5),Jessica Penne,Naho Sugiyuma
+190f819d7843547e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cortavious Romious,Michael Imperato
+51c1d29d2353ebeb,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Hiroyuki Takaya,Bibiano Fernandes
+00639df6b8ed4b6b,Submission,3,3:29,3 Rnd (5-5-5),Micah Miller,Jesse Moreng
+f194b90c87126a95,Submission,1,1:44,3 Rnd (5-5-5),Abongo Humphrey,George Bush
+58e18c60db720cc0,Submission,1,9:59,3 Rnd (10-5-5),Kazushi Sakuraba,Ikuhisa Minowa
+dffc6c4e9815c339,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jose Delano,Manuel Exposito
+c42304ce8b27648c,Submission,2,4:09,3 Rnd (5-5-5),Miesha Tate,Zoila Frausto
+e6271742be4b54ee,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tomoya Miyashita,Keisuke Fujiwara
+30885cf98c47d656,Submission,1,2:23,2 Rnd (10-5),Daisuke Nakamura,Hideo Tokoro
+cec2ac658b35b2f6,Submission,1,3:35,3 Rnd (5-5-5),Tim Kennedy,Trevor Prangley
+5062c06e26879ecd,KO/TKO,3,2:04,5 Rnd (5-5-5-5-5),Robbie Lawler,Murilo Rua
+724310985d1da374,KO/TKO,1,0:41,3 Rnd (5-5-5),CJ Vergara,Bruno Korea
+838b9f9caf7c94b0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Alistair Overeem,Vitor Belfort
+b0fe25028e223e72,KO/TKO,1,4:26,3 Rnd (5-5-5),Jeff Hughes,Josh Appelt
+51c354507aa80512,KO/TKO,2,0:24,3 Rnd (5-5-5),Shinya Aoki,Antonio McKee
+6c4abfcdce1530ae,KO/TKO,3,2:16,3 Rnd (5-5-5),Tony Gravely,Ray Rodriguez
+00e2f4994de58c72,Submission,1,3:24,3 Rnd (10-5-5),Evangelista Santos,Yosuke Nishijima
+833e67471e2575ed,KO/TKO,1,7:17,3 Rnd (10-5-5),Quinton Jackson,Igor Vovchanchyn
+a17d60527d35ef69,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kiyoshi Tamura,Makoto Takimoto
+5c07100ba35e6a16,Decision - Split,3,5:00,3 Rnd (5-5-5),LC Davis,Javier Vazquez
+250ea59c20f401ee,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Frank Trigg,Falaniko Vitale
+c9b7bab03647ef3b,TKO - Doctor's Stoppage,2,1:14,3 Rnd (5-5-5),Thiago Silva,Rodrigo Gripp de Sousa
+de464cfffe36c455,KO/TKO,1,7:25,3 Rnd (10-5-5),Mirko Filipovic,Josh Barnett
+612f04cea81ed57a,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Rodrigo Gracie,Yuki Sasaki
+6f44eaacca06a205,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Rogerio Nogueira,Kazushi Sakuraba
+e789acc3bfd35e0c,Decision - Split,3,5:00,3 Rnd (5-5-5),Quinton Jackson,Matt Lindland
+22a9e7bb83b2ab13,KO/TKO,1,0:29,3 Rnd (5-5-5),Scott Smith,Terry Martin
+ea4529e104ca6a40,KO/TKO,1,2:32,3 Rnd (5-5-5),Adlan Amagov,Anthony Smith
+1c8d40763bb262b9,Submission,2,2:55,3 Rnd (5-5-5),Rafael Alves,Alejandro Flores
+35eda6a6b155b3c9,Submission,1,6:36,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Semmy Schilt
+0addd9418fbac80b,KO/TKO,1,1:14,3 Rnd (5-5-5),Josh Thomson,Ashe Bowman
+87b267fed23d9680,KO/TKO,1,1:39,3 Rnd (5-5-5),Jose Aldo,Chris Mickle
+8d19fbf7f27c1d53,Submission,1,5:12,2 Rnd (10-5),Shinya Aoki,Katsuhiko Nagata
+7e3e3dd82d38fb85,KO/TKO,1,2:02,3 Rnd (10-5-5),Sergei Kharitonov,Pedro Rizzo
+2d2bbc86e941e05c,KO/TKO,1,4:20,No Time Limit,Kevin Rosier,Zane Frazier
+d5323b5782788167,KO/TKO,1,2:38,3 Rnd (5-5-5),Evangelista Santos,Marius Zaromskis
+bc251689a75d689f,KO/TKO,1,1:12,3 Rnd (5-5-5),Louis Cosce,Victor Reyna
+c7856c0e20c44ad2,KO/TKO,2,4:06,3 Rnd (5-5-5),Steven Nguyen,AJ Cunningham
+b50e74c14b1594d5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lorenz Larkin,Robbie Lawler
+86f86e8192394ec8,KO/TKO,1,1:37,3 Rnd (5-5-5),Yohan Lainesse,Justin Burlinson
+5cd30e552be7dc7b,KO/TKO,1,1:02,3 Rnd (5-5-5),Fedor Emelianenko,Yuji Nagata
+f4bef3fc1af95338,KO/TKO,1,3:33,3 Rnd (5-5-5),Anthony Njokuani,Chris Horodecki
+b04d3b13f1255754,KO/TKO,1,6:28,3 Rnd (10-5-5),Wanderlei Silva,Quinton Jackson
+066006238aec2014,KO/TKO,2,0:27,3 Rnd (5-5-5),Anthony Njokuani,Bart Palaszewski
+cf8f1ab36c1546be,KO/TKO,1,1:20,3 Rnd (10-5-5),Tsuyoshi Kohsaka,Mario Sperry
+29fff3fca2a9f41a,Decision - Unanimous,2,5:00,2 Rnd (10-5),Taiei Kin,Ikuhisa Minowa
+dc66c656f5d30c0f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Djorden Santos,Will Currie
+3d671c7283c54341,Decision - Split,3,5:00,3 Rnd (5-5-5),Raulian Paiva,Allan Nascimento
+8341fcd67319ebeb,Submission,1,3:06,3 Rnd (5-5-5),Luke Rockhold,Nik Theotikos
+8aec1a3be02e221b,KO/TKO,3,0:43,3 Rnd (5-5-5),Yusaku Kinoshita,Jose Souza
+0a4052e2042bc1a2,Submission,2,4:36,3 Rnd (5-5-5),Josh Thomson,Duane Ludwig
+e0ecae31a86cc648,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jean Silva,Kevin Vallejos
+c6a2e152acb09324,KO/TKO,2,0:31,3 Rnd (5-5-5),Bart Palaszewski,Zachary Micklewright
+0c1f86e819ed9fba,KO/TKO,2,2:39,3 Rnd (5-5-5),Julio Arce,Peter Petties
+a128fd96b3df2a40,KO/TKO,1,0:11,2 Rnd (10-5),Mario Sperry,Mike Bencic
+59c3c515acf8cfd8,KO/TKO,1,0:53,3 Rnd (10-5-5),Dan Henderson,Murilo Bustamante
+edd49850dbea20c7,KO/TKO,1,3:46,2 Rnd (10-5),Takanori Gomi,Luiz Azeredo
+cea3aae2d40a6bea,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wagnney Fabiano,Frank Gomez
+5a27b11a0673f7bd,Submission,2,4:34,3 Rnd (5-5-5),Chris Cariaso,Anthony Figueroa
+9a242be17a1aedce,TKO - Doctor's Stoppage,1,7:58,2 Rnd (10-5),Vitor Ribeiro,Katsuhiko Nagata
+b2cbb5eb89d11f14,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rashad Evans,Jaime Jara
+010793ad35d686d5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Romie Aram,Joe Stevenson
+d1ebbda6129d8d73,KO/TKO,3,3:56,5 Rnd (5-5-5-5-5),Gilbert Melendez,Mitsuhiro Ishida
+1e0a6536f78f50be,Submission,1,1:29,3 Rnd (5-5-5),Keith Jardine,Amir Rahnavardi
+587a4253aab0fd7f,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Vitor Belfort,Heath Herring
+aa4c83ac33e38b5c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Steven Nguyen,Theo Rlayang
+6d8d83abd61dc585,KO/TKO,1,1:05,2 Rnd (10-5),Zelg Galesic,Taiei Kin
+97cf399124c8a50a,KO/TKO,1,3:43,3 Rnd (5-5-5),Charles Bennett,KJ Noons
+54bb1fe01939ba39,KO/TKO,1,4:36,3 Rnd (5-5-5),Nurullo Aliev,Josh Wick
+7883d46d372aaec2,KO/TKO,1,3:31,3 Rnd (5-5-5),Yoshihiro Akiyama,Masakatsu Okuda
+516df95b0c8c3127,KO/TKO,2,1:20,5 Rnd (5-5-5-5-5),Jose Aldo,Mike Brown
+c20cc533fc85f55d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wagnney Fabiano,Clint Godfrey
+a31b82e059eb1e20,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Jeremy Horn,Gilbert Yvel
+ebcbcb277b6831f5,KO/TKO,1,4:49,3 Rnd (5-5-5),Carlos Zevallos,Andre Walker
+4e870e58f271889a,Submission,1,4:25,2 Rnd (10-5),Ikuhisa Minowa,Eric Esch
+1c32c23aadc8bdca,KO/TKO,2,3:36,3 Rnd (5-5-5),Vitor Petrino,Rodolfo Bellato
+d0078e57015b9f7b,KO/TKO,1,0:40,3 Rnd (10-5-5),Yoshihisa Yamamoto,Mark Kerr
+eff6f83f9af41cab,Submission,1,3:31,3 Rnd (10-5-5),Murilo Rua,Murad Chunkaiev
+9b3d171cf9643f05,Submission,1,4:24,2 Rnd (10-5),Denis Kang,Takahiro Oba
+44fd14b16fd8b727,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Keisuke Sasu,Balajin
+c89ee3c5aaf7dac6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jordan Mein,Tyler Stinson
+7bfc9e39aad125db,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rodolfo Marques Diniz,Yusup Saadulaev
+f0af4d2c7fc0e586,KO/TKO,2,2:25,3 Rnd (5-5-5),Sherron Leggett,Charlie Kohler
+190b164d02796466,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Jose Aldo,Urijah Faber
+b1b2003e6095e6ae,KO/TKO,1,1:55,2 Rnd (10-5),Charles Bennett,Yoshiro Maeda
+8efa0b20ad2afd51,Decision - Split,3,5:00,3 Rnd (5-5-5),Julieta Martinez,Leslie Hernandez
+613f5394563344f0,KO/TKO,1,3:02,3 Rnd (5-5-5),Falaniko Vitale,Ron Fields
+7c0aeb8ae9deb69d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sherrard Blackledge,Cameron Church
+f7e8e689a1e8ac12,KO/TKO,3,2:59,3 Rnd (5-5-5),Lyoto Machida,Dimitiri Wanderley
+49e45327ef90fa78,Submission,1,3:27,3 Rnd (5-5-5),Tatsuya Kawajiri,Donald Sanchez
+4d04b0b1be893cdc,Other,5,3:00,5 Rnd (3-3-3-3-3),TIE,TIE
+51c738179ce03407,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Silva,Andrei Arlovski
+db7e0a8b1c653ad9,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Danni McCormack,Yan Qihui
+c404780acd4faba8,Submission,1,3:57,3 Rnd (5-5-5),Jordan Griffin,Maurice Mitchell
+474bc3c8016d184f,KO/TKO,1,1:09,3 Rnd (5-5-5),Brock Lesnar,Min Soo Kim
+9e8f81681de8a902,Submission,1,2:18,3 Rnd (10-5-5),Ron Waterman,Valentijn Overeem
+a7d5cce543778c0c,KO/TKO,3,2:20,3 Rnd (5-5-5),Louis Lee Scott,Kaushik Saikumar
+8d60e64e047c95f2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),KJ Noons,Billy Evangelista
+41f09ae7467e8899,Submission,1,1:43,3 Rnd (10-5-5),Yoshihisa Yamamoto,Jan Nortje
+b0393d2b689b23a9,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,Gilbert Melendez
+0ca04cc5b49a53ba,KO/TKO,2,3:56,3 Rnd + OT (5-5-5-5),JaeHyun Park,Jack Becker
+02501397e10b9b97,KO/TKO,1,0:47,3 Rnd (5-5-5),Steve Cantwell,Justin McElfresh
+3a2f68e6a7de1546,KO/TKO,1,4:33,3 Rnd (5-5-5),Muhammed Lawal,Roger Gracie
+755229e0c09e863a,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),SeungGuk Choi,Rama Supandhi
+e571a195dc54569e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mirko Filipovic,Kazuyuki Fujita
+77c268a41d2899d1,DQ,1,1:50,3 Rnd (5-5-5),Brock Larson,John Alessio
+381f492f85aa34f0,TKO - Doctor's Stoppage,1,4:16,3 Rnd (10-5-5),Yoshihiro Nakao,Eun Soo Lee
+d346e8a4d9127369,Submission,1,2:24,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Kiyoshi Tamura
+92360a517431f38e,Decision - Split,3,5:00,3 Rnd (5-5-5),Victor Altamirano,Carlos Candelario
+57a19ff5cc23ec04,KO/TKO,1,0:50,3 Rnd (5-5-5),Robbie Lawler,Matt Lindland
+c5a4230f3600981f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dave Terrel,Mike Moreno
+d81a62a170191c06,KO/TKO,2,2:04,2 Rnd (10-5),Phil Baroni,Ikuhisa Minowa
+d936b0208158d710,Submission,1,3:42,3 Rnd (5-5-5),Luke Rockhold,Jesse Taylor
+eceec214103543c0,Decision - Split,2,5:00,2 Rnd (10-5),Luiz Azeredo,Luiz Firmino
+d3734b53a2700ea5,KO/TKO,1,2:09,3 Rnd (5-5-5),Paul Daley,Scott Smith
+c69a14aeb338c63c,KO/TKO,1,3:40,3 Rnd (10-5-5),Wanderlei Silva,Hiromitsu Kanehara
+e8cc2c2e4b0cc8ed,TKO - Doctor's Stoppage,2,1:12,5 Rnd (5-5-5-5-5),Brandon Vera,Mike Whitehead
+17f8b5ccd649ed55,TKO - Doctor's Stoppage,1,10:00,2 Rnd (10-5),Joe Warren,Chase Beebe
+774c94c5441a3a9d,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Sulangrangbo,Sim Kai Xiong
+c060bd0ec804933e,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Anshul Jubli,KyeungPyo Kim
+7b5f6c36ad0018f2,KO/TKO,3,0:44,3 Rnd (5-5-5),Luis Saldana,Vince Murdock
+9841ed77f6ca2eca,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jorge Masvidal,KJ Noons
+ba7471b63f125a68,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Xiao Long,Shohei Nose
+bf966172ae74836e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Clayton Carpenter,Edgar Chairez
+dd03326d85918011,Submission,1,3:24,2 Rnd (10-5),Fabricio Werdum,Aleksander Emelianenko
+b2bc7788472c5704,Submission,1,4:35,2 Rnd (10-5),Josh Thomson,Daisuke Sugie
+d9f2f676ed000cd5,KO/TKO,2,4:53,3 Rnd (5-5-5),Alexis Davis,Amanda Nunes
+2df42cebdd1062b4,KO/TKO,1,0:19,3 Rnd (5-5-5),Alistair Overeem,Todd Duffee
+329e605f13652c11,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ronnie Lawrence,Jose Johnson
+28bb8ac964277bc1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Kazuo Misaki,Dan Henderson
+9b955968a5db4296,Decision - Split,3,5:00,3 Rnd (5-5-5),Jorge Masvidal,Justin Wilcox
+3638be8341b7124c,KO/TKO,1,6:17,2 Rnd (10-10),Anderson Silva,Israel Albuquerque
+32be5d0ac174d355,Decision - Split,5,5:00,5 Rnd (5-5-5-5-5),Gilbert Melendez,Clay Guida
+e3712c0b68f998a5,KO/TKO,1,6:26,3 Rnd (10-5-5),Quinton Jackson,Mikhail Iloukhine
+c7be8d0fab28955e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Raphael Assuncao,LC Davis
+f42d1b863831caa5,KO/TKO,2,0:52,3 Rnd (5-5-5),Johny Hendricks,Justin Haskins
+4b8678a16441dbe1,Other,3,10:00,3 Rnd (10-10-10),TIE,TIE
+2efb965aadcc676a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Johnny Walker,Henrique da Silva
+2ad09ecb9b0f4537,KO/TKO,1,4:27,3 Rnd (5-5-5),Armen Petrosyan,Kaloyan Kolev
+06d4faa6e2b78376,KO/TKO,1,2:15,2 Rnd (10-5),Sergei Kharitonov,Jimmy Ambriz
+22d0862b5fc9eef8,Submission,1,1:46,3 Rnd (5-5-5),Andre Muniz,Taylor Johnson
+85c57b760a8efac1,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Masuto Kawana,YoungJae Song
+4f4ea4fba68f690d,Submission,3,3:49,3 Rnd (5-5-5),Urijah Faber,Raphael Assuncao
+da3e3327bc416aa0,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Josefine Knutsson,Isis Verbeek
+70d249f2c6f5d8c8,Submission,2,1:52,3 Rnd (5-5-5),Domingo Pilarte,Vince Morales
+bb4843f30d2fe989,TKO - Doctor's Stoppage,3,0:20,3 Rnd (10-5-5),Kevin Randleman,Murilo Rua
+7367fa634f4db817,KO/TKO,1,0:56,3 Rnd (5-5-5),Kitt Campbell,Shogo Sato
+abcd12bb4f404698,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Shuya Kamikubo,Baergeng Jieleyisi
+b93cc1f7b46f4852,TKO - Doctor's Stoppage,1,8:57,2 Rnd (10-5),Kuniyoshi Hironaka,Motoki Miyazawa
+e8838908c0d6a875,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Abdul-Kareem Al-Selwady,George Hardwick
+1b76b3200d2f9801,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Gloria de Paula,Pauline Macias
+9aef9130adc7590a,Decision - Unanimous,2,5:00,2 Rnd (10-5),Denis Kang,Akihiro Gono
+be17aaad7221e2d9,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Danny Castillo,Dustin Poirier
+a43e4e50a17b4385,KO/TKO,1,3:04,3 Rnd + OT (5-5-5-5),Jiniushiyue,Billy Pasulatan
+e5908d0519fd0240,KO/TKO,1,0:18,3 Rnd (5-5-5),Aaron Simpson,David Avellan
+d393cb60db807f8c,KO/TKO,1,4:05,3 Rnd (10-5-5),Quinton Jackson,Hirotaka Yokoi
+d4df69f084ea35f0,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Jake Shields,Dan Henderson
+8f95f838d17bba10,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Tarec Saffiedine,Nate Marquardt
+ca66323abe6567d3,Submission,1,3:17,3 Rnd (5-5-5),Cub Swanson,Tommy Lee
+e4f42ebb8cd0ebac,KO/TKO,1,4:55,2 Rnd (10-5),Takanori Gomi,Jadson Costa
+6834c4283e93d881,Decision - Unanimous,2,5:00,2 Rnd (10-5),Eddie Alvarez,Joachim Hansen
+8de77d642da0c799,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Elijah Smith,Aaron Tau
+d0b24570ede9ca31,Submission,1,0:47,3 Rnd (5-5-5),Edson Berto,Victor Valenzuela
+842af7cc34b13902,KO/TKO,1,3:39,3 Rnd (5-5-5),Gegard Mousasi,Stefan Klever
+05a50444b67fe7f2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ty Miller,Jimmy Drago
+54da9d3e4aa472cd,KO/TKO,3,0:41,3 Rnd (5-5-5),Muhammed Lawal,Fabio Silva
+6d62ab414d5488d8,KO/TKO,2,2:16,3 Rnd (5-5-5),Bobby Voelker,Roger Bowling
+77e0ca6ddb6e060a,Submission,1,1:54,2 Rnd (10-5),Fedor Emelianenko,Hong Man Choi
+601d1c86a1f25926,Submission,1,2:33,3 Rnd (10-5-5),Hidehiko Yoshida,Yosuke Nishijima
+6f5362d15b1bdd99,KO/TKO,2,1:15,3 Rnd (5-5-5),Roger Bowling,Brandon Saling
+08bf4c08b439f99d,KO/TKO,1,3:51,3 Rnd (5-5-5),Cung Le,Mike Altman
+2a0b6a5d1c07a4f2,KO/TKO,1,3:39,3 Rnd + OT (5-5-5-5),Angad Bisht,John Dave Almanza
+0cf790338401cad2,DQ,3,2:32,3 Rnd (10-10-10),Mark Kerr,Hugo Duarte
+eb65284fc21abc1b,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Sarah Kaufman,Miesha Tate
+984a9f833d56b9b5,Decision,2,10:00,2 Rnd (10-10),Vitor Belfort,Daijiro Matsui
+5fa1b99fd2381a29,KO/TKO,1,4:52,2 Rnd (10-10),Heath Herring,Enson Inoue
+bbfe2da7548cff8a,KO/TKO,1,4:53,3 Rnd (10-5-5),Heath Herring,Yoshiki Takahashi
+ce5902fec0535a5f,Decision - Unanimous,2,5:00,2 Rnd (10-5),Takeshi Yamazaki,Shoji Maruyama
+68c111ed0f0f2f17,Submission,2,2:50,3 Rnd (5-5-5),Brian Bowles,Charlie Valencia
+67f3f45a3c501917,KO/TKO,1,1:41,3 Rnd (5-5-5),Norifumi Yamamoto,Federico Lopez
+8b7cb2427af4942a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Lyoto Machida,BJ Penn
+4b275aa88b09fe2d,KO/TKO,1,0:57,3 Rnd (5-5-5),Greg Hardy,Austen Lane
+e92d4aa522ad4307,Submission,1,0:59,3 Rnd (5-5-5),Yoshihiro Akiyama,Carl Toomey
+c99280bc8f74f619,KO/TKO,1,2:12,3 Rnd (5-5-5),Imanol Rodriguez,Roque Conceicao
+c22cfceb046f920a,Submission,1,1:49,3 Rnd (5-5-5),Anthony Pettis,Mike Campbell
+3d1955cf7e0f93ad,KO/TKO,1,2:17,3 Rnd (5-5-5),Lavar Johnson,Virgil Zwicker
+79812d0e0b010d4d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Nikolas Motta,Joe Lowry
+e53a755795517545,Submission,2,4:10,3 Rnd (5-5-5),Roger Gracie,Kevin Randleman
+ba9438f43e212f52,Decision - Split,3,5:00,3 Rnd (5-5-5),Leonard Garcia,Chan Sung Jung
+148fa5e8ac087477,KO/TKO,2,1:05,5 Rnd (5-5-5-5-5),Murilo Rua,Joey Villasenor
+7c292e1fe5e5b682,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Mike Brown,Urijah Faber
+cb9aadeb5c6017aa,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Sarah Kaufman,Takayo Hashi
+8a71754ec7c6b777,KO/TKO,1,1:15,3 Rnd (5-5-5),Alistair Overeem,Kazuyuki Fujita
+d203c570def1e94d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Guto Inocente,Virgil Zwicker
+1744dad5ab1fe406,TKO - Doctor's Stoppage,3,5:00,5 Rnd (5-5-5-5-5),Miguel Torres,Yoshiro Maeda
+b2a250ad41d3803e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cory McKenna,Vanessa Demopoulos
+4736d5a918cb4936,Submission,3,2:27,3 Rnd (5-5-5),Demetrious Johnson,Damacio Page
+02ed9b0b15b4a427,Submission,3,3:28,3 Rnd (5-5-5),Miesha Tate,Julie Kedzie
+bb9ed6e1e0181299,Submission,1,1:54,3 Rnd (5-5-5),Mike Brown,Anthony Morrison
+10d669fab1be58b4,KO/TKO,1,4:44,3 Rnd (5-5-5),Christopher Alvidrez,Eliezer Kubanza
+5a7fcfe3846adef6,Decision - Split,3,5:00,3 Rnd (10-5-5),Don Frye,Ken Shamrock
+4172fe2ebace07e4,Submission,1,4:45,3 Rnd + OT (5-5-5-5),Namsrai Batbayar,Agulali
+f8d256f183390aad,KO/TKO,1,3:04,3 Rnd (5-5-5),Baisangur Susurkaev,Murtaza Talha
+2b5f895d21a66ee3,KO/TKO,1,0:20,3 Rnd (5-5-5),Iwo Baraniewski,Mahamed Aly
+dc60c0ad05d7a686,Decision - Split,3,5:00,3 Rnd (5-5-5),Dong Sik Yoon,Tarec Saffiedine
+7a66c612a454fa9b,KO/TKO,1,4:45,3 Rnd (5-5-5),Joey Villasenor,Ryan Jensen
+9a8cb807a2821ea4,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rami Hamed,Ding Meng
+079913611b449376,Submission,3,2:59,3 Rnd (5-5-5),TJ Brown,Dylan Lockard
+2329fd5f35b6d321,Decision - Unanimous,2,5:00,2 Rnd (10-5),Takanori Gomi,Jean Silva
+2f4bdcee104aa82c,Decision - Split,5,1:48,5 Rnd (5-5-5-5-5),Jamie Varner,Donald Cerrone
+c0d6f26e4922a2e5,Submission,2,2:45,3 Rnd (5-5-5),Joseph Benavidez,Wagnney Fabiano
+9321bec45c092d37,KO/TKO,1,0:39,3 Rnd (10-5-5),Gary Goodridge,Don Frye
+5c95f3d240e56091,Submission,3,2:00,5 Rnd (5-5-5-5-5),Jacare Souza,Robbie Lawler
+55506bc7a93fa611,KO/TKO,2,4:01,3 Rnd (5-5-5),Hayato Sakurai,Mac Danzig
+59f5431237a2c5c5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anderson Silva,Tetsuji Kato
+62de80851ebcc85a,KO/TKO,1,0:43,3 Rnd (5-5-5),Paul Buentello,David Abbott
+b59964ef8add4d5b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hiroshi Izumi,Katsuyori Shibata
+13d6b0f751b58b4b,Submission,1,4:17,3 Rnd (10-5-5),Fedor Emelianenko,Kazuyuki Fujita
+9cce6651618cc02c,Decision - Unanimous,2,5:00,2 Rnd (5-5),Chalid Arrab,Rodney Faverus
+b6dafa419ef200e1,KO/TKO,2,2:49,3 Rnd (5-5-5),Antonio Silva,Mike Kyle
+1481b8f280cddf77,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ralek Gracie,Kazushi Sakuraba
+ce463275245c3c4c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Melsik Baghdasaryan,Dennis Buzukja
+ce92602e149639b6,Submission,1,3:16,2 Rnd (10-5),Aleksander Emelianenko,Matt Foki
+c582e2de87331135,Submission,1,1:38,5 Rnd (5-5-5-5-5),Urijah Faber,Dominick Cruz
+914b88781ab03985,Submission,1,1:51,3 Rnd (5-5-5),Wes Schultz,Mario Mingaj
+1a160a48342ad59f,Decision - Split,3,5:00,3 Rnd (10-5-5),Rogerio Nogueira,Guy Mezger
+1531994391953878,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Scott Jorgensen,Kenji Osawa
+114b7d71ff214a91,KO/TKO,2,4:54,3 Rnd (5-5-5),Anthony Njokuani,Edward Faaloloto
+7a710073c7e0eb19,Submission,1,1:58,3 Rnd (10-5-5),Yoshihiro Akiyama,Melvin Manhoef
+d83fe1bb3175368f,Decision - Unanimous,2,5:00,2 Rnd (10-5),Katsuhiko Nagata,Artur Oumakhanov
+c1466d3c1dd2dbb8,KO/TKO,3,2:50,3 Rnd (5-5-5),Hiroshi Izumi,Ikuhisa Minowa
+d0cea1c8d7418f66,KO/TKO,2,3:17,3 Rnd (5-5-5),Manny Tapia,Brandon Foxworth
+ce17641f02fd29a9,Submission,1,2:13,3 Rnd (5-5-5),Chad Mendes,Anthony Morrison
+f959b75dc0468ede,KO/TKO,1,2:24,3 Rnd (10-5-5),Murilo Rua,Akira Shoji
+a011081f39e700d9,Decision - Split,3,5:00,3 Rnd (5-5-5),Billy Evangelista,Clint Coronel
+c3dc4fef380f7cdb,KO/TKO,2,3:46,3 Rnd (5-5-5),Will Brooks,Satoru Kitaoka
+4f70f4133aa33cbc,KO/TKO,3,4:54,3 Rnd (5-5-5),Gilbert Melendez,Olaf Alfonso
+b13564224e299f91,Submission,1,4:45,3 Rnd (5-5-5),Nicolle Caliari,Corinne Laframboise
+0d7ba65d73d791c2,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Pyle,Aaron Wetherspoon
+7324f622ea08faa7,KO/TKO,1,0:47,3 Rnd + OT (5-5-5-5),Sebastian Szalay,ChangMin Yoon
+930f69163561f549,KO/TKO,2,2:02,5 Rnd (5-5-5-5-5),Gilbert Melendez,Rodrigo Damm
+e6885fea4ad5c083,Submission,2,2:16,3 Rnd (5-5-5),Victor Hugo,Eduardo Torres Caut
+c8270b82d3a0942a,KO/TKO,3,4:34,3 Rnd (5-5-5),Ian McCall,Coty Wheeler
+423dcc53da7e77b2,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),DongHun Choi,Jiniushiyue
+baf35a0a28e3593a,Submission,1,2:48,1 Rnd (15),Kazuyuki Fujita,Hans Nijman
+9fbc54c454a100f6,KO/TKO,1,1:19,3 Rnd (5-5-5),Daniel Cormier,John Devine
+b764b9698389a920,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Igor Vovchanchyn,Yuki Kondo
+9045c3212cb41236,Submission,1,9:36,3 Rnd (10-5-5),Alistair Overeem,Vitor Belfort
+4251220418d7c776,Decision - Split,3,5:00,3 Rnd (5-5-5),Benito Lopez,Steven Peterson
+037681585a7c23df,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Shi Ming,YeDam Seo
+970f42a0d5911f36,KO/TKO,2,1:48,3 Rnd + OT (5-5-5-5),Lawrence Lui,Nghiem Van Y
+cc750e6a50445cba,Submission,1,1:42,3 Rnd (5-5-5),Marcus Hicks,Ed Ratcliff
+9e81b2bcc9b1470b,KO/TKO,1,3:34,3 Rnd (5-5-5),Jared Vanderaa,Harry Hunsucker
+f6c00a5cb264f675,KO/TKO,2,1:05,3 Rnd (10-5-5),Quinton Jackson,Ikuhisa Minowa
+9317abdd81b58d98,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Hayes,Matt Kovacs
+32a0bfd0c6597a59,Submission,1,2:13,3 Rnd (5-5-5),Steve Cantwell,Tim McKenzie
+879b5032f5e879f5,Submission,1,7:37,2 Rnd (10-5),Luiz Firmino,Kazuyuki Miyata
+e390bb814de13ef7,KO/TKO,1,1:32,3 Rnd (5-5-5),Erik Silva,Anvar Boynazarov
+643f6cc7ca86edb5,KO/TKO,1,0:14,3 Rnd (5-5-5),Seth Petruzelli,Kevin Ferguson
+2082fa9ed4a9c609,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Zhu Kangjie,Tatsuya Ando
+7e48dd61c579aeed,Submission,1,1:57,3 Rnd (5-5-5),Ron Keslar,Eric Lawson
+2a0612aa7b742a6c,KO/TKO,1,1:16,3 Rnd (5-5-5),Wanderlei Silva,Tatsuya Iwasaki
+5f528585905f441b,KO/TKO,1,2:01,3 Rnd (5-5-5),Samuel Sanches,Chasen Blair
+0d48498c19539551,Submission,1,3:14,3 Rnd (5-5-5),Blake Bilder,Alexander Morgan
+783bf10d31191e0a,KO/TKO,1,1:48,3 Rnd (5-5-5),Kennedy Nzechukwu,Dennis Bryant
+099dbc0a13135f20,Submission,1,1:15,2 Rnd (10-5),Ikuhisa Minowa,Bob Sapp
+8badb24bbf1a3a96,Submission,2,1:19,3 Rnd + OT (5-5-5-5),Rei Tsuruya,Ronal Siahaan
+148ded708e1db0a0,Submission,1,7:40,3 Rnd (10-5-5),Hidehiko Yoshida,David Abbott
+c34264d0be3a888f,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Miesha Tate,Elaina Maxwell
+276a59cc9e94fa28,KO/TKO,1,4:25,3 Rnd (5-5-5),Germaine de Randamie,Stephanie Webber
+ffd16691c4c4aafc,Submission,1,0:57,No Time Limit,Royce Gracie,Ken Shamrock
+d86e3ed44a13de13,KO/TKO,1,4:27,3 Rnd (5-5-5),Hiroyuki Takaya,Joachim Hansen
+f3231e9f063fb7c3,KO/TKO,2,4:34,3 Rnd (5-5-5),Rogerio Nogueira,Todd Gouwenberg
+d55c82a73bcfedb0,Submission,1,3:13,2 Rnd (10-5),Dean Lister,Akira Shoji
+8bbf5502c291e020,Decision - Split,3,5:00,3 Rnd (5-5-5),Danny Castillo,Phil Cardella
+4db2a70c28071299,KO/TKO,1,3:03,3 Rnd (10-5-5),Gary Goodridge,Yoshiaki Yatsu
+c1450c3cc9e769c0,Decision - Unanimous,1,15:00,1 Rnd (15),Mark Kerr,Enson Inoue
+cea0eefa35965d54,KO/TKO,3,0:45,3 Rnd (5-5-5),KJ Noons,Edson Berto
+34eaa4365938c168,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ovince Saint Preux,Benji Radach
+85d229f57a94da6c,Decision - Split,3,5:00,3 Rnd (5-5-5),Chibwikem Onyenegecha,Anthony Adams
+a008bc8220aaad4d,Submission,1,0:41,3 Rnd (10-5-5),Mirko Filipovic,Kevin Randleman
+c4aecf16a059f7d4,KO/TKO,1,0:11,3 Rnd (10-5-5),Assuerio Silva,Yoshihisa Yamamoto
+65d329d83efd58d0,Submission,1,3:20,3 Rnd (5-5-5),Phil Baroni,Yosuke Nishijima
+e0ab7318f75ddb06,KO/TKO,3,4:42,3 Rnd (5-5-5),Orion Cosce,Matt Dixon
+cdfc9e763372599a,KO/TKO,1,8:38,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Pawel Nastula
+72d7db360c53ac8e,KO/TKO,2,1:48,3 Rnd (5-5-5),Fedor Emelianenko,Brett Rogers
+b9a128467a3b1b21,Submission,1,0:24,2 Rnd (10-10),Enson Inoue,Soichi Nishida
+33f4fef6304a32ab,KO/TKO,1,3:53,3 Rnd (10-5-5),Mirko Filipovic,Ibragim Magomedov
+aa34a6bc5896a511,KO/TKO,2,4:18,3 Rnd (5-5-5),Ivan Salaverry,Art Santore
+2a7d4a5f04014e29,KO/TKO,1,0:17,3 Rnd (5-5-5),Greg Hardy,Tebaris Gordon
+998dd29dad3e5e07,Submission,1,1:57,3 Rnd (5-5-5),Kenny Florian,Bobby McAndrews
+884b388bfdd11067,KO/TKO,1,3:14,5 Rnd (5-5-5-5-5),Gilbert Melendez,Tatsuya Kawajiri
+92165f13b8d588ca,KO/TKO,1,1:37,3 Rnd (5-5-5),Maki Pitolo,Justin Sumter
+b32c49d73ce5c599,KO/TKO,1,3:56,3 Rnd (5-5-5),Joe Riggs,Eugene Jackson
+64c73e32aee3d4a2,TKO - Doctor's Stoppage,1,2:16,3 Rnd (10-5-5),Marius Zaromskis,Kazushi Sakuraba
+00dc3531dafa3485,Decision - Split,3,5:00,3 Rnd (5-5-5),Tyron Woodley,Jordan Mein
+6ffaceca00c3cb20,Submission,1,0:42,3 Rnd (5-5-5),Wayne Cole,Mike Kyle
+089a63793480cf49,Could Not Continue,1,2:02,3 Rnd (5-5-5),TIE,TIE
+67c51216f9555763,Other,1,15:00,1 Rnd + OT (15-10),Kazushi Sakuraba,Guy Mezger
+84f2e086d9e294fa,KO/TKO,1,4:55,3 Rnd (10-5-5),Roman Zentsov,Gilbert Yvel
+ac5d55db5a748ff2,KO/TKO,1,0:18,3 Rnd (10-5-5),Gary Goodridge,Dan Bobish
+ce99b089400a4ad3,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ismael Bonfim,Nariman Abbasov
+c95fce7d64beeac8,TKO - Doctor's Stoppage,3,4:18,3 Rnd (5-5-5),Paul Buentello,Kiril Sidelnikov
+e8b36887144d4085,Decision - Unanimous,2,5:00,2 Rnd (10-5),Murilo Bustamante,Dong Sik Yoon
+8319e8fb8ce85409,KO/TKO,3,2:15,3 Rnd (5-5-5),Montel Jackson,Rico DiSciullo
+bf54e2d905e1699e,Submission,1,1:26,3 Rnd (10-5-5),Kazushi Sakuraba,Yurij Kiseliov
+48a14912ae1331dd,KO/TKO,1,3:01,3 Rnd (10-5-5),Yoshihiro Akiyama,Kestutis Smirnovas
+77f22a0b5e809c5c,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Cariaso,Rafael Rebello
+32e0753d3f017d1b,KO/TKO,1,3:26,3 Rnd (5-5-5),Iuri Alcantara,Ricardo Lamas
+ae50b482a3d62cac,KO/TKO,1,1:00,3 Rnd (5-5-5),Charalampos Grigoriou,Cameron Smotherman
+991b7fd4873e7fea,Decision - Split,3,5:00,3 Rnd (5-5-5),Carlos Hernandez,Daniel Barez
+39b70ec9e2ed4426,Submission,1,7:31,2 Rnd (10-5),Michihiro Omigawa,Young Sam Jung
+c4351f1f0b46bf4a,Decision - Split,3,5:00,3 Rnd + OT (5-5-5-5),Shi Ming,Dong Huaxiang
+4bda39f114f1ccdb,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Luke Rockhold,Jacare Souza
+2ee220d1f5e74712,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Makoto Takimoto,Dong Sik Yoon
+1ea0387129e8ea33,KO/TKO,2,3:30,3 Rnd (5-5-5),Daniel Frunza,Vadym Kutsyi
+f3a3daa73a4e9b73,Submission,1,2:50,3 Rnd (10-5-5),Assuerio Silva,Valentijn Overeem
+4ca63838e8ea552f,KO/TKO,1,3:09,3 Rnd (10-5-5),Chuck Liddell,Alistair Overeem
+5bcde86d5f40cebb,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Manvel Gamburyan,Leonard Garcia
+06133c7c8c726ece,Decision - Unanimous,1,15:00,1 Rnd (15),Mark Coleman,Akira Shoji
+ebf548d053a2e0be,KO/TKO,3,3:29,3 Rnd (5-5-5),Ikuhisa Minowa,Rameau Thierry Sokoudjou
+757b2a060d9151df,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sara McMann,Hitomi Akano
+98840d98f7c2d6cc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dylan Budka,Chad Hanekom
+33e44be826a1cd2a,Decision - Unanimous,2,5:00,2 Rnd (5-5),Keith Jardine,George Allen
+e906796c0e43c0ac,KO/TKO,1,0:41,3 Rnd (5-5-5),Brian Stann,Steve Cantwell
+1df97d78457e7a06,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Carol Foro,Shanelle Dyer
+6cc8aa715c5335a9,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jeff Bedard,Mike French
+103dd3ef6e5bd9e2,Submission,1,2:53,5 Rnd (5-5-5-5-5),Rob McCullough,Kit Cope
+e5bd00471c1ce9a5,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kyle Driscoll,Dinis Paiva Jr.
+f1619ff59c01c94c,KO/TKO,2,3:09,3 Rnd (5-5-5),Augusto Sakai,Marcos Conrado Jr.
+c2d98b7a30c70de7,Submission,1,3:49,3 Rnd (5-5-5),Joe Solecki,James Wallace
+95bfd69bc8afedb9,Submission,1,1:23,3 Rnd (5-5-5),Alistair Overeem,Tony Sylvester
+a44ea2f14b259ae7,KO/TKO,1,3:48,3 Rnd (5-5-5),Shane del Rosario,Lolohea Mahe
+f32c819edc6849bc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kamal Shalorus,Dave Jansen
+1aebfcec4ab1f5f1,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cameron Olson,Karl Reed
+c23ef3f8736fe1ec,KO/TKO,1,4:19,3 Rnd (5-5-5),Cung Le,Brian Warren
+9f4999e98cc3140d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Josh Thomson,Gesias Cavalcante
+bdad04f0820874b3,Submission,1,4:03,2 Rnd (10-5),Tatsuya Kawajiri,Ross Ebanez
+4c31e89caec40661,KO/TKO,2,1:03,3 Rnd (5-5-5),Lyoto Machida,Rich Franklin
+3e49c868130978e8,Submission,1,1:33,3 Rnd (5-5-5),Shinya Aoki,Lyle Beerbohm
+201e7c6d2db7c9d5,Decision - Majority,3,5:00,3 Rnd (5-5-5),Rob McCullough,Marcus Hicks
+4400b5af34e50dea,KO/TKO,1,0:57,2 Rnd (10-5),Kiyoshi Tamura,Masakatsu Funaki
+4487ae4c518a6505,Submission,2,3:42,3 Rnd (5-5-5),Eddie Alvarez,Katsunori Kikuno
+136509dff3b96cbb,Submission,1,0:46,3 Rnd (10-5-5),Mirko Filipovic,Josh Barnett
+1997255d18bdcc99,KO/TKO,3,0:25,3 Rnd (5-5-5),Cung Le,Tony Fryklund
+bc602e9a17665eab,Decision - Unanimous,2,5:00,2 Rnd (10-5),Riki Fukuda,Murilo Rua
+a808944129b9d203,KO/TKO,2,1:26,3 Rnd (10-10-10),Akira Shoji,Wallid Ismail
+f5ecd2c50fd29d8e,Submission,1,2:58,2 Rnd (10-5),Katsuhisa Fujii,Jin Oh Kim
+ca6abb47b28d4ad3,KO/TKO,1,7:37,2 Rnd (10-5),Ryan Gracie,Kazuhiro Hamanaka
+d838e9d10b09e488,KO/TKO,3,0:31,3 Rnd (5-5-5),Mike Swick,Kengo Ura
+6e808d2284d1da91,Decision - Split,3,5:00,3 Rnd (5-5-5),Gerald Harris,Kazuhiro Nakamura
+a0008f010451655b,Submission,1,5:52,2 Rnd (10-5),Takanori Gomi,Charles Bennett
+9a6f9f6cee4ea4bd,TKO - Doctor's Stoppage,3,5:00,5 Rnd (5-5-5-5-5),Cung Le,Frank Shamrock
+83af37a5f909bc36,Submission,1,6:10,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Mark Coleman
+7242b686f4ec7686,Submission,2,1:45,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Mirko Filipovic
+ed03c81b92ecb186,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Fabricio Werdum,Jon Olav Einemo
+5f5a12c724d2625b,Submission,2,3:39,3 Rnd + OT (5-5-5-5),YoungJae Song,Jin Aoi
+93e8d60f05a3782c,KO/TKO,3,2:20,3 Rnd (5-5-5),Shelton Graves,Everett Sims
+6e3b5840f8c05faa,KO/TKO,2,2:31,3 Rnd (5-5-5),Benji Radach,Murilo Rua
+243ef46cc122e17e,KO/TKO,1,0:25,3 Rnd (10-5-5),Roman Zentsov,Pedro Rizzo
+fc853cc1c88c00cc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tarec Saffiedine,James Terry
+c33759ead046daa8,Decision - Unanimous,2,10:00,2 Rnd (10-10),Tom Erikson,Gary Goodridge
+c17dbd0bdaf336ea,Decision - Unanimous,2,5:00,2 Rnd (10-5),Atsushi Yamamoto,Hideo Tokoro
+f8b13f3909216f83,KO/TKO,1,1:48,3 Rnd (5-5-5),Robbie Lawler,Adlan Amagov
+1781e8fc223ebf5e,DQ,2,2:22,3 Rnd + OT (5-5-5-5),Bahatebole Batebolati,WonBin Ki
+12d09b19ac610b5a,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Fabricio Werdum
+e0bf215b64f31619,Submission,3,1:19,3 Rnd (5-5-5),Lyle Beerbohm,Ray Perales
+6b4f022c3cd76938,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Jacare Souza,Tim Kennedy
+73f38f4c58a00561,Submission,2,3:56,3 Rnd (5-5-5),Akihiro Gono,Hayato Sakurai
+6f8185a1cc100570,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Diego Sanchez,Jorge Santiago
+44b1b38cab395123,KO/TKO,1,3:16,3 Rnd (4-4-4),Ben Rothwell,Devin Cole
+bac87c3321dfa75b,Submission,2,2:43,3 Rnd (5-5-5),Tim Kennedy,Zak Cummings
+f0764d38795b524c,KO/TKO,1,0:36,3 Rnd (5-5-5),Lerryan Douglas,Cam Teague
+3757cabdc1ad7f36,KO/TKO,1,5:00,3 Rnd (5-5-5),Alex Serdyukov,Luis Santos
+83e83ea6b1f02560,KO/TKO,2,2:49,3 Rnd (5-5-5),Eugene Jackson,Mike Seal
+45e87d6127a96d1f,Submission,1,8:10,3 Rnd (10-5-5),Josh Barnett,Kazuhiro Nakamura
+ba2e0b5a442f439a,KO/TKO,3,2:07,3 Rnd (5-5-5),Joe Riggs,Louis Taylor
+3c8cd38d579d6fd7,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Dominick Cruz,Scott Jorgensen
+991d084feb15a112,KO/TKO,1,3:43,3 Rnd (5-5-5),Luis Pajuelo,Robbie Ring
+7ccbbe7aa5aa5c79,Submission,2,1:17,3 Rnd (5-5-5),Josh Barnett,Brett Rogers
+2b77c918e655e435,Decision - Majority,3,5:00,3 Rnd (5-5-5),TIE,TIE
+d2b43e8b49ceeabf,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Mauricio Rua,Rogerio Nogueira
+a615824f1451f681,KO/TKO,1,2:12,2 Rnd (10-5),Mirko Filipovic,Yoshihisa Yamamoto
+eabafb8b77f6ac0e,KO/TKO,1,4:47,3 Rnd (10-5-5),Mauricio Rua,Quinton Jackson
+77b6adb306b5b863,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),SeungGuk Choi,Qiu Lun
+81bd1c1f7dfccbb7,Decision - Unanimous,2,5:00,2 Rnd (10-5),Shinya Aoki,Marcus Aurelio
+0a2e535569dfdd6b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Roger Bowling,Josh Thornburg
+6a65af5991ea7540,Decision - Unanimous,2,5:00,2 Rnd (10-5),Hayato Sakurai,Kuniyoshi Hironaka
+39d040bac5b7ddd1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Caol Uno,Akiyo Nishiura
+1d6eda59445af039,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rashid Vagabov,Paulo Henrique
+7915d41760c36c62,Decision - Split,3,5:00,3 Rnd (5-5-5),Nah-Shon Burrell,James Terry
+bf9ad9e771ef4319,Decision - Split,3,4:00,3 Rnd (4-4-4),Chris Horodecki,Bart Palaszewski
+f248dbf531292b2c,KO/TKO,1,4:57,3 Rnd (10-10-10),Gary Goodridge,Oleg Taktarov
+dff5c0fd4a1b0fef,KO/TKO,1,0:25,3 Rnd (5-5-5),Claudio Ribeiro,Ivan Valenzuela
+028ba26cebe62457,Submission,1,8:16,3 Rnd (10-5-5),Fedor Emelianenko,Mark Hunt
+1ed964912388daa2,Submission,1,1:15,3 Rnd (5-5-5),Megumi Fujii,Karla Benitez
+3357eff66d95fa5b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Antonio Banuelos,Cole Escovedo
+daa2851e2cea26c6,Decision,2,10:00,2 Rnd (10-10),Luiz Azeredo,Anderson Silva
+eea06ca2f6c93d52,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Antonio Rodrigo Nogueira,Josh Barnett
+91d0f0452fba3066,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dan Henderson,Vitor Belfort
+63f5a7b0fb0d334a,Decision - Split,2,5:00,3 Rnd (10-5-5),Akihiro Gono,Yuki Kondo
+0049a10440ad307a,Submission,1,1:02,2 Rnd (10-5),Jesse Taylor,Dong Sik Yoon
+17e073ba2936d1d7,Decision - Split,3,5:00,3 Rnd (5-5-5),Jerrel Venetiaan,Daijiro Matsui
+bdbf39811bed8c54,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mario Sousa,Mariusz Ksiazkiewicz
+92975422fd77707c,KO/TKO,1,0:29,2 Rnd (10-5),Tatsuya Kawajiri,Chris Brennan
+369ac1763a995bea,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Boston Salmon,Ricky Turcios
+45655047aba658b6,Decision - Split,3,5:00,3 Rnd (5-5-5),Olivier Murad,Xie Bin
+8a6ac3b4dabd76a7,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Xie Bin,Yibugele
+8847fe4b88c51487,Submission,1,2:47,3 Rnd (5-5-5),Tommy Gantt,Adam Livingston
+0161f74a492fa375,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Josefine Knutsson,YeDam Seo
+f40aea8c3aa037cf,Decision - Unanimous,2,10:00,2 Rnd (10-10),Igor Vovchanchyn,Mark Kerr
+ec3fbf5a12ae4d0b,KO/TKO,1,3:48,3 Rnd + OT (5-5-5-5),Aaron Tau,Rio Tirto
+7da4527386346ef5,KO/TKO,1,2:52,3 Rnd (5-5-5),Terry Martin,Keith Berry
+c10faf7a88d5431a,KO/TKO,3,0:50,5 Rnd (5-5-5-5-5),Dan Henderson,Rafael Cavalcante
+446de91aef423d44,KO/TKO,1,3:01,3 Rnd (5-5-5),Bevon Lewis,Alton Cunningham
+f84d9b9f072670ca,Decision - Split,3,5:00,3 Rnd (5-5-5),Saimon Oliveira,Jose Alday
+5b0c86f47ae164b1,Decision - Unanimous,2,5:00,2 Rnd (10-5),Akihiro Gono,Crosley Gracie
+3ef332945aa9aad1,KO/TKO,1,0:27,3 Rnd (5-5-5),Brock Larson,Kevin Knabjian
+99d0517adc67fc40,Submission,1,4:37,3 Rnd (5-5-5),HanSeul Kim,John Adajar
+97ccec7f5ee797f1,Submission,1,1:40,3 Rnd (5-5-5),Kazushi Sakuraba,Zelg Galesic
+6297a81500866725,KO/TKO,1,1:34,3 Rnd (5-5-5),Gegard Mousasi,Gary Goodridge
+a7c00838c9076ccf,Submission,1,3:00,3 Rnd (5-5-5),Shane Roller,Todd Moore
+7f88a4f2c476c155,Decision - Split,3,5:00,3 Rnd (5-5-5),Nick Piccininni,Jack Duffy
+dfcfc9d5d5b6f3b2,Submission,1,1:52,3 Rnd (10-5-5),Igor Vovchanchyn,Gilbert Yvel
+756ec128df94ce6e,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Takeya Mizugaki,Rani Yahya
+3235d08f7d0f241c,TKO - Doctor's Stoppage,1,1:46,3 Rnd (5-5-5),Damian Pinas,Vitor Costa
+75eb815f8e89104c,Submission,2,2:42,3 Rnd (5-5-5),Austin Vanderford,Angelo Trevino
+74aaff7cf997e127,KO/TKO,1,0:50,3 Rnd (5-5-5),Josh Grispi,Micah Miller
+708db9149bf306b0,KO/TKO,1,1:43,3 Rnd (5-5-5),Chris Duncan,Charlie Campbell
+b3f0c32ef0008e91,Submission,2,4:25,3 Rnd (5-5-5),Mark Hominick,Trenell Young
+26566dd27fe1ba27,KO/TKO,1,1:38,3 Rnd (10-5-5),Wanderlei Silva,Kazushi Sakuraba
+d877fbd816083046,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jake Shields,Dave Menne
+a0186ed12aa08f41,Decision - Split,3,5:00,3 Rnd (5-5-5),Fredson Paixao,Bryan Caraway
+7dfa32f820b08b5f,KO/TKO,1,2:35,2 Rnd (10-5),Takashi Sugiura,Paulo Cesar Silva
+8011be29960cd518,Submission,1,3:12,3 Rnd (5-5-5),Shi Ming,Puja Tomar
+a1d2658c2aa6eec4,KO/TKO,1,15:00,1 Rnd + OT (15-10),Igor Vovchanchyn,Kazushi Sakuraba
+58a0c57e271c8b26,KO/TKO,1,1:13,3 Rnd (5-5-5),Rich Franklin,Leo Sylvest
+2dab10e741f3aa8b,Submission,2,1:44,3 Rnd (5-5-5),Karine Silva,Yan Qihui
+8c0d5151a5d9ff7a,KO/TKO,2,3:53,3 Rnd (5-5-5),Anderson Silva,Jorge Rivera
+f2011c493edcc80b,TKO - Doctor's Stoppage,1,10:00,2 Rnd (10-10),Igor Vovchanchyn,Enson Inoue
+662a23eaf1df63eb,KO/TKO,1,7:01,2 Rnd (10-5),Hayato Sakurai,Katsuyori Shibata
+60f7d83ecfb5f8a2,Decision - Unanimous,3,5:00,3 Rnd (10-5-5),Kazushi Sakuraba,Antonio Schembri
+af3aab1f986165d9,Submission,1,0:33,3 Rnd (5-5-5),Alistair Overeem,James Thompson
+0a60aec44570fe47,KO/TKO,2,2:30,3 Rnd (5-5-5),Patrick Kaase,Jarrod Kwitty
+2af4d8a953e11598,Decision - Unanimous,3,3:00,3 Rnd (3-3-3),Gina Carano,Julie Kedzie
+bb37c49ab61895e2,KO/TKO,1,9:51,2 Rnd (10-5),Murilo Bustamante,Ikuhisa Minowa
+a8f6be6bff7fc3f5,KO/TKO,1,3:15,3 Rnd (5-5-5),Jhonata Diniz,Eduardo Neves
+c2a0eebadba98a69,TKO - Doctor's Stoppage,2,5:00,3 Rnd (5-5-5),Antonio Silva,Fedor Emelianenko
+9b96e9c4e7080dac,KO/TKO,1,1:28,3 Rnd (5-5-5),Justin Levens,Justin Hawes
+5d0761a3e4923899,TKO - Doctor's Stoppage,1,3:27,3 Rnd (10-5-5),Yuki Kondo,Mario Sperry
+3d102b8751124645,Submission,1,0:29,3 Rnd (5-5-5),Blas Avena,Joe Benoit
+b790fd7b1c84002a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Kevin Syler,Lance Lawrence
+183a853c55d32b28,Decision - Unanimous,2,5:00,2 Rnd (10-5),Tatsuya Kawajiri,Kultar Gill
+5996abe816710d15,Submission,1,2:13,3 Rnd (10-10-10),Mark Kerr,Pedro Otavio
+e8bcff901e1e98f6,KO/TKO,1,0:18,3 Rnd (5-5-5),Damacio Page,Marcos Galvao
+1a13fc881a0aa164,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ken Cross,Kevin Syler
+5bd071a38f37debb,KO/TKO,2,1:49,3 Rnd (5-5-5),Sean Woodson,Terrance McKinney
+45c260921c7a96a6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chad Mendes,Cub Swanson
+c20a19e750adb94a,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Miles Johns,Richie Santiago
+7798dfb04b31fcc1,KO/TKO,1,0:15,2 Rnd (10-5),Denis Kang,Murilo Rua
+3188e4fcd9d432de,Submission,2,2:43,3 Rnd (5-5-5),Donald Cerrone,Chris Horodecki
+642f3bcd0f821e40,KO/TKO,2,4:04,3 Rnd + OT (5-5-5-5),Nghiem Van Y,Rui Imura
+c20b2efce2c8c9cf,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tucker Lutz,Chase Gibson
+90193393454f947f,Decision - Split,2,5:00,2 Rnd (10-5),Gesias Cavalcante,Katsunori Kikuno
+64b342f237a2e19d,KO/TKO,1,2:08,3 Rnd (5-5-5),Chad Griggs,Valentijn Overeem
+4c4bf977aad53bcc,KO/TKO,3,1:16,3 Rnd (10-5-5),Kevin Randleman,Kenichi Yamamoto
+4fe6f6f4787396b8,KO/TKO,3,0:47,3 Rnd (10-5-5),Alex Stiebling,Allan Goes
+2657e5e7b6c5918b,KO/TKO,2,1:53,3 Rnd + OT (5-5-5-5),Machi Fukuda,Anelya Toktogonova
+67b340494348c59d,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Hayato Sakurai,Ryo Chonan
+b806901f74e0bba8,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Matt Ricehouse,Ryan Couture
+f4e6acbf40d29aa7,Decision - Majority,3,5:00,3 Rnd + OT (5-5-5-5),Xiao Long,Shuya Kamikubo
+737179b4606ed370,KO/TKO,1,7:09,2 Rnd (10-5),Joachim Hansen,Luiz Azeredo
+19ff0b517d6d4299,KO/TKO,1,10:14,1 Rnd (15),Igor Vovchanchyn,Gary Goodridge
+d22a0c528786b65c,Submission,2,4:37,3 Rnd (5-5-5),Rogerio Bontorin,Gustavo Gabriel
+61e1d1fee5153a6c,Submission,1,3:55,3 Rnd (5-5-5),Shane Roller,Jamie Varner
+824e02d6d56bf7c7,KO/TKO,1,4:17,3 Rnd + OT (5-5-5-5),Xie Bin,Masuto Kawana
+2727d6abb552ceb2,Decision - Unanimous,2,5:00,2 Rnd (10-5),Murilo Bustamante,Ryuta Sakurai
+9282ef7a9d52443b,Submission,2,4:17,3 Rnd (5-5-5),Kevin Christian,Francesco Mazzeo
+6e41cb60eefb5f56,Submission,1,3:57,2 Rnd (10-5),Shinya Aoki,Clay French
+5b96ffdfef4654a9,KO/TKO,1,0:38,3 Rnd (10-5-5),Kazushi Sakuraba,Dong Sik Yoon
+44bb89b85f89c7a6,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brok Weaver,Devin Smyth
+556055969b2f0bd7,KO/TKO,1,0:08,3 Rnd (5-5-5),Jose Aldo,Cub Swanson
+db72f0b4d2a34a6a,Submission,4,3:03,5 Rnd (5-5-5-5-5),Miesha Tate,Marloes Coenen
+54447cee0aa2e38f,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ricardo Lamas,Dave Jansen
+79512bd1e463657b,Decision - Split,3,5:00,3 Rnd (5-5-5),Robert Peralta,Hiroyuki Takaya
+4a1e7c670be02cb1,Submission,1,0:22,3 Rnd (10-5-5),Heath Herring,Denis Sobolev
+c65e891d794ea466,KO/TKO,2,5:00,3 Rnd (10-5-5),Yoshihisa Yamamoto,Alexander Otsuka
+d12edc71faee389d,KO/TKO,1,8:58,2 Rnd (10-10),Gary Goodridge,Yoshiaki Yatsu
+09d5227e3a8907dd,KO/TKO,1,1:00,2 Rnd (10-5),Jens Pulver,Tomomi Iwama
+32d350a70ce39d8f,Decision - Unanimous,2,5:00,2 Rnd (10-5),Jacare Souza,Jason Miller
+fdba6ce3f32a9d27,KO/TKO,3,2:52,3 Rnd (5-5-5),Ryan Couture,Conor Heun
+17f8acabd9494a2c,KO/TKO,1,2:39,3 Rnd (10-5-5),Gary Goodridge,Valentijn Overeem
+c390ec8c5d8c18b0,KO/TKO,1,2:46,3 Rnd (5-5-5),Bolaji Oki,Dylan Salvador
+9b85435db51d8402,Submission,1,3:01,3 Rnd (5-5-5),Erik Koch,Bendy Casimir
+5e4d365639c465c7,KO/TKO,2,2:46,3 Rnd (5-5-5),Anthony Ruiz,Jeremy  Freitag
+9a8c21272767faef,KO/TKO,4,4:43,5 Rnd (5-5-5-5-5),Carlos Condit,Hiromitsu Miura
+182822019958e0f2,Decision - Unanimous,1,10:00,1 Rnd (10),Kazushi Sakuraba,Ryan Gracie
+c717d9f6e4d2a2c4,Submission,1,3:09,3 Rnd (5-5-5),Cody Haddon,Billy Brand
+8e14eb886564af75,KO/TKO,1,0:48,3 Rnd (5-5-5),Adlan Amagov,Keith Berry
+9b0ec5129a707f03,Submission,3,3:15,3 Rnd (5-5-5),Jimmy Flick,Nate Smith
+c5cb2d551483192b,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Cheyanne Vlismas,Hilarie Rose
+645b48d0ba9b7c8d,KO/TKO,1,1:55,3 Rnd (10-5-5),Heath Herring,Hirotaka Yokoi
+538062500df8f6d3,KO/TKO,1,3:01,5 Rnd (5-5-5-5-5),Michael Bisping,Miika Mehmet
+c53327add2bbda93,KO/TKO,6,15:00,Unlimited Rnd  (15),Kazushi Sakuraba,Royce Gracie
+b3a1b5840b88d550,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mitsuhiro Ishida,Cristiano Marcello
+59ae618afb6ac9db,Submission,1,1:39,3 Rnd (3-3-3),Bryan Caraway,Alvin Cacdac
+1657be063c89f0d3,Decision - Unanimous,2,5:00,2 Rnd (10-5),Takanori Gomi,Luiz Azeredo
+1171032ac5b85604,KO/TKO,2,2:54,3 Rnd (5-5-5),Mauricio Rua,Erick Wanderlei
+9d2be26cb26f4ca3,Decision - Split,3,5:00,3 Rnd (10-5-5),Dan Henderson,Murilo Rua
+5e93d36fdf0f6f8e,KO/TKO,2,4:26,3 Rnd (5-5-5),Rogerio Nogueira,Vladimir Matyushenko
+a5d956abb25bc988,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Brendan Loughnane,Bill Algeo
+c568440b6f3539a4,KO/TKO,2,0:33,3 Rnd (5-5-5),Jamie Pickett,Jhonoven Pati
+d463ac5d19b198e8,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tony Johnson,Alton Cunningham
+7c29f7a1a73f57ea,KO/TKO,2,2:55,3 Rnd (3-3-3),Seth Kleinbeck,Sam Spengler
+ba1fb8f4eb0cf2c8,Submission,1,3:30,3 Rnd (5-5-5),Rani Yahya,Yoshiro Maeda
+a85f8c62ca150478,KO/TKO,1,1:22,3 Rnd (5-5-5),Cory Devela,Joe Riggs
+edf5141eccdd13c5,Decision - Split,3,5:00,3 Rnd (5-5-5),Isaac Vallie-Flagg,Gesias Cavalcante
+e61fe63ad0ce57b4,Submission,1,4:19,3 Rnd (5-5-5),Gadzhi Omargadzhiev,Jansey Silva
+834f96522a351885,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Raul Rosas Jr.,Mando Gutierrez
+898b34ec3a78cfcc,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jasmine Jasudavicius,Julia Polastri
+ff44ee7d8eb39829,KO/TKO,1,1:28,3 Rnd (10-5-5),James Thompson,Paulo Cesar Silva
+fca372c8d6161f81,Submission,2,2:43,3 Rnd (5-5-5),Torrez Finney,Yuri Panferov
+c164a580c8121fe2,KO/TKO,1,4:05,5 Rnd (5-5-5-5-5),Patrick Cote,Jason Day
+011dc13fcbc3d6b9,KO/TKO,1,1:40,2 Rnd (10-5),Phil Baroni,Ryo Chonan
+90f4c4a4e30e6abf,KO/TKO,1,1:36,3 Rnd (5-5-5),Erik Koch,Francisco Rivera
+b08f02bfba18cfe4,Decision - Majority,3,5:00,3 Rnd (5-5-5),Josh McDonald,Patrick Murphy
+79197a3ca78e0596,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Nick Maximov,Oscar Cota
+0494ef16feff9e65,KO/TKO,2,3:04,5 Rnd (5-5-5-5-5),Miguel Torres,Manny Tapia
+d926af83ff2d5a2f,Submission,1,6:20,3 Rnd (10-5-5),Kazushi Sakuraba,Katsuyori Shibata
+b576661b05c4d4da,KO/TKO,3,1:30,3 Rnd (5-5-5),Liz Carmouche,Jan Finney
+98f243f76632ac1f,KO/TKO,1,1:23,2 Rnd (10-10),Igor Vovchanchyn,Francisco Bueno
+60300690969f06e4,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Toshiomi Kazama,Maimaitituoheti Keremuaili
+a7e89978fdc2d362,Decision - Unanimous,2,5:00,2 Rnd (5-5),Bibiano Fernandes,Rodolfo Marques Diniz
+bae5f82385b29c1a,Submission,1,3:29,3 Rnd (5-5-5),Albert Duraev,Caio Bittencourt
+1c35a92c9c949557,Submission,2,3:38,3 Rnd (5-5-5),Tyron Woodley,Zach Light
+122070930be9a37e,KO/TKO,1,8:07,2 Rnd (10-5),Takanori Gomi,Fabio Mello
+785b7d814d9b81f1,Submission,1,3:46,3 Rnd (5-5-5),Rafael Tobias,Jair De Oliveira
+76a7fa80c1d98279,KO/TKO,1,1:10,3 Rnd (10-5-5),Mirko Filipovic,Ikuhisa Minowa
+bd6c4ef39a82e00b,Decision - Unanimous,2,5:00,3 Rnd (10-5-5),Gilbert Melendez,Tatsuya Kawajiri
+f8deb7ef6288cc7b,Other,1,30:00,1 Rnd (30),TIE,TIE
+3477a8023783cb80,KO/TKO,3,0:51,3 Rnd (10-5-5),Murilo Rua,Daijiro Matsui
+401ff1bec2ac0739,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Dominique Steele,Chris Mierzwiak
+ff18cead7817b21e,KO/TKO,1,6:23,3 Rnd (10-5-5),Mark Hunt,Dan Bobish
+96ae89d5885e5b7a,Submission,1,2:52,3 Rnd (10-5-5),Mario Sperry,Igor Vovchanchyn
+3c30da3b02dfea13,Submission,1,2:02,3 Rnd (10-5-5),Josh Barnett,Mark Hunt
+14e38ffd7086d350,KO/TKO,2,1:06,3 Rnd (5-5-5),Josh Hokit,Guilherme Uriel
+43cc040a91145fa7,Submission,2,2:57,3 Rnd (5-5-5),Joseph Benavidez,Miguel Torres
+abaa317e9b8374ca,KO/TKO,1,4:12,3 Rnd (5-5-5),Dan Henderson,Fedor Emelianenko
+06de2289364efcd5,KO/TKO,2,3:22,3 Rnd (5-5-5),Jose Aldo,Alexandre Franca Nogueira
+90e892b2c50ce4dd,Submission,3,4:48,3 Rnd (5-5-5),Wagnney Fabiano,Akitoshi Tamura
+6c337f3e54ce4add,Decision - Unanimous,3,4:00,3 Rnd (4-4-4),Vladimir Matyushenko,Alex Schoenauer
+68c442e1071390b9,Submission,2,3:40,3 Rnd (5-5-5),Vinicius Moreira,John Allan
+3d1bf8a37f73df27,KO/TKO,3,4:12,3 Rnd (5-5-5),Allen Crowder,Don'Tale Mayes
+3c70edc3845fd51b,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Miguel Torres,Takeya Mizugaki
+627670ad216539d9,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Shin Haraguchi,JunYoung Hong
+4b641e3706fd8031,Submission,1,2:42,2 Rnd (10-5),Joseph Benavidez,Junya Kudo
+8437a2ead16bf500,KO/TKO,1,1:09,2 Rnd (10-5),Wanderlei Silva,Ikuhisa Minowa
+dbcf9153092221d3,KO/TKO,1,4:03,2 Rnd (10-5),Marius Zaromskis,Hayato Sakurai
+197f68e2fb3ec585,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Manvel Gamburyan,John Franchi
+0a1cd93703423bf3,KO/TKO,2,3:21,3 Rnd (5-5-5),Mark Hominick,Yves Jabouin
+7f8e8fba285b5a59,Submission,1,1:58,3 Rnd (5-5-5),Casey Olson,Bobby Sanchez
+74582b99c1c0c822,KO/TKO,2,1:11,3 Rnd (5-5-5),Bart Palaszewski,Alex Karalexis
+91272188bc5a5f95,Submission,1,0:25,3 Rnd (5-5-5),Ronda Rousey,Sarah D'alelio
+99dd66a3b1ee6476,Decision - Unanimous,2,5:00,2 Rnd (10-5),Mu Bae Choi,Yoshihisa Yamamoto
+ce8ac77a24021d3f,KO/TKO,1,6:58,3 Rnd (10-5-5),Quinton Jackson,Kevin Randleman
