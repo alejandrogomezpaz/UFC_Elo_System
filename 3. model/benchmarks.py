@@ -15,9 +15,11 @@ ECE + reliability curve
 '''
 
 def log_loss(outcomes, probabilities):
+    outcomes = np.asarray(outcomes, dtype=float)
+    probabilities = np.asarray(probabilities, dtype=float)
     nudge = 1e-10
-    probabilities = np.clip(probabilities, nudge, 1 - nudge) #prevents log converging to literal infinity by slight nudge away from 0
-    return -1 * np.mean(outcomes * np.log(probabilities) + (1 - outcomes) * np.log(1 - probabilities))
+    probabilities = np.clip(probabilities, nudge, 1 - nudge)
+    return -np.mean(outcomes * np.log(probabilities) + (1 - outcomes) * np.log(1 - probabilities))
 
 def brier_skill_score(outcomes, probabilities):
     baseline_pred_rate = 0.5
@@ -101,7 +103,7 @@ def confidence_calibration(outcomes, probabilities, step):
     return expected_calibration_error
 
 def full_benchmark(outcomes, probabilities, step):
-    print(log_loss(outcomes, probabilities))
-    print(brier_skill_score(outcomes, probabilities))
-    print(ranking_calibration(outcomes, probabilities))
-    print(confidence_calibration(outcomes, probabilities, step))
+    print(f'log_loss: {log_loss(outcomes, probabilities)}')
+    print(f'brier_skill_score: {brier_skill_score(outcomes, probabilities)}'')
+    print(f'ranking_calibration: {ranking_calibration(outcomes, probabilities)}'')
+    print(f'confidence_calibration: {confidence_calibration(outcomes, probabilities, step)}'')
