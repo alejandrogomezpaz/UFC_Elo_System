@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.integrate import quad
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 '''
 log-loss
@@ -22,6 +22,8 @@ def log_loss(outcomes, probabilities):
     return -np.mean(outcomes * np.log(probabilities) + (1 - outcomes) * np.log(1 - probabilities))
 
 def brier_skill_score(outcomes, probabilities):
+    outcomes = np.asarray(outcomes, dtype=float)
+    probabilities = np.asarray(probabilities, dtype=float)
     baseline_pred_rate = 0.5
     naive_model = np.mean((baseline_pred_rate - outcomes) ** 2)
     brier_model = np.mean((probabilities - outcomes) ** 2)
@@ -42,8 +44,8 @@ def ranking_calibration(outcomes, probabilities):
         true_neg = np.sum(~pred & ~actual)
         false_neg = np.sum(~pred & actual)
 
-        true_pos_rate = true_pos / (true_pos + false_pos)
-        false_pos_rate = true_neg / (true_neg + false_neg)
+        true_pos_rate  = true_pos  / (true_pos  + false_neg) if (true_pos  + false_neg) else 0.0
+        false_pos_rate = false_pos / (false_pos + true_neg)  if (false_pos + true_neg)  else 0.0
 
         tpr_points.append(true_pos_rate)
         fpr_points.append(false_pos_rate)
@@ -51,7 +53,7 @@ def ranking_calibration(outcomes, probabilities):
     area_under_curve = np.trapezoid(tpr_points, fpr_points)
     #AI generated plotting code; could not be bothered
     plt.figure(figsize=(6, 6))
-    plt.plot(fpr_points, tpr_points, label=f'Model (AUC = {auc:.3f})')
+    plt.plot(fpr_points, tpr_points, label=f'Model (AUC = {area_under_curve:.3f})')
     plt.plot([0, 1], [0, 1], '--', color='gray', label='Guessing (AUC = 0.5)')
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
@@ -66,32 +68,29 @@ def confidence_calibration(outcomes, probabilities, step):
     probabilities = np.array(probabilities)
     outcomes = np.array(outcomes)
 
-    edges = np.arange(0 , 100 + step, step)
+    edges = np.arange(0, 1 + step, step)   # probabilities live in [0, 1]
     pred_points = []
     actual_points = []
     weights = []
 
     for i in range(len(edges) - 1):
-        interval_accuracy = np.array()
-        in_bin = [edges[i] <=  probabilities < edges[i + 1]]
+        in_bin = (probabilities >= edges[i]) & (probabilities < edges[i + 1])
 
-        if len(in_bin) == 0:
+        if in_bin.sum() == 0:
             continue
-        else:
-            interval_accuracy.append(np.mean(in_bin))
 
-        pred_points.append(probabilities[in_bin].mean()) # avg predicted prob in bin (x)
-        actual_points.append(outcomes[in_bin].mean()) # win rate of fights in bin (y)
+        pred_points.append(probabilities[in_bin].mean())  # avg predicted prob in bin (x)
+        actual_points.append(outcomes[in_bin].mean())     # win rate in bin (y)
         weights.append(in_bin.sum())
-    
+
     pred_points = np.array(pred_points)
     actual_points = np.array(actual_points)
     weights = np.array(weights)
     expected_calibration_error = np.sum(weights / weights.sum() * np.abs(actual_points - pred_points))
 
-    #AI generated code for graph; couldn't be bothered :)
+    #AI generated plotting code below; couldn't be bothered :)
     plt.figure(figsize=(6, 6))
-    plt.plot(pred_points, actual_points, 'o-', label=f'Model (ECE = {ece:.3f})')
+    plt.plot(pred_points, actual_points, 'o-', label=f'Model (ECE = {expected_calibration_error:.3f})')
     plt.plot([0, 1], [0, 1], '--', color='gray', label='Perfect calibration')
     plt.xlabel('Predicted probability')
     plt.ylabel('Actual win rate')
@@ -104,6 +103,6 @@ def confidence_calibration(outcomes, probabilities, step):
 
 def full_benchmark(outcomes, probabilities, step):
     print(f'log_loss: {log_loss(outcomes, probabilities)}')
-    print(f'brier_skill_score: {brier_skill_score(outcomes, probabilities)}'')
-    print(f'ranking_calibration: {ranking_calibration(outcomes, probabilities)}'')
-    print(f'confidence_calibration: {confidence_calibration(outcomes, probabilities, step)}'')
+    print(f'brier_skill_score: {brier_skill_score(outcomes, probabilities)}')
+    print(f'ranking_calibration: {ranking_calibration(outcomes, probabilities)}')
+    print(f'confidence_calibration: {confidence_calibration(outcomes, probabilities, step)}')
