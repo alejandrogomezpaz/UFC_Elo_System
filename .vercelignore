@@ -1,0 +1,10 @@
+# keep the deployed bundle lean: only api/ + predict.py + model.joblib are
+# needed at runtime (fighter data is served from Neon Postgres, not CSVs)
+.git
+.DS_Store
+*.ipynb
+__pycache__/
+1. data_scraping/
+2. data_cleaning/
+3. feature_engineering_and_model_training/
+4. Model Query Pipeline/updater_data/
