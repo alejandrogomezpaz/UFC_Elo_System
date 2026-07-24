@@ -1,62 +1,104 @@
+import datetime
 import os
 import sys
-import copy
-import math
 from pathlib import Path
 
+import glicko2
 import numpy as np
 import pandas as pd
-import glicko2
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-from sklearn.preprocessing import OneHotEncoder
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine, inspect, text
+from sqlalchemy.exc import SQLAlchemyError
 
 '''
-updater pipeline: catch the neon database up to a target date, with receipts
-    1) ask fighter_features for the last date it knows about (MAX(date))
-    2) scrape ufcstats.com completed events from that date up to the target date,
-       least recent first, skipping any fight_id we already have
-    3) clean the new fights with the same code as 2. data_cleaning (copied text,
-       not imported -- the notebooks stay untouched)
-    4) recompute glicko ratings + features over the FULL history (old csvs + new
-       appends) with the same code as ratings.ipynb / feature_engineering_instantiator,
-       so one pipeline run can never drift from the instantiation
-    5) rebuild fighter_features on neon behind a backup-table swap
-failsafes (belt, suspenders, second belt)
-    - raw scrapes append to updater_data/*.csv first; cleaned/derived files are
-      REGENERATED from those logs every run, so a crash anywhere = just rerun
-    - already-scraped and known-failed fight_ids are skipped (resume for free)
-    - every url gets retries; fights that still fail land in a failed csv like
-      the original scraper did, and are excluded rather than half-included
-    - pairing/column/dupe guards abort loudly before anything touches the db
-    - db swap keeps the old table as fighter_features_backup (rollback = rename it back)
+incremental updater: scrape ufcstats.com for new events, clean, and roll the
+glicko ratings + features forward in postgres. run it after every card.
+    1) takes a date (or date range) as the scraping window
+    2) asks the db for the last date it was updated
+    3) scrapes ufcstats.com with playwright, starting from the least recent
+       event not yet in the db, iterating forward chronologically
+    4) per event: cleans the scraped data (cleaning code copy-pasted from
+       2. data_cleaning/data_cleaning.ipynb), then per fight writes the fight
+       rows, the round-by-round stats, and both fighters' new pre-fight
+       snapshots (glicko + features) into the db
+    5) repeats event by event until caught up through the input date
+tables it maintains (fights/fight_stats/fighters are created and seeded from
+the local cleaned csvs the first time this runs against a fresh db):
+    fights           -- fighters_fights.csv schema, two rows per fight
+    fight_stats      -- fights.csv schema, round-by-round + round 0 aggregate
+    fighters         -- fighters.csv schema, static biostats
+    fighter_features -- must already exist (load_fighter_features.py); new
+                        pre-fight snapshot rows get appended here
+conventions (same as instantiation):
+    snapshots are PRE-fight: row (fighter, date) is the state carried INTO the
+    fight on that date, so a fight never leaks into its own features. draws
+    ('TIE') count for neither wins nor losses; no-contests/overturned fights
+    crash the scraper on purpose and are discarded, same policy as always.
+failsafes / redundancy:
+    - always resumes from the db's own last date; a requested start after that
+      is clamped down, since a gap would silently corrupt every rating after it
+    - one transaction per event: a crash mid-event rolls back cleanly and the
+      next run picks up exactly where it left off
+    - fight_id and (fighter, date) existence checks make reruns idempotent
+    - unscrapeable fights are logged to failed_updates.csv, never crash the run
+    - table schemas are introspected up front; aborts loudly on any mismatch
+    - glicko carry replays every fight since the last stored snapshot, so a
+      hole in fighter_features self-heals instead of compounding
+    - post-run verification cross-checks max dates and row counts across tables
 usage
-    pip install pandas numpy sqlalchemy psycopg2-binary playwright beautifulsoup4 glicko2 scikit-learn   (first time only)
-    python updater.py 2026-07-23        (target date; defaults to today if omitted)
-    set UFC_DB_URL to point at neon -- keep it in the environment, never in this file
+    python updater.py                         catch up through today
+    python updater.py 2026-07-23              catch up through a given date
+    python updater.py 2026-06-01 2026-07-23   explicit window (start clamps to db state)
+    set UFC_DB_URL to hit neon; defaults to the local postgres.app db.
+    first time: pip install pandas numpy beautifulsoup4 playwright sqlalchemy
+    psycopg2-binary glicko2, then: playwright install chromium
 '''
 
 DB_URL = os.environ.get('UFC_DB_URL', 'postgresql+psycopg2://alejandrogomez-paz@localhost:5432/ufc')
-TABLE = 'fighter_features'
 
-ROOT = Path(__file__).resolve().parent.parent
-SCRAPE_DIR = ROOT / '1. data_scraping'
-CLEAN_DIR = ROOT / '2. data_cleaning'
-DATA_DIR = Path(__file__).resolve().parent / 'updater_data'   # append-only logs + derived files live here
-
-# converged tau from ratings.ipynb; static, do not re-optimize on updates
+# converged in ratings.ipynb; static, do not re-fit here
 OPTIMAL_TAU = 0.10040325212871097
+glicko2.Player._tau = OPTIMAL_TAU
 
-# exact column order of 2. data_cleaning/fighters_fights.csv, so concat lines up
-FF_COLS = ['fight_id', 'round_finished', 'winner_name', 'loser_name', 'round_total',
-           'round_time_sec', 'fighter_id', 'event', 'stoppage_time_sec', 'opponent_name',
-           'fighter_name', 'method_type', 'method_specific', 'date']
+HERE = Path(__file__).resolve().parent
+CLEANING_DIR = HERE.parent / '2. data_cleaning'
+FAILED_CSV = str(HERE / 'failed_updates.csv')
+
+# fight-page method strings -> the fighter-page vocabulary stored in fights.
+# method_type is kept for completeness; ratings and features never read it
+METHOD_MAP = {
+    'Decision - Unanimous': 'U-DEC',
+    'Decision - Split': 'S-DEC',
+    'Decision - Majority': 'M-DEC',
+    'KO/TKO': 'KO/TKO',
+    "TKO - Doctor's Stoppage": 'KO/TKO',
+    'Submission': 'SUB',
+    'DQ': 'DQ',
+    'Could Not Continue': 'CNC',
+    'Overturned': 'Overturned',
+}
+
+# the per-minute stat columns, copied from feature_engineering_instantiator.ipynb
+NORM_COLS = ['sig_str_pct', 'td_pct', 'sub_att', 'rev', 'sig_str_landed', 'sig_str_attempted',
+             'total_str_landed', 'total_str_attempted', 'td_landed', 'td_attempted',
+             'head_landed', 'head_attempted', 'body_landed', 'body_attempted',
+             'leg_landed', 'leg_attempted', 'distance_landed', 'distance_attempted',
+             'clinch_landed', 'clinch_attempted', 'ground_landed', 'ground_attempted', 'ctrl_secs']
+
+STANCE_COLS = ['stance_orthodox', 'stance_southpaw', 'stance_switch', 'stance_nan']
+
+TABLE_COLS = {}  # table -> ordered column list, filled by ensure_tables
 
 
-#---------------------------------------------------------------------------------
-# scraping -- copied from 1. data_scraping/CODE_DATA_SCRAPING.ipynb (keep in sync)
-#---------------------------------------------------------------------------------
+
+# ---- scraping (copied from 1. data_scraping/CODE_DATA_SCRAPING.ipynb) ----
+
+def id_from_url(url):
+    return url.rstrip('/').split('/')[-1]
+
+def save_progress(df, filename):
+    df.to_csv( filename, mode="a", header=not os.path.exists(filename), index=False )
 
 def single_raw_html_fetcher(url, page):
     page.goto(url, wait_until="domcontentloaded")
@@ -67,84 +109,6 @@ def single_raw_html_fetcher(url, page):
     page.wait_for_timeout(200)
     html = page.content()
     return html
-
-def id_from_url(url):
-    return url.rstrip('/').split('/')[-1]
-
-def save_progress(df, filename):
-    df.to_csv( filename, mode="a", header=not os.path.exists(filename), index=False )
-
-def fight_url_scraper(event_urls_list, page):
-
-    fight_urls = []
-    for url in event_urls_list:
-        html = single_raw_html_fetcher(url, page)
-        soup = BeautifulSoup(html, "html.parser")
-
-
-        event_soup = soup.find('tbody', class_ = "b-fight-details__table-body")
-        row_soup = event_soup.find_all('tr')
-
-        for row in row_soup:
-            link = row.get('data-link')
-            if link:
-                fight_urls.append(link)
-
-    fight_urls = list(set(fight_urls)) # precautionary dedupe after iteration...
-    return fight_urls
-
-def single_fighter_scraper(html):
-    soup = BeautifulSoup(html, "html.parser")
-    fighter_soup = soup.find('section', class_ = 'b-statistics__section_details')
-
-    #For record
-    heading_soup = soup.find('h2')
-    record_unclean = heading_soup.find('span', class_ = 'b-content__title-record').text.strip()
-    record = record_unclean[8:]
-    df_record = pd.DataFrame([record], columns = ['record'])
-
-    #For fight table
-    fight_columns = [column.text.strip() for column in fighter_soup.find_all('th')]
-    fight_rows = fighter_soup.find_all('tr')
-
-    fight_data = []
-    fight_ids = []
-    for row in fight_rows:
-        cells = row.find_all('td')
-        clean_cell = [cell.text.strip() for cell in cells]
-        if len(clean_cell) < len(fight_columns):
-            clean_cell += [None] * (len(fight_columns) - len(clean_cell))
-
-        fight_data.append(clean_cell)
-
-        link = row.get('data-link')
-        fight_ids.append(id_from_url(link) if link else None)
-
-    df_fight_table = pd.DataFrame(fight_data, columns = fight_columns)
-    df_fight_table.insert(0, 'fight_id', fight_ids)
-
-    #For biostats table
-    biostats_table_soup = fighter_soup.find('ul')
-    biostats_columns = [column.text.strip() for column in biostats_table_soup.find_all('i', class_ = 'b-list__box-item-title b-list__box-item-title_type_width')]
-
-    biostats_data = []
-    for i in range(len(biostats_columns)):
-        biostats_data.append(biostats_table_soup.find_all('i', class_ = 'b-list__box-item-title b-list__box-item-title_type_width')[i].next_sibling.strip())
-    df_biostats_table = pd.DataFrame([biostats_data], columns = biostats_columns)
-
-
-    #For career statistics table
-    career_stat_soup = fighter_soup.find('div', class_="b-list__info-box-left")
-    career_stat_columns = [column.text.strip() for column in career_stat_soup.find_all('i')]
-
-    career_stat_data = []
-    for i in range(len(career_stat_columns)):
-        career_stat_data.append(career_stat_soup.find_all('i')[i].next_sibling.strip())
-    df_career_stat = pd.DataFrame([career_stat_data], columns = career_stat_columns)
-
-    df_fighter_stats = pd.concat([df_record, df_career_stat, df_biostats_table], axis = 1).drop(columns=["Career statistics:"])
-
-    return df_fighter_stats, df_fight_table
 
 def single_fight_scraper(html):
 
@@ -264,62 +228,122 @@ def single_fight_scraper(html):
 
     return  df_fight_stats, df_rbr_fight
 
+def single_fighter_scraper(html):
+    soup = BeautifulSoup(html, "html.parser")
+    fighter_soup = soup.find('section', class_ = 'b-statistics__section_details')
 
-#---------------------------------------------------------------------------------
-# scraping -- updater-only additions (events with dates, person links, retries)
-#---------------------------------------------------------------------------------
+    #For record
+    heading_soup = soup.find('h2')
+    record_unclean = heading_soup.find('span', class_ = 'b-content__title-record').text.strip()
+    record = record_unclean[8:]
+    df_record = pd.DataFrame([record], columns = ['record'])
 
-def fetch_with_retry(url, page, tries = 3):
-    for attempt in range(tries): #failsafe: ufcstats hiccups, so every url gets three chances
-        try:
-            return single_raw_html_fetcher(url, page)
-        except Exception as e:
-            if attempt == tries - 1:
-                raise
-            page.wait_for_timeout(1500)
+    #For fight table
+    fight_columns = [column.text.strip() for column in fighter_soup.find_all('th')]
+    fight_rows = fighter_soup.find_all('tr')
+
+    fight_data = []
+    fight_ids = []
+    for row in fight_rows:
+        cells = row.find_all('td')
+        clean_cell = [cell.text.strip() for cell in cells]
+        if len(clean_cell) < len(fight_columns):
+            clean_cell += [None] * (len(fight_columns) - len(clean_cell))
+
+        fight_data.append(clean_cell)
+
+        link = row.get('data-link')
+        fight_ids.append(id_from_url(link) if link else None)
+
+    df_fight_table = pd.DataFrame(fight_data, columns = fight_columns)
+    df_fight_table.insert(0, 'fight_id', fight_ids)
+
+    #For biostats table
+    biostats_table_soup = fighter_soup.find('ul')
+    biostats_columns = [column.text.strip() for column in biostats_table_soup.find_all('i', class_ = 'b-list__box-item-title b-list__box-item-title_type_width')]
+
+    biostats_data = []
+    for i in range(len(biostats_columns)):
+        biostats_data.append(biostats_table_soup.find_all('i', class_ = 'b-list__box-item-title b-list__box-item-title_type_width')[i].next_sibling.strip())
+    df_biostats_table = pd.DataFrame([biostats_data], columns = biostats_columns)
+
+
+    #For career statistics table
+    career_stat_soup = fighter_soup.find('div', class_="b-list__info-box-left")
+    career_stat_columns = [column.text.strip() for column in career_stat_soup.find_all('i')]
+
+    career_stat_data = []
+    for i in range(len(career_stat_columns)):
+        career_stat_data.append(career_stat_soup.find_all('i')[i].next_sibling.strip())
+    df_career_stat = pd.DataFrame([career_stat_data], columns = career_stat_columns)
+
+    df_fighter_stats = pd.concat([df_record, df_career_stat, df_biostats_table], axis = 1).drop(columns=["Career statistics:"])
+
+    return df_fighter_stats, df_fight_table
+
+
+# updater-specific scrapers, same style as the originals
 
 def completed_events_scraper(page):
-    #same table as events_page_scraper in CODE_DATA_SCRAPING, but keeping the date span too
+    #the listing shows every event with its date, newest first (plus the next
+    #upcoming card at the top, which the date window filters right back out)
     url = 'http://ufcstats.com/statistics/events/completed?page=all'
-    html = fetch_with_retry(url, page)
+    html = single_raw_html_fetcher(url, page)
     soup = BeautifulSoup(html, "html.parser")
 
-    soup = soup.find('table', class_ = "b-statistics__table-events")
-    row_soup = soup.find_all('tr', class_ = 'b-statistics__table-row')
-
+    table_soup = soup.find('table', class_ = "b-statistics__table-events")
     events = []
-    for row in row_soup:
+    for row in table_soup.find_all('tr', class_ = 'b-statistics__table-row'):
         a_tag = row.find('a', class_ = 'b-link b-link_style_black')
-        date_tag = row.find('span', class_ = 'b-statistics__date')
-        if a_tag and a_tag.get('href'):
-            events.append([a_tag['href'], a_tag.text.strip(),
-                           pd.to_datetime(date_tag.text.strip(), errors = 'coerce') if date_tag else pd.NaT])
+        date_span = row.find('span', class_ = 'b-statistics__date')
+        if a_tag is None or date_span is None: #header and spacer rows
+            continue
+        event_date = pd.to_datetime(date_span.text.strip(), errors='coerce')
+        events.append({'event_url': a_tag.get('href'),
+                       'event_name': a_tag.text.strip(),
+                       'date': None if pd.isna(event_date) else event_date.date()})
 
-    df_events = pd.DataFrame(events, columns = ['event_url', 'event_name', 'event_date'])
-    return df_events
+    events = [e for e in events if e['date'] is not None]
+    events.sort(key=lambda e: e['date'])
+    return events
 
-def event_page_date(event_url, page):
-    #failsafe: second, independent source for the event date if the listing span fails
-    html = fetch_with_retry(event_url, page)
+def event_page_parser(html):
+    #the event page restates its own date (used to double-check the listing)
+    #and holds one data-link per fight, in card order
     soup = BeautifulSoup(html, "html.parser")
+
+    event_date = None
     for li in soup.find_all('li', class_ = 'b-list__box-list-item'):
-        if 'Date:' in li.text:
-            return pd.to_datetime(li.text.replace('Date:', '').strip(), errors = 'coerce')
-    return pd.NaT
+        item_text = li.get_text(' ', strip=True)
+        if item_text.lower().startswith('date:'):
+            parsed = pd.to_datetime(item_text[5:].strip(), errors='coerce')
+            event_date = None if pd.isna(parsed) else parsed.date()
 
-def fight_person_links(html):
-    #the two fighter names + fighter-details urls off a fight page (same class the winner/loser scrape uses)
+    fight_urls = []
+    event_soup = soup.find('tbody', class_ = "b-fight-details__table-body")
+    if event_soup:
+        for row in event_soup.find_all('tr'):
+            link = row.get('data-link')
+            if link and link not in fight_urls: # precautionary dedupe, keeps card order
+                fight_urls.append(link)
+
+    return event_date, fight_urls
+
+def fight_person_ids(html):
+    #fighter profile links on the fight page, name -> fighter_id
     soup = BeautifulSoup(html, "html.parser")
-    links = soup.find_all('a', class_ = 'b-link b-fight-details__person-link')
-    return [(a.text.strip(), a['href']) for a in links]
+    ids = {}
+    for a_tag in soup.find_all('a', class_ = 'b-link b-fight-details__person-link'):
+        link = a_tag.get('href')
+        if link:
+            ids[a_tag.text.strip()] = id_from_url(link)
+    return ids
 
 
-#---------------------------------------------------------------------------------
-# cleaning -- copied from 2. data_cleaning/data_cleaning.ipynb (keep in sync)
-#---------------------------------------------------------------------------------
+
+# ---- cleaning (copied from 2. data_cleaning/data_cleaning.ipynb) ----
 
 def clean_fight_oneline(df_fight_oneline):
-
     df_fight_oneline.columns = df_fight_oneline.columns.str.replace(':', '').str.replace(' ', '_').str.lower() #reformat col names
     df_fight_oneline['time_sec'] = ((pd.to_numeric(df_fight_oneline['time'].str.split(':', expand=True)[0], errors = 'coerce') * 60) +
                            pd.to_numeric(df_fight_oneline['time'].str.split(':', expand=True)[1], errors = 'coerce')).astype('Int64') #clean time col to secs
@@ -329,11 +353,9 @@ def clean_fight_oneline(df_fight_oneline):
     df_fight_oneline['round_total'] = pd.to_numeric(split[0], errors='coerce').astype('Int64')
     df_fight_oneline['round_time_sec'] = pd.to_numeric(split[1], errors='coerce').astype('Int64') * 60
     df_fight_oneline = df_fight_oneline.drop(columns='time_format')
-
     return df_fight_oneline
 
 def clean_rbr(df_rbr):
-
     df_rbr['Td %_x'] = df_rbr['Td %_x'].replace('---', np.nan) #clean '---' with NaNs
 
     for col in df_rbr.columns: #drop duplicate columns error in scraping
@@ -362,7 +384,12 @@ def clean_rbr(df_rbr):
                            pd.to_numeric(df_rbr['ctrl'].str.split(':', expand=True)[1], errors = 'coerce')).astype('Int64') #clean time col
     df_rbr = df_rbr.drop(columns = 'ctrl')
 
-    #fix fight meta-aggregate 'row 0''s missing data (same loop as the cleaning notebook)
+    #the notebook leaves these as strings and the csv round-trip made them ints;
+    #the db columns are integer so convert here
+    for col in ['kd', 'sub_att', 'rev']:
+        df_rbr[col] = pd.to_numeric(df_rbr[col], errors='coerce').astype('Int64')
+
+    # fix fight meta-aggregate 'row 0''s missing data (copied from the notebook)
     stat_cols = ['sig_str_landed', 'sig_str_attempted', 'head_landed', 'head_attempted', #cols to be aggregated
                  'body_landed', 'body_attempted', 'leg_landed', 'leg_attempted',
                  'distance_landed', 'distance_attempted', 'clinch_landed', 'clinch_attempted',
@@ -377,10 +404,21 @@ def clean_rbr(df_rbr):
             for col in stat_cols:
                 df_rbr.at[i, col] = totals.loc[(row['fight_id'], row['fighter']), col]
 
+    #postgres cannot take duplicate column names. the 'Sig. str._x' and 'Sig. str'
+    #splits both land on sig_str_landed/attempted; pandas called the second copy
+    #sig_str_landed.1 on the csv round-trip, which seeded the db as sig_str_landed_1
+    seen, cols = {}, []
+    for col in df_rbr.columns:
+        k = seen.get(col, 0)
+        cols.append(col if k == 0 else f'{col}_{k}')
+        seen[col] = k + 1
+    df_rbr.columns = cols
+
     return df_rbr
 
-def clean_fighter_stats(df_fighter_stats):
-
+def clean_fighter_stats(df_fighter_stats, fighter_name):
+    #single-row version for debut fighters; the name_map merge from the notebook
+    #is replaced by the name we already have from the fight page
     df_fighter_stats = df_fighter_stats.replace('--', np.nan) #clean '--' with NaNs
 
     split = df_fighter_stats['record'].str.split('-', expand=True) #split record col into wins/losses/draws
@@ -405,448 +443,394 @@ def clean_fighter_stats(df_fighter_stats):
 
     df_fighter_stats['weight'] = pd.to_numeric(df_fighter_stats['weight'].str.replace(' lbs.', '', regex=False), errors='coerce').astype('Int64')
     df_fighter_stats['reach'] = pd.to_numeric(df_fighter_stats['reach'].str.rstrip('"'), errors='coerce').astype('Int64')
-
-    #the notebook mapped fighter_name in from the fighter-fights table; here the name rode
-    #in on the scrape (person link text), so it is already a column and no merge is needed
-    for col in df_fighter_stats.columns: #same blank-column artifact the notebook dropped as 'unnamed_6'
-        if col.startswith('unnamed'):
-            df_fighter_stats = df_fighter_stats.drop(columns = col)
-
     df_fighter_stats['dob'] = pd.to_datetime(df_fighter_stats['dob'], format='%b %d, %Y', errors='coerce') #save col to datetime datatype
+    df_fighter_stats['fighter_name'] = fighter_name
 
+    #the blank career-stat label the csv round-trip used to call unnamed_6
+    df_fighter_stats = df_fighter_stats.drop(columns=[c for c in df_fighter_stats.columns if c == ''])
     return df_fighter_stats
 
 
-#---------------------------------------------------------------------------------
-# ratings -- copied from 3. feature_engineering_and_model_training/ratings.ipynb
-#---------------------------------------------------------------------------------
 
-def rating_func(df_fighters_fights):
+# ---- db bootstrap and helpers ----
 
-    rating_dict = {} # [fighter, date]: glicko rating
-    initialized_fighters = set()
+def align_to_table(df, table):
+    #reindex to the live table's columns: extras are dropped with a warning,
+    #missing columns become NULL. cheap insurance against schema drift
+    cols = TABLE_COLS[table]
+    extras = [c for c in df.columns if c not in cols]
+    if extras:
+        print(f'    warning: dropping columns not in {table}: {extras}')
+    return df.reindex(columns=cols)
 
-    for i, row in df_fighters_fights.iterrows():
-        fighter, opponent, date = row['fighter_name'], row['opponent_name'], row['date']
-        if fighter not in initialized_fighters:
-            rating_dict[(fighter, date)] = glicko2.Player()
-            initialized_fighters.add(fighter)
-        if opponent not in initialized_fighters:
-            rating_dict[(opponent, date)] = glicko2.Player()
-            initialized_fighters.add(opponent)
+def seed_table(engine, table, df, pk_cols):
+    df = df.dropna(subset=pk_cols)
+    dupes = df.duplicated(subset=pk_cols).sum()
+    if dupes:
+        print(f'    dropping {dupes} duplicate {pk_cols} rows before seeding')
+        df = df.drop_duplicates(subset=pk_cols, keep='first')
+    with engine.begin() as conn:
+        df.to_sql(table, conn, if_exists='replace', index=False, chunksize=5000)
+        conn.execute(text(f'ALTER TABLE {table} ADD PRIMARY KEY ({", ".join(pk_cols)})'))
+    print(f'    seeded {table} with {len(df):,} rows')
 
-        last_date = max([d for (f, d) in rating_dict.keys() if f == fighter])
-        opp_last_date = max([d for (f, d) in rating_dict.keys() if f == opponent])
-        fighter_object = copy.deepcopy(rating_dict[(fighter, last_date)])
-        opponent_object = copy.deepcopy(rating_dict[(opponent, opp_last_date)])
+def ensure_tables(engine):
+    insp = inspect(engine)
 
-        # next two lines in order to freeze variables form objects; makes logic less messy and less variable tracking :)
-        fighter_rating, fighter_rd = rating_dict[(fighter, last_date)].rating, rating_dict[(fighter, last_date)].rd
-        opponent_rating, opponent_rd = rating_dict[(opponent, opp_last_date)].rating, rating_dict[(opponent, opp_last_date)].rd
+    if not insp.has_table('fighter_features'):
+        sys.exit('fighter_features is missing -- run load_fighter_features.py first, this script only keeps it current')
 
-        if fighter == row['winner_name']:
-            fighter_object.update_player([opponent_rating], [opponent_rd], [1])
-            rating_dict[(fighter, date)] = fighter_object
+    if not insp.has_table('fights'):
+        print('fights table missing, seeding from the cleaned csvs (first run against this db)')
+        df = pd.read_csv(CLEANING_DIR / 'fighters_fights.csv')
+        df['date'] = pd.to_datetime(df['date']).dt.date
+        seed_table(engine, 'fights', df, ['fight_id', 'fighter_name'])
 
-            opponent_object.update_player([fighter_rating], [fighter_rd], [0])
-            rating_dict[(opponent, date)] = opponent_object
+    if not insp.has_table('fight_stats'):
+        print('fight_stats table missing, seeding from the cleaned csvs')
+        df = pd.read_csv(CLEANING_DIR / 'fights.csv')  #pandas mangles the duplicate sig_str cols to .1 on read
+        df.columns = [c.replace('.', '_') for c in df.columns]
+        seed_table(engine, 'fight_stats', df, ['fight_id', 'fighter', 'round'])
+
+    if not insp.has_table('fighters'):
+        print('fighters table missing, seeding from the cleaned csvs')
+        df = pd.read_csv(CLEANING_DIR / 'fighters.csv')
+        df['dob'] = pd.to_datetime(df['dob'], errors='coerce').dt.date
+        seed_table(engine, 'fighters', df, ['fighter_id'])
+
+    insp = inspect(engine)  #re-inspect, tables may have just been created
+    for table in ['fights', 'fight_stats', 'fighters', 'fighter_features']:
+        TABLE_COLS[table] = [c['name'] for c in insp.get_columns(table)]
+
+    #abort loudly if fighter_features cannot hold what this script computes
+    required = ({'fighter', 'date', 'rating', 'rating_deviation', 'volatility', 'all_time_min',
+                 'wins', 'losses', 'weight', 'stance', 'dob', 'reach_z', 'height_inches_z', 'age'}
+                | {c + '_norm' for c in NORM_COLS} | set(STANCE_COLS))
+    missing = required - set(TABLE_COLS['fighter_features'])
+    if missing:
+        sys.exit(f'fighter_features is missing columns this script fills: {sorted(missing)}')
+
+def last_update_date(engine):
+    with engine.connect() as conn:
+        d_fights = conn.execute(text('SELECT MAX(date) FROM fights')).scalar()
+        d_feats = conn.execute(text('SELECT MAX(date) FROM fighter_features')).scalar()
+    if d_fights is None or d_feats is None:
+        sys.exit('fights or fighter_features is empty -- instantiate the db before updating it')
+    if d_fights != d_feats:
+        #diverged tables mean snapshot holes ahead, which would quietly poison
+        #every rating that touches them. refuse and make the human look
+        sys.exit(f'fights is current through {d_fights} but fighter_features through {d_feats}; '
+                 'the instantiation csvs/tables are out of sync, fix that before updating')
+    return d_fights
+
+
+
+# ---- rating + feature carry (semantics copied from ratings.ipynb and feature_engineering_instantiator.ipynb) ----
+
+def glicko_carry(conn, fighter, event_date):
+    '''rating carried INTO the new fight. take the fighter's last stored pre-fight
+    snapshot and replay every fight between then and now (normally exactly one).
+    opponents stay frozen at their own pre-fight snapshots -- exactly what the
+    deepcopies in rating_func do. one deliberate deviation: rating_func scores a
+    draw as a win for whichever fighter landed on the odd row of the [::2] slice,
+    which is not reconstructible from the db; here a draw is outcome 0 for both.'''
+    snap = conn.execute(text(
+        'SELECT date, rating, rating_deviation, volatility FROM fighter_features '
+        'WHERE fighter = :f AND date < :d ORDER BY date DESC LIMIT 1'),
+        {'f': fighter, 'd': event_date}).fetchone()
+    if snap is None:
+        return 1500.0, 350.0, 0.06 #debut, same defaults as a fresh glicko2.Player()
+
+    player = glicko2.Player(rating=snap.rating, rd=snap.rating_deviation, vol=snap.volatility)
+
+    replays = conn.execute(text(
+        'SELECT date, opponent_name, winner_name FROM fights '
+        'WHERE fighter_name = :f AND date >= :s AND date < :d ORDER BY date, fight_id'),
+        {'f': fighter, 's': snap.date, 'd': event_date}).fetchall()
+    if len(replays) == 0:
+        print(f'    warning: no fight row behind the {snap.date} snapshot for {fighter}, carrying rating forward unchanged')
+    if len(replays) > 1:
+        print(f'    warning: replaying {len(replays)} fights for {fighter} (snapshot hole, self-healing)')
+
+    for fight in replays:
+        opp = conn.execute(text(
+            'SELECT rating, rating_deviation FROM fighter_features WHERE fighter = :o AND date = :d'),
+            {'o': fight.opponent_name, 'd': fight.date}).fetchone()
+        if opp is None: #same effect as rating_func initializing an unseen opponent
+            print(f'    warning: no snapshot for opponent {fight.opponent_name} on {fight.date}, assuming a fresh 1500')
+            opp_rating, opp_rd = 1500.0, 350.0
         else:
-            fighter_object.update_player([opponent_rating], [opponent_rd], [0])
-            rating_dict[(fighter, date)] = fighter_object
+            opp_rating, opp_rd = opp.rating, opp.rating_deviation
+        outcome = 1 if fight.winner_name == fighter else 0
+        player.update_player([opp_rating], [opp_rd], [outcome])
 
-            opponent_object.update_player([fighter_rating], [fighter_rd], [1])
-            rating_dict[(opponent, date)] = opponent_object
+    return player.rating, player.rd, player.vol
 
+def stats_carry(conn, fighter, event_date):
+    '''prior time-weighted per-minute averages, excluding the current fight.
+    summing stat*length over every prior fight and dividing by total minutes is
+    exactly the cumsum().shift(1) from feature_engineering_instantiator evaluated
+    at the new row, so instantiated and updated snapshots agree by construction.
+    only fights that have round-by-round stats count, wins/losses included --
+    same inner merge as the instantiator.'''
+    stat_select = ', '.join(f'fs.{c}' for c in NORM_COLS)
+    df_fights = pd.read_sql(text(
+        f'SELECT {stat_select}, f.round_finished, f.round_time_sec, f.stoppage_time_sec, '
+        'f.winner_name, f.loser_name '
+        'FROM fight_stats fs '
+        'JOIN fights f ON f.fight_id = fs.fight_id AND f.fighter_name = fs.fighter '
+        'WHERE fs.fighter = :f AND fs.round = 0 AND f.date < :d '
+        'ORDER BY f.date'), conn, params={'f': fighter, 'd': event_date})
 
-    df_ratings = pd.DataFrame(
-        [(f, d, p.rating, p.rd, p.vol) for (f, d), p in rating_dict.items()],
-        columns=['fighter', 'prior_to_date', 'rating', 'rating_deviation', 'volatility'])
+    out = {'all_time_min': np.nan, 'wins': np.nan, 'losses': np.nan}
+    out.update({col + '_norm': np.nan for col in NORM_COLS})
+    if len(df_fights) == 0:
+        return out #debut: NaN across the board, same as the shift(1) NaNs at instantiation
 
-    df_ratings = df_ratings.sort_values(['fighter', 'prior_to_date'], ascending = True)
+    num_cols = NORM_COLS + ['round_finished', 'round_time_sec', 'stoppage_time_sec']
+    df_fights[num_cols] = df_fights[num_cols].apply(pd.to_numeric, errors='coerce').fillna(0) #same fillna(0) as the instantiator; to_numeric guards against text-typed db columns
 
-    # pre-fight rating: the rating carried INTO each fight (previous fight's result)
-    df_ratings['rating'] = df_ratings.groupby('fighter')['rating'].shift(1).fillna(1500)
-    df_ratings['rating_deviation']     = df_ratings.groupby('fighter')['rating_deviation'].shift(1).fillna(350)
-    df_ratings['volatility'] = df_ratings.groupby('fighter')['volatility'].shift(1).fillna(0.06)
-
-    return df_ratings
-
-
-#---------------------------------------------------------------------------------
-# features -- copied from feature_engineering_instantiator.ipynb (reads the frames
-# passed in instead of the csvs; everything else is the same text)
-#---------------------------------------------------------------------------------
-
-def build_fighter_database(df_fighters_fights, df_rbr, df_fighters, df_ratings):
-
-    cols1 = ['fighter_id']
-    df_fighters_fights = df_fighters_fights.drop(columns = cols1)
-    df_fighters_fights = df_fighters_fights.sort_values('date', ascending = True)
-    df_fighters_fights = df_fighters_fights.rename(columns={'fighter_name': 'fighter'})
-
-    df_rbr_agg = df_rbr[df_rbr['round'] == 0]
-    df_fights = pd.merge(df_rbr_agg, df_fighters_fights, on=['fight_id', 'fighter'])
-    df_fights = df_fights.fillna(0)
-
-
-
-    # clean and merge fighter static data with ratings on composite primary key
-    cols2 = ['slpm',  'sapm', 'td_avg', 'sub_avg', 'wins', 'losses', 'draws', 'str_acc_pct',  'str_def_pct', 'td_acc_pct', 'td_def_pct']
-    df_fighters = df_fighters.drop(columns = cols2)
-
-    df_ratings = df_ratings.rename(columns={'prior_to_date': 'date'})
-
-    n = df_fighters['fighter_name'].duplicated().sum()
-    print(f"{n} rows would be dropped")
-
-    df_fighters_u = df_fighters.drop_duplicates('fighter_name', keep='first')
-    df = pd.merge(df_ratings, df_fighters_u,
-                      left_on='fighter', right_on='fighter_name',
-                      how='left', validate='m:1')
-
-
-
-
-    # time-weighted running average of each stat, EXCLUDING the current fight (no leakage)
     df_fights['fight_length_min'] = (((df_fights['round_finished'] - 1) * df_fights['round_time_sec']) + df_fights['stoppage_time_sec']) / 60
 
-    df_fights = df_fights.sort_values(['fighter', 'date']).reset_index(drop=True)
-    g = df_fights.groupby('fighter')
+    all_time_min = df_fights['fight_length_min'].sum()
+    out['all_time_min'] = all_time_min
+    for col in NORM_COLS:
+        wsum = (df_fights[col] * df_fights['fight_length_min']).sum()
+        out[col + '_norm'] = wsum / all_time_min if all_time_min > 0 else np.nan
 
-    agg = df_fights[['fighter', 'date']].copy()
-    agg['all_time_min'] = g['fight_length_min'].cumsum().shift(1)
-    agg.loc[g.cumcount() == 0, 'all_time_min'] = np.nan
+    out['wins'] = float((df_fights['winner_name'] == fighter).sum()) #'TIE' rows count for neither
+    out['losses'] = float((df_fights['loser_name'] == fighter).sum())
+    return out
 
-    cols = ['sig_str_pct', 'td_pct', 'sub_att', 'rev', 'sig_str_landed', 'sig_str_attempted',
-            'total_str_landed', 'total_str_attempted', 'td_landed', 'td_attempted',
-            'head_landed', 'head_attempted', 'body_landed', 'body_attempted',
-            'leg_landed', 'leg_attempted', 'distance_landed', 'distance_attempted',
-            'clinch_landed', 'clinch_attempted', 'ground_landed', 'ground_attempted', 'ctrl_secs']
+def fighters_biostats(conn, fighter, fighter_id, page):
+    #static biostats for a debut fighter: db first, scrape their page if unseen
+    row = conn.execute(text(
+        'SELECT weight, reach, height_inches, stance, dob FROM fighters WHERE fighter_id = :i'),
+        {'i': fighter_id}).fetchone()
+    if row is not None:
+        return {'weight': row.weight, 'reach': row.reach, 'height_inches': row.height_inches,
+                'stance': row.stance, 'dob': row.dob}
 
-    for col in cols:
-        wsum = df_fights[col] * df_fights['fight_length_min']
-        prior_wsum = wsum.groupby(df_fights['fighter']).cumsum().shift(1)
-        prior_wsum[g.cumcount() == 0] = np.nan
-        agg[col + '_norm'] = prior_wsum / agg['all_time_min']
+    print(f'    new fighter {fighter}, scraping their page')
+    html = single_raw_html_fetcher(f'http://ufcstats.com/fighter-details/{fighter_id}', page)
+    df_fighter_stats, _ = single_fighter_scraper(html)
+    df_fighter_stats = clean_fighter_stats(df_fighter_stats, fighter)
+    df_fighter_stats.insert(0, 'fighter_id', fighter_id)
+    df_fighter_stats['dob'] = df_fighter_stats['dob'].dt.date
+    align_to_table(df_fighter_stats, 'fighters').to_sql('fighters', conn, if_exists='append', index=False)
 
-    agg['wins'] = df_fights.assign(w=(df_fights['fighter'] == df_fights['winner_name'])).groupby('fighter')['w'].cumsum().shift(1)
-    agg['losses'] = df_fights.assign(l=(df_fights['fighter'] == df_fights['loser_name'])).groupby('fighter')['l'].cumsum().shift(1)
+    r = df_fighter_stats.iloc[0]
+    return {col: (None if pd.isna(r.get(col)) else r.get(col))
+            for col in ['weight', 'reach', 'height_inches', 'stance', 'dob']}
 
-    df = df.merge(agg, on=['fighter', 'date'], how='left')
+def static_carry(conn, fighter, fighter_id, event_date, page):
+    '''weight/stance/dob and the weight-class z-scores ride along from the last
+    snapshot; only age is recomputed each time. debuts pull biostats from the
+    fighters table (scraping their page if needed). one honest approximation:
+    the instantiator z-scored reach/height against its full snapshot population,
+    which is not stored, so post-instantiation debuts z-score against the
+    fighters table for their weight class instead.'''
+    prev = conn.execute(text(
+        'SELECT weight, stance, dob, reach_z, height_inches_z, '
+        'stance_orthodox, stance_southpaw, stance_switch, stance_nan '
+        'FROM fighter_features WHERE fighter = :f AND date < :d ORDER BY date DESC LIMIT 1'),
+        {'f': fighter, 'd': event_date}).fetchone()
+
+    if prev is not None:
+        out = {'weight': prev.weight, 'stance': prev.stance, 'dob': prev.dob,
+               'reach_z': prev.reach_z, 'height_inches_z': prev.height_inches_z,
+               'stance_orthodox': prev.stance_orthodox, 'stance_southpaw': prev.stance_southpaw,
+               'stance_switch': prev.stance_switch, 'stance_nan': prev.stance_nan}
+    else:
+        bio = fighters_biostats(conn, fighter, fighter_id, page)
+        stance = bio['stance'] if bio['stance'] in ('Orthodox', 'Southpaw', 'Switch') else None #rare stances were collapsed to nan at instantiation
+        out = {'weight': bio['weight'], 'stance': stance, 'dob': bio['dob'],
+               'stance_orthodox': 1.0 if stance == 'Orthodox' else 0.0,
+               'stance_southpaw': 1.0 if stance == 'Southpaw' else 0.0,
+               'stance_switch': 1.0 if stance == 'Switch' else 0.0,
+               'stance_nan': 1.0 if stance is None else 0.0}
+        for col in ['reach', 'height_inches']:
+            out[col + '_z'] = np.nan
+            if bio[col] is not None and bio['weight'] is not None:
+                pop = pd.read_sql(text(f'SELECT {col} FROM fighters WHERE weight = :w'),
+                                  conn, params={'w': bio['weight']})[col].dropna()
+                if len(pop) > 1 and pop.std() > 0:
+                    out[col + '_z'] = (bio[col] - pop.mean()) / pop.std()
+
+    #age recomputed every snapshot; same floor((date - dob) / 365.25) as the instantiator
+    if out['dob'] is not None and pd.notna(out['dob']):
+        out['age'] = int(np.floor((pd.Timestamp(event_date) - pd.Timestamp(out['dob'])).days / 365.25))
+    else:
+        out['age'] = None
+    return out
+
+def build_snapshot(conn, fighter, fighter_id, event_date, page):
+    row = {'fighter': fighter, 'date': event_date}
+    rating, rd, vol = glicko_carry(conn, fighter, event_date)
+    row.update({'rating': rating, 'rating_deviation': rd, 'volatility': vol})
+    row.update(stats_carry(conn, fighter, event_date))
+    row.update(static_carry(conn, fighter, fighter_id, event_date, page))
+    return row
 
 
 
-    # static fighter biostats normalized by weightclass
-    cols_to_norm_by_weightclass = ['reach', 'height_inches']
-    for col in cols_to_norm_by_weightclass:
-        grp = df.groupby('weight')[col]
-        df[col + '_z'] = (df[col] - grp.transform('mean')) / grp.transform('std')
-    df = df.drop(columns = cols_to_norm_by_weightclass)
+# ---- per-event processing ----
 
+def write_fight(conn, page, fight_id, oneline, df_stats_rows, person_ids, event_name, event_date):
+    names = list(dict.fromkeys(df_stats_rows['fighter'])) #both fighters, scrape order preserved
+    if len(names) != 2:
+        raise ValueError(f'expected 2 fighters in the round table, got {names}')
+    fighter_one, fighter_two = names
 
+    #snapshots first: every query inside filters date < event_date, so the state
+    #is strictly pre-event no matter what lands in this transaction later
+    snapshots = []
+    for fighter in (fighter_one, fighter_two):
+        exists = conn.execute(text('SELECT 1 FROM fighter_features WHERE fighter = :f AND date = :d'),
+                              {'f': fighter, 'd': event_date}).fetchone()
+        if exists: #reruns, or the old same-day tournament quirk
+            print(f'    warning: snapshot ({fighter}, {event_date}) already exists, keeping the original')
+            continue
+        snapshots.append(build_snapshot(conn, fighter, person_ids.get(fighter), event_date, page))
 
-    # stance to numeric through One Hot Encoding
-    counts = df['stance'].value_counts()
-    rare = counts[counts < df['stance'].isna().sum()].index
-    df['stance'] = df['stance'].where(~df['stance'].isin(rare), np.nan)
-    enc = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
-    encoded = enc.fit_transform(df[['stance']])
-    df[enc.get_feature_names_out(['stance'])] = encoded
+    fight_rows = []
+    for fighter, opponent in ((fighter_one, fighter_two), (fighter_two, fighter_one)): #two perspectives, fighters_fights schema
+        fight_rows.append({
+            'fight_id': fight_id,
+            'round_finished': int(oneline['round']),
+            'winner_name': oneline['winner'],
+            'loser_name': oneline['loser'],
+            'round_total': None if pd.isna(oneline['round_total']) else int(oneline['round_total']),
+            'round_time_sec': None if pd.isna(oneline['round_time_sec']) else int(oneline['round_time_sec']),
+            'fighter_id': person_ids.get(fighter),
+            'event': event_name,
+            'stoppage_time_sec': None if pd.isna(oneline['time_sec']) else int(oneline['time_sec']),
+            'opponent_name': opponent,
+            'fighter_name': fighter,
+            'method_type': METHOD_MAP.get(oneline['method'], oneline['method']),
+            'method_specific': None, #lived on the fighter pages; not on the fight page, and nothing downstream reads it
+            'date': event_date,
+        })
 
+    align_to_table(pd.DataFrame(fight_rows), 'fights').to_sql('fights', conn, if_exists='append', index=False)
+    align_to_table(df_stats_rows, 'fight_stats').to_sql('fight_stats', conn, if_exists='append', index=False)
+    if snapshots:
+        align_to_table(pd.DataFrame(snapshots), 'fighter_features').to_sql('fighter_features', conn, if_exists='append', index=False)
+    return len(snapshots)
 
-    df = df.drop(columns = ['fighter_name', 'fighter_id'])
-    df['dob'] = pd.to_datetime(df['dob'])
-    df['date'] = pd.to_datetime(df['date'])
-    age_years = (df['date'] - df['dob']).dt.days / 365.25
-    df['age'] = np.floor(pd.to_numeric(age_years, errors='coerce')).astype('Int64')
+def process_event(engine, page, event):
+    html = single_raw_html_fetcher(event['event_url'], page)
+    page_date, fight_urls = event_page_parser(html)
+    event_date = event['date']
+    if page_date is not None and page_date != event_date: #listing and event page should agree
+        print(f'    warning: listing says {event_date}, event page says {page_date}; trusting the event page')
+        event_date = page_date
+    if len(fight_urls) == 0:
+        print('    no fight links yet (event probably has not happened), skipping')
+        return 0, 0, 0
 
-    df_u = df[~df.duplicated(['fighter', 'date'], keep=False)]
-
-    return df_u
-
-
-#---------------------------------------------------------------------------------
-# updater orchestration
-#---------------------------------------------------------------------------------
-
-def last_db_date(engine):
-    #primary source of truth: the table itself. cross-checked against the local csv below
-    with engine.connect() as conn:
-        db_max = conn.execute(text(f"SELECT MAX(date) FROM {TABLE}")).scalar()
-    if db_max is None:
-        raise SystemExit(f"'{TABLE}' is empty or missing -- run load_fighter_features.py once before updating.")
-
-    csv_max = pd.to_datetime(pd.read_csv(CLEAN_DIR / 'fighters_fights.csv')['date']).max()
-    db_max = pd.to_datetime(db_max)
-    if csv_max.date() != db_max.date():
-        print(f"note: db max date ({db_max.date()}) != fighters_fights.csv max date ({csv_max.date()}); "
-              "using the earlier one so nothing gets skipped")
-    return min(db_max, csv_max)
-
-def read_if_exists(path, **kwargs):
-    return pd.read_csv(path, **kwargs) if os.path.exists(path) else None
-
-def known_fight_ids():
-    #failsafe: three independent sources of 'already have it' -- cleaned history,
-    #this updater's own raw log, and every failed-fights log (NC/overturned etc.)
-    known = set(pd.read_csv(CLEAN_DIR / 'fighters_fights.csv')['fight_id'])
-
-    for path in [DATA_DIR / 'raw_fight_oneline_stats.csv',
-                 SCRAPE_DIR / 'failed_fights.csv', SCRAPE_DIR / 'missing_failed_fights.csv',
-                 DATA_DIR / 'failed_fights.csv']:
-        df = read_if_exists(path)
-        if df is not None:
-            if 'fight_id' in df.columns:
-                known |= set(df['fight_id'])
-            else:
-                known |= set(df['url'].str.rstrip('/').str.split('/').str[-1])
-    return known
-
-def known_fighter_names():
-    names = set(pd.read_csv(CLEAN_DIR / 'fighters.csv')['fighter_name'].dropna())
-    df = read_if_exists(DATA_DIR / 'raw_fighter_stats.csv')
-    if df is not None:
-        names |= set(df['fighter_name'].dropna())
-    return names
-
-def scrape_new_fights(last_date, target_date):
-    #sweep completed events oldest-first, scraping only fights we do not have yet.
-    #everything lands in append-only raw logs first, so a crash mid-run loses nothing
-    known = known_fight_ids()
-    names = known_fighter_names()
-    n_new = 0
-
-    p = sync_playwright().start()
-    browser = p.chromium.launch(headless=True)
-    page = browser.new_page()
-
-    df_events = completed_events_scraper(page)
-    for i, row in df_events.iterrows(): #failsafe: re-derive missing dates from the event page itself
-        if pd.isna(row['event_date']):
-            df_events.at[i, 'event_date'] = event_page_date(row['event_url'], page)
-
-    #>= last_date on purpose: a second event on the last-updated day would slip through '>'
-    #the fight_id check keeps the overlap from double-scraping anything
-    df_events = df_events[(df_events['event_date'] >= last_date) & (df_events['event_date'] <= target_date)]
-    df_events = df_events.sort_values('event_date', ascending = True) #least recent first
-    print(f"{len(df_events)} completed event(s) in window {last_date.date()} -> {target_date.date()}")
-
-    for _, event in df_events.iterrows():
-        event_fight_urls = fight_url_scraper([event['event_url']], page)
-        fresh = [url for url in event_fight_urls if id_from_url(url) not in known]
-        print(f"{event['event_name']} ({event['event_date'].date()}): {len(fresh)} new / {len(event_fight_urls)} fights")
-
-        for url in fresh:
+    n_new = n_skip = n_fail = 0
+    with engine.begin() as conn: #one transaction per event: all of it lands or none of it does
+        for url in fight_urls:
+            fight_id = id_from_url(url)
+            if conn.execute(text('SELECT 1 FROM fights WHERE fight_id = :i LIMIT 1'), {'i': fight_id}).fetchone():
+                n_skip += 1
+                continue
             try:
-                html = fetch_with_retry(url, page)
-                persons = fight_person_links(html)
-                if len(persons) != 2:
-                    raise ValueError(f"expected 2 fighters on fight page, got {len(persons)}")
-
-                df3, df4 = single_fight_scraper(html)
-                fid = id_from_url(url)
-                df3.insert(0, 'fight_id', fid)
-                df4.insert(0, 'fight_id', fid)
-
-                #debut fighters: grab their page now so biostats exist at recompute time
-                for name, fighter_url in persons:
-                    if name not in names:
-                        print(f"    new fighter: {name}")
-                        df_stats, _ = single_fighter_scraper(fetch_with_retry(fighter_url, page))
-                        df_stats.insert(0, 'fighter_id', id_from_url(fighter_url))
-                        df_stats['fighter_name'] = name
-                        save_progress(df_stats, DATA_DIR / 'raw_fighter_stats.csv')
-                        names.add(name)
-
-                #meta rides in its own log so fighters_fights rows can be rebuilt after any crash
-                (f1_name, f1_url), (f2_name, f2_url) = persons
-                df_meta = pd.DataFrame([[fid, event['event_name'], event['event_date'].strftime('%Y-%m-%d'),
-                                         f1_name, id_from_url(f1_url), f2_name, id_from_url(f2_url)]],
-                                       columns = ['fight_id', 'event', 'date',
-                                                  'fighter_1', 'fighter_1_id', 'fighter_2', 'fighter_2_id'])
-
-                save_progress(df3, DATA_DIR / 'raw_fight_oneline_stats.csv')
-                save_progress(df4, DATA_DIR / 'raw_fights_roundbyround.csv')
-                save_progress(df_meta, DATA_DIR / 'fight_meta.csv')
-                known.add(fid)
+                fight_html = single_raw_html_fetcher(url, page)
+                df_fight_stats, df_rbr_fight = single_fight_scraper(fight_html) #NCs/overturned crash here on purpose, same discard policy as instantiation
+                person_ids = fight_person_ids(fight_html)
+                df_fight_stats.insert(0, 'fight_id', fight_id)
+                df_rbr_fight.insert(0, 'fight_id', fight_id)
+                oneline = clean_fight_oneline(df_fight_stats).iloc[0]
+                df_stats_rows = clean_rbr(df_rbr_fight)
+                write_fight(conn, page, fight_id, oneline, df_stats_rows, person_ids, event['event_name'], event_date)
                 n_new += 1
+            except SQLAlchemyError: #db errors are systemic: let the transaction roll back instead of half-committing
+                raise
             except Exception as e:
-                print(f"skip fight {url}: {e}")
-                df_fail = pd.DataFrame([[url, str(e)]], columns=['url', 'error'])
-                save_progress(df_fail, DATA_DIR / 'failed_fights.csv')
+                print(f'    skip fight {url}: {e}')
+                save_progress(pd.DataFrame([[url, str(e)]], columns=['url', 'error']), FAILED_CSV)
+                n_fail += 1
+    return n_new, n_skip, n_fail
 
-    page.close()
-    browser.close()
-    p.stop()
-    return n_new
 
-def rebuild_appends():
-    #regenerated (not appended) every run from the raw logs -> rerunning is always safe.
-    #round-trips through csv on purpose: pandas mangles the duplicate sig-str columns on
-    #read exactly like it did for the original fights.csv, so the frames line up
-    raw_oneline = read_if_exists(DATA_DIR / 'raw_fight_oneline_stats.csv')
-    raw_rbr = read_if_exists(DATA_DIR / 'raw_fights_roundbyround.csv')
-    meta = read_if_exists(DATA_DIR / 'fight_meta.csv')
-    if raw_oneline is None or raw_rbr is None or meta is None:
-        return None, None, None
 
-    raw_oneline = raw_oneline.drop_duplicates('fight_id') #failsafe: double-append protection
-    raw_rbr = raw_rbr.drop_duplicates(['fight_id', 'Fighter', 'Round'])
-    meta = meta.drop_duplicates('fight_id')
+# ---- main ----
 
-    df_oneline = clean_fight_oneline(raw_oneline)
-    df_rbr_new = clean_rbr(raw_rbr)
+def parse_iso(s):
+    try:
+        return datetime.date.fromisoformat(s)
+    except ValueError:
+        sys.exit(f'bad date {s!r}, expected YYYY-MM-DD')
 
-    #build the two per-fighter perspective rows the old fighter-page scrape used to provide.
-    #method_specific lived on the fighter page only, so it stays NaN here (nothing downstream reads it)
-    ff_rows = []
-    df_oneline = df_oneline.merge(meta, on = 'fight_id')
-    df_oneline = df_oneline.sort_values(['date', 'fight_id'], ascending = True)
-    for _, row in df_oneline.iterrows():
-        for me, me_id, them in [('fighter_1', 'fighter_1_id', 'fighter_2'),
-                                ('fighter_2', 'fighter_2_id', 'fighter_1')]:
-            ff_rows.append([row['fight_id'], row['round'], row['winner'], row['loser'],
-                            row['round_total'], row['round_time_sec'], row[me_id], row['event'],
-                            row['time_sec'], row[them], row[me], row['method'], np.nan, row['date']])
-    df_ff_new = pd.DataFrame(ff_rows, columns = FF_COLS)
-
-    raw_fighters = read_if_exists(DATA_DIR / 'raw_fighter_stats.csv')
-    df_fighters_new = None
-    if raw_fighters is not None:
-        df_fighters_new = clean_fighter_stats(raw_fighters.drop_duplicates('fighter_id'))
-
-    #csv round-trip (see note above), also doubles as an audit trail of what this updater added
-    df_ff_new.to_csv(DATA_DIR / 'fighters_fights_appended.csv', index=False)
-    df_rbr_new.to_csv(DATA_DIR / 'fights_appended.csv', index=False)
-    if df_fighters_new is not None:
-        df_fighters_new.to_csv(DATA_DIR / 'fighters_appended.csv', index=False)
-
-    df_ff_new = pd.read_csv(DATA_DIR / 'fighters_fights_appended.csv')
-    df_rbr_new = pd.read_csv(DATA_DIR / 'fights_appended.csv')
-    df_fighters_new = read_if_exists(DATA_DIR / 'fighters_appended.csv')
-    return df_ff_new, df_rbr_new, df_fighters_new
-
-def recompute(df_ff_new, df_rbr_new, df_fighters_new):
-    #full-history recompute with the instantiation code = zero drift between updates
-    #and instantiation, and multi-event gaps / debuts / ties all come out identical
-    df_ff = pd.read_csv(CLEAN_DIR / 'fighters_fights.csv')
-    df_rbr = pd.read_csv(CLEAN_DIR / 'fights.csv')
-    df_fighters = pd.read_csv(CLEAN_DIR / 'fighters.csv')
-
-    if list(df_rbr_new.columns) != list(df_rbr.columns):
-        raise SystemExit("Aborting: fights_appended.csv columns do not match fights.csv -- "
-                         "ufcstats layout probably changed, fix the scraper before touching the db.")
-
-    df_ff = pd.concat([df_ff, df_ff_new], ignore_index=True)
-    df_rbr = pd.concat([df_rbr, df_rbr_new], ignore_index=True)
-    if df_fighters_new is not None:
-        df_fighters = pd.concat([df_fighters, df_fighters_new], ignore_index=True)
-
-    #failsafe: ratings and features assume two adjacent rows per fight ([::2] one-per-fight trick)
-    if len(df_ff) % 2 or (df_ff['fight_id'].values[::2] != df_ff['fight_id'].values[1::2]).any():
-        raise SystemExit("Aborting: fighters_fights pairing broke (rows must come in adjacent pairs per fight).")
-
-    #same prep text as ratings.ipynb
-    df = df_ff.copy()
-    cols = ['round_finished', 'round_time_sec', 'round_total', 'round_time_sec', 'fighter_id', 'event', 'stoppage_time_sec', 'method_type', 'method_specific']
-    df = df.drop(columns = cols)
-    df = df[::2]
-    df = df.sort_values('date', ascending = True)
-
-    print(f"computing glicko ratings over {len(df):,} fights (same loop as ratings.ipynb, takes a few minutes)...")
-    glicko2.Player._tau = OPTIMAL_TAU
-    df_ratings = rating_func(df)
-
-    df_u = build_fighter_database(df_ff, df_rbr, df_fighters, df_ratings)
-    df_u.to_csv(DATA_DIR / 'fighter_database_updated.csv') #index kept, load reads index_col=0 like load_fighter_features
-
-    #failsafe: every new fight should have produced two snapshot rows; name mismatches show up here
-    got = set(zip(df_u['fighter'], df_u['date'].dt.strftime('%Y-%m-%d')))
-    missing = [(f, d) for f, d in zip(df_ff_new['fighter_name'], df_ff_new['date']) if (f, d) not in got]
-    if missing:
-        print(f"warning: {len(missing)} expected (fighter, date) rows missing from rebuild "
-              f"(dupe-drop or a name mismatch between fight page and fighter page): {missing[:5]}")
-
-    return df_u
-
-def load_to_db(engine):
-    #same load as load_fighter_features.py, but staged through a swap so the live
-    #table is never half-written and the old one survives as _backup
-    df = pd.read_csv(DATA_DIR / 'fighter_database_updated.csv', index_col=0)
-
-    # Real date types instead of strings
-    df["date"] = pd.to_datetime(df["date"]).dt.date
-    df["dob"] = pd.to_datetime(df["dob"], errors="coerce").dt.date
-
-    # Lowercase column names (stance_Orthodox -> stance_orthodox) so you never
-    # have to double-quote identifiers in SQL
-    df.columns = [c.strip().lower().replace(".", "_") for c in df.columns]
-
-    # Guard: Postgres will reject the PK anyway, but fail early with a clear message
-    dupes = df.duplicated(subset=["fighter", "date"]).sum()
-    if dupes:
-        raise SystemExit(
-            f"Aborting: {dupes} duplicate (fighter, date) rows in rebuild. "
-            "Fix the data, then rerun."
-        )
-
+def verify_run(engine, total_new, total_skip, total_fail):
+    #post-run redundancy check: the tables should agree with each other again
     with engine.connect() as conn:
-        old_n = conn.execute(text(f"SELECT COUNT(*) FROM {TABLE}")).scalar()
-        old_max = conn.execute(text(f"SELECT MAX(date) FROM {TABLE}")).scalar()
+        d_fights = conn.execute(text('SELECT MAX(date) FROM fights')).scalar()
+        d_feats = conn.execute(text('SELECT MAX(date) FROM fighter_features')).scalar()
+        n_fights = conn.execute(text('SELECT COUNT(*) FROM fights')).scalar()
+        n_feats = conn.execute(text('SELECT COUNT(*) FROM fighter_features')).scalar()
 
-    #failsafe: an update should only ever grow the table and move the clock forward
-    if len(df) < old_n:
-        raise SystemExit(f"Aborting: rebuild has {len(df):,} rows but '{TABLE}' already has {old_n:,}. "
-                         "Refusing to shrink the table -- inspect updater_data/ first.")
-    if df["date"].max() < old_max:
-        raise SystemExit(f"Aborting: rebuild max date {df['date'].max()} is behind the db's {old_max}.")
-
-    with engine.begin() as conn:
-        df.to_sql(f"{TABLE}_new", conn, if_exists="replace", index=False)
-        conn.execute(text(f"ALTER TABLE {TABLE}_new ADD PRIMARY KEY (fighter, date)"))
-
-    with engine.begin() as conn: #single transaction, so the live table swaps atomically
-        conn.execute(text(f"DROP TABLE IF EXISTS {TABLE}_backup"))
-        conn.execute(text(f"ALTER TABLE {TABLE} RENAME TO {TABLE}_backup"))
-        conn.execute(text(f"ALTER TABLE {TABLE}_new RENAME TO {TABLE}"))
-
-    with engine.connect() as conn:
-        n = conn.execute(text(f"SELECT COUNT(*) FROM {TABLE}")).scalar()
-        new_max = conn.execute(text(f"SELECT MAX(date) FROM {TABLE}")).scalar()
-    print(f"Loaded {n:,} rows into '{TABLE}' (+{n - old_n:,}), max date {old_max} -> {new_max}.")
-    print(f"old table kept as '{TABLE}_backup' -- rollback is just renaming it back.")
-
+    print(f'\ndone: {total_new} fights added, {total_skip} already in db, {total_fail} failed')
+    print(f'    fights: {n_fights:,} rows through {d_fights}')
+    print(f'    fighter_features: {n_feats:,} rows through {d_feats}')
+    if d_fights != d_feats:
+        print('    warning: max dates disagree -- rerun to self-heal, and check the log above')
+    if total_fail:
+        print(f'    {total_fail} fights logged to {FAILED_CSV} (NCs and overturned fights are expected there)')
 
 def main():
-    if len(sys.argv) > 2:
-        sys.exit('usage: python updater.py [YYYY-MM-DD]   (target date, defaults to today)')
-    target_date = pd.to_datetime(sys.argv[1]) if len(sys.argv) == 2 else pd.Timestamp.today().normalize()
-    if pd.isna(target_date):
-        sys.exit(f"could not parse '{sys.argv[1]}' as a date")
+    args = sys.argv[1:]
+    today = datetime.date.today()
+    if len(args) == 0:
+        start_arg, end_date = None, today
+    elif len(args) == 1:
+        start_arg, end_date = None, parse_iso(args[0])
+    elif len(args) == 2:
+        start_arg, end_date = parse_iso(args[0]), parse_iso(args[1])
+    else:
+        sys.exit('usage: python updater.py [end_date] | [start_date end_date]   (dates are YYYY-MM-DD)')
 
-    os.makedirs(DATA_DIR, exist_ok=True)
     engine = create_engine(DB_URL)
+    ensure_tables(engine)
+    last_date = last_update_date(engine)
+    print(f'db is current through {last_date}')
 
-    last_date = last_db_date(engine)
-    print(f"db last updated {last_date.date()}, target {target_date.date()}")
-    if target_date < last_date:
-        sys.exit('target date is before the last update -- nothing to do')
+    #the ratings chain cannot tolerate a gap, so the window never starts after
+    #the db state. starting earlier is harmless: existing fights get skipped
+    start_date = last_date
+    if start_arg is not None:
+        if start_arg > last_date:
+            print(f'warning: requested start {start_arg} is after the db state, clamping to {last_date} so no gap corrupts the chain')
+        else:
+            start_date = start_arg
+    if end_date < start_date:
+        sys.exit(f'end date {end_date} is before start date {start_date}, nothing to do')
+    if end_date > today:
+        print('note: events after today have no results yet and will be skipped when empty')
 
-    n_new = scrape_new_fights(last_date, target_date)
-    print(f"scraped {n_new} new fight(s) this run")
+    total_new = total_skip = total_fail = 0
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
 
-    df_ff_new, df_rbr_new, df_fighters_new = rebuild_appends()
-    if df_ff_new is None or df_ff_new.empty:
-        sys.exit('no new fights in the logs -- database already up to date, nothing to load')
+        events = completed_events_scraper(page)
+        #start date inclusive: if a run died mid-day, the surviving events of that
+        #day are deduped fight by fight and the rolled-back one gets redone
+        window = [e for e in events if start_date <= e['date'] <= end_date]
+        print(f'{len(window)} events in window {start_date} -> {end_date}')
 
-    #no-op guard: nothing scraped this run and every logged fight is strictly older than the
-    #db clock (i.e. already folded in by a previous successful run) -> skip the recompute
-    if n_new == 0 and pd.to_datetime(df_ff_new['date']).max() < last_date:
-        sys.exit('logs contain nothing newer than the db -- already up to date')
+        for event in window: #oldest first, so every rating update sees a settled past
+            print(f"{event['event_name']} ({event['date']})")
+            n_new, n_skip, n_fail = process_event(engine, page, event)
+            print(f'    {n_new} fights added, {n_skip} already in db, {n_fail} failed')
+            total_new += n_new; total_skip += n_skip; total_fail += n_fail
 
-    recompute(df_ff_new, df_rbr_new, df_fighters_new)
-    load_to_db(engine)
+        page.close()
+        browser.close()
 
+    verify_run(engine, total_new, total_skip, total_fail)
 
 if __name__ == '__main__':
     main()

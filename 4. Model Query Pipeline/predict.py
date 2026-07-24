@@ -46,12 +46,33 @@ themes = {
 
 
 def latest_snapshot(engine, name):
-    q = text('SELECT * FROM fighter_features WHERE fighter = :name ORDER BY date DESC LIMIT 1')
-    rows = pd.read_sql(q, engine, params={'name': name})
-    if len(rows) == 1:
+    name = name.strip()
+
+    def _snap(where, params):
+        q = text(f'SELECT * FROM fighter_features WHERE {where} '
+                 'ORDER BY date DESC LIMIT 1')
+        return pd.read_sql(q, engine, params=params)
+
+    # 1. exact match
+    rows = _snap('fighter = :name', {'name': name})
+    if len(rows):
         return rows.iloc[0]
-    close = pd.read_sql(text('SELECT DISTINCT fighter FROM fighter_features WHERE fighter ILIKE :pat ORDER BY fighter'),
-                        engine, params={'pat': f'%{name}%'})
+
+    # 2. case-insensitive exact (handles casing / trailing space)
+    rows = _snap('LOWER(fighter) = LOWER(:name)', {'name': name})
+    if len(rows):
+        return rows.iloc[0]
+
+    # 3. fuzzy contains
+    close = pd.read_sql(
+        text('SELECT DISTINCT fighter FROM fighter_features '
+             'WHERE fighter ILIKE :pat ORDER BY fighter'),
+        engine, params={'pat': f'%{name}%'})
+
+    if len(close) == 1:                      # one candidate -> take it
+        return _snap('fighter = :name',
+                     {'name': close.iloc[0]['fighter']}).iloc[0]
+
     hints = ', '.join(close['fighter'].head(5)) if len(close) else 'no close matches'
     sys.exit(f"'{name}' is not in fighter_features. did you mean: {hints}")
 
@@ -73,27 +94,38 @@ def predict(x):
     return p, np.percentile(ps, 2.5), np.percentile(ps, 97.5)
 
 
-def reasoning(x, name_a, name_b, p):
-    # exact bookkeeping, no vibes: logit(p) = intercept + sum(coef * scaled_diff),
-    # so each feature's pull is its coef * scaled_diff term. + pulls toward A, - toward B
+def reasoning(x, name_a, name_b, p, lo, hi):
+    # logit(p) = intercept + sum(coef * scaled_diff); each feature's pull is one term (log-odds, additive).
+    # displayed as % change in odds = exp(pull)-1. lo/hi are fighter A's 95% CI from predict().
     pulls = pd.Series(model.coef_[0] * scaler.transform(x)[0], index=feature_cols)
-    favorite = name_a if p >= 0.5 else name_b
     zeroed = int((model.coef_[0] == 0).sum())
 
+    def odds_pct(logodds):
+        return (np.exp(logodds) - 1) * 100
+
+    if p >= 0.5:
+        favorite, p_fav, lo_f, hi_f = name_a, p, lo, hi
+    else:                                  # flip prob and interval into B's terms
+        favorite, p_fav, lo_f, hi_f = name_b, 1 - p, 1 - hi, 1 - lo
+
     print(f'\nwhy the model picks {favorite}:')
-    print(f'    (log-odds pulls; + favors {name_a}, - favors {name_b}. '
+    print(f'    {favorite} wins {p_fav:.1%} (95% CI {lo_f:.1%}-{hi_f:.1%})')
+    print(f'    (odds pulls; + favors {name_a}, - favors {name_b}. '
           f'lasso zeroed {zeroed}/{len(feature_cols)} features, the survivors do the talking)')
 
     totals = {t: pulls[cols].sum() for t, cols in themes.items()}
     for theme, pull in sorted(totals.items(), key=lambda kv: (-abs(kv[1]), kv[0])):
-        verdict = 'a wash' if abs(pull) < 0.05 else f'favors {name_a if pull > 0 else name_b} ({pull:+.2f})'
+        verdict = ('a wash' if abs(pull) < 0.05
+                   else f'favors {name_a if pull > 0 else name_b} ({odds_pct(pull):+.0f}% odds)')
         print(f'    {theme:<14} {verdict}')
 
     top = pulls.reindex(pulls.abs().sort_values(ascending=False, kind='stable').index)[:3]
-    print(f'    biggest single factors: ' + ', '.join(f'{c} ({v:+.2f})' for c, v in top.items()))
+    print(f'    biggest single factors: '
+          + ', '.join(f'{c} ({odds_pct(v):+.0f}% odds)' for c, v in top.items()))
 
     logit = model.intercept_[0] + pulls.sum()
-    print(f'    net: {logit:+.2f} log-odds -> p = {1 / (1 + np.exp(-logit)):.3f}, hence the call')
+    print(f'    net: {odds_pct(pulls.sum()):+.0f}% odds vs. baseline '
+          f'-> p = {1 / (1 + np.exp(-logit)):.1%}, hence the call')
 
 
 if __name__ == '__main__':
@@ -121,4 +153,4 @@ if __name__ == '__main__':
     print(f'    snapshots: {name_a} as of {fA["date"]}, {name_b} as of {fB["date"]}')
     print(f'    P({name_a} wins) = {p:.3f}    95% CI [{lo:.3f}, {hi:.3f}]')
     print(f'    call: {favorite} ({p_fav:.0%})')
-    reasoning(x, name_a, name_b, p)
+    reasoning(x, name_a, name_b, p, lo, hi)
