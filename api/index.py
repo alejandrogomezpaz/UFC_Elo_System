@@ -467,9 +467,9 @@ _PREDICT_CONTENT = """
     <button class="predictbtn" id="go">Predict</button>
   </form>
   <div class="examples">Try:
-    <button type="button" data-a="Jon Jones" data-b="Stipe Miocic">Jones vs Miocic</button>
-    <button type="button" data-a="Islam Makhachev" data-b="Alexander Volkanovski">Makhachev vs Volkanovski</button>
-    <button type="button" data-a="Alex Pereira" data-b="Israel Adesanya">Pereira vs Adesanya</button>
+    <button type="button" data-a="Khabib Nurmagomedov" data-b="Conor McGregor">Khabib vs McGregor</button>
+    <button type="button" data-a="Demetrious Johnson" data-b="Henry Cejudo">Johnson vs Cejudo</button>
+    <button type="button" data-a="Israel Adesanya" data-b="Alex Pereira">Adesanya vs Pereira</button>
   </div>
   <div class="stats">
     <span class="chip">10,900+ fights</span>
