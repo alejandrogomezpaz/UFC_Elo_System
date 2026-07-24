@@ -95,37 +95,38 @@ def predict(x):
 
 
 def reasoning(x, name_a, name_b, p, lo, hi):
-    # logit(p) = intercept + sum(coef * scaled_diff); each feature's pull is one term (log-odds, additive).
-    # displayed as % change in odds = exp(pull)-1. lo/hi are fighter A's 95% CI from predict().
+    # logit(p) = intercept + sum(coef * scaled_diff); each feature's pull is one term.
+    # + pulls toward A, - toward B (log-odds, additive). lo/hi are A's 95% CI from predict().
     pulls = pd.Series(model.coef_[0] * scaler.transform(x)[0], index=feature_cols)
     zeroed = int((model.coef_[0] == 0).sum())
-
-    def odds_pct(logodds):
-        return (np.exp(logodds) - 1) * 100
 
     if p >= 0.5:
         favorite, p_fav, lo_f, hi_f = name_a, p, lo, hi
     else:                                  # flip prob and interval into B's terms
         favorite, p_fav, lo_f, hi_f = name_b, 1 - p, 1 - hi, 1 - lo
 
-    print(f'\nwhy the model picks {favorite}:')
     print(f'    {favorite} wins {p_fav:.1%} (95% CI {lo_f:.1%}-{hi_f:.1%})')
-    print(f'    (odds pulls; + favors {name_a}, - favors {name_b}. '
-          f'lasso zeroed {zeroed}/{len(feature_cols)} features, the survivors do the talking)')
+    print(f'\nwhy the model picks {favorite}:')
+
+    top = pulls.reindex(pulls.abs().sort_values(ascending=False, kind='stable').index)[:3]
+
+    def phrase(c, v):                       # "edge in <feature> (toward <fighter>)"
+        strength = 'a decisive' if abs(v) >= 0.5 else 'a clear' if abs(v) >= 0.2 else 'a slight'
+        return f'{strength} edge in {c} for {name_a if v > 0 else name_b}'
+
+    items = list(top.items())
+    lead = phrase(*items[0])
+    rest = '; '.join(phrase(c, v) for c, v in items[1:])
+    print(f'\n    The model leans toward {favorite} mainly on {lead}. '
+          f'Backing that up: {rest}. '
+          f'Together these three factors account for most of the {p_fav:.0%} call.\n')
 
     totals = {t: pulls[cols].sum() for t, cols in themes.items()}
     for theme, pull in sorted(totals.items(), key=lambda kv: (-abs(kv[1]), kv[0])):
-        verdict = ('a wash' if abs(pull) < 0.05
-                   else f'favors {name_a if pull > 0 else name_b} ({odds_pct(pull):+.0f}% odds)')
+        verdict = 'a wash' if abs(pull) < 0.05 else f'favors {name_a if pull > 0 else name_b} ({pull:+.2f})'
         print(f'    {theme:<14} {verdict}')
 
-    top = pulls.reindex(pulls.abs().sort_values(ascending=False, kind='stable').index)[:3]
-    print(f'    biggest single factors: '
-          + ', '.join(f'{c} ({odds_pct(v):+.0f}% odds)' for c, v in top.items()))
-
-    logit = model.intercept_[0] + pulls.sum()
-    print(f'    net: {odds_pct(pulls.sum()):+.0f}% odds vs. baseline '
-          f'-> p = {1 / (1 + np.exp(-logit)):.1%}, hence the call')
+    print(f'    biggest single factors: ' + ', '.join(f'{c} ({v:+.2f})' for c, v in top.items()))
 
 
 if __name__ == '__main__':
@@ -151,6 +152,4 @@ if __name__ == '__main__':
 
     print(f'\n{name_a} vs {name_b}')
     print(f'    snapshots: {name_a} as of {fA["date"]}, {name_b} as of {fB["date"]}')
-    print(f'    P({name_a} wins) = {p:.3f}    95% CI [{lo:.3f}, {hi:.3f}]')
-    print(f'    call: {favorite} ({p_fav:.0%})')
     reasoning(x, name_a, name_b, p, lo, hi)
