@@ -108,6 +108,65 @@ def api_predict():
     )
 
 
+# human-readable labels for the 34 model features (keys match feature_cols)
+_PRETTY = {
+    "rating_diff": "Glicko-2 rating", "rating_deviation_diff": "rating uncertainty (RD)",
+    "volatility_diff": "rating volatility",
+    "sig_str_pct_norm_diff": "sig. strike accuracy", "sig_str_landed_norm_diff": "sig. strikes landed",
+    "sig_str_attempted_norm_diff": "sig. strikes attempted",
+    "total_str_landed_norm_diff": "total strikes landed",
+    "total_str_attempted_norm_diff": "total strikes attempted",
+    "head_landed_norm_diff": "head strikes landed", "head_attempted_norm_diff": "head strikes attempted",
+    "body_landed_norm_diff": "body strikes landed", "body_attempted_norm_diff": "body strikes attempted",
+    "leg_landed_norm_diff": "leg strikes landed", "leg_attempted_norm_diff": "leg strikes attempted",
+    "distance_landed_norm_diff": "distance strikes landed",
+    "distance_attempted_norm_diff": "distance strikes attempted",
+    "clinch_landed_norm_diff": "clinch strikes landed",
+    "clinch_attempted_norm_diff": "clinch strikes attempted",
+    "td_pct_norm_diff": "takedown accuracy", "td_landed_norm_diff": "takedowns landed",
+    "td_attempted_norm_diff": "takedowns attempted", "sub_att_norm_diff": "submission attempts",
+    "rev_norm_diff": "reversals", "ground_landed_norm_diff": "ground strikes landed",
+    "ground_attempted_norm_diff": "ground strikes attempted", "ctrl_secs_norm_diff": "control time",
+    "wins_diff": "career wins", "losses_diff": "career losses",
+    "reach_z_diff": "reach (class z-score)", "height_inches_z_diff": "height (class z-score)",
+    "age_diff": "age",
+    "stance_Orthodox_diff": "orthodox stance", "stance_Southpaw_diff": "southpaw stance",
+    "stance_Switch_diff": "switch stance",
+}
+
+
+def _pretty(col: str) -> str:
+    return _PRETTY.get(col, col.replace("_diff", "").replace("_norm", "").replace("_", " "))
+
+
+@app.get("/api/analytics")
+def api_analytics():
+    import numpy as np
+    coefs = predict.model.coef_[0]
+    col_theme = {c: t for t, cols in predict.themes.items() for c in cols}
+    # coefficient spread across the 1,000 bootstrap refits
+    ens = np.array([m.coef_[0] for _, m in predict.ensemble])
+    lo, hi = np.percentile(ens, [2.5, 97.5], axis=0)
+    sel = (ens != 0).mean(axis=0)  # how often the lasso keeps each feature
+
+    feats = [{
+        "name": col, "label": _pretty(col),
+        "theme": col_theme.get(col, "other"),
+        "coef": float(coefs[i]),
+        "lo": float(lo[i]), "hi": float(hi[i]),
+        "sel": float(sel[i]),
+    } for i, col in enumerate(predict.feature_cols)]
+    feats.sort(key=lambda f: -abs(f["coef"]))
+
+    return jsonify(
+        intercept=float(predict.model.intercept_[0]),
+        n_features=len(feats),
+        n_zero=int((coefs == 0).sum()),
+        n_bootstrap=len(predict.ensemble),
+        features=feats,
+    )
+
+
 # --------------------------------------------------------------------------
 # Frontend: single-file pages sharing one base template. Tokens (__TITLE__,
 # __NAV__, __CONTENT__) are substituted with str.replace, so CSS/JS braces
@@ -262,6 +321,31 @@ _BASE = """<!doctype html>
   .loading span:nth-child(3){animation-delay:.3s}
   @keyframes pulse{0%,100%{opacity:.25; transform:scale(.8)}50%{opacity:1; transform:scale(1)}}
 
+  /* ---- analytics ---- */
+  .legend{display:flex; flex-wrap:wrap; gap:.4rem 1rem; margin:.5rem 0 1rem; font-size:.78rem;
+          color:var(--muted)}
+  .sw{display:inline-block; width:.65rem; height:.65rem; border-radius:3px; margin-right:.35rem;
+      vertical-align:-1px}
+  .axis{display:grid; grid-template-columns:minmax(110px,175px) 1fr 52px; gap:.6rem;
+        font-size:.72rem; color:var(--faint); margin-bottom:.35rem}
+  .axis .mid{display:flex; justify-content:space-between}
+  .frow{display:grid; grid-template-columns:minmax(110px,175px) 1fr 52px; gap:.6rem;
+        align-items:center; margin:.3rem 0; font-size:.82rem}
+  .fname{color:var(--muted); text-align:right; white-space:nowrap; overflow:hidden;
+         text-overflow:ellipsis}
+  .ftrack{position:relative; height:12px}
+  .ftrack::before{content:""; position:absolute; left:50%; top:-3px; bottom:-3px; width:1px;
+         background:rgba(255,255,255,.18)}
+  .fbar{position:absolute; top:1px; height:10px; border-radius:5px; opacity:.92}
+  .fci{position:absolute; top:5px; height:2px; background:rgba(255,255,255,.4); border-radius:1px}
+  .fval{color:var(--faint); font-variant-numeric:tabular-nums; font-size:.76rem}
+  .trow{display:grid; grid-template-columns:minmax(110px,175px) 1fr 52px; gap:.6rem;
+        align-items:center; margin:.45rem 0}
+  .ttrack{height:12px; border-radius:6px; background:rgba(255,255,255,.06); overflow:hidden}
+  .tfill{height:100%; border-radius:6px}
+  .zeroed{margin-top:1rem; font-size:.8rem; color:var(--faint); line-height:1.9}
+  .zeroed .chip{margin-right:.25rem}
+
   /* ---- authors ---- */
   .author{display:flex; gap:1.3rem; align-items:flex-start; flex-wrap:wrap}
   .avatar{width:84px; height:84px; border-radius:50%; background:var(--grad); flex-shrink:0;
@@ -282,7 +366,8 @@ __CONTENT__
 <footer>Built on 10,900+ UFC fights &middot; predictions are statistical estimates, not betting advice.</footer>
 </body></html>"""
 
-_NAV_ITEMS = [("Predict", "/"), ("Methodology", "/methodology"), ("Authors", "/authors")]
+_NAV_ITEMS = [("Predict", "/"), ("Analytics", "/analytics"),
+              ("Methodology", "/methodology"), ("Authors", "/authors")]
 
 
 def _render(title: str, content: str, active: str) -> str:
@@ -382,6 +467,100 @@ $('f').addEventListener('submit', async (ev) => {
     go.disabled = false;
   }
 });
+</script>
+"""
+
+_ANALYTICS_CONTENT = """
+<div class="card hero">
+  <span class="eyebrow">What the model has learned</span>
+  <h1>Analytics</h1>
+  <p class="sub">The lasso's surviving coefficients, read straight off the live model. All
+  features are standardized, so bar lengths are directly comparable: each shows how hard one
+  standard deviation of advantage in that stat pulls the predicted log-odds.</p>
+</div>
+<div id="an"><div class="card loading"><span></span><span></span><span></span>&nbsp;loading coefficients&hellip;</div></div>
+<script>
+const THEME_COLORS = {
+  'glicko rating': '#5b8cff', 'striking': '#8b5bff', 'grappling': '#c77dff',
+  'record': '#4fd8c9', 'physical/age': '#ff8fb8', 'stance': '#7f86ff', 'other': '#9a9db8'
+};
+const esc = (s) => String(s).replace(/</g, '&lt;');
+const f2 = (v) => (v >= 0 ? '+' : '') + v.toFixed(2);
+
+(async () => {
+  const el = document.getElementById('an');
+  let d;
+  try {
+    const r = await fetch('/api/analytics');
+    d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'request failed');
+  } catch (e) {
+    el.innerHTML = '<div class="card"><div class="err">' + esc(e.message) + '</div></div>';
+    return;
+  }
+  const active = d.features.filter(f => f.coef !== 0);
+  const zeroed = d.features.filter(f => f.coef === 0);
+  const max = Math.max(...active.map(f => Math.max(Math.abs(f.coef), Math.abs(f.lo), Math.abs(f.hi))));
+  const pos = (v) => 50 + (v / max) * 48;          // percent position of value v
+
+  // theme totals (sum of |coef|)
+  const totals = {};
+  active.forEach(f => { totals[f.theme] = (totals[f.theme] || 0) + Math.abs(f.coef); });
+  const tmax = Math.max(...Object.values(totals));
+  const themeRows = Object.entries(totals).sort((a, b) => b[1] - a[1]).map(([t, v]) =>
+    '<div class="trow"><div class="fname">' + esc(t) + '</div>' +
+    '<div class="ttrack"><div class="tfill" style="width:' + (v / tmax * 100).toFixed(1) +
+    '%;background:' + (THEME_COLORS[t] || '#9a9db8') + '"></div></div>' +
+    '<div class="fval">' + v.toFixed(2) + '</div></div>').join('');
+
+  const legend = Object.keys(totals).map(t =>
+    '<span><span class="sw" style="background:' + (THEME_COLORS[t] || '#9a9db8') +
+    '"></span>' + esc(t) + '</span>').join('');
+
+  const rows = active.map(f => {
+    const c = THEME_COLORS[f.theme] || '#9a9db8';
+    const L = pos(Math.min(0, f.coef)), R = pos(Math.max(0, f.coef));
+    const cl = pos(Math.min(f.lo, f.hi)), cr = pos(Math.max(f.lo, f.hi));
+    const tip = esc(f.label) + ': β = ' + f2(f.coef) + ' | 95% bootstrap range ' +
+                f2(f.lo) + ' to ' + f2(f.hi) + ' | kept in ' + Math.round(f.sel * 100) +
+                '% of 1,000 refits';
+    return '<div class="frow" title="' + tip + '"><div class="fname">' + esc(f.label) + '</div>' +
+      '<div class="ftrack">' +
+      '<div class="fbar" style="left:' + L.toFixed(2) + '%;width:' + (R - L).toFixed(2) +
+        '%;background:' + c + '"></div>' +
+      '<div class="fci" style="left:' + cl.toFixed(2) + '%;width:' + Math.max(cr - cl, .4).toFixed(2) +
+        '%"></div></div>' +
+      '<div class="fval">' + f2(f.coef) + '</div></div>';
+  }).join('');
+
+  el.innerHTML =
+    '<div class="card"><h2>Where the signal lives</h2>' +
+    '<p class="muted">Total influence per theme &mdash; sum of coefficient magnitudes,' +
+    ' Σ|β|.</p>' + themeRows + '</div>' +
+
+    '<div class="card"><h2>The biggest factors</h2>' +
+    '<p class="muted">' + active.length + ' of ' + d.n_features +
+    ' features survived the L1 penalty. Bars: coefficient β on the standardized' +
+    ' differential; whiskers: 95% range across ' + d.n_bootstrap.toLocaleString() +
+    ' bootstrap refits. Hover any row for details.</p>' +
+    '<div class="legend">' + legend + '</div>' +
+    '<div class="axis"><div></div><div class="mid"><span>&larr; advantage lowers win odds</span>' +
+    '<span>advantage raises win odds &rarr;</span></div><div></div></div>' + rows +
+    (zeroed.length ?
+      '<div class="zeroed"><b>' + zeroed.length + ' features zeroed out by the lasso:</b> ' +
+      zeroed.map(f => '<span class="chip">' + esc(f.label) + '</span>').join('') + '</div>' : '') +
+    '</div>' +
+
+    '<div class="card"><h2>How to read this</h2>' +
+    '<p>A bar to the right means holding an edge in that stat raises a fighter\\'s predicted' +
+    ' win odds; to the left means it lowers them (e.g. more career losses, higher age). Because' +
+    ' inputs are standardized, a bar twice as long carries twice the log-odds weight per standard' +
+    ' deviation of advantage.</p>' +
+    '<p class="muted">Whiskers that cross zero mean the bootstrap isn\\'t sure the effect' +
+    ' survives resampling &mdash; treat those as weak signals. The kept-rate in each tooltip' +
+    ' shows how often the lasso selected the feature across refits: a rough measure of' +
+    ' stability. Coefficients update automatically whenever the model retrains.</p></div>';
+})();
 </script>
 """
 
@@ -500,6 +679,11 @@ _AUTHORS_CONTENT = """
 @app.get("/")
 def home():
     return _render("UFC Fight Predictor", _PREDICT_CONTENT, "Predict")
+
+
+@app.get("/analytics")
+def analytics():
+    return _render("Analytics — UFC Fight Predictor", _ANALYTICS_CONTENT, "Analytics")
 
 
 @app.get("/methodology")
