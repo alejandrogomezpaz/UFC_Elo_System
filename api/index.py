@@ -881,11 +881,19 @@ _AUTHORS_CONTENT = """
     <div class="avatar">AG</div>
     <div class="info">
       <h2>Alejandro (Alex) Gomez-Paz</h2>
-      <p class="role">University of Washington</p>
-      <p>Built this project end to end &mdash; data, model, and site.</p>
-      <p class="muted"><a href="mailto:alexgp@uw.edu">alexgp@uw.edu</a></p>
+      <p class="role">University of Washington &mdash; B.S. Applied Mathematics, Data Science option
+      &middot; Expected June 2028</p>
+      <p class="muted">Seattle, Washington</p>
+      <p class="muted">
+        <a href="mailto:alexgp@uw.edu">alexgp@uw.edu</a> &middot;
+        <a href="https://github.com/alejandrogomezpaz" target="_blank" rel="noopener">GitHub</a> &middot;
+        <a href="https://www.linkedin.com/in/alejandro-gomez-paz-b417b4396/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
     </div>
   </div>
+  <p>An end-to-end, automatically updating UFC fight-outcome prediction model built on scraped,
+  leakage-free data, pairing a bootstrapped logistic regression with natural-language reasoning
+  &mdash; written in Python and SQL.</p>
 </div>
 """
 
