@@ -439,7 +439,7 @@ __CONTENT__
 </body></html>"""
 
 _NAV_ITEMS = [("Predict", "/"), ("Rankings", "/rankings"), ("Analytics", "/analytics"),
-              ("Methodology", "/methodology"), ("Authors", "/authors")]
+              ("Methodology", "/methodology"), ("Author", "/author")]
 
 
 def _render(title: str, content: str, active: str) -> str:
@@ -871,11 +871,6 @@ _METHODOLOGY_CONTENT = """
 """
 
 _AUTHORS_CONTENT = """
-<div class="card hero">
-  <span class="eyebrow">The team</span>
-  <h1>Authors</h1>
-</div>
-
 <div class="card">
   <div class="author">
     <div class="avatar">AG</div>
@@ -918,6 +913,7 @@ def methodology():
     return _render("Methodology — UFC Fight Predictor", _METHODOLOGY_CONTENT, "Methodology")
 
 
-@app.get("/authors")
-def authors():
-    return _render("Authors — UFC Fight Predictor", _AUTHORS_CONTENT, "Authors")
+@app.get("/author")
+@app.get("/authors")          # legacy path, kept so old links don't 404
+def author():
+    return _render("Author — UFC Fight Predictor", _AUTHORS_CONTENT, "Author")
