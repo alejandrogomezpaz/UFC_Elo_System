@@ -1,0 +1,53 @@
+fight_id,round_finished,winner_name,loser_name,round_total,round_time_sec,fighter_id,event,stoppage_time_sec,opponent_name,fighter_name,method_type,method_specific,date
+1162a74e3604c488,1,Ryan Gandra,Zach Reese,3,300,e463ce0a2ca474f4,UFC 329: McGregor vs. Holloway 2,75,Zach Reese,Ryan Gandra,KO/TKO,,2026-07-11
+1162a74e3604c488,1,Ryan Gandra,Zach Reese,3,300,23dec7c47cb418f8,UFC 329: McGregor vs. Holloway 2,75,Ryan Gandra,Zach Reese,KO/TKO,,2026-07-11
+118c25bda9392140,1,Gable Steveson,Elisha Ellison,3,300,f7e856a73c96048e,UFC 329: McGregor vs. Holloway 2,151,Elisha Ellison,Gable Steveson,KO/TKO,,2026-07-11
+118c25bda9392140,1,Gable Steveson,Elisha Ellison,3,300,87e4a3a5080ee7ce,UFC 329: McGregor vs. Holloway 2,151,Gable Steveson,Elisha Ellison,KO/TKO,,2026-07-11
+130b325610c54a64,1,Paddy Pimblett,Benoit Saint Denis,3,300,c2299ec916bc7c56,UFC 329: McGregor vs. Holloway 2,52,Paddy Pimblett,Benoit Saint Denis,Submission,,2026-07-11
+130b325610c54a64,1,Paddy Pimblett,Benoit Saint Denis,3,300,7826923b47f8d72a,UFC 329: McGregor vs. Holloway 2,52,Benoit Saint Denis,Paddy Pimblett,Submission,,2026-07-11
+1b6a3b0d27654d3e,2,Alessandro Costa,Cody Durden,3,300,3fa97913cfd205d3,UFC 329: McGregor vs. Holloway 2,139,Cody Durden,Alessandro Costa,Submission,,2026-07-11
+1b6a3b0d27654d3e,2,Alessandro Costa,Cody Durden,3,300,7f6ed67d3ed3c036,UFC 329: McGregor vs. Holloway 2,139,Alessandro Costa,Cody Durden,Submission,,2026-07-11
+7765e5e779dd7dc9,3,Robert Whittaker,Nikita Krylov,3,300,1091d4d957141094,UFC 329: McGregor vs. Holloway 2,61,Robert Whittaker,Nikita Krylov,KO/TKO,,2026-07-11
+7765e5e779dd7dc9,3,Robert Whittaker,Nikita Krylov,3,300,e1147d3d2dabe1ce,UFC 329: McGregor vs. Holloway 2,61,Nikita Krylov,Robert Whittaker,KO/TKO,,2026-07-11
+930317fde9dbc55e,1,Luke Riley,Kai Kamaka III,3,300,b1de86d835638319,UFC 329: McGregor vs. Holloway 2,183,Kai Kamaka III,Luke Riley,KO/TKO,,2026-07-11
+930317fde9dbc55e,1,Luke Riley,Kai Kamaka III,3,300,eee0ef3e2b14816b,UFC 329: McGregor vs. Holloway 2,183,Luke Riley,Kai Kamaka III,KO/TKO,,2026-07-11
+989760fa75321d69,1,Max Holloway,Conor McGregor,5,300,f4c49976c75c5ab2,UFC 329: McGregor vs. Holloway 2,69,Max Holloway,Conor McGregor,KO/TKO,,2026-07-11
+989760fa75321d69,1,Max Holloway,Conor McGregor,5,300,150ff4cc642270b9,UFC 329: McGregor vs. Holloway 2,69,Conor McGregor,Max Holloway,KO/TKO,,2026-07-11
+9e00ee7644774e18,3,Farid Basharat,John Garza,3,300,a09ed60aa67a3f67,UFC 329: McGregor vs. Holloway 2,300,John Garza,Farid Basharat,Decision - Unanimous,,2026-07-11
+9e00ee7644774e18,3,Farid Basharat,John Garza,3,300,a54b961a1f8be1d5,UFC 329: McGregor vs. Holloway 2,300,Farid Basharat,John Garza,Decision - Unanimous,,2026-07-11
+a26ea74f2e908842,1,King Green,Terrance McKinney,3,300,887961364be5ceb3,UFC 329: McGregor vs. Holloway 2,299,Terrance McKinney,King Green,KO/TKO,,2026-07-11
+a26ea74f2e908842,1,King Green,Terrance McKinney,3,300,809bd1a871491508,UFC 329: McGregor vs. Holloway 2,299,King Green,Terrance McKinney,KO/TKO,,2026-07-11
+a3ab1979192b647c,3,Brandon Royval,Lone'er Kavanagh,3,300,6e15f63b6c2e2c15,UFC 329: McGregor vs. Holloway 2,220,Lone'er Kavanagh,Brandon Royval,Submission,,2026-07-11
+a3ab1979192b647c,3,Brandon Royval,Lone'er Kavanagh,3,300,bb2c3c3a466224af,UFC 329: McGregor vs. Holloway 2,220,Brandon Royval,Lone'er Kavanagh,Submission,,2026-07-11
+b223b10ef19f912c,1,Damian Pinas,Cesar Almeida,3,300,fdd22e895a70e4a8,UFC 329: McGregor vs. Holloway 2,284,Cesar Almeida,Damian Pinas,KO/TKO,,2026-07-11
+b223b10ef19f912c,1,Damian Pinas,Cesar Almeida,3,300,64d47ef881a437a4,UFC 329: McGregor vs. Holloway 2,284,Damian Pinas,Cesar Almeida,KO/TKO,,2026-07-11
+c572daedf2012a49,3,Mario Bautista,Cory Sandhagen,3,300,65f09bacd3957381,UFC 329: McGregor vs. Holloway 2,300,Mario Bautista,Cory Sandhagen,Decision - Unanimous,,2026-07-11
+c572daedf2012a49,3,Mario Bautista,Cory Sandhagen,3,300,bc711b6dd95c1af6,UFC 329: McGregor vs. Holloway 2,300,Cory Sandhagen,Mario Bautista,Decision - Unanimous,,2026-07-11
+e84c3f1f9a33fa90,3,Wang Cong,Tracy Cortez,3,300,68d4a891e5cf2029,UFC 329: McGregor vs. Holloway 2,300,Wang Cong,Tracy Cortez,Decision - Unanimous,,2026-07-11
+e84c3f1f9a33fa90,3,Wang Cong,Tracy Cortez,3,300,2997e7fe3c9d3d4a,UFC 329: McGregor vs. Holloway 2,300,Tracy Cortez,Wang Cong,Decision - Unanimous,,2026-07-11
+e9f389ba3a1e33c4,1,Adrian Yanez,Cody Garbrandt,3,300,d8c7c61b176e3994,UFC 329: McGregor vs. Holloway 2,167,Adrian Yanez,Cody Garbrandt,KO/TKO,,2026-07-11
+e9f389ba3a1e33c4,1,Adrian Yanez,Cody Garbrandt,3,300,0232cabbc30a2372,UFC 329: McGregor vs. Holloway 2,167,Cody Garbrandt,Adrian Yanez,KO/TKO,,2026-07-11
+307ea95ad7ebe466,1,Dione Barbosa,Anna Melisano,3,300,40a7ec5d1ad6ffa8,UFC Fight Night: Du Plessis vs. Usman,244,Dione Barbosa,Anna Melisano,Submission,,2026-07-18
+307ea95ad7ebe466,1,Dione Barbosa,Anna Melisano,3,300,27b388f0aab49780,UFC Fight Night: Du Plessis vs. Usman,244,Anna Melisano,Dione Barbosa,Submission,,2026-07-18
+3bd159c1bed14700,3,Jose Delgado,Austin Bashi,3,300,d3f89fa685bd8420,UFC Fight Night: Du Plessis vs. Usman,300,Jose Delgado,Austin Bashi,Decision - Unanimous,,2026-07-18
+3bd159c1bed14700,3,Jose Delgado,Austin Bashi,3,300,7d6ceff6747f2de2,UFC Fight Night: Du Plessis vs. Usman,300,Austin Bashi,Jose Delgado,Decision - Unanimous,,2026-07-18
+410e6b9e01660b35,3,Alden Coria,Stewart Nicoll,3,300,5e9ca8dd7d783a75,UFC Fight Night: Du Plessis vs. Usman,300,Stewart Nicoll,Alden Coria,Decision - Unanimous,,2026-07-18
+410e6b9e01660b35,3,Alden Coria,Stewart Nicoll,3,300,2bd98ab77a8daa75,UFC Fight Night: Du Plessis vs. Usman,300,Alden Coria,Stewart Nicoll,Decision - Unanimous,,2026-07-18
+46d800ce45fdd3e6,2,Felipe Franco,Levi Rodrigues Jr.,3,300,9ac4e43ed56429ed,UFC Fight Night: Du Plessis vs. Usman,100,Felipe Franco,Levi Rodrigues Jr.,KO/TKO,,2026-07-18
+46d800ce45fdd3e6,2,Felipe Franco,Levi Rodrigues Jr.,3,300,e564146b9cf6dbef,UFC Fight Night: Du Plessis vs. Usman,100,Levi Rodrigues Jr.,Felipe Franco,KO/TKO,,2026-07-18
+4eff5a845db17572,3,Christian Leroy Duncan,Jared Cannonier,3,300,13a0275fa13c4d26,UFC Fight Night: Du Plessis vs. Usman,300,Christian Leroy Duncan,Jared Cannonier,Decision - Unanimous,,2026-07-18
+4eff5a845db17572,3,Christian Leroy Duncan,Jared Cannonier,3,300,a93f94c923c3a9cb,UFC Fight Night: Du Plessis vs. Usman,300,Jared Cannonier,Christian Leroy Duncan,Decision - Unanimous,,2026-07-18
+52ddf20a10890b41,3,Fatima Kline,Tabatha Ricci,3,300,d25240135aee03e5,UFC Fight Night: Du Plessis vs. Usman,300,Fatima Kline,Tabatha Ricci,Decision - Unanimous,,2026-07-18
+52ddf20a10890b41,3,Fatima Kline,Tabatha Ricci,3,300,745fa7b605f8e2da,UFC Fight Night: Du Plessis vs. Usman,300,Tabatha Ricci,Fatima Kline,Decision - Unanimous,,2026-07-18
+701c97405da76603,5,Dricus Du Plessis,Kamaru Usman,5,300,0d7b51c9d2649a6e,UFC Fight Night: Du Plessis vs. Usman,300,Kamaru Usman,Dricus Du Plessis,Decision - Unanimous,,2026-07-18
+701c97405da76603,5,Dricus Du Plessis,Kamaru Usman,5,300,f1b2aa7853d1ed6e,UFC Fight Night: Du Plessis vs. Usman,300,Dricus Du Plessis,Kamaru Usman,Decision - Unanimous,,2026-07-18
+9e525f939fba3e73,3,Ezra Elliott,Damien Anderson,3,300,b852ad2b35354fcb,UFC Fight Night: Du Plessis vs. Usman,300,Damien Anderson,Ezra Elliott,Decision - Unanimous,,2026-07-18
+9e525f939fba3e73,3,Ezra Elliott,Damien Anderson,3,300,df619b9a86ce0a9a,UFC Fight Night: Du Plessis vs. Usman,300,Ezra Elliott,Damien Anderson,Decision - Unanimous,,2026-07-18
+c64c6ba6eb1e1d06,3,Tommy McMillen,Alberto Montes,3,300,6b0a6def604de298,UFC Fight Night: Du Plessis vs. Usman,209,Alberto Montes,Tommy McMillen,KO/TKO,,2026-07-18
+c64c6ba6eb1e1d06,3,Tommy McMillen,Alberto Montes,3,300,a112097ad877a48f,UFC Fight Night: Du Plessis vs. Usman,209,Tommy McMillen,Alberto Montes,KO/TKO,,2026-07-18
+e05155c1b5c2dc74,1,RJ Harris,Alvin Hines,3,300,e03187ec8b5b6abc,UFC Fight Night: Du Plessis vs. Usman,100,Alvin Hines,RJ Harris,KO/TKO,,2026-07-18
+e05155c1b5c2dc74,1,RJ Harris,Alvin Hines,3,300,ab2a4b5e04dc5fe9,UFC Fight Night: Du Plessis vs. Usman,100,RJ Harris,Alvin Hines,KO/TKO,,2026-07-18
+f2abca7379982d4f,1,Chase Hooper,Mitch Ramirez,3,300,971246648e162f0d,UFC Fight Night: Du Plessis vs. Usman,135,Mitch Ramirez,Chase Hooper,Submission,,2026-07-18
+f2abca7379982d4f,1,Chase Hooper,Mitch Ramirez,3,300,e99eb0ef25885de5,UFC Fight Night: Du Plessis vs. Usman,135,Chase Hooper,Mitch Ramirez,Submission,,2026-07-18
+f2eb569176e46edf,3,Jean-Paul Lebosnoyani,Seokhyeon Ko,3,300,a3dda21be645be93,UFC Fight Night: Du Plessis vs. Usman,300,Seokhyeon Ko,Jean-Paul Lebosnoyani,Decision - Unanimous,,2026-07-18
+f2eb569176e46edf,3,Jean-Paul Lebosnoyani,Seokhyeon Ko,3,300,4a07b1988477502c,UFC Fight Night: Du Plessis vs. Usman,300,Jean-Paul Lebosnoyani,Seokhyeon Ko,Decision - Unanimous,,2026-07-18
