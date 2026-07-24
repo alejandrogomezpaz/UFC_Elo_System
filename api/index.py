@@ -203,6 +203,9 @@ _BASE = """<!doctype html>
   h2{font-size:1.25rem; margin:0 0 .5rem}
   h3{font-size:1.02rem; margin:1.1rem 0 .3rem}
   p{margin:.5rem 0}
+  ul{margin:.5rem 0 0; padding-left:1.2rem}
+  li{margin:.4rem 0}
+  li::marker{color:var(--violet)}
   .muted{color:var(--muted)}
   code,.math{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em;
        background:rgba(255,255,255,.07); border:1px solid var(--line);
@@ -448,21 +451,29 @@ _METHODOLOGY_CONTENT = """
 </div>
 
 <div class="card">
-  <h2>6 &middot; Explanations, not vibes</h2>
-  <p>Because the model is linear in log-odds, its reasoning decomposes exactly &mdash; no
-  post-hoc approximation. Each feature contributes <code>&beta;&#11388; &middot; x&#11388;</code>
-  (on scaled differentials) to the final log-odds; positive terms pull toward fighter A, negative
-  toward B, and they simply add up. Contributions are grouped into themes &mdash; rating, striking,
-  grappling, record, physical, stance &mdash; and the same input always produces the same
-  explanation, word for word.</p>
+  <h2>6 &middot; Natural language reasoning</h2>
+  <p>Every prediction ships with a plain-English explanation generated directly from the Lasso
+  coefficients &mdash; no post-hoc approximation. Because the model is linear in log-odds, its
+  reasoning decomposes exactly: each feature contributes <code>&beta;&#11388; &middot; x&#11388;</code>
+  (on scaled differentials), positive terms pull toward fighter A, negative toward B, and they
+  simply add up. Contributions are grouped into themes &mdash; rating, striking, grappling,
+  record, physical, stance &mdash; and the explanation is deterministic: same input, same words.</p>
 </div>
 
 <div class="card">
   <h2>7 &middot; Serving</h2>
-  <p>Name two fighters and the pipeline pulls their latest pre-fight snapshots from Postgres,
-  forms the differential vector, scores it through the model and the bootstrap ensemble, and
-  returns probability, CI, and reasoning &mdash; live, in one request, on a Vercel serverless
-  function.</p>
+  <p>The live system has four moving parts:</p>
+  <ul>
+    <li><b>Database</b> &mdash; Neon-hosted PostgreSQL storing every fighter's pre-fight
+    feature snapshots.</li>
+    <li><b>Query pipeline</b> &mdash; <code>predict.py</code>: name two fighters, it pulls their
+    latest snapshots, forms the differential vector, and scores it through the model and
+    bootstrap ensemble.</li>
+    <li><b>Vercel app</b> &mdash; a Flask serverless function wrapping that pipeline; this site
+    and its JSON API (<code>/api/predict</code>).</li>
+    <li><b>Updater</b> &mdash; <code>updater.py</code>: re-scrapes new events, recomputes
+    Glicko-2 ratings, appends to the database, and refreshes the model.</li>
+  </ul>
 </div>
 """
 
@@ -477,14 +488,9 @@ _AUTHORS_CONTENT = """
     <div class="avatar">AG</div>
     <div class="info">
       <h2>Alejandro (Alex) Gomez-Paz</h2>
-      <p class="role">Data science, modeling &amp; engineering &middot; University of Washington</p>
-      <p>Alex built this project end to end: scraping and cleaning 10,900+ UFC fights, engineering
-      leak-free pre-fight features, tuning the Glicko-2 rating system, training the L1 logistic
-      regression and its 1,000-model bootstrap ensemble, and deploying the live prediction service
-      you're using now.</p>
-      <p>The goal was a fight predictor that is quantitative, objective, and scalable across
-      weight classes &mdash; and that can always show its work.</p>
-      <p class="muted">Get in touch: <a href="mailto:alexgp@uw.edu">alexgp@uw.edu</a></p>
+      <p class="role">University of Washington</p>
+      <p>Built this project end to end &mdash; data, model, and site.</p>
+      <p class="muted"><a href="mailto:alexgp@uw.edu">alexgp@uw.edu</a></p>
     </div>
   </div>
 </div>
