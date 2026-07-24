@@ -168,6 +168,78 @@ def api_analytics():
 
 
 # --------------------------------------------------------------------------
+# Rankings: Glicko-2 leaderboards read straight from fighter_features.
+# Snapshots are PRE-fight, so a fighter's newest row is the rating they carried
+# INTO their most recent bout -- stated plainly on the page.
+# --------------------------------------------------------------------------
+
+_ACTIVE_MONTHS = 24          # "current" = fought within this window
+_DIV_LIMITS = [(115, "Strawweight"), (125, "Flyweight"), (135, "Bantamweight"),
+               (145, "Featherweight"), (155, "Lightweight"), (170, "Welterweight"),
+               (185, "Middleweight"), (205, "Light Heavyweight")]
+_DIV_ORDER = [d for _, d in _DIV_LIMITS] + ["Heavyweight"]
+
+
+def _division(weight):
+    # the db stores contracted weight in lbs, catchweights included; snap each
+    # to the nearest official limit, everything above light heavy is heavyweight
+    if weight is None:
+        return "Unknown"
+    try:
+        w = float(weight)
+    except (TypeError, ValueError):
+        return "Unknown"
+    if w > 206:
+        return "Heavyweight"
+    return min(_DIV_LIMITS, key=lambda lim: abs(w - lim[0]))[1]
+
+
+# peak = the single highest-rated snapshot a fighter ever held (ties -> earliest)
+_SQL_PEAK = """
+SELECT DISTINCT ON (fighter) fighter, rating, rating_deviation, date, weight
+FROM fighter_features
+WHERE rating IS NOT NULL
+ORDER BY fighter, rating DESC, date ASC
+"""
+
+# current = each fighter's newest snapshot, restricted to recent activity
+_SQL_CURRENT = """
+SELECT DISTINCT ON (fighter) fighter, rating, rating_deviation, date, weight
+FROM fighter_features
+WHERE rating IS NOT NULL
+  AND date >= (CURRENT_DATE - make_interval(months => :months))
+ORDER BY fighter, date DESC
+"""
+
+
+@app.get("/api/rankings")
+def api_rankings():
+    try:
+        with _get_engine().connect() as conn:
+            peak = conn.execute(text(_SQL_PEAK)).mappings().all()
+            cur = conn.execute(text(_SQL_CURRENT),
+                               {"months": _ACTIVE_MONTHS}).mappings().all()
+    except RuntimeError as e:
+        return jsonify(error=str(e)), 503
+    except Exception as e:
+        return jsonify(error=str(e)[:300]), 503
+
+    def shape(rs, limit):
+        out = [{
+            "fighter": r["fighter"],
+            "rating": round(float(r["rating"]), 1),
+            "rd": None if r["rating_deviation"] is None else round(float(r["rating_deviation"]), 1),
+            "date": str(r["date"]),
+            "division": _division(r["weight"]),
+        } for r in rs]
+        out.sort(key=lambda d: -d["rating"])
+        return out[:limit]
+
+    return jsonify(divisions=_DIV_ORDER, window_months=_ACTIVE_MONTHS,
+                   alltime=shape(peak, 800), current=shape(cur, 1200))
+
+
+# --------------------------------------------------------------------------
 # Frontend: single-file pages sharing one base template. Tokens (__TITLE__,
 # __NAV__, __CONTENT__) are substituted with str.replace, so CSS/JS braces
 # need no escaping.
@@ -366,7 +438,7 @@ __CONTENT__
 <footer>Built on 10,900+ UFC fights &middot; predictions are statistical estimates, not betting advice.</footer>
 </body></html>"""
 
-_NAV_ITEMS = [("Predict", "/"), ("Analytics", "/analytics"),
+_NAV_ITEMS = [("Predict", "/"), ("Rankings", "/rankings"), ("Analytics", "/analytics"),
               ("Methodology", "/methodology"), ("Authors", "/authors")]
 
 
@@ -564,6 +636,148 @@ const f2 = (v) => (v >= 0 ? '+' : '') + v.toFixed(2);
 </script>
 """
 
+_RANKINGS_CONTENT = """
+<style>
+  main{max-width:1020px}
+  .tabs{display:flex; gap:.4rem; margin:1.3rem 0 .3rem; flex-wrap:wrap}
+  .tab{font:inherit; font-size:.92rem; font-weight:600; color:var(--muted); cursor:pointer;
+       background:rgba(255,255,255,.04); border:1px solid var(--line); border-radius:999px;
+       padding:.45rem 1.1rem; transition:all .18s}
+  .tab:hover{color:var(--ink)}
+  .tab.on{color:#fff; background:var(--grad); border-color:transparent;
+          box-shadow:0 6px 20px rgba(109,63,255,.35)}
+  .chips{display:flex; gap:.35rem; flex-wrap:wrap; margin:.9rem 0 .2rem}
+  .chipbtn{font:inherit; font-size:.8rem; color:var(--muted); cursor:pointer;
+       background:rgba(255,255,255,.03); border:1px solid var(--line); border-radius:999px;
+       padding:.32rem .8rem; transition:all .15s}
+  .chipbtn:hover{color:var(--ink); border-color:var(--violet)}
+  .chipbtn.on{color:var(--ink); background:rgba(139,91,255,.22); border-color:var(--violet)}
+  .searchbox{margin-top:.9rem}
+  .searchbox input{padding:.6rem .9rem; font-size:.9rem}
+  table.rank{width:100%; border-collapse:collapse; margin-top:1rem; font-size:.9rem}
+  table.rank th{text-align:left; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+       color:var(--faint); font-weight:600; padding:.5rem .6rem; border-bottom:1px solid var(--line)}
+  table.rank td{padding:.55rem .6rem; border-bottom:1px solid rgba(255,255,255,.05)}
+  table.rank tr:hover td{background:rgba(255,255,255,.035)}
+  .num{text-align:right; font-variant-numeric:tabular-nums}
+  .rk{color:var(--faint); font-variant-numeric:tabular-nums; width:2.6rem}
+  .rk.top{color:var(--pink); font-weight:700}
+  .who{font-weight:600}
+  .rating{font-family:'Space Grotesk'; font-weight:600}
+  .div{color:var(--muted); font-size:.84rem}
+  .when{color:var(--faint); font-size:.84rem; font-variant-numeric:tabular-nums}
+  .rdcell{color:var(--faint); font-variant-numeric:tabular-nums}
+  .empty{color:var(--faint); padding:1.2rem .2rem}
+  @media (max-width:620px){
+    table.rank .hide-sm{display:none}
+    table.rank td,table.rank th{padding:.5rem .35rem}
+  }
+</style>
+
+<div class="card hero">
+  <span class="eyebrow">Glicko-2 leaderboards</span>
+  <h1>Rankings</h1>
+  <p class="sub">Ratings are computed on one global scale across every division, so they double
+  as a pound-for-pound list. Pick a tab, then filter by division.</p>
+  <div class="tabs">
+    <button class="tab on" id="t-current">Current</button>
+    <button class="tab" id="t-alltime">All-time peaks</button>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="searchbox"><input id="q" placeholder="Search a fighter&hellip;" autocomplete="off"></div>
+</div>
+<div id="rk"><div class="card loading"><span></span><span></span><span></span>&nbsp;loading ratings&hellip;</div></div>
+<script>
+const esc = (s) => String(s).replace(/</g, '&lt;');
+const state = { tab: 'current', div: 'P4P', q: '' };
+let DATA = null;
+
+const depth = () => (state.div === 'P4P' ? 25 : 15);
+
+function rows() {
+  const src = DATA[state.tab] || [];
+  const pool = state.div === 'P4P' ? src : src.filter(r => r.division === state.div);
+  const ranked = pool.slice(0, depth()).map((r, i) => ({ r, rank: i + 1 }));
+  if (!state.q) return ranked;
+  const q = state.q.toLowerCase();
+  // search looks through the whole (filtered) pool, keeping true ranks visible
+  return pool.map((r, i) => ({ r, rank: i + 1 }))
+             .filter(o => o.r.fighter.toLowerCase().includes(q))
+             .slice(0, 50);
+}
+
+function table() {
+  const list = rows();
+  if (!list.length) return '<div class="card"><p class="empty">Nobody matches that filter.</p></div>';
+  const peak = state.tab === 'alltime';
+  const head =
+    '<tr><th class="rk">#</th><th>Fighter</th>' +
+    '<th class="num">' + (peak ? 'Peak rating' : 'Rating') + '</th>' +
+    '<th class="num hide-sm">RD</th>' +
+    '<th class="hide-sm">' + (peak ? 'Peak date' : 'Last fight') + '</th>' +
+    '<th>Weight class</th></tr>';
+  const body = list.map(o =>
+    '<tr><td class="rk' + (o.rank <= 3 ? ' top' : '') + '">' + o.rank + '</td>' +
+    '<td class="who">' + esc(o.r.fighter) + '</td>' +
+    '<td class="num rating">' + o.r.rating.toFixed(1) + '</td>' +
+    '<td class="num rdcell hide-sm">' + (o.r.rd == null ? '&mdash;' : '&plusmn;' + o.r.rd.toFixed(0)) + '</td>' +
+    '<td class="when hide-sm">' + esc(o.r.date) + '</td>' +
+    '<td class="div">' + esc(o.r.division) + '</td></tr>').join('');
+  const note = peak
+    ? 'Highest rating each fighter ever carried, with the date they held it and the division they were fighting in at the time.'
+    : 'Latest rating for fighters who have competed in the last ' + DATA.window_months +
+      ' months. Snapshots are pre-fight, so this is the rating a fighter took into their most recent bout.';
+  return '<div class="card">' +
+    '<h2>' + (peak ? 'All-time peak ratings' : 'Current ratings') +
+    ' &mdash; ' + esc(state.div === 'P4P' ? 'pound-for-pound' : state.div) + '</h2>' +
+    '<p class="muted">' + note + ' RD is the rating deviation: the model&rsquo;s uncertainty about ' +
+    'that number, so a big RD means few or long-ago fights &mdash; read those rows with caution.</p>' +
+    '<table class="rank"><thead>' + head + '</thead><tbody>' + body + '</tbody></table></div>';
+}
+
+function chips() {
+  const all = ['P4P'].concat(DATA.divisions);
+  document.getElementById('chips').innerHTML = all.map(d =>
+    '<button class="chipbtn' + (d === state.div ? ' on' : '') + '" data-d="' + esc(d) + '">' +
+    esc(d) + '</button>').join('');
+  document.querySelectorAll('.chipbtn').forEach(b => b.addEventListener('click', () => {
+    state.div = b.dataset.d; chips(); draw();
+  }));
+}
+
+function draw() { document.getElementById('rk').innerHTML = table(); }
+
+function setTab(tab) {
+  state.tab = tab;
+  document.getElementById('t-current').classList.toggle('on', tab === 'current');
+  document.getElementById('t-alltime').classList.toggle('on', tab === 'alltime');
+  draw();
+}
+
+document.getElementById('t-current').addEventListener('click', () => setTab('current'));
+document.getElementById('t-alltime').addEventListener('click', () => setTab('alltime'));
+document.getElementById('q').addEventListener('input', (e) => {
+  state.q = e.target.value.trim(); draw();
+});
+
+(async () => {
+  try {
+    const r = await fetch('/api/rankings');
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'request failed');
+    DATA = d;
+  } catch (e) {
+    document.getElementById('rk').innerHTML =
+      '<div class="card"><div class="err">' + esc(e.message) + '</div></div>';
+    return;
+  }
+  chips();
+  draw();
+})();
+</script>
+"""
+
+
 _METHODOLOGY_CONTENT = """
 <div class="card hero">
   <span class="eyebrow">Under the hood</span>
@@ -684,6 +898,11 @@ def home():
 @app.get("/analytics")
 def analytics():
     return _render("Analytics — UFC Fight Predictor", _ANALYTICS_CONTENT, "Analytics")
+
+
+@app.get("/rankings")
+def rankings():
+    return _render("Rankings — UFC Fight Predictor", _RANKINGS_CONTENT, "Rankings")
 
 
 @app.get("/methodology")
