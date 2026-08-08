@@ -455,27 +455,17 @@ def _render(title: str, content: str, active: str) -> str:
 
 _PREDICT_CONTENT = """
 <div class="card hero">
-  <span class="eyebrow">Counterfactual matchup engine</span>
-  <h1>Who wins? <span class="grad-text">Ask the model.</span></h1>
-  <p class="sub">Glicko-2 ratings + L1 logistic regression trained on 10,900+ UFC fights,
-  with a 1,000-model bootstrap confidence interval. Predictions are generated live from
-  Neon Postgres.</p>
+  <h1>Counterfactual Prediction Model</h1>
   <form id="f" class="fightform">
-    <input id="a" placeholder="Fighter A (e.g. Jon Jones)" required autocomplete="off">
+    <input id="a" placeholder="Fighter A" required autocomplete="off">
     <div class="vs">VS</div>
-    <input id="b" placeholder="Fighter B (e.g. Stipe Miocic)" required autocomplete="off">
+    <input id="b" placeholder="Fighter B" required autocomplete="off">
     <button class="predictbtn" id="go">Predict</button>
   </form>
   <div class="examples">Try:
     <button type="button" data-a="Khabib Nurmagomedov" data-b="Conor McGregor">Khabib vs McGregor</button>
     <button type="button" data-a="Demetrious Johnson" data-b="Henry Cejudo">Johnson vs Cejudo</button>
     <button type="button" data-a="Israel Adesanya" data-b="Alex Pereira">Adesanya vs Pereira</button>
-  </div>
-  <div class="stats">
-    <span class="chip">10,900+ fights</span>
-    <span class="chip">34 engineered features</span>
-    <span class="chip">1,000-model bootstrap CI</span>
-    <span class="chip">Deterministic explanations</span>
   </div>
 </div>
 <div id="out"></div>
@@ -799,11 +789,10 @@ _METHODOLOGY_CONTENT = """
 
 <div class="card">
   <h2>2 &middot; Skill ratings: Glicko-2</h2>
-  <p>Elo answers &ldquo;how good is this fighter?&rdquo; with a single number. Glicko-2 adds two
-  more: how <em>sure</em> we are about that number, and how <em>volatile</em> the fighter's
-  performances are. A win over an uncertain opponent moves you less than a win over a
-  well-established one, and long layoffs inflate uncertainty &mdash; both natural fits for MMA's
-  sparse fight schedules.</p>
+  <p>The Glicko-2 rating system quantifies skill level, uncertainty, and volatility. A win over an
+  uncertain opponent moves you less than a win over a well-established one, and long layoffs inflate
+  uncertainty &mdash; both natural fits for MMA's sparse fight schedules. This is a cool usage of
+  distributions!</p>
   <p>Formally, each fighter carries a rating <code>&mu;</code>, a rating deviation
   <code>&phi;</code> (standard error of &mu;), and a volatility <code>&sigma;</code>. The system
   constant <code>&tau;</code>, which governs how fast volatility can change, was hyperparameter-tuned
@@ -823,10 +812,12 @@ _METHODOLOGY_CONTENT = """
 </div>
 
 <div class="card">
-  <h2>4 &middot; Model: L1-regularized logistic regression</h2>
-  <p>A deliberately simple model. Logistic regression keeps every prediction interpretable, and the
-  L1 (lasso) penalty forces the model to be opinionated: features that don't pull their weight get
-  coefficients of exactly zero, leaving a sparse, readable set of drivers.</p>
+  <h2>4 &middot; Model</h2>
+  <p>Given the highly correlated nature of the pre-engineered data (e.g. total strikes aggregated
+  from body strikes + leg strikes + &hellip;) I used the Elastic-Net logistic regression model which
+  penalizes large weights (Ridge) and zaps low value coefficients to zero (Lasso). This is a highly
+  interpretable model. Interestingly the model converged to a purely Lasso logistic regression model
+  when trained through log-loss minimization.</p>
   <p>The win probability is <code>p(A beats B) = &sigma;(&beta;&#8320; + &beta;&#7511;x)</code>
   where <code>&sigma;</code> is the logistic function, fit by minimizing
   <code>&Sigma; log-loss + &lambda;&#8214;&beta;&#8214;&#8321;</code> over 10,900+ fights, with
@@ -882,7 +873,7 @@ _AUTHORS_CONTENT = """
       <p class="muted">
         <a href="mailto:alexgp@uw.edu">alexgp@uw.edu</a> &middot;
         <a href="https://github.com/alejandrogomezpaz" target="_blank" rel="noopener">GitHub</a> &middot;
-        <a href="https://www.linkedin.com/in/alejandro-gomez-paz-b417b4396/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/alejandro-gomez-paz/" target="_blank" rel="noopener">LinkedIn</a>
       </p>
     </div>
   </div>
