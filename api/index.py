@@ -28,6 +28,56 @@ import predict  # noqa: E402  (loads model.joblib once per cold start)
 
 app = Flask(__name__)
 
+# --------------------------------------------------------------------------
+# Vercel path handoff.
+#
+# vercel.json rewrites every URL to this function (`/(.*)` -> `/api/index`).
+# Depending on how the platform hands the request to a WSGI app, PATH_INFO can
+# arrive as the *rewritten* path ("/api/index"), or empty (""), instead of the
+# URL the visitor actually asked for. Either one makes every Flask route miss
+# and Werkzeug serves its default "Not Found" page for the whole site.
+#
+# Vercel forwards the original request URL in x-vercel-original-path / the
+# standard x-forwarded-* set, so prefer that, then fall back to repairing the
+# two degenerate PATH_INFO values above.
+# --------------------------------------------------------------------------
+
+_FUNCTION_PATH = "/api/index"
+
+
+class _RestoreRequestPath:
+    def __init__(self, wsgi_app):
+        self.wsgi_app = wsgi_app
+
+    def __call__(self, environ, start_response):
+        path = environ.get("PATH_INFO") or ""
+
+        # Only intervene when the path is unusable as-is; a correct handoff is
+        # left completely untouched.
+        if path in ("", _FUNCTION_PATH) or path.startswith(_FUNCTION_PATH + "/"):
+            original = (environ.get("HTTP_X_VERCEL_ORIGINAL_PATH")
+                        or environ.get("HTTP_X_ORIGINAL_URI")
+                        or "")
+            if original:
+                original = original.split("?", 1)[0]
+
+            if original and not original.startswith(_FUNCTION_PATH):
+                path = original
+            elif path.startswith(_FUNCTION_PATH + "/"):
+                # "/api/index/rankings" -> "/rankings"
+                path = path[len(_FUNCTION_PATH):]
+            else:
+                path = "/"
+
+            environ["PATH_INFO"] = path if path.startswith("/") else "/" + path
+
+        # SCRIPT_NAME must stay empty, or url_for() prefixes every generated link.
+        environ["SCRIPT_NAME"] = ""
+        return self.wsgi_app(environ, start_response)
+
+
+app.wsgi_app = _RestoreRequestPath(app.wsgi_app)
+
 _engine = None
 
 
@@ -908,3 +958,35 @@ def methodology():
 @app.get("/authors")          # legacy path, kept so old links don't 404
 def author():
     return _render("Author — UFC Fight Predictor", _AUTHORS_CONTENT, "Author")
+
+
+@app.errorhandler(404)
+def not_found(_e):
+    # A branded 404 instead of Werkzeug's default. It echoes the path Flask
+    # actually received, which makes a Vercel path-handoff problem obvious at a
+    # glance rather than looking like the whole site is down.
+    content = f"""
+<div class="card hero">
+  <h1>Page not found</h1>
+  <p class="sub">No route matches <code>{request.path}</code>.</p>
+  <div class="examples">Go to:
+    <button type="button" onclick="location.href='/'">Predict</button>
+    <button type="button" onclick="location.href='/rankings'">Rankings</button>
+    <button type="button" onclick="location.href='/analytics'">Analytics</button>
+  </div>
+</div>
+"""
+    return _render("Not found — UFC Fight Predictor", content, ""), 404
+
+
+@app.get("/api/whoami")
+def whoami():
+    # Diagnostic: shows exactly what the WSGI layer handed Flask.
+    return jsonify(
+        path=request.path,
+        raw_path_info=request.environ.get("PATH_INFO"),
+        script_name=request.environ.get("SCRIPT_NAME"),
+        vercel_original_path=request.headers.get("x-vercel-original-path"),
+        host=request.host,
+        routes=sorted(str(r.rule) for r in app.url_map.iter_rules()),
+    )
