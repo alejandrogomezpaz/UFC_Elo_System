@@ -17,6 +17,7 @@ import os
 import sys
 from contextlib import redirect_stdout
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode
 
 from flask import Flask, jsonify, request
 from sqlalchemy import create_engine, text
@@ -31,45 +32,69 @@ app = Flask(__name__)
 # --------------------------------------------------------------------------
 # Vercel path handoff.
 #
-# vercel.json rewrites every URL to this function (`/(.*)` -> `/api/index`).
-# Depending on how the platform hands the request to a WSGI app, PATH_INFO can
-# arrive as the *rewritten* path ("/api/index"), or empty (""), instead of the
-# URL the visitor actually asked for. Either one makes every Flask route miss
-# and Werkzeug serves its default "Not Found" page for the whole site.
+# Vercel changed behaviour: "Internal rewrites in backend framework projects now
+# route requests using the rewritten destination path." Our vercel.json sends
+# every URL to this function, so Flask started receiving the literal rewritten
+# path ("/api/index") instead of the URL the visitor asked for -- every route
+# missed and Werkzeug served its default 404 for the entire site.
 #
-# Vercel forwards the original request URL in x-vercel-original-path / the
-# standard x-forwarded-* set, so prefer that, then fall back to repairing the
-# two degenerate PATH_INFO values above.
+# vercel.json therefore carries the real path along as ?__vpath=/<path>, and we
+# put it back on the request here before Flask routes it. Fallbacks cover the
+# older pass-through behaviour and the degenerate empty-path case, so this keeps
+# working whichever way the platform hands the request over.
 # --------------------------------------------------------------------------
 
 _FUNCTION_PATH = "/api/index"
+_PATH_PARAM = "__vpath"
 
 
 class _RestoreRequestPath:
     def __init__(self, wsgi_app):
         self.wsgi_app = wsgi_app
 
-    def __call__(self, environ, start_response):
-        path = environ.get("PATH_INFO") or ""
+    @staticmethod
+    def _normalise(path: str) -> str:
+        path = path.split("?", 1)[0]
+        if not path.startswith("/"):
+            path = "/" + path
+        # collapse "//" and a trailing-only slash artefact from ?__vpath=/$1
+        while "//" in path:
+            path = path.replace("//", "/")
+        return path
 
-        # Only intervene when the path is unusable as-is; a correct handoff is
-        # left completely untouched.
-        if path in ("", _FUNCTION_PATH) or path.startswith(_FUNCTION_PATH + "/"):
+    def __call__(self, environ, start_response):
+        query = environ.get("QUERY_STRING", "") or ""
+        original = None
+
+        # 1. Preferred: the path vercel.json handed us, removed from the query
+        #    string so it never shows up in request.args.
+        if _PATH_PARAM in query:
+            kept = []
+            for key, value in parse_qsl(query, keep_blank_values=True):
+                if key == _PATH_PARAM and original is None:
+                    original = value
+                else:
+                    kept.append((key, value))
+            environ["QUERY_STRING"] = urlencode(kept)
+
+        # 2. Fallbacks for a header-forwarded original path.
+        if not original:
             original = (environ.get("HTTP_X_VERCEL_ORIGINAL_PATH")
                         or environ.get("HTTP_X_ORIGINAL_URI")
                         or "")
-            if original:
-                original = original.split("?", 1)[0]
+            if original.startswith(_FUNCTION_PATH):
+                original = ""
 
-            if original and not original.startswith(_FUNCTION_PATH):
-                path = original
-            elif path.startswith(_FUNCTION_PATH + "/"):
-                # "/api/index/rankings" -> "/rankings"
-                path = path[len(_FUNCTION_PATH):]
-            else:
-                path = "/"
+        path = environ.get("PATH_INFO") or ""
 
-            environ["PATH_INFO"] = path if path.startswith("/") else "/" + path
+        if original:
+            environ["PATH_INFO"] = self._normalise(original)
+        elif path.startswith(_FUNCTION_PATH + "/"):
+            # "/api/index/rankings" -> "/rankings"
+            environ["PATH_INFO"] = self._normalise(path[len(_FUNCTION_PATH):])
+        elif path in ("", _FUNCTION_PATH):
+            environ["PATH_INFO"] = "/"
+        # else: a correct pass-through handoff, left completely untouched.
 
         # SCRIPT_NAME must stay empty, or url_for() prefixes every generated link.
         environ["SCRIPT_NAME"] = ""
